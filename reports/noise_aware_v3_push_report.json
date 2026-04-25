@@ -1,0 +1,937 @@
+{
+  "candidate_count": 20,
+  "candidates": [
+    {
+      "answer_mean": 255.04852353846155,
+      "answer_std": 143.8855871360469,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "250",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "component_weights": {
+        "clean": 0.3,
+        "model": 0.18,
+        "neutral_avoidance": 0.08,
+        "robust": 0.08
+      },
+      "family": "noise_aware_v3_low_noise",
+      "hypothesis": "Low-noise external consensus target=posterior with ridge residual.",
+      "ids_match_test_order": true,
+      "mae_vs_199": 6.550000002015916,
+      "mean_delta_vs_199": -9.548841717332834e-10,
+      "method_labels": [
+        "low_noise_target",
+        "external_consensus"
+      ],
+      "name": "noise_v3_clean_target_01",
+      "next_manual_upload_target": false,
+      "output_bytes": 166787,
+      "output_file": "official_candidates/250_noise_v3_clean_target_01_output.csv",
+      "reproduction_command": "python3 official_candidates/250_noise_v3_clean_target_01_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/199_noise_champion_scaled_external_denoising_output.csv --neutral-output official_candidates/249_noise_v2_champion_directional_denoising_output.csv --output official_candidates/250_noise_v3_clean_target_01_output.csv",
+      "risk_label": "noise_aware_v3_low_noise_denoising",
+      "risk_labels": [
+        "low_noise_external_consensus",
+        "scaled_mac_model",
+        "robust_noisy_label_training",
+        "official_best_base"
+      ],
+      "row_count": 9425,
+      "source_bytes": 748,
+      "source_file": "official_candidates/250_noise_v3_clean_target_01_source.py",
+      "std_delta_vs_199": -0.8180949212822952,
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.04852354132626,
+      "answer_std": 143.97293817621912,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "251",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "component_weights": {
+        "clean": 0.32,
+        "model": 0.18,
+        "neutral_avoidance": 0.08,
+        "robust": 0.08
+      },
+      "family": "noise_aware_v3_low_noise",
+      "hypothesis": "Low-noise external consensus target=median_of_means with huber residual.",
+      "ids_match_test_order": true,
+      "mae_vs_199": 6.9000000010610085,
+      "mean_delta_vs_199": 1.9098251868854277e-09,
+      "method_labels": [
+        "low_noise_target",
+        "external_consensus"
+      ],
+      "name": "noise_v3_clean_target_02",
+      "next_manual_upload_target": false,
+      "output_bytes": 166666,
+      "output_file": "official_candidates/251_noise_v3_clean_target_02_output.csv",
+      "reproduction_command": "python3 official_candidates/251_noise_v3_clean_target_02_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/199_noise_champion_scaled_external_denoising_output.csv --neutral-output official_candidates/249_noise_v2_champion_directional_denoising_output.csv --output official_candidates/251_noise_v3_clean_target_02_output.csv",
+      "risk_label": "noise_aware_v3_low_noise_denoising",
+      "risk_labels": [
+        "low_noise_external_consensus",
+        "scaled_mac_model",
+        "robust_noisy_label_training",
+        "official_best_base"
+      ],
+      "row_count": 9425,
+      "source_bytes": 754,
+      "source_file": "official_candidates/251_noise_v3_clean_target_02_source.py",
+      "std_delta_vs_199": -0.7307438811100724,
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.04852354143236,
+      "answer_std": 144.0354034959827,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "252",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "component_weights": {
+        "clean": 0.34,
+        "model": 0.18,
+        "neutral_avoidance": 0.08,
+        "robust": 0.08
+      },
+      "family": "noise_aware_v3_low_noise",
+      "hypothesis": "Low-noise external consensus target=huber with hgb residual.",
+      "ids_match_test_order": true,
+      "mae_vs_199": 7.250000003713528,
+      "mean_delta_vs_199": 2.015923428189126e-09,
+      "method_labels": [
+        "low_noise_target",
+        "external_consensus"
+      ],
+      "name": "noise_v3_clean_target_03",
+      "next_manual_upload_target": false,
+      "output_bytes": 166567,
+      "output_file": "official_candidates/252_noise_v3_clean_target_03_output.csv",
+      "reproduction_command": "python3 official_candidates/252_noise_v3_clean_target_03_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/199_noise_champion_scaled_external_denoising_output.csv --neutral-output official_candidates/249_noise_v2_champion_directional_denoising_output.csv --output official_candidates/252_noise_v3_clean_target_03_output.csv",
+      "risk_label": "noise_aware_v3_low_noise_denoising",
+      "risk_labels": [
+        "low_noise_external_consensus",
+        "scaled_mac_model",
+        "robust_noisy_label_training",
+        "official_best_base"
+      ],
+      "row_count": 9425,
+      "source_bytes": 743,
+      "source_file": "official_candidates/252_noise_v3_clean_target_03_source.py",
+      "std_delta_vs_199": -0.668278561346483,
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.04852353580904,
+      "answer_std": 143.19189532777517,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "253",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "component_weights": {
+        "clean": 0.28,
+        "model": 0.18,
+        "neutral_avoidance": 0.08,
+        "robust": 0.08
+      },
+      "family": "noise_aware_v3_low_noise",
+      "hypothesis": "Low-noise external consensus target=winsor_positive with ridge residual.",
+      "ids_match_test_order": true,
+      "mae_vs_199": 7.599999999151193,
+      "mean_delta_vs_199": -3.6073970477445982e-09,
+      "method_labels": [
+        "low_noise_target",
+        "external_consensus"
+      ],
+      "name": "noise_v3_clean_target_04",
+      "next_manual_upload_target": false,
+      "output_bytes": 166955,
+      "output_file": "official_candidates/253_noise_v3_clean_target_04_output.csv",
+      "reproduction_command": "python3 official_candidates/253_noise_v3_clean_target_04_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/199_noise_champion_scaled_external_denoising_output.csv --neutral-output official_candidates/249_noise_v2_champion_directional_denoising_output.csv --output official_candidates/253_noise_v3_clean_target_04_output.csv",
+      "risk_label": "noise_aware_v3_low_noise_denoising",
+      "risk_labels": [
+        "low_noise_external_consensus",
+        "scaled_mac_model",
+        "robust_noisy_label_training",
+        "official_best_base"
+      ],
+      "row_count": 9425,
+      "source_bytes": 754,
+      "source_file": "official_candidates/253_noise_v3_clean_target_04_source.py",
+      "std_delta_vs_199": -1.511786729554018,
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.0485235409018,
+      "answer_std": 144.0606712513745,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "254",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "component_weights": {
+        "clean": 0.3,
+        "model": 0.18,
+        "neutral_avoidance": 0.08,
+        "robust": 0.08
+      },
+      "family": "noise_aware_v3_low_noise",
+      "hypothesis": "Low-noise external consensus target=zero_hurdle with hgb residual.",
+      "ids_match_test_order": true,
+      "mae_vs_199": 7.950000007002654,
+      "mean_delta_vs_199": 1.4853753782517742e-09,
+      "method_labels": [
+        "low_noise_target",
+        "external_consensus"
+      ],
+      "name": "noise_v3_clean_target_05",
+      "next_manual_upload_target": false,
+      "output_bytes": 166625,
+      "output_file": "official_candidates/254_noise_v3_clean_target_05_output.csv",
+      "reproduction_command": "python3 official_candidates/254_noise_v3_clean_target_05_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/199_noise_champion_scaled_external_denoising_output.csv --neutral-output official_candidates/249_noise_v2_champion_directional_denoising_output.csv --output official_candidates/254_noise_v3_clean_target_05_output.csv",
+      "risk_label": "noise_aware_v3_low_noise_denoising",
+      "risk_labels": [
+        "low_noise_external_consensus",
+        "scaled_mac_model",
+        "robust_noisy_label_training",
+        "official_best_base"
+      ],
+      "row_count": 9425,
+      "source_bytes": 748,
+      "source_file": "official_candidates/254_noise_v3_clean_target_05_source.py",
+      "std_delta_vs_199": -0.6430108059547024,
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.04852353771886,
+      "answer_std": 144.1376279746606,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "255",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "component_weights": {
+        "clean": 0.34,
+        "model": 0.34,
+        "neutral_avoidance": 0.08,
+        "robust": 0.08
+      },
+      "family": "noise_aware_v3_low_noise",
+      "hypothesis": "High-capacity hgb capacity=520 target=posterior.",
+      "ids_match_test_order": true,
+      "mae_vs_199": 7.350000000848807,
+      "mean_delta_vs_199": -1.6975718608591706e-09,
+      "method_labels": [
+        "high_capacity_model",
+        "train_label_denoising"
+      ],
+      "name": "noise_v3_capacity_hgb_01",
+      "next_manual_upload_target": false,
+      "output_bytes": 166561,
+      "output_file": "official_candidates/255_noise_v3_capacity_hgb_01_output.csv",
+      "reproduction_command": "python3 official_candidates/255_noise_v3_capacity_hgb_01_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/199_noise_champion_scaled_external_denoising_output.csv --neutral-output official_candidates/249_noise_v2_champion_directional_denoising_output.csv --output official_candidates/255_noise_v3_capacity_hgb_01_output.csv",
+      "risk_label": "noise_aware_v3_low_noise_denoising",
+      "risk_labels": [
+        "low_noise_external_consensus",
+        "scaled_mac_model",
+        "robust_noisy_label_training",
+        "official_best_base"
+      ],
+      "row_count": 9425,
+      "source_bytes": 767,
+      "source_file": "official_candidates/255_noise_v3_capacity_hgb_01_source.py",
+      "std_delta_vs_199": -0.566054082668586,
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.04852354132626,
+      "answer_std": 144.18181537497165,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "256",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "component_weights": {
+        "clean": 0.34,
+        "model": 0.34,
+        "neutral_avoidance": 0.08,
+        "robust": 0.08
+      },
+      "family": "noise_aware_v3_low_noise",
+      "hypothesis": "High-capacity hgb capacity=650 target=zero_hurdle.",
+      "ids_match_test_order": true,
+      "mae_vs_199": 7.700000000636605,
+      "mean_delta_vs_199": 1.9098251868854277e-09,
+      "method_labels": [
+        "high_capacity_model",
+        "train_label_denoising"
+      ],
+      "name": "noise_v3_capacity_hgb_02",
+      "next_manual_upload_target": false,
+      "output_bytes": 166611,
+      "output_file": "official_candidates/256_noise_v3_capacity_hgb_02_output.csv",
+      "reproduction_command": "python3 official_candidates/256_noise_v3_capacity_hgb_02_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/199_noise_champion_scaled_external_denoising_output.csv --neutral-output official_candidates/249_noise_v2_champion_directional_denoising_output.csv --output official_candidates/256_noise_v3_capacity_hgb_02_output.csv",
+      "risk_label": "noise_aware_v3_low_noise_denoising",
+      "risk_labels": [
+        "low_noise_external_consensus",
+        "scaled_mac_model",
+        "robust_noisy_label_training",
+        "official_best_base"
+      ],
+      "row_count": 9425,
+      "source_bytes": 768,
+      "source_file": "official_candidates/256_noise_v3_capacity_hgb_02_source.py",
+      "std_delta_vs_199": -0.5218666823575404,
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.04852353899204,
+      "answer_std": 143.8873268468797,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "257",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "component_weights": {
+        "clean": 0.3,
+        "model": 0.34,
+        "neutral_avoidance": 0.08,
+        "robust": 0.08
+      },
+      "family": "noise_aware_v3_low_noise",
+      "hypothesis": "High-capacity trees capacity=512 target=posterior.",
+      "ids_match_test_order": true,
+      "mae_vs_199": 8.04999999851459,
+      "mean_delta_vs_199": -4.2439296521479264e-10,
+      "method_labels": [
+        "high_capacity_model",
+        "train_label_denoising"
+      ],
+      "name": "noise_v3_capacity_trees_03",
+      "next_manual_upload_target": false,
+      "output_bytes": 166581,
+      "output_file": "official_candidates/257_noise_v3_capacity_trees_03_output.csv",
+      "reproduction_command": "python3 official_candidates/257_noise_v3_capacity_trees_03_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/199_noise_champion_scaled_external_denoising_output.csv --neutral-output official_candidates/249_noise_v2_champion_directional_denoising_output.csv --output official_candidates/257_noise_v3_capacity_trees_03_output.csv",
+      "risk_label": "noise_aware_v3_low_noise_denoising",
+      "risk_labels": [
+        "low_noise_external_consensus",
+        "scaled_mac_model",
+        "robust_noisy_label_training",
+        "official_best_base"
+      ],
+      "row_count": 9425,
+      "source_bytes": 768,
+      "source_file": "official_candidates/257_noise_v3_capacity_trees_03_source.py",
+      "std_delta_vs_199": -0.8163552104495011,
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.04852354058357,
+      "answer_std": 143.8753626263994,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "258",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "component_weights": {
+        "clean": 0.32,
+        "model": 0.34,
+        "neutral_avoidance": 0.08,
+        "robust": 0.08
+      },
+      "family": "noise_aware_v3_low_noise",
+      "hypothesis": "High-capacity trees capacity=640 target=huber.",
+      "ids_match_test_order": true,
+      "mae_vs_199": 8.399999996710875,
+      "mean_delta_vs_199": 1.1671374977595406e-09,
+      "method_labels": [
+        "high_capacity_model",
+        "train_label_denoising"
+      ],
+      "name": "noise_v3_capacity_trees_04",
+      "next_manual_upload_target": false,
+      "output_bytes": 166585,
+      "output_file": "official_candidates/258_noise_v3_capacity_trees_04_output.csv",
+      "reproduction_command": "python3 official_candidates/258_noise_v3_capacity_trees_04_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/199_noise_champion_scaled_external_denoising_output.csv --neutral-output official_candidates/249_noise_v2_champion_directional_denoising_output.csv --output official_candidates/258_noise_v3_capacity_trees_04_output.csv",
+      "risk_label": "noise_aware_v3_low_noise_denoising",
+      "risk_labels": [
+        "low_noise_external_consensus",
+        "scaled_mac_model",
+        "robust_noisy_label_training",
+        "official_best_base"
+      ],
+      "row_count": 9425,
+      "source_bytes": 764,
+      "source_file": "official_candidates/258_noise_v3_capacity_trees_04_source.py",
+      "std_delta_vs_199": -0.8283194309297812,
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.04852354037132,
+      "answer_std": 143.9030834494553,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "259",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "component_weights": {
+        "clean": 0.34,
+        "model": 0.34,
+        "neutral_avoidance": 0.08,
+        "robust": 0.08
+      },
+      "family": "noise_aware_v3_low_noise",
+      "hypothesis": "High-capacity trees capacity=768 target=median_of_means.",
+      "ids_match_test_order": true,
+      "mae_vs_199": 8.749999999469496,
+      "mean_delta_vs_199": 9.548841717332834e-10,
+      "method_labels": [
+        "high_capacity_model",
+        "train_label_denoising"
+      ],
+      "name": "noise_v3_capacity_trees_05",
+      "next_manual_upload_target": false,
+      "output_bytes": 166527,
+      "output_file": "official_candidates/259_noise_v3_capacity_trees_05_output.csv",
+      "reproduction_command": "python3 official_candidates/259_noise_v3_capacity_trees_05_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/199_noise_champion_scaled_external_denoising_output.csv --neutral-output official_candidates/249_noise_v2_champion_directional_denoising_output.csv --output official_candidates/259_noise_v3_capacity_trees_05_output.csv",
+      "risk_label": "noise_aware_v3_low_noise_denoising",
+      "risk_labels": [
+        "low_noise_external_consensus",
+        "scaled_mac_model",
+        "robust_noisy_label_training",
+        "official_best_base"
+      ],
+      "row_count": 9425,
+      "source_bytes": 775,
+      "source_file": "official_candidates/259_noise_v3_capacity_trees_05_source.py",
+      "std_delta_vs_199": -0.8005986078738943,
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.04852354090187,
+      "answer_std": 143.21538662690074,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "260",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "component_weights": {
+        "clean": 0.3,
+        "model": 0.34,
+        "neutral_avoidance": 0.08,
+        "robust": 0.08
+      },
+      "family": "noise_aware_v3_low_noise",
+      "hypothesis": "High-capacity hgb capacity=700 target=winsor_positive.",
+      "ids_match_test_order": true,
+      "mae_vs_199": 9.100000000424403,
+      "mean_delta_vs_199": 1.485432221670635e-09,
+      "method_labels": [
+        "high_capacity_model",
+        "train_label_denoising"
+      ],
+      "name": "noise_v3_capacity_hgb_06",
+      "next_manual_upload_target": false,
+      "output_bytes": 166792,
+      "output_file": "official_candidates/260_noise_v3_capacity_hgb_06_output.csv",
+      "reproduction_command": "python3 official_candidates/260_noise_v3_capacity_hgb_06_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/199_noise_champion_scaled_external_denoising_output.csv --neutral-output official_candidates/249_noise_v2_champion_directional_denoising_output.csv --output official_candidates/260_noise_v3_capacity_hgb_06_output.csv",
+      "risk_label": "noise_aware_v3_low_noise_denoising",
+      "risk_labels": [
+        "low_noise_external_consensus",
+        "scaled_mac_model",
+        "robust_noisy_label_training",
+        "official_best_base"
+      ],
+      "row_count": 9425,
+      "source_bytes": 771,
+      "source_file": "official_candidates/260_noise_v3_capacity_hgb_06_source.py",
+      "std_delta_vs_199": -1.488295430428451,
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.04852353655173,
+      "answer_std": 144.25231453173566,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "261",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "component_weights": {
+        "clean": 0.28,
+        "model": 0.18,
+        "neutral_avoidance": 0.08,
+        "robust": 0.24
+      },
+      "family": "noise_aware_v3_low_noise",
+      "hypothesis": "Robust noisy-label method=ordered target=posterior.",
+      "ids_match_test_order": true,
+      "mae_vs_199": 7.749999996923076,
+      "mean_delta_vs_199": -2.864709358618711e-09,
+      "method_labels": [
+        "robust_training",
+        "ordered"
+      ],
+      "name": "noise_v3_robust_ordered_01",
+      "next_manual_upload_target": false,
+      "output_bytes": 166546,
+      "output_file": "official_candidates/261_noise_v3_robust_ordered_01_output.csv",
+      "reproduction_command": "python3 official_candidates/261_noise_v3_robust_ordered_01_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/199_noise_champion_scaled_external_denoising_output.csv --neutral-output official_candidates/249_noise_v2_champion_directional_denoising_output.csv --output official_candidates/261_noise_v3_robust_ordered_01_output.csv",
+      "risk_label": "noise_aware_v3_low_noise_denoising",
+      "risk_labels": [
+        "low_noise_external_consensus",
+        "scaled_mac_model",
+        "robust_noisy_label_training",
+        "official_best_base"
+      ],
+      "row_count": 9425,
+      "source_bytes": 770,
+      "source_file": "official_candidates/261_noise_v3_robust_ordered_01_source.py",
+      "std_delta_vs_199": -0.45136752559352544,
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.0485235390981,
+      "answer_std": 144.1443850069611,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "262",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "component_weights": {
+        "clean": 0.28,
+        "model": 0.18,
+        "neutral_avoidance": 0.08,
+        "robust": 0.24
+      },
+      "family": "noise_aware_v3_low_noise",
+      "hypothesis": "Robust noisy-label method=co_teach target=huber.",
+      "ids_match_test_order": true,
+      "mae_vs_199": 8.099999997771883,
+      "mean_delta_vs_199": -3.183231456205249e-10,
+      "method_labels": [
+        "robust_training",
+        "co_teach"
+      ],
+      "name": "noise_v3_robust_co_teach_02",
+      "next_manual_upload_target": false,
+      "output_bytes": 166573,
+      "output_file": "official_candidates/262_noise_v3_robust_co_teach_02_output.csv",
+      "reproduction_command": "python3 official_candidates/262_noise_v3_robust_co_teach_02_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/199_noise_champion_scaled_external_denoising_output.csv --neutral-output official_candidates/249_noise_v2_champion_directional_denoising_output.csv --output official_candidates/262_noise_v3_robust_co_teach_02_output.csv",
+      "risk_label": "noise_aware_v3_low_noise_denoising",
+      "risk_labels": [
+        "low_noise_external_consensus",
+        "scaled_mac_model",
+        "robust_noisy_label_training",
+        "official_best_base"
+      ],
+      "row_count": 9425,
+      "source_bytes": 766,
+      "source_file": "official_candidates/262_noise_v3_robust_co_teach_02_source.py",
+      "std_delta_vs_199": -0.5592970503680874,
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.04852353931037,
+      "answer_std": 144.10167781023057,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "263",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "component_weights": {
+        "clean": 0.28,
+        "model": 0.18,
+        "neutral_avoidance": 0.08,
+        "robust": 0.24
+      },
+      "family": "noise_aware_v3_low_noise",
+      "hypothesis": "Robust noisy-label method=distributional target=zero_hurdle.",
+      "ids_match_test_order": true,
+      "mae_vs_199": 8.450000002440317,
+      "mean_delta_vs_199": -1.0606981959426776e-10,
+      "method_labels": [
+        "robust_training",
+        "distributional"
+      ],
+      "name": "noise_v3_robust_distributional_03",
+      "next_manual_upload_target": false,
+      "output_bytes": 166566,
+      "output_file": "official_candidates/263_noise_v3_robust_distributional_03_output.csv",
+      "reproduction_command": "python3 official_candidates/263_noise_v3_robust_distributional_03_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/199_noise_champion_scaled_external_denoising_output.csv --neutral-output official_candidates/249_noise_v2_champion_directional_denoising_output.csv --output official_candidates/263_noise_v3_robust_distributional_03_output.csv",
+      "risk_label": "noise_aware_v3_low_noise_denoising",
+      "risk_labels": [
+        "low_noise_external_consensus",
+        "scaled_mac_model",
+        "robust_noisy_label_training",
+        "official_best_base"
+      ],
+      "row_count": 9425,
+      "source_bytes": 781,
+      "source_file": "official_candidates/263_noise_v3_robust_distributional_03_source.py",
+      "std_delta_vs_199": -0.6020042470986198,
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.04852353888595,
+      "answer_std": 144.26747304350846,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "264",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "component_weights": {
+        "clean": 0.28,
+        "model": 0.18,
+        "neutral_avoidance": 0.08,
+        "robust": 0.24
+      },
+      "family": "noise_aware_v3_low_noise",
+      "hypothesis": "Robust noisy-label method=superlearner target=posterior.",
+      "ids_match_test_order": true,
+      "mae_vs_199": 8.800000000954908,
+      "mean_delta_vs_199": -5.304912065184908e-10,
+      "method_labels": [
+        "robust_training",
+        "superlearner"
+      ],
+      "name": "noise_v3_robust_superlearner_04",
+      "next_manual_upload_target": false,
+      "output_bytes": 166566,
+      "output_file": "official_candidates/264_noise_v3_robust_superlearner_04_output.csv",
+      "reproduction_command": "python3 official_candidates/264_noise_v3_robust_superlearner_04_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/199_noise_champion_scaled_external_denoising_output.csv --neutral-output official_candidates/249_noise_v2_champion_directional_denoising_output.csv --output official_candidates/264_noise_v3_robust_superlearner_04_output.csv",
+      "risk_label": "noise_aware_v3_low_noise_denoising",
+      "risk_labels": [
+        "low_noise_external_consensus",
+        "scaled_mac_model",
+        "robust_noisy_label_training",
+        "official_best_base"
+      ],
+      "row_count": 9425,
+      "source_bytes": 774,
+      "source_file": "official_candidates/264_noise_v3_robust_superlearner_04_source.py",
+      "std_delta_vs_199": -0.4362090138207293,
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.04852354567637,
+      "answer_std": 143.070582657914,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "265",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "component_weights": {
+        "clean": 0.28,
+        "model": 0.18,
+        "neutral_avoidance": 0.08,
+        "robust": 0.24
+      },
+      "family": "noise_aware_v3_low_noise",
+      "hypothesis": "Robust noisy-label method=ngboost_like target=winsor_positive.",
+      "ids_match_test_order": true,
+      "mae_vs_199": 9.149999995437666,
+      "mean_delta_vs_199": 6.2599383454653434e-09,
+      "method_labels": [
+        "robust_training",
+        "ngboost_like"
+      ],
+      "name": "noise_v3_robust_ngboost_like_05",
+      "next_manual_upload_target": false,
+      "output_bytes": 166865,
+      "output_file": "official_candidates/265_noise_v3_robust_ngboost_like_05_output.csv",
+      "reproduction_command": "python3 official_candidates/265_noise_v3_robust_ngboost_like_05_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/199_noise_champion_scaled_external_denoising_output.csv --neutral-output official_candidates/249_noise_v2_champion_directional_denoising_output.csv --output official_candidates/265_noise_v3_robust_ngboost_like_05_output.csv",
+      "risk_label": "noise_aware_v3_low_noise_denoising",
+      "risk_labels": [
+        "low_noise_external_consensus",
+        "scaled_mac_model",
+        "robust_noisy_label_training",
+        "official_best_base"
+      ],
+      "row_count": 9425,
+      "source_bytes": 781,
+      "source_file": "official_candidates/265_noise_v3_robust_ngboost_like_05_source.py",
+      "std_delta_vs_199": -1.6330993994151868,
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.04852354058357,
+      "answer_std": 144.09278228576088,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "266",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "component_weights": {
+        "clean": 0.28,
+        "model": 0.34,
+        "neutral_avoidance": 0.18,
+        "robust": 0.24
+      },
+      "family": "noise_aware_v3_low_noise",
+      "hypothesis": "V3 fusion style=clean_heavy around Candidate 199.",
+      "ids_match_test_order": true,
+      "mae_vs_199": 8.550000002440319,
+      "mean_delta_vs_199": 1.1671374977595406e-09,
+      "method_labels": [
+        "superlearner_fusion",
+        "uncertainty_shrinkage"
+      ],
+      "name": "noise_v3_fusion_clean_heavy_01",
+      "next_manual_upload_target": false,
+      "output_bytes": 166557,
+      "output_file": "official_candidates/266_noise_v3_fusion_clean_heavy_01_output.csv",
+      "reproduction_command": "python3 official_candidates/266_noise_v3_fusion_clean_heavy_01_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/199_noise_champion_scaled_external_denoising_output.csv --neutral-output official_candidates/249_noise_v2_champion_directional_denoising_output.csv --output official_candidates/266_noise_v3_fusion_clean_heavy_01_output.csv",
+      "risk_label": "noise_aware_v3_low_noise_denoising",
+      "risk_labels": [
+        "low_noise_external_consensus",
+        "scaled_mac_model",
+        "robust_noisy_label_training",
+        "official_best_base"
+      ],
+      "row_count": 9425,
+      "source_bytes": 730,
+      "source_file": "official_candidates/266_noise_v3_fusion_clean_heavy_01_source.py",
+      "std_delta_vs_199": -0.6108997715683131,
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.0485235332626,
+      "answer_std": 144.05473902330166,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "267",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "component_weights": {
+        "clean": 0.28,
+        "model": 0.34,
+        "neutral_avoidance": 0.18,
+        "robust": 0.24
+      },
+      "family": "noise_aware_v3_low_noise",
+      "hypothesis": "V3 fusion style=model_heavy around Candidate 199.",
+      "ids_match_test_order": true,
+      "mae_vs_199": 8.900000000424404,
+      "mean_delta_vs_199": -6.153840104161645e-09,
+      "method_labels": [
+        "superlearner_fusion",
+        "uncertainty_shrinkage"
+      ],
+      "name": "noise_v3_fusion_model_heavy_02",
+      "next_manual_upload_target": false,
+      "output_bytes": 166564,
+      "output_file": "official_candidates/267_noise_v3_fusion_model_heavy_02_output.csv",
+      "reproduction_command": "python3 official_candidates/267_noise_v3_fusion_model_heavy_02_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/199_noise_champion_scaled_external_denoising_output.csv --neutral-output official_candidates/249_noise_v2_champion_directional_denoising_output.csv --output official_candidates/267_noise_v3_fusion_model_heavy_02_output.csv",
+      "risk_label": "noise_aware_v3_low_noise_denoising",
+      "risk_labels": [
+        "low_noise_external_consensus",
+        "scaled_mac_model",
+        "robust_noisy_label_training",
+        "official_best_base"
+      ],
+      "row_count": 9425,
+      "source_bytes": 730,
+      "source_file": "official_candidates/267_noise_v3_fusion_model_heavy_02_source.py",
+      "std_delta_vs_199": -0.6489430340275248,
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.04852353655178,
+      "answer_std": 144.13037266024534,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "268",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "component_weights": {
+        "clean": 0.28,
+        "model": 0.34,
+        "neutral_avoidance": 0.18,
+        "robust": 0.24
+      },
+      "family": "noise_aware_v3_low_noise",
+      "hypothesis": "V3 fusion style=uncertainty_heavy around Candidate 199.",
+      "ids_match_test_order": true,
+      "mae_vs_199": 9.250000000954905,
+      "mean_delta_vs_199": -2.8646525151998503e-09,
+      "method_labels": [
+        "superlearner_fusion",
+        "uncertainty_shrinkage"
+      ],
+      "name": "noise_v3_fusion_uncertainty_heavy_03",
+      "next_manual_upload_target": false,
+      "output_bytes": 166559,
+      "output_file": "official_candidates/268_noise_v3_fusion_uncertainty_heavy_03_output.csv",
+      "reproduction_command": "python3 official_candidates/268_noise_v3_fusion_uncertainty_heavy_03_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/199_noise_champion_scaled_external_denoising_output.csv --neutral-output official_candidates/249_noise_v2_champion_directional_denoising_output.csv --output official_candidates/268_noise_v3_fusion_uncertainty_heavy_03_output.csv",
+      "risk_label": "noise_aware_v3_low_noise_denoising",
+      "risk_labels": [
+        "low_noise_external_consensus",
+        "scaled_mac_model",
+        "robust_noisy_label_training",
+        "official_best_base"
+      ],
+      "row_count": 9425,
+      "source_bytes": 723,
+      "source_file": "official_candidates/268_noise_v3_fusion_uncertainty_heavy_03_source.py",
+      "std_delta_vs_199": -0.5733093970838468,
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.04852353846155,
+      "answer_std": 144.17900097117982,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "269",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "component_weights": {
+        "clean": 0.28,
+        "model": 0.34,
+        "neutral_avoidance": 0.18,
+        "robust": 0.24
+      },
+      "family": "noise_aware_v3_low_noise",
+      "hypothesis": "Champion: Candidate 199 plus low-noise target, high-capacity stacker, and uncertainty shrinkage.",
+      "ids_match_test_order": true,
+      "mae_vs_199": 8.799999995649866,
+      "mean_delta_vs_199": -9.548841717332834e-10,
+      "method_labels": [
+        "champion",
+        "low_noise_target",
+        "high_capacity_model",
+        "uncertainty_shrinkage"
+      ],
+      "name": "noise_v3_champion_low_noise_stack",
+      "next_manual_upload_target": true,
+      "output_bytes": 166549,
+      "output_file": "official_candidates/269_noise_v3_champion_low_noise_stack_output.csv",
+      "reproduction_command": "python3 official_candidates/269_noise_v3_champion_low_noise_stack_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/199_noise_champion_scaled_external_denoising_output.csv --neutral-output official_candidates/249_noise_v2_champion_directional_denoising_output.csv --output official_candidates/269_noise_v3_champion_low_noise_stack_output.csv",
+      "risk_label": "noise_aware_v3_low_noise_denoising",
+      "risk_labels": [
+        "low_noise_external_consensus",
+        "scaled_mac_model",
+        "robust_noisy_label_training",
+        "official_best_base"
+      ],
+      "row_count": 9425,
+      "source_bytes": 694,
+      "source_file": "official_candidates/269_noise_v3_champion_low_noise_stack_source.py",
+      "std_delta_vs_199": -0.5246810861493714,
+      "upload_ready": true
+    }
+  ],
+  "external_consensus_coverage": {
+    "test_row": 1.0,
+    "train_item": 1.0
+  },
+  "family": "noise_aware_v3_low_noise",
+  "low_noise_target_profile": {
+    "external_test_row_coverage": 1.0,
+    "external_train_item_coverage": 1.0,
+    "global_zero_rate": 0.3062051623400636,
+    "mean_within_item_std": 210.46057417993865,
+    "train_items": 4507,
+    "train_rows": 135210
+  },
+  "mode": "generate",
+  "model_capacity_summary": {
+    "candidate_count": 20,
+    "extra_trees_max_estimators": 768,
+    "hgb_max_iter": 700
+  },
+  "movement_gate": {
+    "mae_vs_199_max": 14.0,
+    "mae_vs_199_min": 5.0,
+    "mean_delta_abs_max": 8.0,
+    "passed": true,
+    "std_delta_abs_max": 12.0
+  },
+  "next_manual_upload_target": "269",
+  "official_feedback": {
+    "best_remains_candidate_id": "199",
+    "candidate_id": "249",
+    "official_partial_score": 53.8099243,
+    "submission_id": "manual_249_score_53_8099243",
+    "submission_id_missing": true
+  },
+  "risk_label": "noise_aware_v3_low_noise_denoising",
+  "robust_training_method_labels": [
+    "champion",
+    "co_teach",
+    "distributional",
+    "external_consensus",
+    "high_capacity_model",
+    "low_noise_target",
+    "ngboost_like",
+    "ordered",
+    "robust_training",
+    "superlearner",
+    "superlearner_fusion",
+    "train_label_denoising",
+    "uncertainty_shrinkage"
+  ]
+}

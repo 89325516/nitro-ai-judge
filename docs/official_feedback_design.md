@@ -65,3 +65,8 @@ Candidate `159_rebound_champion_counter_prior_stack` scored `38.87076 / 100`, ab
 ## Noise-Aware V2 Feedback Update
 
 Candidate `199_noise_champion_scaled_external_denoising` scored `53.8099243 / 100`, above Candidate `159` at `38.87076 / 100`. Candidate `199` is the active official best. The next batch starts at Candidate `200`, keeps the same noise-aware direction, prunes unscored historical exploration files, and sets Candidate `249` as the largest-ID directional denoising champion.
+
+
+## Noise-Aware V3 Feedback Update
+
+Candidate `249_noise_v2_champion_directional_denoising` scored `53.8099243 / 100`, matching Candidate `199` rather than improving on it. Candidate `199` remains the active official best. The next batch starts at Candidate `250`, treats Candidate `249` as a neutral no-gain direction anchor, and sets Candidate `269` as the largest-ID low-noise denoising champion.

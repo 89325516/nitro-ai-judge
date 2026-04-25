@@ -25,13 +25,13 @@
   },
   "final_selection_policy": "choose_current_highest_successful_official_score",
   "latest_manual_submission_policy": "largest_numeric_candidate_id_at_manual_upload_time",
-  "latest_official_feedback_candidate_id": "199",
+  "latest_official_feedback_candidate_id": "249",
   "latest_official_feedback_score": 53.8099243,
-  "latest_official_feedback_submission_id": "manual_199_score_53_8099243",
+  "latest_official_feedback_submission_id": "manual_249_score_53_8099243",
   "latest_official_feedback_submission_id_missing": true,
-  "next_manual_upload_target": "249",
-  "next_manual_upload_target_output": "official_candidates/249_noise_v2_champion_directional_denoising_output.csv",
-  "next_manual_upload_target_source": "official_candidates/249_noise_v2_champion_directional_denoising_source.py",
+  "next_manual_upload_target": "269",
+  "next_manual_upload_target_output": "official_candidates/269_noise_v3_champion_low_noise_stack_output.csv",
+  "next_manual_upload_target_source": "official_candidates/269_noise_v3_champion_low_noise_stack_source.py",
   "noise_aware_anchor": {
     "candidate_id": "159",
     "next_search_direction": "train-label denoising and participant reliability modeling",
@@ -45,6 +45,13 @@
     "official_partial_score": 53.8099243,
     "previous_noise_anchor_candidate_id": "159",
     "previous_noise_anchor_score": 38.87076
+  },
+  "noise_aware_v3_anchor": {
+    "neutral_candidate_id": "249",
+    "neutral_score": 53.8099243,
+    "next_search_direction": "low-noise targets, higher-capacity tabular models, robust noisy-label stacking",
+    "official_best_candidate_id": "199",
+    "official_best_score": 53.8099243
   },
   "official_80_target_met": false,
   "official_80_target_score": 80.0,
@@ -237,7 +244,7 @@
         "train_label_denoising"
       ],
       "source_file": "official_candidates/200_noise_v2_anchor_reproduction_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -267,7 +274,7 @@
         "train_label_denoising"
       ],
       "source_file": "official_candidates/201_noise_v2_direction_01_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -297,7 +304,7 @@
         "train_label_denoising"
       ],
       "source_file": "official_candidates/202_noise_v2_direction_02_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -327,7 +334,7 @@
         "train_label_denoising"
       ],
       "source_file": "official_candidates/203_noise_v2_direction_03_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -357,7 +364,7 @@
         "train_label_denoising"
       ],
       "source_file": "official_candidates/204_noise_v2_direction_04_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -387,7 +394,7 @@
         "train_label_denoising"
       ],
       "source_file": "official_candidates/205_noise_v2_direction_05_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -417,7 +424,7 @@
         "train_label_denoising"
       ],
       "source_file": "official_candidates/206_noise_v2_direction_06_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -447,7 +454,7 @@
         "train_label_denoising"
       ],
       "source_file": "official_candidates/207_noise_v2_direction_07_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -477,7 +484,7 @@
         "train_label_denoising"
       ],
       "source_file": "official_candidates/208_noise_v2_direction_08_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -507,7 +514,7 @@
         "train_label_denoising"
       ],
       "source_file": "official_candidates/209_noise_v2_direction_09_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -537,7 +544,7 @@
         "train_label_denoising"
       ],
       "source_file": "official_candidates/210_noise_v2_direction_10_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -567,7 +574,7 @@
         "train_label_denoising"
       ],
       "source_file": "official_candidates/211_noise_v2_direction_11_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -597,7 +604,7 @@
         "train_label_denoising"
       ],
       "source_file": "official_candidates/212_noise_v2_direction_12_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -630,7 +637,7 @@
         "train_label_denoising"
       ],
       "source_file": "official_candidates/213_noise_v2_scaled_hgb_01_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -663,7 +670,7 @@
         "train_label_denoising"
       ],
       "source_file": "official_candidates/214_noise_v2_scaled_hgb_02_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -696,7 +703,7 @@
         "train_label_denoising"
       ],
       "source_file": "official_candidates/215_noise_v2_scaled_hgb_03_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -729,7 +736,7 @@
         "train_label_denoising"
       ],
       "source_file": "official_candidates/216_noise_v2_scaled_trees_04_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -762,7 +769,7 @@
         "train_label_denoising"
       ],
       "source_file": "official_candidates/217_noise_v2_scaled_trees_05_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -795,7 +802,7 @@
         "train_label_denoising"
       ],
       "source_file": "official_candidates/218_noise_v2_scaled_trees_06_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -828,7 +835,7 @@
         "train_label_denoising"
       ],
       "source_file": "official_candidates/219_noise_v2_scaled_ridge_07_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -861,7 +868,7 @@
         "train_label_denoising"
       ],
       "source_file": "official_candidates/220_noise_v2_scaled_ridge_08_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -894,7 +901,7 @@
         "train_label_denoising"
       ],
       "source_file": "official_candidates/221_noise_v2_scaled_huber_09_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -927,7 +934,7 @@
         "train_label_denoising"
       ],
       "source_file": "official_candidates/222_noise_v2_scaled_huber_10_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -960,7 +967,7 @@
         "train_label_denoising"
       ],
       "source_file": "official_candidates/223_noise_v2_scaled_hgb_11_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -993,7 +1000,7 @@
         "train_label_denoising"
       ],
       "source_file": "official_candidates/224_noise_v2_scaled_trees_12_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -1026,7 +1033,7 @@
         "train_label_denoising"
       ],
       "source_file": "official_candidates/225_noise_v2_external_consensus_01_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -1059,7 +1066,7 @@
         "train_label_denoising"
       ],
       "source_file": "official_candidates/226_noise_v2_external_consensus_02_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -1092,7 +1099,7 @@
         "train_label_denoising"
       ],
       "source_file": "official_candidates/227_noise_v2_external_consensus_03_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -1125,7 +1132,7 @@
         "train_label_denoising"
       ],
       "source_file": "official_candidates/228_noise_v2_external_consensus_04_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -1158,7 +1165,7 @@
         "train_label_denoising"
       ],
       "source_file": "official_candidates/229_noise_v2_external_consensus_05_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -1191,7 +1198,7 @@
         "train_label_denoising"
       ],
       "source_file": "official_candidates/230_noise_v2_external_consensus_06_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -1224,7 +1231,7 @@
         "train_label_denoising"
       ],
       "source_file": "official_candidates/231_noise_v2_external_consensus_07_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -1257,7 +1264,7 @@
         "train_label_denoising"
       ],
       "source_file": "official_candidates/232_noise_v2_external_consensus_08_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -1290,7 +1297,7 @@
         "train_label_denoising"
       ],
       "source_file": "official_candidates/233_noise_v2_external_consensus_09_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -1323,7 +1330,7 @@
         "train_label_denoising"
       ],
       "source_file": "official_candidates/234_noise_v2_external_consensus_10_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -1356,7 +1363,7 @@
         "train_label_denoising"
       ],
       "source_file": "official_candidates/235_noise_v2_external_consensus_11_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -1389,7 +1396,7 @@
         "train_label_denoising"
       ],
       "source_file": "official_candidates/236_noise_v2_external_consensus_12_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -1424,7 +1431,7 @@
         "train_label_denoising"
       ],
       "source_file": "official_candidates/237_noise_v2_fused_01_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -1459,7 +1466,7 @@
         "train_label_denoising"
       ],
       "source_file": "official_candidates/238_noise_v2_fused_02_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -1494,7 +1501,7 @@
         "train_label_denoising"
       ],
       "source_file": "official_candidates/239_noise_v2_fused_03_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -1529,7 +1536,7 @@
         "train_label_denoising"
       ],
       "source_file": "official_candidates/240_noise_v2_fused_04_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -1564,7 +1571,7 @@
         "train_label_denoising"
       ],
       "source_file": "official_candidates/241_noise_v2_fused_05_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -1599,7 +1606,7 @@
         "train_label_denoising"
       ],
       "source_file": "official_candidates/242_noise_v2_fused_06_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -1634,7 +1641,7 @@
         "train_label_denoising"
       ],
       "source_file": "official_candidates/243_noise_v2_fused_07_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -1669,7 +1676,7 @@
         "train_label_denoising"
       ],
       "source_file": "official_candidates/244_noise_v2_fused_08_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -1704,7 +1711,7 @@
         "train_label_denoising"
       ],
       "source_file": "official_candidates/245_noise_v2_fused_09_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -1739,7 +1746,7 @@
         "train_label_denoising"
       ],
       "source_file": "official_candidates/246_noise_v2_fused_10_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -1774,7 +1781,7 @@
         "train_label_denoising"
       ],
       "source_file": "official_candidates/247_noise_v2_fused_11_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -1809,7 +1816,7 @@
         "train_label_denoising"
       ],
       "source_file": "official_candidates/248_noise_v2_fused_12_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -1825,7 +1832,7 @@
       "local_report": "reports/noise_aware_v2_push_report.json",
       "manual_upload_priority": 249,
       "name": "noise_v2_champion_directional_denoising",
-      "next_manual_upload_target": true,
+      "next_manual_upload_target": false,
       "noise_evidence_groups": [
         "official_best_base",
         "official_winning_direction",
@@ -1835,6 +1842,9 @@
         "empirical_bayes_shrinkage",
         "zero_hurdle"
       ],
+      "official_complete_score": null,
+      "official_partial_score": 53.8099243,
+      "official_submission_id": "manual_249_score_53_8099243",
       "output_file": "official_candidates/249_noise_v2_champion_directional_denoising_output.csv",
       "risk_label": "noise_aware_v2_directional_denoising",
       "risk_labels": [
@@ -1844,6 +1854,589 @@
         "train_label_denoising"
       ],
       "source_file": "official_candidates/249_noise_v2_champion_directional_denoising_source.py",
+      "status": "official_scored",
+      "submission_id_missing": true,
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "250",
+      "component_weights": {
+        "clean": 0.3,
+        "model": 0.18,
+        "neutral_avoidance": 0.08,
+        "robust": 0.08
+      },
+      "hypothesis": "Low-noise external consensus target=posterior with ridge residual.",
+      "local_report": "reports/noise_aware_v3_push_report.json",
+      "manual_upload_priority": 250,
+      "method_labels": [
+        "low_noise_target",
+        "external_consensus"
+      ],
+      "name": "noise_v3_clean_target_01",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/250_noise_v3_clean_target_01_output.csv",
+      "risk_label": "noise_aware_v3_low_noise_denoising",
+      "risk_labels": [
+        "low_noise_external_consensus",
+        "scaled_mac_model",
+        "robust_noisy_label_training",
+        "official_best_base"
+      ],
+      "source_file": "official_candidates/250_noise_v3_clean_target_01_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "251",
+      "component_weights": {
+        "clean": 0.32,
+        "model": 0.18,
+        "neutral_avoidance": 0.08,
+        "robust": 0.08
+      },
+      "hypothesis": "Low-noise external consensus target=median_of_means with huber residual.",
+      "local_report": "reports/noise_aware_v3_push_report.json",
+      "manual_upload_priority": 251,
+      "method_labels": [
+        "low_noise_target",
+        "external_consensus"
+      ],
+      "name": "noise_v3_clean_target_02",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/251_noise_v3_clean_target_02_output.csv",
+      "risk_label": "noise_aware_v3_low_noise_denoising",
+      "risk_labels": [
+        "low_noise_external_consensus",
+        "scaled_mac_model",
+        "robust_noisy_label_training",
+        "official_best_base"
+      ],
+      "source_file": "official_candidates/251_noise_v3_clean_target_02_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "252",
+      "component_weights": {
+        "clean": 0.34,
+        "model": 0.18,
+        "neutral_avoidance": 0.08,
+        "robust": 0.08
+      },
+      "hypothesis": "Low-noise external consensus target=huber with hgb residual.",
+      "local_report": "reports/noise_aware_v3_push_report.json",
+      "manual_upload_priority": 252,
+      "method_labels": [
+        "low_noise_target",
+        "external_consensus"
+      ],
+      "name": "noise_v3_clean_target_03",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/252_noise_v3_clean_target_03_output.csv",
+      "risk_label": "noise_aware_v3_low_noise_denoising",
+      "risk_labels": [
+        "low_noise_external_consensus",
+        "scaled_mac_model",
+        "robust_noisy_label_training",
+        "official_best_base"
+      ],
+      "source_file": "official_candidates/252_noise_v3_clean_target_03_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "253",
+      "component_weights": {
+        "clean": 0.28,
+        "model": 0.18,
+        "neutral_avoidance": 0.08,
+        "robust": 0.08
+      },
+      "hypothesis": "Low-noise external consensus target=winsor_positive with ridge residual.",
+      "local_report": "reports/noise_aware_v3_push_report.json",
+      "manual_upload_priority": 253,
+      "method_labels": [
+        "low_noise_target",
+        "external_consensus"
+      ],
+      "name": "noise_v3_clean_target_04",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/253_noise_v3_clean_target_04_output.csv",
+      "risk_label": "noise_aware_v3_low_noise_denoising",
+      "risk_labels": [
+        "low_noise_external_consensus",
+        "scaled_mac_model",
+        "robust_noisy_label_training",
+        "official_best_base"
+      ],
+      "source_file": "official_candidates/253_noise_v3_clean_target_04_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "254",
+      "component_weights": {
+        "clean": 0.3,
+        "model": 0.18,
+        "neutral_avoidance": 0.08,
+        "robust": 0.08
+      },
+      "hypothesis": "Low-noise external consensus target=zero_hurdle with hgb residual.",
+      "local_report": "reports/noise_aware_v3_push_report.json",
+      "manual_upload_priority": 254,
+      "method_labels": [
+        "low_noise_target",
+        "external_consensus"
+      ],
+      "name": "noise_v3_clean_target_05",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/254_noise_v3_clean_target_05_output.csv",
+      "risk_label": "noise_aware_v3_low_noise_denoising",
+      "risk_labels": [
+        "low_noise_external_consensus",
+        "scaled_mac_model",
+        "robust_noisy_label_training",
+        "official_best_base"
+      ],
+      "source_file": "official_candidates/254_noise_v3_clean_target_05_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "255",
+      "component_weights": {
+        "clean": 0.34,
+        "model": 0.34,
+        "neutral_avoidance": 0.08,
+        "robust": 0.08
+      },
+      "hypothesis": "High-capacity hgb capacity=520 target=posterior.",
+      "local_report": "reports/noise_aware_v3_push_report.json",
+      "manual_upload_priority": 255,
+      "method_labels": [
+        "high_capacity_model",
+        "train_label_denoising"
+      ],
+      "name": "noise_v3_capacity_hgb_01",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/255_noise_v3_capacity_hgb_01_output.csv",
+      "risk_label": "noise_aware_v3_low_noise_denoising",
+      "risk_labels": [
+        "low_noise_external_consensus",
+        "scaled_mac_model",
+        "robust_noisy_label_training",
+        "official_best_base"
+      ],
+      "source_file": "official_candidates/255_noise_v3_capacity_hgb_01_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "256",
+      "component_weights": {
+        "clean": 0.34,
+        "model": 0.34,
+        "neutral_avoidance": 0.08,
+        "robust": 0.08
+      },
+      "hypothesis": "High-capacity hgb capacity=650 target=zero_hurdle.",
+      "local_report": "reports/noise_aware_v3_push_report.json",
+      "manual_upload_priority": 256,
+      "method_labels": [
+        "high_capacity_model",
+        "train_label_denoising"
+      ],
+      "name": "noise_v3_capacity_hgb_02",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/256_noise_v3_capacity_hgb_02_output.csv",
+      "risk_label": "noise_aware_v3_low_noise_denoising",
+      "risk_labels": [
+        "low_noise_external_consensus",
+        "scaled_mac_model",
+        "robust_noisy_label_training",
+        "official_best_base"
+      ],
+      "source_file": "official_candidates/256_noise_v3_capacity_hgb_02_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "257",
+      "component_weights": {
+        "clean": 0.3,
+        "model": 0.34,
+        "neutral_avoidance": 0.08,
+        "robust": 0.08
+      },
+      "hypothesis": "High-capacity trees capacity=512 target=posterior.",
+      "local_report": "reports/noise_aware_v3_push_report.json",
+      "manual_upload_priority": 257,
+      "method_labels": [
+        "high_capacity_model",
+        "train_label_denoising"
+      ],
+      "name": "noise_v3_capacity_trees_03",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/257_noise_v3_capacity_trees_03_output.csv",
+      "risk_label": "noise_aware_v3_low_noise_denoising",
+      "risk_labels": [
+        "low_noise_external_consensus",
+        "scaled_mac_model",
+        "robust_noisy_label_training",
+        "official_best_base"
+      ],
+      "source_file": "official_candidates/257_noise_v3_capacity_trees_03_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "258",
+      "component_weights": {
+        "clean": 0.32,
+        "model": 0.34,
+        "neutral_avoidance": 0.08,
+        "robust": 0.08
+      },
+      "hypothesis": "High-capacity trees capacity=640 target=huber.",
+      "local_report": "reports/noise_aware_v3_push_report.json",
+      "manual_upload_priority": 258,
+      "method_labels": [
+        "high_capacity_model",
+        "train_label_denoising"
+      ],
+      "name": "noise_v3_capacity_trees_04",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/258_noise_v3_capacity_trees_04_output.csv",
+      "risk_label": "noise_aware_v3_low_noise_denoising",
+      "risk_labels": [
+        "low_noise_external_consensus",
+        "scaled_mac_model",
+        "robust_noisy_label_training",
+        "official_best_base"
+      ],
+      "source_file": "official_candidates/258_noise_v3_capacity_trees_04_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "259",
+      "component_weights": {
+        "clean": 0.34,
+        "model": 0.34,
+        "neutral_avoidance": 0.08,
+        "robust": 0.08
+      },
+      "hypothesis": "High-capacity trees capacity=768 target=median_of_means.",
+      "local_report": "reports/noise_aware_v3_push_report.json",
+      "manual_upload_priority": 259,
+      "method_labels": [
+        "high_capacity_model",
+        "train_label_denoising"
+      ],
+      "name": "noise_v3_capacity_trees_05",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/259_noise_v3_capacity_trees_05_output.csv",
+      "risk_label": "noise_aware_v3_low_noise_denoising",
+      "risk_labels": [
+        "low_noise_external_consensus",
+        "scaled_mac_model",
+        "robust_noisy_label_training",
+        "official_best_base"
+      ],
+      "source_file": "official_candidates/259_noise_v3_capacity_trees_05_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "260",
+      "component_weights": {
+        "clean": 0.3,
+        "model": 0.34,
+        "neutral_avoidance": 0.08,
+        "robust": 0.08
+      },
+      "hypothesis": "High-capacity hgb capacity=700 target=winsor_positive.",
+      "local_report": "reports/noise_aware_v3_push_report.json",
+      "manual_upload_priority": 260,
+      "method_labels": [
+        "high_capacity_model",
+        "train_label_denoising"
+      ],
+      "name": "noise_v3_capacity_hgb_06",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/260_noise_v3_capacity_hgb_06_output.csv",
+      "risk_label": "noise_aware_v3_low_noise_denoising",
+      "risk_labels": [
+        "low_noise_external_consensus",
+        "scaled_mac_model",
+        "robust_noisy_label_training",
+        "official_best_base"
+      ],
+      "source_file": "official_candidates/260_noise_v3_capacity_hgb_06_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "261",
+      "component_weights": {
+        "clean": 0.28,
+        "model": 0.18,
+        "neutral_avoidance": 0.08,
+        "robust": 0.24
+      },
+      "hypothesis": "Robust noisy-label method=ordered target=posterior.",
+      "local_report": "reports/noise_aware_v3_push_report.json",
+      "manual_upload_priority": 261,
+      "method_labels": [
+        "robust_training",
+        "ordered"
+      ],
+      "name": "noise_v3_robust_ordered_01",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/261_noise_v3_robust_ordered_01_output.csv",
+      "risk_label": "noise_aware_v3_low_noise_denoising",
+      "risk_labels": [
+        "low_noise_external_consensus",
+        "scaled_mac_model",
+        "robust_noisy_label_training",
+        "official_best_base"
+      ],
+      "source_file": "official_candidates/261_noise_v3_robust_ordered_01_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "262",
+      "component_weights": {
+        "clean": 0.28,
+        "model": 0.18,
+        "neutral_avoidance": 0.08,
+        "robust": 0.24
+      },
+      "hypothesis": "Robust noisy-label method=co_teach target=huber.",
+      "local_report": "reports/noise_aware_v3_push_report.json",
+      "manual_upload_priority": 262,
+      "method_labels": [
+        "robust_training",
+        "co_teach"
+      ],
+      "name": "noise_v3_robust_co_teach_02",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/262_noise_v3_robust_co_teach_02_output.csv",
+      "risk_label": "noise_aware_v3_low_noise_denoising",
+      "risk_labels": [
+        "low_noise_external_consensus",
+        "scaled_mac_model",
+        "robust_noisy_label_training",
+        "official_best_base"
+      ],
+      "source_file": "official_candidates/262_noise_v3_robust_co_teach_02_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "263",
+      "component_weights": {
+        "clean": 0.28,
+        "model": 0.18,
+        "neutral_avoidance": 0.08,
+        "robust": 0.24
+      },
+      "hypothesis": "Robust noisy-label method=distributional target=zero_hurdle.",
+      "local_report": "reports/noise_aware_v3_push_report.json",
+      "manual_upload_priority": 263,
+      "method_labels": [
+        "robust_training",
+        "distributional"
+      ],
+      "name": "noise_v3_robust_distributional_03",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/263_noise_v3_robust_distributional_03_output.csv",
+      "risk_label": "noise_aware_v3_low_noise_denoising",
+      "risk_labels": [
+        "low_noise_external_consensus",
+        "scaled_mac_model",
+        "robust_noisy_label_training",
+        "official_best_base"
+      ],
+      "source_file": "official_candidates/263_noise_v3_robust_distributional_03_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "264",
+      "component_weights": {
+        "clean": 0.28,
+        "model": 0.18,
+        "neutral_avoidance": 0.08,
+        "robust": 0.24
+      },
+      "hypothesis": "Robust noisy-label method=superlearner target=posterior.",
+      "local_report": "reports/noise_aware_v3_push_report.json",
+      "manual_upload_priority": 264,
+      "method_labels": [
+        "robust_training",
+        "superlearner"
+      ],
+      "name": "noise_v3_robust_superlearner_04",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/264_noise_v3_robust_superlearner_04_output.csv",
+      "risk_label": "noise_aware_v3_low_noise_denoising",
+      "risk_labels": [
+        "low_noise_external_consensus",
+        "scaled_mac_model",
+        "robust_noisy_label_training",
+        "official_best_base"
+      ],
+      "source_file": "official_candidates/264_noise_v3_robust_superlearner_04_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "265",
+      "component_weights": {
+        "clean": 0.28,
+        "model": 0.18,
+        "neutral_avoidance": 0.08,
+        "robust": 0.24
+      },
+      "hypothesis": "Robust noisy-label method=ngboost_like target=winsor_positive.",
+      "local_report": "reports/noise_aware_v3_push_report.json",
+      "manual_upload_priority": 265,
+      "method_labels": [
+        "robust_training",
+        "ngboost_like"
+      ],
+      "name": "noise_v3_robust_ngboost_like_05",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/265_noise_v3_robust_ngboost_like_05_output.csv",
+      "risk_label": "noise_aware_v3_low_noise_denoising",
+      "risk_labels": [
+        "low_noise_external_consensus",
+        "scaled_mac_model",
+        "robust_noisy_label_training",
+        "official_best_base"
+      ],
+      "source_file": "official_candidates/265_noise_v3_robust_ngboost_like_05_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "266",
+      "component_weights": {
+        "clean": 0.28,
+        "model": 0.34,
+        "neutral_avoidance": 0.18,
+        "robust": 0.24
+      },
+      "hypothesis": "V3 fusion style=clean_heavy around Candidate 199.",
+      "local_report": "reports/noise_aware_v3_push_report.json",
+      "manual_upload_priority": 266,
+      "method_labels": [
+        "superlearner_fusion",
+        "uncertainty_shrinkage"
+      ],
+      "name": "noise_v3_fusion_clean_heavy_01",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/266_noise_v3_fusion_clean_heavy_01_output.csv",
+      "risk_label": "noise_aware_v3_low_noise_denoising",
+      "risk_labels": [
+        "low_noise_external_consensus",
+        "scaled_mac_model",
+        "robust_noisy_label_training",
+        "official_best_base"
+      ],
+      "source_file": "official_candidates/266_noise_v3_fusion_clean_heavy_01_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "267",
+      "component_weights": {
+        "clean": 0.28,
+        "model": 0.34,
+        "neutral_avoidance": 0.18,
+        "robust": 0.24
+      },
+      "hypothesis": "V3 fusion style=model_heavy around Candidate 199.",
+      "local_report": "reports/noise_aware_v3_push_report.json",
+      "manual_upload_priority": 267,
+      "method_labels": [
+        "superlearner_fusion",
+        "uncertainty_shrinkage"
+      ],
+      "name": "noise_v3_fusion_model_heavy_02",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/267_noise_v3_fusion_model_heavy_02_output.csv",
+      "risk_label": "noise_aware_v3_low_noise_denoising",
+      "risk_labels": [
+        "low_noise_external_consensus",
+        "scaled_mac_model",
+        "robust_noisy_label_training",
+        "official_best_base"
+      ],
+      "source_file": "official_candidates/267_noise_v3_fusion_model_heavy_02_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "268",
+      "component_weights": {
+        "clean": 0.28,
+        "model": 0.34,
+        "neutral_avoidance": 0.18,
+        "robust": 0.24
+      },
+      "hypothesis": "V3 fusion style=uncertainty_heavy around Candidate 199.",
+      "local_report": "reports/noise_aware_v3_push_report.json",
+      "manual_upload_priority": 268,
+      "method_labels": [
+        "superlearner_fusion",
+        "uncertainty_shrinkage"
+      ],
+      "name": "noise_v3_fusion_uncertainty_heavy_03",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/268_noise_v3_fusion_uncertainty_heavy_03_output.csv",
+      "risk_label": "noise_aware_v3_low_noise_denoising",
+      "risk_labels": [
+        "low_noise_external_consensus",
+        "scaled_mac_model",
+        "robust_noisy_label_training",
+        "official_best_base"
+      ],
+      "source_file": "official_candidates/268_noise_v3_fusion_uncertainty_heavy_03_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "269",
+      "component_weights": {
+        "clean": 0.28,
+        "model": 0.34,
+        "neutral_avoidance": 0.18,
+        "robust": 0.24
+      },
+      "hypothesis": "Champion: Candidate 199 plus low-noise target, high-capacity stacker, and uncertainty shrinkage.",
+      "local_report": "reports/noise_aware_v3_push_report.json",
+      "manual_upload_priority": 269,
+      "method_labels": [
+        "champion",
+        "low_noise_target",
+        "high_capacity_model",
+        "uncertainty_shrinkage"
+      ],
+      "name": "noise_v3_champion_low_noise_stack",
+      "next_manual_upload_target": true,
+      "output_file": "official_candidates/269_noise_v3_champion_low_noise_stack_output.csv",
+      "risk_label": "noise_aware_v3_low_noise_denoising",
+      "risk_labels": [
+        "low_noise_external_consensus",
+        "scaled_mac_model",
+        "robust_noisy_label_training",
+        "official_best_base"
+      ],
+      "source_file": "official_candidates/269_noise_v3_champion_low_noise_stack_source.py",
       "status": "pending",
       "upload_ready": true
     }
@@ -1950,6 +2543,21 @@
       "submission_id": "manual_199_score_53_8099243",
       "submission_id_missing": true,
       "timestamp": "2026-04-25 22:05"
+    },
+    {
+      "assignment_policy": "largest_numeric_candidate_id_at_manual_upload_time",
+      "candidate_id": "249",
+      "chosen_as_final": false,
+      "hypothesis": "Candidate 249 matched Candidate 199, so it anchors the no-gain direction for V3.",
+      "local_report": "reports/noise_aware_v2_push_report.json",
+      "official_complete_score": null,
+      "official_partial_score": 53.8099243,
+      "output_file": "official_candidates/249_noise_v2_champion_directional_denoising_output.csv",
+      "source_file": "official_candidates/249_noise_v2_champion_directional_denoising_source.py",
+      "state": "success",
+      "submission_id": "manual_249_score_53_8099243",
+      "submission_id_missing": true,
+      "timestamp": "2026-04-25 22:45"
     }
   ]
 }

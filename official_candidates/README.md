@@ -78,7 +78,7 @@ Candidate `199` scored `53.8099243 / 100`, so this batch continues the same stra
 | `248_noise_v2_fused_12` | `noise_aware_v2_directional` | `official_candidates/248_noise_v2_fused_12_source.py` | `official_candidates/248_noise_v2_fused_12_output.csv` | Direction-aware fusion gamma=1.5 with denoised residual components. |
 | `249_noise_v2_champion_directional_denoising` | `noise_aware_v2_directional` | `official_candidates/249_noise_v2_champion_directional_denoising_source.py` | `official_candidates/249_noise_v2_champion_directional_denoising_output.csv` | Champion: fixed 199 plus validated 159-to-199 direction and denoised residual fusion. |
 
-Current next manual upload target: `249_noise_v2_champion_directional_denoising`. Candidate `199` remains the official best until a higher judge score is recorded.
+Historical next manual upload target for this batch: `249_noise_v2_champion_directional_denoising`. Candidate `249` later matched Candidate `199` at `53.8099243 / 100`.
 
 ## Batch 14: Noise-Aware V2 Directional Push From Candidate 199
 
@@ -137,4 +137,33 @@ Candidate `199` scored `53.8099243 / 100` and is now the official best. This bat
 | `248_noise_v2_fused_12` | `noise_aware_v2_directional` | `official_candidates/248_noise_v2_fused_12_source.py` | `official_candidates/248_noise_v2_fused_12_output.csv` | Direction-aware fusion gamma=1.5 with denoised residual components. |
 | `249_noise_v2_champion_directional_denoising` | `noise_aware_v2_directional` | `official_candidates/249_noise_v2_champion_directional_denoising_source.py` | `official_candidates/249_noise_v2_champion_directional_denoising_output.csv` | Champion: fixed 199 plus validated 159-to-199 direction and denoised residual fusion. |
 
-Current next manual upload target: `249_noise_v2_champion_directional_denoising`. Candidate `199` remains the official best until a higher judge score is recorded.
+Historical next manual upload target for this batch: `249_noise_v2_champion_directional_denoising`. Candidate `249` later matched Candidate `199` at `53.8099243 / 100`.
+
+## Current Batch: Noise-Aware V3 Low-Noise Push
+
+Candidate `249` matched Candidate `199` at `53.8099243 / 100`, so Candidate `199` remains the official best. This smaller batch uses low-noise targets, higher-capacity models, and robust training; Candidate `269` is the next manual upload target.
+
+| Candidate | Family | Source | Output | Hypothesis |
+| --- | --- | --- | --- | --- |
+| `250_noise_v3_clean_target_01` | `noise_aware_v3_low_noise` | `official_candidates/250_noise_v3_clean_target_01_source.py` | `official_candidates/250_noise_v3_clean_target_01_output.csv` | Low-noise external consensus target=posterior with ridge residual. |
+| `251_noise_v3_clean_target_02` | `noise_aware_v3_low_noise` | `official_candidates/251_noise_v3_clean_target_02_source.py` | `official_candidates/251_noise_v3_clean_target_02_output.csv` | Low-noise external consensus target=median_of_means with huber residual. |
+| `252_noise_v3_clean_target_03` | `noise_aware_v3_low_noise` | `official_candidates/252_noise_v3_clean_target_03_source.py` | `official_candidates/252_noise_v3_clean_target_03_output.csv` | Low-noise external consensus target=huber with hgb residual. |
+| `253_noise_v3_clean_target_04` | `noise_aware_v3_low_noise` | `official_candidates/253_noise_v3_clean_target_04_source.py` | `official_candidates/253_noise_v3_clean_target_04_output.csv` | Low-noise external consensus target=winsor_positive with ridge residual. |
+| `254_noise_v3_clean_target_05` | `noise_aware_v3_low_noise` | `official_candidates/254_noise_v3_clean_target_05_source.py` | `official_candidates/254_noise_v3_clean_target_05_output.csv` | Low-noise external consensus target=zero_hurdle with hgb residual. |
+| `255_noise_v3_capacity_hgb_01` | `noise_aware_v3_low_noise` | `official_candidates/255_noise_v3_capacity_hgb_01_source.py` | `official_candidates/255_noise_v3_capacity_hgb_01_output.csv` | High-capacity hgb capacity=520 target=posterior. |
+| `256_noise_v3_capacity_hgb_02` | `noise_aware_v3_low_noise` | `official_candidates/256_noise_v3_capacity_hgb_02_source.py` | `official_candidates/256_noise_v3_capacity_hgb_02_output.csv` | High-capacity hgb capacity=650 target=zero_hurdle. |
+| `257_noise_v3_capacity_trees_03` | `noise_aware_v3_low_noise` | `official_candidates/257_noise_v3_capacity_trees_03_source.py` | `official_candidates/257_noise_v3_capacity_trees_03_output.csv` | High-capacity trees capacity=512 target=posterior. |
+| `258_noise_v3_capacity_trees_04` | `noise_aware_v3_low_noise` | `official_candidates/258_noise_v3_capacity_trees_04_source.py` | `official_candidates/258_noise_v3_capacity_trees_04_output.csv` | High-capacity trees capacity=640 target=huber. |
+| `259_noise_v3_capacity_trees_05` | `noise_aware_v3_low_noise` | `official_candidates/259_noise_v3_capacity_trees_05_source.py` | `official_candidates/259_noise_v3_capacity_trees_05_output.csv` | High-capacity trees capacity=768 target=median_of_means. |
+| `260_noise_v3_capacity_hgb_06` | `noise_aware_v3_low_noise` | `official_candidates/260_noise_v3_capacity_hgb_06_source.py` | `official_candidates/260_noise_v3_capacity_hgb_06_output.csv` | High-capacity hgb capacity=700 target=winsor_positive. |
+| `261_noise_v3_robust_ordered_01` | `noise_aware_v3_low_noise` | `official_candidates/261_noise_v3_robust_ordered_01_source.py` | `official_candidates/261_noise_v3_robust_ordered_01_output.csv` | Robust noisy-label method=ordered target=posterior. |
+| `262_noise_v3_robust_co_teach_02` | `noise_aware_v3_low_noise` | `official_candidates/262_noise_v3_robust_co_teach_02_source.py` | `official_candidates/262_noise_v3_robust_co_teach_02_output.csv` | Robust noisy-label method=co_teach target=huber. |
+| `263_noise_v3_robust_distributional_03` | `noise_aware_v3_low_noise` | `official_candidates/263_noise_v3_robust_distributional_03_source.py` | `official_candidates/263_noise_v3_robust_distributional_03_output.csv` | Robust noisy-label method=distributional target=zero_hurdle. |
+| `264_noise_v3_robust_superlearner_04` | `noise_aware_v3_low_noise` | `official_candidates/264_noise_v3_robust_superlearner_04_source.py` | `official_candidates/264_noise_v3_robust_superlearner_04_output.csv` | Robust noisy-label method=superlearner target=posterior. |
+| `265_noise_v3_robust_ngboost_like_05` | `noise_aware_v3_low_noise` | `official_candidates/265_noise_v3_robust_ngboost_like_05_source.py` | `official_candidates/265_noise_v3_robust_ngboost_like_05_output.csv` | Robust noisy-label method=ngboost_like target=winsor_positive. |
+| `266_noise_v3_fusion_clean_heavy_01` | `noise_aware_v3_low_noise` | `official_candidates/266_noise_v3_fusion_clean_heavy_01_source.py` | `official_candidates/266_noise_v3_fusion_clean_heavy_01_output.csv` | V3 fusion style=clean_heavy around Candidate 199. |
+| `267_noise_v3_fusion_model_heavy_02` | `noise_aware_v3_low_noise` | `official_candidates/267_noise_v3_fusion_model_heavy_02_source.py` | `official_candidates/267_noise_v3_fusion_model_heavy_02_output.csv` | V3 fusion style=model_heavy around Candidate 199. |
+| `268_noise_v3_fusion_uncertainty_heavy_03` | `noise_aware_v3_low_noise` | `official_candidates/268_noise_v3_fusion_uncertainty_heavy_03_source.py` | `official_candidates/268_noise_v3_fusion_uncertainty_heavy_03_output.csv` | V3 fusion style=uncertainty_heavy around Candidate 199. |
+| `269_noise_v3_champion_low_noise_stack` | `noise_aware_v3_low_noise` | `official_candidates/269_noise_v3_champion_low_noise_stack_source.py` | `official_candidates/269_noise_v3_champion_low_noise_stack_output.csv` | Champion: Candidate 199 plus low-noise target, high-capacity stacker, and uncertainty shrinkage. |
+
+Current next manual upload target: `269_noise_v3_champion_low_noise_stack`. Candidate `199` remains the official best until a higher judge score is recorded.

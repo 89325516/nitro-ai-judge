@@ -229,6 +229,21 @@
 - The V2 champion changes from Candidate `199` within the documented movement gate.
 - Unscored historical numbered exploration files are removed when they are not official anchors or current inputs.
 
+## Noise-Aware V3 Low-Noise Push
+
+- Candidate `249` is recorded as scored without replacing Candidate `199` as best.
+- V3 candidates use low-noise external consensus or denoised train targets.
+- V3 candidates include higher-capacity MacBook-bounded tabular models.
+- V3 candidates include robust noisy-label training evidence.
+- V3 generates a smaller high-quality batch rather than a default 50-candidate sweep.
+- V3 candidates preserve exactly one answer for each test datapoint.
+- V3 candidates preserve the required public submission columns.
+- V3 candidate answers are finite and non-negative.
+- The V3 champion is the largest numeric candidate after generation.
+- The V3 champion is marked as the next manual upload target.
+- The V3 champion changes from Candidate `199` within the documented movement gate.
+- V3 does not restore pruned historical exploration artifacts.
+
 ## Final 99+ Target
 
 - The final product target is an official or exact-truth score of at least `99 / 100`.
