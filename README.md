@@ -30,6 +30,20 @@ python3 solution.py --train data/train_data.csv --test data/test_data.csv --outp
 
 The command writes a Nitro-compatible CSV with `subtaskID`, `datapointID`, and `answer` columns. The solution intentionally uses general word and position features instead of concrete participant IDs because the test participants are unseen.
 
+## Evaluate A Solution
+
+Run the default local estimate with:
+
+```bash
+python3 evaluate.py cross-validate --train data/train_data.csv --strategy text --folds 3 --command "python3 solution.py --train {train} --test {test} --output {output}" --report reports/baseline_text_holdout.json
+```
+
+This cross-validation score is an estimate based on held-out training texts. It is not the hidden Nitro leaderboard score. If a truth file is available, run exact scoring with:
+
+```bash
+python3 evaluate.py score --truth truth.csv --predictions submission.csv --report reports/exact_score.json
+```
+
 ## Development Discipline
 
 Changes should keep module boundaries small, avoid hidden state, prefer injected dependencies, and test observable behavior rather than implementation details.

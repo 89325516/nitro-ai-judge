@@ -32,6 +32,15 @@
 - The generation process does not require the source PDF.
 - The source file used for submission remains below the judge source upload size limit.
 
+## Evaluation Program
+
+- The evaluator computes the Nitro metric from observable truth and prediction values.
+- Negative R2 contributes zero to the final score.
+- Pearson correlation contributes by absolute value.
+- Exact scoring rejects missing, duplicate, non-numeric, or non-finite prediction rows.
+- Cross-validation scores are labeled as local estimates, not hidden-test results.
+- Candidate solutions are evaluated through CSV files and command execution, not private model internals.
+
 ## Change Discipline
 
 - Any new mechanism is documented before implementation.
