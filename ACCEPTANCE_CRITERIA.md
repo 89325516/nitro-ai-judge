@@ -133,6 +133,15 @@
 - The official ledger can be updated without changing previously recorded official scores.
 - The current best successful official score is identifiable after each ledger update.
 
+## External Data Branching
+
+- The conservative branch does not directly reconstruct test labels from public row-level matches.
+- The high-risk branch labels any direct test-row reconstruction before a candidate is promoted.
+- External-data candidates preserve exactly one answer for each test datapoint.
+- External-data candidates preserve the required public submission columns.
+- Each external-data candidate report states its evidence class.
+- Branch score targets are not treated as met without official feedback or exact truth labels.
+
 ## Final 99+ Target
 
 - The final product target is an official or exact-truth score of at least `99 / 100`.
