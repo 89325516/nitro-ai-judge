@@ -26,6 +26,14 @@
     },
     {
       "mode": "cross_validate",
+      "name": "semantic_trt_text_holdout",
+      "path": "reports/semantic_trt_text_holdout.json",
+      "row_count": 135210,
+      "score": 38.55469362010065,
+      "score_type": "local_estimate"
+    },
+    {
+      "mode": "cross_validate",
       "name": "baseline_text_holdout",
       "path": "reports/baseline_text_holdout.json",
       "row_count": 135210,

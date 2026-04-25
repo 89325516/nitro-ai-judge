@@ -70,3 +70,12 @@ Use these source and output pairs for manual Nitro Judge submissions. Official s
 Because Candidate `002_frozen_transformer` is currently official-best, submit Candidate `003_safe_v6` next, then prefer Transformer scale variants before zero-rate variants.
 
 After each successful official submission, record the score with `python3 experiments/official_80_push.py record ...` and select the highest successful official score as final.
+
+## Batch 5: Semantic CSV-Only Candidate
+
+20. `021_semantic_trt`
+   - Source: `official_candidates/021_semantic_trt_source.py`
+   - Output: `official_candidates/021_semantic_trt_output.csv`
+   - Local estimate: `38.55469362010065 / 100`
+   - Recommendation: hold for now because it does not beat the frozen Transformer local gate of `38.99673098959958 / 100`.
+   - Hypothesis: corrected page context and separated skip, positive-time, and rank views may transfer differently from local text-holdout.

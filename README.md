@@ -81,3 +81,20 @@ The audit separates local estimates, oracle ceilings, leakage signals, and exact
 ## Development Discipline
 
 Changes should keep module boundaries small, avoid hidden state, prefer injected dependencies, and test observable behavior rather than implementation details.
+
+
+### Semantic TRT Sprint
+
+Run the conservative CSV-only semantic candidate with:
+
+```bash
+python3 experiments/semantic_trt.py --train data/train_data.csv --test data/test_data.csv --output official_candidates/021_semantic_trt_output.csv
+```
+
+Evaluate it locally with:
+
+```bash
+python3 evaluate.py cross-validate --train data/train_data.csv --strategy text --folds 3 --command "python3 experiments/semantic_trt.py --train {train} --test {test} --output {output}" --report reports/semantic_trt_text_holdout.json
+```
+
+The current semantic candidate is a local estimate only and is not promoted over the frozen Transformer candidate.
