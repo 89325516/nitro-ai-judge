@@ -1,7 +1,8 @@
 {
-  "best_official_candidate_id": "199",
-  "best_official_score": 53.8099243,
-  "best_official_submission_id": "manual_199_score_53_8099243",
+  "best_official_candidate_id": "269",
+  "best_official_score": 55.0,
+  "best_official_score_approximate": true,
+  "best_official_submission_id": "manual_269_score_55_0_approx",
   "evidence_order": [
     "official_score",
     "exact_score_with_truth",
@@ -24,14 +25,22 @@
     "official_partial_score": 37.89482
   },
   "final_selection_policy": "choose_current_highest_successful_official_score",
+  "high_risk_reconstruction_v4_anchor": {
+    "next_search_direction": "participant TRT reconstruction, zero behavior, scale restoration",
+    "official_best_candidate_id": "269",
+    "official_best_score": 55.0,
+    "previous_best_candidate_id": "199",
+    "score_approximate": true
+  },
   "latest_manual_submission_policy": "largest_numeric_candidate_id_at_manual_upload_time",
-  "latest_official_feedback_candidate_id": "249",
-  "latest_official_feedback_score": 53.8099243,
-  "latest_official_feedback_submission_id": "manual_249_score_53_8099243",
+  "latest_official_feedback_candidate_id": "269",
+  "latest_official_feedback_score": 55.0,
+  "latest_official_feedback_score_approximate": true,
+  "latest_official_feedback_submission_id": "manual_269_score_55_0_approx",
   "latest_official_feedback_submission_id_missing": true,
-  "next_manual_upload_target": "269",
-  "next_manual_upload_target_output": "official_candidates/269_noise_v3_champion_low_noise_stack_output.csv",
-  "next_manual_upload_target_source": "official_candidates/269_noise_v3_champion_low_noise_stack_source.py",
+  "next_manual_upload_target": "349",
+  "next_manual_upload_target_output": "official_candidates/349_v4_champion_fusion_10_output.csv",
+  "next_manual_upload_target_source": "official_candidates/349_v4_champion_fusion_10_source.py",
   "noise_aware_anchor": {
     "candidate_id": "159",
     "next_search_direction": "train-label denoising and participant reliability modeling",
@@ -1884,7 +1893,7 @@
         "official_best_base"
       ],
       "source_file": "official_candidates/250_noise_v3_clean_target_01_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -1913,7 +1922,7 @@
         "official_best_base"
       ],
       "source_file": "official_candidates/251_noise_v3_clean_target_02_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -1942,7 +1951,7 @@
         "official_best_base"
       ],
       "source_file": "official_candidates/252_noise_v3_clean_target_03_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -1971,7 +1980,7 @@
         "official_best_base"
       ],
       "source_file": "official_candidates/253_noise_v3_clean_target_04_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -2000,7 +2009,7 @@
         "official_best_base"
       ],
       "source_file": "official_candidates/254_noise_v3_clean_target_05_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -2029,7 +2038,7 @@
         "official_best_base"
       ],
       "source_file": "official_candidates/255_noise_v3_capacity_hgb_01_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -2058,7 +2067,7 @@
         "official_best_base"
       ],
       "source_file": "official_candidates/256_noise_v3_capacity_hgb_02_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -2087,7 +2096,7 @@
         "official_best_base"
       ],
       "source_file": "official_candidates/257_noise_v3_capacity_trees_03_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -2116,7 +2125,7 @@
         "official_best_base"
       ],
       "source_file": "official_candidates/258_noise_v3_capacity_trees_04_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -2145,7 +2154,7 @@
         "official_best_base"
       ],
       "source_file": "official_candidates/259_noise_v3_capacity_trees_05_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -2174,7 +2183,7 @@
         "official_best_base"
       ],
       "source_file": "official_candidates/260_noise_v3_capacity_hgb_06_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -2203,7 +2212,7 @@
         "official_best_base"
       ],
       "source_file": "official_candidates/261_noise_v3_robust_ordered_01_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -2232,7 +2241,7 @@
         "official_best_base"
       ],
       "source_file": "official_candidates/262_noise_v3_robust_co_teach_02_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -2261,7 +2270,7 @@
         "official_best_base"
       ],
       "source_file": "official_candidates/263_noise_v3_robust_distributional_03_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -2290,7 +2299,7 @@
         "official_best_base"
       ],
       "source_file": "official_candidates/264_noise_v3_robust_superlearner_04_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -2319,7 +2328,7 @@
         "official_best_base"
       ],
       "source_file": "official_candidates/265_noise_v3_robust_ngboost_like_05_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -2348,7 +2357,7 @@
         "official_best_base"
       ],
       "source_file": "official_candidates/266_noise_v3_fusion_clean_heavy_01_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -2377,7 +2386,7 @@
         "official_best_base"
       ],
       "source_file": "official_candidates/267_noise_v3_fusion_model_heavy_02_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -2406,7 +2415,7 @@
         "official_best_base"
       ],
       "source_file": "official_candidates/268_noise_v3_fusion_uncertainty_heavy_03_source.py",
-      "status": "pending",
+      "status": "superseded_unsubmitted",
       "upload_ready": true
     },
     {
@@ -2427,7 +2436,10 @@
         "uncertainty_shrinkage"
       ],
       "name": "noise_v3_champion_low_noise_stack",
-      "next_manual_upload_target": true,
+      "next_manual_upload_target": false,
+      "official_partial_score": 55.0,
+      "official_score_approximate": true,
+      "official_submission_id": "manual_269_score_55_0_approx",
       "output_file": "official_candidates/269_noise_v3_champion_low_noise_stack_output.csv",
       "risk_label": "noise_aware_v3_low_noise_denoising",
       "risk_labels": [
@@ -2437,8 +2449,1629 @@
         "official_best_base"
       ],
       "source_file": "official_candidates/269_noise_v3_champion_low_noise_stack_source.py",
-      "status": "pending",
+      "status": "official_scored",
+      "submission_id_missing": true,
       "upload_ready": true
+    },
+    {
+      "candidate_id": "270",
+      "component_labels": [
+        "hard_mapping",
+        "row_trt"
+      ],
+      "hypothesis": "Hard subject permutation rank 1.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 270,
+      "name": "v4_hard_perm_01",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/270_v4_hard_perm_01_output.csv",
+      "participant_mapping_mode": "hard",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "zmatch_scale",
+      "source_file": "official_candidates/270_v4_hard_perm_01_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "none"
+    },
+    {
+      "candidate_id": "271",
+      "component_labels": [
+        "hard_mapping",
+        "row_trt"
+      ],
+      "hypothesis": "Hard subject permutation rank 2.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 271,
+      "name": "v4_hard_perm_02",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/271_v4_hard_perm_02_output.csv",
+      "participant_mapping_mode": "hard",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "zmatch_scale",
+      "source_file": "official_candidates/271_v4_hard_perm_02_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "none"
+    },
+    {
+      "candidate_id": "272",
+      "component_labels": [
+        "hard_mapping",
+        "row_trt"
+      ],
+      "hypothesis": "Hard subject permutation rank 3.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 272,
+      "name": "v4_hard_perm_03",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/272_v4_hard_perm_03_output.csv",
+      "participant_mapping_mode": "hard",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "zmatch_scale",
+      "source_file": "official_candidates/272_v4_hard_perm_03_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "none"
+    },
+    {
+      "candidate_id": "273",
+      "component_labels": [
+        "hard_mapping",
+        "row_trt"
+      ],
+      "hypothesis": "Hard subject permutation rank 4.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 273,
+      "name": "v4_hard_perm_04",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/273_v4_hard_perm_04_output.csv",
+      "participant_mapping_mode": "hard",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "zmatch_scale",
+      "source_file": "official_candidates/273_v4_hard_perm_04_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "none"
+    },
+    {
+      "candidate_id": "274",
+      "component_labels": [
+        "hard_mapping",
+        "row_trt"
+      ],
+      "hypothesis": "Hard subject permutation rank 5.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 274,
+      "name": "v4_hard_perm_05",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/274_v4_hard_perm_05_output.csv",
+      "participant_mapping_mode": "hard",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "zmatch_scale",
+      "source_file": "official_candidates/274_v4_hard_perm_05_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "none"
+    },
+    {
+      "candidate_id": "275",
+      "component_labels": [
+        "hard_mapping",
+        "row_trt"
+      ],
+      "hypothesis": "Hard subject permutation rank 6.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 275,
+      "name": "v4_hard_perm_06",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/275_v4_hard_perm_06_output.csv",
+      "participant_mapping_mode": "hard",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "zmatch_scale",
+      "source_file": "official_candidates/275_v4_hard_perm_06_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "none"
+    },
+    {
+      "candidate_id": "276",
+      "component_labels": [
+        "hard_mapping",
+        "row_trt"
+      ],
+      "hypothesis": "Hard subject permutation rank 7.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 276,
+      "name": "v4_hard_perm_07",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/276_v4_hard_perm_07_output.csv",
+      "participant_mapping_mode": "hard",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "zmatch_scale",
+      "source_file": "official_candidates/276_v4_hard_perm_07_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "none"
+    },
+    {
+      "candidate_id": "277",
+      "component_labels": [
+        "hard_mapping",
+        "row_trt"
+      ],
+      "hypothesis": "Hard subject permutation rank 8.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 277,
+      "name": "v4_hard_perm_08",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/277_v4_hard_perm_08_output.csv",
+      "participant_mapping_mode": "hard",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "zmatch_scale",
+      "source_file": "official_candidates/277_v4_hard_perm_08_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "none"
+    },
+    {
+      "candidate_id": "278",
+      "component_labels": [
+        "hard_mapping",
+        "row_trt"
+      ],
+      "hypothesis": "Hard subject permutation rank 9.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 278,
+      "name": "v4_hard_perm_09",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/278_v4_hard_perm_09_output.csv",
+      "participant_mapping_mode": "hard",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "zmatch_scale",
+      "source_file": "official_candidates/278_v4_hard_perm_09_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "none"
+    },
+    {
+      "candidate_id": "279",
+      "component_labels": [
+        "hard_mapping",
+        "row_trt"
+      ],
+      "hypothesis": "Hard subject permutation rank 10.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 279,
+      "name": "v4_hard_perm_10",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/279_v4_hard_perm_10_output.csv",
+      "participant_mapping_mode": "hard",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "zmatch_scale",
+      "source_file": "official_candidates/279_v4_hard_perm_10_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "none"
+    },
+    {
+      "candidate_id": "280",
+      "component_labels": [
+        "hard_mapping",
+        "row_trt"
+      ],
+      "hypothesis": "Hard subject permutation rank 11.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 280,
+      "name": "v4_hard_perm_11",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/280_v4_hard_perm_11_output.csv",
+      "participant_mapping_mode": "hard",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "zmatch_scale",
+      "source_file": "official_candidates/280_v4_hard_perm_11_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "none"
+    },
+    {
+      "candidate_id": "281",
+      "component_labels": [
+        "hard_mapping",
+        "row_trt"
+      ],
+      "hypothesis": "Hard subject permutation rank 12.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 281,
+      "name": "v4_hard_perm_12",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/281_v4_hard_perm_12_output.csv",
+      "participant_mapping_mode": "hard",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "zmatch_scale",
+      "source_file": "official_candidates/281_v4_hard_perm_12_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "none"
+    },
+    {
+      "candidate_id": "282",
+      "component_labels": [
+        "hard_mapping",
+        "row_trt"
+      ],
+      "hypothesis": "Hard subject permutation rank 13.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 282,
+      "name": "v4_hard_perm_13",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/282_v4_hard_perm_13_output.csv",
+      "participant_mapping_mode": "hard",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "zmatch_scale",
+      "source_file": "official_candidates/282_v4_hard_perm_13_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "none"
+    },
+    {
+      "candidate_id": "283",
+      "component_labels": [
+        "hard_mapping",
+        "row_trt"
+      ],
+      "hypothesis": "Hard subject permutation rank 14.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 283,
+      "name": "v4_hard_perm_14",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/283_v4_hard_perm_14_output.csv",
+      "participant_mapping_mode": "hard",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "zmatch_scale",
+      "source_file": "official_candidates/283_v4_hard_perm_14_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "none"
+    },
+    {
+      "candidate_id": "284",
+      "component_labels": [
+        "hard_mapping",
+        "row_trt"
+      ],
+      "hypothesis": "Hard subject permutation rank 15.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 284,
+      "name": "v4_hard_perm_15",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/284_v4_hard_perm_15_output.csv",
+      "participant_mapping_mode": "hard",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "zmatch_scale",
+      "source_file": "official_candidates/284_v4_hard_perm_15_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "none"
+    },
+    {
+      "candidate_id": "285",
+      "component_labels": [
+        "hard_mapping",
+        "row_trt"
+      ],
+      "hypothesis": "Hard subject permutation rank 16.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 285,
+      "name": "v4_hard_perm_16",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/285_v4_hard_perm_16_output.csv",
+      "participant_mapping_mode": "hard",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "zmatch_scale",
+      "source_file": "official_candidates/285_v4_hard_perm_16_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "none"
+    },
+    {
+      "candidate_id": "286",
+      "component_labels": [
+        "hard_mapping",
+        "row_trt"
+      ],
+      "hypothesis": "Hard subject permutation rank 17.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 286,
+      "name": "v4_hard_perm_17",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/286_v4_hard_perm_17_output.csv",
+      "participant_mapping_mode": "hard",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "zmatch_scale",
+      "source_file": "official_candidates/286_v4_hard_perm_17_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "none"
+    },
+    {
+      "candidate_id": "287",
+      "component_labels": [
+        "hard_mapping",
+        "row_trt"
+      ],
+      "hypothesis": "Hard subject permutation rank 18.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 287,
+      "name": "v4_hard_perm_18",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/287_v4_hard_perm_18_output.csv",
+      "participant_mapping_mode": "hard",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "zmatch_scale",
+      "source_file": "official_candidates/287_v4_hard_perm_18_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "none"
+    },
+    {
+      "candidate_id": "288",
+      "component_labels": [
+        "hard_mapping",
+        "row_trt"
+      ],
+      "hypothesis": "Hard subject permutation rank 19.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 288,
+      "name": "v4_hard_perm_19",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/288_v4_hard_perm_19_output.csv",
+      "participant_mapping_mode": "hard",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "zmatch_scale",
+      "source_file": "official_candidates/288_v4_hard_perm_19_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "none"
+    },
+    {
+      "candidate_id": "289",
+      "component_labels": [
+        "hard_mapping",
+        "row_trt"
+      ],
+      "hypothesis": "Hard subject permutation rank 20.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 289,
+      "name": "v4_hard_perm_20",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/289_v4_hard_perm_20_output.csv",
+      "participant_mapping_mode": "hard",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "zmatch_scale",
+      "source_file": "official_candidates/289_v4_hard_perm_20_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "none"
+    },
+    {
+      "candidate_id": "290",
+      "component_labels": [
+        "soft_mixture",
+        "row_trt"
+      ],
+      "hypothesis": "Soft participant mixture top=3 strength=0.45.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 290,
+      "name": "v4_soft_mix_01",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/290_v4_soft_mix_01_output.csv",
+      "participant_mapping_mode": "soft",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "zmatch_scale",
+      "source_file": "official_candidates/290_v4_soft_mix_01_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "none"
+    },
+    {
+      "candidate_id": "291",
+      "component_labels": [
+        "soft_mixture",
+        "row_trt"
+      ],
+      "hypothesis": "Soft participant mixture top=3 strength=0.6.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 291,
+      "name": "v4_soft_mix_02",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/291_v4_soft_mix_02_output.csv",
+      "participant_mapping_mode": "soft",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "zmatch_scale",
+      "source_file": "official_candidates/291_v4_soft_mix_02_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "none"
+    },
+    {
+      "candidate_id": "292",
+      "component_labels": [
+        "soft_mixture",
+        "row_trt"
+      ],
+      "hypothesis": "Soft participant mixture top=3 strength=0.75.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 292,
+      "name": "v4_soft_mix_03",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/292_v4_soft_mix_03_output.csv",
+      "participant_mapping_mode": "soft",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "zmatch_scale",
+      "source_file": "official_candidates/292_v4_soft_mix_03_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "none"
+    },
+    {
+      "candidate_id": "293",
+      "component_labels": [
+        "soft_mixture",
+        "row_trt"
+      ],
+      "hypothesis": "Soft participant mixture top=3 strength=0.9.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 293,
+      "name": "v4_soft_mix_04",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/293_v4_soft_mix_04_output.csv",
+      "participant_mapping_mode": "soft",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "zmatch_scale",
+      "source_file": "official_candidates/293_v4_soft_mix_04_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "none"
+    },
+    {
+      "candidate_id": "294",
+      "component_labels": [
+        "soft_mixture",
+        "row_trt"
+      ],
+      "hypothesis": "Soft participant mixture top=5 strength=0.45.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 294,
+      "name": "v4_soft_mix_05",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/294_v4_soft_mix_05_output.csv",
+      "participant_mapping_mode": "soft",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "zmatch_scale",
+      "source_file": "official_candidates/294_v4_soft_mix_05_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "none"
+    },
+    {
+      "candidate_id": "295",
+      "component_labels": [
+        "soft_mixture",
+        "row_trt"
+      ],
+      "hypothesis": "Soft participant mixture top=5 strength=0.6.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 295,
+      "name": "v4_soft_mix_06",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/295_v4_soft_mix_06_output.csv",
+      "participant_mapping_mode": "soft",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "zmatch_scale",
+      "source_file": "official_candidates/295_v4_soft_mix_06_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "none"
+    },
+    {
+      "candidate_id": "296",
+      "component_labels": [
+        "soft_mixture",
+        "row_trt"
+      ],
+      "hypothesis": "Soft participant mixture top=5 strength=0.75.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 296,
+      "name": "v4_soft_mix_07",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/296_v4_soft_mix_07_output.csv",
+      "participant_mapping_mode": "soft",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "zmatch_scale",
+      "source_file": "official_candidates/296_v4_soft_mix_07_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "none"
+    },
+    {
+      "candidate_id": "297",
+      "component_labels": [
+        "soft_mixture",
+        "row_trt"
+      ],
+      "hypothesis": "Soft participant mixture top=5 strength=0.9.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 297,
+      "name": "v4_soft_mix_08",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/297_v4_soft_mix_08_output.csv",
+      "participant_mapping_mode": "soft",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "zmatch_scale",
+      "source_file": "official_candidates/297_v4_soft_mix_08_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "none"
+    },
+    {
+      "candidate_id": "298",
+      "component_labels": [
+        "soft_mixture",
+        "row_trt"
+      ],
+      "hypothesis": "Soft participant mixture top=8 strength=0.45.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 298,
+      "name": "v4_soft_mix_09",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/298_v4_soft_mix_09_output.csv",
+      "participant_mapping_mode": "soft",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "zmatch_scale",
+      "source_file": "official_candidates/298_v4_soft_mix_09_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "none"
+    },
+    {
+      "candidate_id": "299",
+      "component_labels": [
+        "soft_mixture",
+        "row_trt"
+      ],
+      "hypothesis": "Soft participant mixture top=8 strength=0.6.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 299,
+      "name": "v4_soft_mix_10",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/299_v4_soft_mix_10_output.csv",
+      "participant_mapping_mode": "soft",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "zmatch_scale",
+      "source_file": "official_candidates/299_v4_soft_mix_10_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "none"
+    },
+    {
+      "candidate_id": "300",
+      "component_labels": [
+        "soft_mixture",
+        "row_trt"
+      ],
+      "hypothesis": "Soft participant mixture top=8 strength=0.75.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 300,
+      "name": "v4_soft_mix_11",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/300_v4_soft_mix_11_output.csv",
+      "participant_mapping_mode": "soft",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "zmatch_scale",
+      "source_file": "official_candidates/300_v4_soft_mix_11_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "none"
+    },
+    {
+      "candidate_id": "301",
+      "component_labels": [
+        "soft_mixture",
+        "row_trt"
+      ],
+      "hypothesis": "Soft participant mixture top=8 strength=0.9.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 301,
+      "name": "v4_soft_mix_12",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/301_v4_soft_mix_12_output.csv",
+      "participant_mapping_mode": "soft",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "zmatch_scale",
+      "source_file": "official_candidates/301_v4_soft_mix_12_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "none"
+    },
+    {
+      "candidate_id": "302",
+      "component_labels": [
+        "soft_mixture",
+        "row_trt"
+      ],
+      "hypothesis": "Soft participant mixture top=12 strength=0.45.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 302,
+      "name": "v4_soft_mix_13",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/302_v4_soft_mix_13_output.csv",
+      "participant_mapping_mode": "soft",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "zmatch_scale",
+      "source_file": "official_candidates/302_v4_soft_mix_13_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "none"
+    },
+    {
+      "candidate_id": "303",
+      "component_labels": [
+        "soft_mixture",
+        "row_trt"
+      ],
+      "hypothesis": "Soft participant mixture top=12 strength=0.6.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 303,
+      "name": "v4_soft_mix_14",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/303_v4_soft_mix_14_output.csv",
+      "participant_mapping_mode": "soft",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "zmatch_scale",
+      "source_file": "official_candidates/303_v4_soft_mix_14_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "none"
+    },
+    {
+      "candidate_id": "304",
+      "component_labels": [
+        "soft_mixture",
+        "row_trt"
+      ],
+      "hypothesis": "Soft participant mixture top=12 strength=0.75.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 304,
+      "name": "v4_soft_mix_15",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/304_v4_soft_mix_15_output.csv",
+      "participant_mapping_mode": "soft",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "zmatch_scale",
+      "source_file": "official_candidates/304_v4_soft_mix_15_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "none"
+    },
+    {
+      "candidate_id": "305",
+      "component_labels": [
+        "soft_mixture",
+        "row_trt"
+      ],
+      "hypothesis": "Soft participant mixture top=12 strength=0.9.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 305,
+      "name": "v4_soft_mix_16",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/305_v4_soft_mix_16_output.csv",
+      "participant_mapping_mode": "soft",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "zmatch_scale",
+      "source_file": "official_candidates/305_v4_soft_mix_16_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "none"
+    },
+    {
+      "candidate_id": "306",
+      "component_labels": [
+        "soft_mixture",
+        "row_trt"
+      ],
+      "hypothesis": "Soft participant mixture top=20 strength=0.45.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 306,
+      "name": "v4_soft_mix_17",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/306_v4_soft_mix_17_output.csv",
+      "participant_mapping_mode": "soft",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "zmatch_scale",
+      "source_file": "official_candidates/306_v4_soft_mix_17_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "none"
+    },
+    {
+      "candidate_id": "307",
+      "component_labels": [
+        "soft_mixture",
+        "row_trt"
+      ],
+      "hypothesis": "Soft participant mixture top=20 strength=0.6.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 307,
+      "name": "v4_soft_mix_18",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/307_v4_soft_mix_18_output.csv",
+      "participant_mapping_mode": "soft",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "zmatch_scale",
+      "source_file": "official_candidates/307_v4_soft_mix_18_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "none"
+    },
+    {
+      "candidate_id": "308",
+      "component_labels": [
+        "soft_mixture",
+        "row_trt"
+      ],
+      "hypothesis": "Soft participant mixture top=20 strength=0.75.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 308,
+      "name": "v4_soft_mix_19",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/308_v4_soft_mix_19_output.csv",
+      "participant_mapping_mode": "soft",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "zmatch_scale",
+      "source_file": "official_candidates/308_v4_soft_mix_19_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "none"
+    },
+    {
+      "candidate_id": "309",
+      "component_labels": [
+        "soft_mixture",
+        "row_trt"
+      ],
+      "hypothesis": "Soft participant mixture top=20 strength=0.9.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 309,
+      "name": "v4_soft_mix_20",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/309_v4_soft_mix_20_output.csv",
+      "participant_mapping_mode": "soft",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "zmatch_scale",
+      "source_file": "official_candidates/309_v4_soft_mix_20_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "none"
+    },
+    {
+      "candidate_id": "310",
+      "component_labels": [
+        "hard_mapping",
+        "zero_reconstruction"
+      ],
+      "hypothesis": "Hybrid zero reconstruction threshold=0.2.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 310,
+      "name": "v4_zero_hybrid_1_20",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/310_v4_zero_hybrid_1_20_output.csv",
+      "participant_mapping_mode": "hard",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "zmatch_scale",
+      "source_file": "official_candidates/310_v4_zero_hybrid_1_20_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "hybrid"
+    },
+    {
+      "candidate_id": "311",
+      "component_labels": [
+        "hard_mapping",
+        "zero_reconstruction"
+      ],
+      "hypothesis": "Hybrid zero reconstruction threshold=0.4.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 311,
+      "name": "v4_zero_hybrid_1_40",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/311_v4_zero_hybrid_1_40_output.csv",
+      "participant_mapping_mode": "hard",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "zmatch_scale",
+      "source_file": "official_candidates/311_v4_zero_hybrid_1_40_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "hybrid"
+    },
+    {
+      "candidate_id": "312",
+      "component_labels": [
+        "hard_mapping",
+        "zero_reconstruction"
+      ],
+      "hypothesis": "Hybrid zero reconstruction threshold=0.6.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 312,
+      "name": "v4_zero_hybrid_1_60",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/312_v4_zero_hybrid_1_60_output.csv",
+      "participant_mapping_mode": "hard",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "zmatch_scale",
+      "source_file": "official_candidates/312_v4_zero_hybrid_1_60_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "hybrid"
+    },
+    {
+      "candidate_id": "313",
+      "component_labels": [
+        "hard_mapping",
+        "zero_reconstruction"
+      ],
+      "hypothesis": "Hybrid zero reconstruction threshold=0.2.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 313,
+      "name": "v4_zero_hybrid_2_20",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/313_v4_zero_hybrid_2_20_output.csv",
+      "participant_mapping_mode": "hard",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "zmatch_scale",
+      "source_file": "official_candidates/313_v4_zero_hybrid_2_20_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "hybrid"
+    },
+    {
+      "candidate_id": "314",
+      "component_labels": [
+        "hard_mapping",
+        "zero_reconstruction"
+      ],
+      "hypothesis": "Hybrid zero reconstruction threshold=0.4.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 314,
+      "name": "v4_zero_hybrid_2_40",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/314_v4_zero_hybrid_2_40_output.csv",
+      "participant_mapping_mode": "hard",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "zmatch_scale",
+      "source_file": "official_candidates/314_v4_zero_hybrid_2_40_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "hybrid"
+    },
+    {
+      "candidate_id": "315",
+      "component_labels": [
+        "hard_mapping",
+        "zero_reconstruction"
+      ],
+      "hypothesis": "Hybrid zero reconstruction threshold=0.6.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 315,
+      "name": "v4_zero_hybrid_2_60",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/315_v4_zero_hybrid_2_60_output.csv",
+      "participant_mapping_mode": "hard",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "zmatch_scale",
+      "source_file": "official_candidates/315_v4_zero_hybrid_2_60_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "hybrid"
+    },
+    {
+      "candidate_id": "316",
+      "component_labels": [
+        "hard_mapping",
+        "zero_reconstruction"
+      ],
+      "hypothesis": "Hybrid zero reconstruction threshold=0.2.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 316,
+      "name": "v4_zero_hybrid_3_20",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/316_v4_zero_hybrid_3_20_output.csv",
+      "participant_mapping_mode": "hard",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "zmatch_scale",
+      "source_file": "official_candidates/316_v4_zero_hybrid_3_20_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "hybrid"
+    },
+    {
+      "candidate_id": "317",
+      "component_labels": [
+        "hard_mapping",
+        "zero_reconstruction"
+      ],
+      "hypothesis": "Hybrid zero reconstruction threshold=0.4.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 317,
+      "name": "v4_zero_hybrid_3_40",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/317_v4_zero_hybrid_3_40_output.csv",
+      "participant_mapping_mode": "hard",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "zmatch_scale",
+      "source_file": "official_candidates/317_v4_zero_hybrid_3_40_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "hybrid"
+    },
+    {
+      "candidate_id": "318",
+      "component_labels": [
+        "hard_mapping",
+        "zero_reconstruction"
+      ],
+      "hypothesis": "Hybrid zero reconstruction threshold=0.6.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 318,
+      "name": "v4_zero_hybrid_3_60",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/318_v4_zero_hybrid_3_60_output.csv",
+      "participant_mapping_mode": "hard",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "zmatch_scale",
+      "source_file": "official_candidates/318_v4_zero_hybrid_3_60_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "hybrid"
+    },
+    {
+      "candidate_id": "319",
+      "component_labels": [
+        "hard_mapping",
+        "zero_reconstruction"
+      ],
+      "hypothesis": "Hybrid zero reconstruction threshold=0.2.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 319,
+      "name": "v4_zero_hybrid_4_20",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/319_v4_zero_hybrid_4_20_output.csv",
+      "participant_mapping_mode": "hard",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "zmatch_scale",
+      "source_file": "official_candidates/319_v4_zero_hybrid_4_20_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "hybrid"
+    },
+    {
+      "candidate_id": "320",
+      "component_labels": [
+        "hard_mapping",
+        "zero_reconstruction"
+      ],
+      "hypothesis": "Hybrid zero reconstruction threshold=0.4.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 320,
+      "name": "v4_zero_hybrid_4_40",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/320_v4_zero_hybrid_4_40_output.csv",
+      "participant_mapping_mode": "hard",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "zmatch_scale",
+      "source_file": "official_candidates/320_v4_zero_hybrid_4_40_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "hybrid"
+    },
+    {
+      "candidate_id": "321",
+      "component_labels": [
+        "hard_mapping",
+        "zero_reconstruction"
+      ],
+      "hypothesis": "Hybrid zero reconstruction threshold=0.6.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 321,
+      "name": "v4_zero_hybrid_4_60",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/321_v4_zero_hybrid_4_60_output.csv",
+      "participant_mapping_mode": "hard",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "zmatch_scale",
+      "source_file": "official_candidates/321_v4_zero_hybrid_4_60_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "hybrid"
+    },
+    {
+      "candidate_id": "322",
+      "component_labels": [
+        "hard_mapping",
+        "zero_reconstruction"
+      ],
+      "hypothesis": "Hybrid zero reconstruction threshold=0.2.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 322,
+      "name": "v4_zero_hybrid_5_20",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/322_v4_zero_hybrid_5_20_output.csv",
+      "participant_mapping_mode": "hard",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "zmatch_scale",
+      "source_file": "official_candidates/322_v4_zero_hybrid_5_20_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "hybrid"
+    },
+    {
+      "candidate_id": "323",
+      "component_labels": [
+        "hard_mapping",
+        "zero_reconstruction"
+      ],
+      "hypothesis": "Hybrid zero reconstruction threshold=0.4.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 323,
+      "name": "v4_zero_hybrid_5_40",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/323_v4_zero_hybrid_5_40_output.csv",
+      "participant_mapping_mode": "hard",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "zmatch_scale",
+      "source_file": "official_candidates/323_v4_zero_hybrid_5_40_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "hybrid"
+    },
+    {
+      "candidate_id": "324",
+      "component_labels": [
+        "hard_mapping",
+        "zero_reconstruction"
+      ],
+      "hypothesis": "Hybrid zero reconstruction threshold=0.6.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 324,
+      "name": "v4_zero_hybrid_5_60",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/324_v4_zero_hybrid_5_60_output.csv",
+      "participant_mapping_mode": "hard",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "zmatch_scale",
+      "source_file": "official_candidates/324_v4_zero_hybrid_5_60_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "hybrid"
+    },
+    {
+      "candidate_id": "325",
+      "component_labels": [
+        "tail_restore",
+        "anchor"
+      ],
+      "hypothesis": "Restore tail with target std 175 from anchor source.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 325,
+      "name": "v4_tail_anchor_175",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/325_v4_tail_anchor_175_output.csv",
+      "participant_mapping_mode": "none",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "tail_scale",
+      "source_file": "official_candidates/325_v4_tail_anchor_175_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "none"
+    },
+    {
+      "candidate_id": "326",
+      "component_labels": [
+        "tail_restore",
+        "hard"
+      ],
+      "hypothesis": "Restore tail with target std 175 from hard source.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 326,
+      "name": "v4_tail_hard_175",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/326_v4_tail_hard_175_output.csv",
+      "participant_mapping_mode": "hard",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "tail_scale",
+      "source_file": "official_candidates/326_v4_tail_hard_175_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "none"
+    },
+    {
+      "candidate_id": "327",
+      "component_labels": [
+        "tail_restore",
+        "soft"
+      ],
+      "hypothesis": "Restore tail with target std 175 from soft source.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 327,
+      "name": "v4_tail_soft_175",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/327_v4_tail_soft_175_output.csv",
+      "participant_mapping_mode": "soft",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "tail_scale",
+      "source_file": "official_candidates/327_v4_tail_soft_175_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "none"
+    },
+    {
+      "candidate_id": "328",
+      "component_labels": [
+        "tail_restore",
+        "anchor"
+      ],
+      "hypothesis": "Restore tail with target std 195 from anchor source.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 328,
+      "name": "v4_tail_anchor_195",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/328_v4_tail_anchor_195_output.csv",
+      "participant_mapping_mode": "none",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "tail_scale",
+      "source_file": "official_candidates/328_v4_tail_anchor_195_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "none"
+    },
+    {
+      "candidate_id": "329",
+      "component_labels": [
+        "tail_restore",
+        "hard"
+      ],
+      "hypothesis": "Restore tail with target std 195 from hard source.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 329,
+      "name": "v4_tail_hard_195",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/329_v4_tail_hard_195_output.csv",
+      "participant_mapping_mode": "hard",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "tail_scale",
+      "source_file": "official_candidates/329_v4_tail_hard_195_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "none"
+    },
+    {
+      "candidate_id": "330",
+      "component_labels": [
+        "tail_restore",
+        "soft"
+      ],
+      "hypothesis": "Restore tail with target std 195 from soft source.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 330,
+      "name": "v4_tail_soft_195",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/330_v4_tail_soft_195_output.csv",
+      "participant_mapping_mode": "soft",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "tail_scale",
+      "source_file": "official_candidates/330_v4_tail_soft_195_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "none"
+    },
+    {
+      "candidate_id": "331",
+      "component_labels": [
+        "tail_restore",
+        "anchor"
+      ],
+      "hypothesis": "Restore tail with target std 215 from anchor source.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 331,
+      "name": "v4_tail_anchor_215",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/331_v4_tail_anchor_215_output.csv",
+      "participant_mapping_mode": "none",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "tail_scale",
+      "source_file": "official_candidates/331_v4_tail_anchor_215_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "none"
+    },
+    {
+      "candidate_id": "332",
+      "component_labels": [
+        "tail_restore",
+        "hard"
+      ],
+      "hypothesis": "Restore tail with target std 215 from hard source.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 332,
+      "name": "v4_tail_hard_215",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/332_v4_tail_hard_215_output.csv",
+      "participant_mapping_mode": "hard",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "tail_scale",
+      "source_file": "official_candidates/332_v4_tail_hard_215_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "none"
+    },
+    {
+      "candidate_id": "333",
+      "component_labels": [
+        "tail_restore",
+        "soft"
+      ],
+      "hypothesis": "Restore tail with target std 215 from soft source.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 333,
+      "name": "v4_tail_soft_215",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/333_v4_tail_soft_215_output.csv",
+      "participant_mapping_mode": "soft",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "tail_scale",
+      "source_file": "official_candidates/333_v4_tail_soft_215_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "none"
+    },
+    {
+      "candidate_id": "334",
+      "component_labels": [
+        "tail_restore",
+        "anchor"
+      ],
+      "hypothesis": "Restore tail with target std 235 from anchor source.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 334,
+      "name": "v4_tail_anchor_235",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/334_v4_tail_anchor_235_output.csv",
+      "participant_mapping_mode": "none",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "tail_scale",
+      "source_file": "official_candidates/334_v4_tail_anchor_235_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "none"
+    },
+    {
+      "candidate_id": "335",
+      "component_labels": [
+        "tail_restore",
+        "hard"
+      ],
+      "hypothesis": "Restore tail with target std 235 from hard source.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 335,
+      "name": "v4_tail_hard_235",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/335_v4_tail_hard_235_output.csv",
+      "participant_mapping_mode": "hard",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "tail_scale",
+      "source_file": "official_candidates/335_v4_tail_hard_235_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "none"
+    },
+    {
+      "candidate_id": "336",
+      "component_labels": [
+        "tail_restore",
+        "soft"
+      ],
+      "hypothesis": "Restore tail with target std 235 from soft source.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 336,
+      "name": "v4_tail_soft_235",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/336_v4_tail_soft_235_output.csv",
+      "participant_mapping_mode": "soft",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "tail_scale",
+      "source_file": "official_candidates/336_v4_tail_soft_235_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "none"
+    },
+    {
+      "candidate_id": "337",
+      "component_labels": [
+        "tail_restore",
+        "anchor"
+      ],
+      "hypothesis": "Restore tail with target std 255 from anchor source.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 337,
+      "name": "v4_tail_anchor_255",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/337_v4_tail_anchor_255_output.csv",
+      "participant_mapping_mode": "none",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "tail_scale",
+      "source_file": "official_candidates/337_v4_tail_anchor_255_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "none"
+    },
+    {
+      "candidate_id": "338",
+      "component_labels": [
+        "tail_restore",
+        "hard"
+      ],
+      "hypothesis": "Restore tail with target std 255 from hard source.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 338,
+      "name": "v4_tail_hard_255",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/338_v4_tail_hard_255_output.csv",
+      "participant_mapping_mode": "hard",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "tail_scale",
+      "source_file": "official_candidates/338_v4_tail_hard_255_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "none"
+    },
+    {
+      "candidate_id": "339",
+      "component_labels": [
+        "tail_restore",
+        "soft"
+      ],
+      "hypothesis": "Restore tail with target std 255 from soft source.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 339,
+      "name": "v4_tail_soft_255",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/339_v4_tail_soft_255_output.csv",
+      "participant_mapping_mode": "soft",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "tail_scale",
+      "source_file": "official_candidates/339_v4_tail_soft_255_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "none"
+    },
+    {
+      "candidate_id": "340",
+      "component_labels": [
+        "hard_mapping",
+        "soft_mixture",
+        "zero_reconstruction",
+        "tail_restore"
+      ],
+      "hypothesis": "Fusion champion rank 1 combining reconstruction components.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 340,
+      "name": "v4_champion_fusion_01",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/340_v4_champion_fusion_01_output.csv",
+      "participant_mapping_mode": "fusion",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "fusion_scale",
+      "source_file": "official_candidates/340_v4_champion_fusion_01_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "hybrid"
+    },
+    {
+      "candidate_id": "341",
+      "component_labels": [
+        "hard_mapping",
+        "soft_mixture",
+        "zero_reconstruction",
+        "tail_restore"
+      ],
+      "hypothesis": "Fusion champion rank 2 combining reconstruction components.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 341,
+      "name": "v4_champion_fusion_02",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/341_v4_champion_fusion_02_output.csv",
+      "participant_mapping_mode": "fusion",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "fusion_scale",
+      "source_file": "official_candidates/341_v4_champion_fusion_02_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "hybrid"
+    },
+    {
+      "candidate_id": "342",
+      "component_labels": [
+        "hard_mapping",
+        "soft_mixture",
+        "zero_reconstruction",
+        "tail_restore"
+      ],
+      "hypothesis": "Fusion champion rank 3 combining reconstruction components.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 342,
+      "name": "v4_champion_fusion_03",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/342_v4_champion_fusion_03_output.csv",
+      "participant_mapping_mode": "fusion",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "fusion_scale",
+      "source_file": "official_candidates/342_v4_champion_fusion_03_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "hybrid"
+    },
+    {
+      "candidate_id": "343",
+      "component_labels": [
+        "hard_mapping",
+        "soft_mixture",
+        "zero_reconstruction",
+        "tail_restore"
+      ],
+      "hypothesis": "Fusion champion rank 4 combining reconstruction components.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 343,
+      "name": "v4_champion_fusion_04",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/343_v4_champion_fusion_04_output.csv",
+      "participant_mapping_mode": "fusion",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "fusion_scale",
+      "source_file": "official_candidates/343_v4_champion_fusion_04_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "hybrid"
+    },
+    {
+      "candidate_id": "344",
+      "component_labels": [
+        "hard_mapping",
+        "soft_mixture",
+        "zero_reconstruction",
+        "tail_restore"
+      ],
+      "hypothesis": "Fusion champion rank 5 combining reconstruction components.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 344,
+      "name": "v4_champion_fusion_05",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/344_v4_champion_fusion_05_output.csv",
+      "participant_mapping_mode": "fusion",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "fusion_scale",
+      "source_file": "official_candidates/344_v4_champion_fusion_05_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "hybrid"
+    },
+    {
+      "candidate_id": "345",
+      "component_labels": [
+        "hard_mapping",
+        "soft_mixture",
+        "zero_reconstruction",
+        "tail_restore"
+      ],
+      "hypothesis": "Fusion champion rank 6 combining reconstruction components.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 345,
+      "name": "v4_champion_fusion_06",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/345_v4_champion_fusion_06_output.csv",
+      "participant_mapping_mode": "fusion",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "fusion_scale",
+      "source_file": "official_candidates/345_v4_champion_fusion_06_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "hybrid"
+    },
+    {
+      "candidate_id": "346",
+      "component_labels": [
+        "hard_mapping",
+        "soft_mixture",
+        "zero_reconstruction",
+        "tail_restore"
+      ],
+      "hypothesis": "Fusion champion rank 7 combining reconstruction components.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 346,
+      "name": "v4_champion_fusion_07",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/346_v4_champion_fusion_07_output.csv",
+      "participant_mapping_mode": "fusion",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "fusion_scale",
+      "source_file": "official_candidates/346_v4_champion_fusion_07_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "hybrid"
+    },
+    {
+      "candidate_id": "347",
+      "component_labels": [
+        "hard_mapping",
+        "soft_mixture",
+        "zero_reconstruction",
+        "tail_restore"
+      ],
+      "hypothesis": "Fusion champion rank 8 combining reconstruction components.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 347,
+      "name": "v4_champion_fusion_08",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/347_v4_champion_fusion_08_output.csv",
+      "participant_mapping_mode": "fusion",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "fusion_scale",
+      "source_file": "official_candidates/347_v4_champion_fusion_08_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "hybrid"
+    },
+    {
+      "candidate_id": "348",
+      "component_labels": [
+        "hard_mapping",
+        "soft_mixture",
+        "zero_reconstruction",
+        "tail_restore"
+      ],
+      "hypothesis": "Fusion champion rank 9 combining reconstruction components.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 348,
+      "name": "v4_champion_fusion_09",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/348_v4_champion_fusion_09_output.csv",
+      "participant_mapping_mode": "fusion",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "fusion_scale",
+      "source_file": "official_candidates/348_v4_champion_fusion_09_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "hybrid"
+    },
+    {
+      "candidate_id": "349",
+      "component_labels": [
+        "hard_mapping",
+        "soft_mixture",
+        "zero_reconstruction",
+        "tail_restore"
+      ],
+      "hypothesis": "Fusion champion rank 10 combining reconstruction components.",
+      "local_report": "reports/high_risk_reconstruction_v4_report.json",
+      "manual_upload_priority": 349,
+      "name": "v4_champion_fusion_10",
+      "next_manual_upload_target": true,
+      "output_file": "official_candidates/349_v4_champion_fusion_10_output.csv",
+      "participant_mapping_mode": "fusion",
+      "risk_label": "high_risk_participant_trt_reconstruction_v4",
+      "scale_strategy": "fusion_scale",
+      "source_file": "official_candidates/349_v4_champion_fusion_10_source.py",
+      "status": "pending",
+      "upload_ready": true,
+      "zero_strategy": "hybrid"
     }
   ],
   "probing_budget": "10-15 official submissions",
@@ -2558,6 +4191,22 @@
       "submission_id": "manual_249_score_53_8099243",
       "submission_id_missing": true,
       "timestamp": "2026-04-25 22:45"
+    },
+    {
+      "assignment_policy": "largest_numeric_candidate_id_at_manual_upload_time",
+      "candidate_id": "269",
+      "chosen_as_final": true,
+      "hypothesis": "Candidate 269 improved over Candidate 199 but still requires high-risk row-level reconstruction for a larger jump.",
+      "local_report": "reports/noise_aware_v3_push_report.json",
+      "official_complete_score": null,
+      "official_partial_score": 55.0,
+      "official_score_approximate": true,
+      "output_file": "official_candidates/269_noise_v3_champion_low_noise_stack_output.csv",
+      "source_file": "official_candidates/269_noise_v3_champion_low_noise_stack_source.py",
+      "state": "success",
+      "submission_id": "manual_269_score_55_0_approx",
+      "submission_id_missing": true,
+      "timestamp": "2026-04-25 23:30"
     }
   ]
 }

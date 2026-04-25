@@ -258,3 +258,16 @@
 - Any changed behavior updates this file in the same change set.
 - Acceptance checks describe externally observable outcomes, not private implementation details.
 - Dead paths introduced by replaced requirements are removed rather than preserved as comments.
+
+## High-Risk Participant Reconstruction V4
+
+- Candidate `269` official feedback is recorded as approximate until an exact score is provided.
+- V4 candidates preserve exactly one output row for each test datapoint.
+- V4 candidate outputs use exactly `subtaskID`, `datapointID`, and `answer` columns.
+- V4 candidate answers are finite and non-negative.
+- V4 candidates carry the visible reconstruction risk label.
+- V4 candidate sources reproduce their paired outputs.
+- V4 reports identify participant mapping, zero handling, and scale handling for each candidate.
+- The V4 champion is the largest numeric generated candidate.
+- The V4 champion is marked as the next manual upload target.
+- The official `80 / 100` and final `99 / 100` targets are not marked complete without official or exact-truth evidence.

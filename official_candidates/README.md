@@ -12,7 +12,8 @@ This directory now keeps only official anchors, required modeling inputs, and th
 | `099_feedback_champion_safe25_medium50_high25` | official history | `38.20618` | First feedback champion improvement. |
 | `129_aggressive_champion_trained_direction_risk` | official negative anchor | `37.89482` | Failed over-push direction to avoid. |
 | `159_rebound_champion_counter_prior_stack` | official history | `38.87076` | Rebound and denoising anchor. |
-| `199_noise_champion_scaled_external_denoising` | current official best | `53.8099243` | Validated noise-aware scaled external denoising path. |
+| `199_noise_champion_scaled_external_denoising` | official history | `53.8099243` | Validated noise-aware scaled external denoising path. |
+| `269_noise_v3_champion_low_noise_stack` | current approximate official best | `55.0 approx` | Positive V3 anchor for V4 reconstruction. |
 
 ## Required Modeling Inputs
 
@@ -166,4 +167,93 @@ Candidate `249` matched Candidate `199` at `53.8099243 / 100`, so Candidate `199
 | `268_noise_v3_fusion_uncertainty_heavy_03` | `noise_aware_v3_low_noise` | `official_candidates/268_noise_v3_fusion_uncertainty_heavy_03_source.py` | `official_candidates/268_noise_v3_fusion_uncertainty_heavy_03_output.csv` | V3 fusion style=uncertainty_heavy around Candidate 199. |
 | `269_noise_v3_champion_low_noise_stack` | `noise_aware_v3_low_noise` | `official_candidates/269_noise_v3_champion_low_noise_stack_source.py` | `official_candidates/269_noise_v3_champion_low_noise_stack_output.csv` | Champion: Candidate 199 plus low-noise target, high-capacity stacker, and uncertainty shrinkage. |
 
-Current next manual upload target: `269_noise_v3_champion_low_noise_stack`. Candidate `199` remains the official best until a higher judge score is recorded.
+Historical next manual upload target: `269_noise_v3_champion_low_noise_stack`. Candidate `269` later received approximate `55 / 100` feedback.
+
+## Current Batch: High-Risk Participant Reconstruction V4
+
+Candidate `269` is treated as the approximate official best at `55 / 100`. This batch uses high-risk participant TRT reconstruction, zero behavior, and scale restoration. Candidate `349` is the next manual upload target.
+
+| Candidate | Family | Source | Output | Hypothesis |
+| --- | --- | --- | --- | --- |
+| `270_v4_hard_perm_01` | `high_risk_participant_reconstruction_v4` | `official_candidates/270_v4_hard_perm_01_source.py` | `official_candidates/270_v4_hard_perm_01_output.csv` | Hard subject permutation rank 1. |
+| `271_v4_hard_perm_02` | `high_risk_participant_reconstruction_v4` | `official_candidates/271_v4_hard_perm_02_source.py` | `official_candidates/271_v4_hard_perm_02_output.csv` | Hard subject permutation rank 2. |
+| `272_v4_hard_perm_03` | `high_risk_participant_reconstruction_v4` | `official_candidates/272_v4_hard_perm_03_source.py` | `official_candidates/272_v4_hard_perm_03_output.csv` | Hard subject permutation rank 3. |
+| `273_v4_hard_perm_04` | `high_risk_participant_reconstruction_v4` | `official_candidates/273_v4_hard_perm_04_source.py` | `official_candidates/273_v4_hard_perm_04_output.csv` | Hard subject permutation rank 4. |
+| `274_v4_hard_perm_05` | `high_risk_participant_reconstruction_v4` | `official_candidates/274_v4_hard_perm_05_source.py` | `official_candidates/274_v4_hard_perm_05_output.csv` | Hard subject permutation rank 5. |
+| `275_v4_hard_perm_06` | `high_risk_participant_reconstruction_v4` | `official_candidates/275_v4_hard_perm_06_source.py` | `official_candidates/275_v4_hard_perm_06_output.csv` | Hard subject permutation rank 6. |
+| `276_v4_hard_perm_07` | `high_risk_participant_reconstruction_v4` | `official_candidates/276_v4_hard_perm_07_source.py` | `official_candidates/276_v4_hard_perm_07_output.csv` | Hard subject permutation rank 7. |
+| `277_v4_hard_perm_08` | `high_risk_participant_reconstruction_v4` | `official_candidates/277_v4_hard_perm_08_source.py` | `official_candidates/277_v4_hard_perm_08_output.csv` | Hard subject permutation rank 8. |
+| `278_v4_hard_perm_09` | `high_risk_participant_reconstruction_v4` | `official_candidates/278_v4_hard_perm_09_source.py` | `official_candidates/278_v4_hard_perm_09_output.csv` | Hard subject permutation rank 9. |
+| `279_v4_hard_perm_10` | `high_risk_participant_reconstruction_v4` | `official_candidates/279_v4_hard_perm_10_source.py` | `official_candidates/279_v4_hard_perm_10_output.csv` | Hard subject permutation rank 10. |
+| `280_v4_hard_perm_11` | `high_risk_participant_reconstruction_v4` | `official_candidates/280_v4_hard_perm_11_source.py` | `official_candidates/280_v4_hard_perm_11_output.csv` | Hard subject permutation rank 11. |
+| `281_v4_hard_perm_12` | `high_risk_participant_reconstruction_v4` | `official_candidates/281_v4_hard_perm_12_source.py` | `official_candidates/281_v4_hard_perm_12_output.csv` | Hard subject permutation rank 12. |
+| `282_v4_hard_perm_13` | `high_risk_participant_reconstruction_v4` | `official_candidates/282_v4_hard_perm_13_source.py` | `official_candidates/282_v4_hard_perm_13_output.csv` | Hard subject permutation rank 13. |
+| `283_v4_hard_perm_14` | `high_risk_participant_reconstruction_v4` | `official_candidates/283_v4_hard_perm_14_source.py` | `official_candidates/283_v4_hard_perm_14_output.csv` | Hard subject permutation rank 14. |
+| `284_v4_hard_perm_15` | `high_risk_participant_reconstruction_v4` | `official_candidates/284_v4_hard_perm_15_source.py` | `official_candidates/284_v4_hard_perm_15_output.csv` | Hard subject permutation rank 15. |
+| `285_v4_hard_perm_16` | `high_risk_participant_reconstruction_v4` | `official_candidates/285_v4_hard_perm_16_source.py` | `official_candidates/285_v4_hard_perm_16_output.csv` | Hard subject permutation rank 16. |
+| `286_v4_hard_perm_17` | `high_risk_participant_reconstruction_v4` | `official_candidates/286_v4_hard_perm_17_source.py` | `official_candidates/286_v4_hard_perm_17_output.csv` | Hard subject permutation rank 17. |
+| `287_v4_hard_perm_18` | `high_risk_participant_reconstruction_v4` | `official_candidates/287_v4_hard_perm_18_source.py` | `official_candidates/287_v4_hard_perm_18_output.csv` | Hard subject permutation rank 18. |
+| `288_v4_hard_perm_19` | `high_risk_participant_reconstruction_v4` | `official_candidates/288_v4_hard_perm_19_source.py` | `official_candidates/288_v4_hard_perm_19_output.csv` | Hard subject permutation rank 19. |
+| `289_v4_hard_perm_20` | `high_risk_participant_reconstruction_v4` | `official_candidates/289_v4_hard_perm_20_source.py` | `official_candidates/289_v4_hard_perm_20_output.csv` | Hard subject permutation rank 20. |
+| `290_v4_soft_mix_01` | `high_risk_participant_reconstruction_v4` | `official_candidates/290_v4_soft_mix_01_source.py` | `official_candidates/290_v4_soft_mix_01_output.csv` | Soft participant mixture top=3 strength=0.45. |
+| `291_v4_soft_mix_02` | `high_risk_participant_reconstruction_v4` | `official_candidates/291_v4_soft_mix_02_source.py` | `official_candidates/291_v4_soft_mix_02_output.csv` | Soft participant mixture top=3 strength=0.6. |
+| `292_v4_soft_mix_03` | `high_risk_participant_reconstruction_v4` | `official_candidates/292_v4_soft_mix_03_source.py` | `official_candidates/292_v4_soft_mix_03_output.csv` | Soft participant mixture top=3 strength=0.75. |
+| `293_v4_soft_mix_04` | `high_risk_participant_reconstruction_v4` | `official_candidates/293_v4_soft_mix_04_source.py` | `official_candidates/293_v4_soft_mix_04_output.csv` | Soft participant mixture top=3 strength=0.9. |
+| `294_v4_soft_mix_05` | `high_risk_participant_reconstruction_v4` | `official_candidates/294_v4_soft_mix_05_source.py` | `official_candidates/294_v4_soft_mix_05_output.csv` | Soft participant mixture top=5 strength=0.45. |
+| `295_v4_soft_mix_06` | `high_risk_participant_reconstruction_v4` | `official_candidates/295_v4_soft_mix_06_source.py` | `official_candidates/295_v4_soft_mix_06_output.csv` | Soft participant mixture top=5 strength=0.6. |
+| `296_v4_soft_mix_07` | `high_risk_participant_reconstruction_v4` | `official_candidates/296_v4_soft_mix_07_source.py` | `official_candidates/296_v4_soft_mix_07_output.csv` | Soft participant mixture top=5 strength=0.75. |
+| `297_v4_soft_mix_08` | `high_risk_participant_reconstruction_v4` | `official_candidates/297_v4_soft_mix_08_source.py` | `official_candidates/297_v4_soft_mix_08_output.csv` | Soft participant mixture top=5 strength=0.9. |
+| `298_v4_soft_mix_09` | `high_risk_participant_reconstruction_v4` | `official_candidates/298_v4_soft_mix_09_source.py` | `official_candidates/298_v4_soft_mix_09_output.csv` | Soft participant mixture top=8 strength=0.45. |
+| `299_v4_soft_mix_10` | `high_risk_participant_reconstruction_v4` | `official_candidates/299_v4_soft_mix_10_source.py` | `official_candidates/299_v4_soft_mix_10_output.csv` | Soft participant mixture top=8 strength=0.6. |
+| `300_v4_soft_mix_11` | `high_risk_participant_reconstruction_v4` | `official_candidates/300_v4_soft_mix_11_source.py` | `official_candidates/300_v4_soft_mix_11_output.csv` | Soft participant mixture top=8 strength=0.75. |
+| `301_v4_soft_mix_12` | `high_risk_participant_reconstruction_v4` | `official_candidates/301_v4_soft_mix_12_source.py` | `official_candidates/301_v4_soft_mix_12_output.csv` | Soft participant mixture top=8 strength=0.9. |
+| `302_v4_soft_mix_13` | `high_risk_participant_reconstruction_v4` | `official_candidates/302_v4_soft_mix_13_source.py` | `official_candidates/302_v4_soft_mix_13_output.csv` | Soft participant mixture top=12 strength=0.45. |
+| `303_v4_soft_mix_14` | `high_risk_participant_reconstruction_v4` | `official_candidates/303_v4_soft_mix_14_source.py` | `official_candidates/303_v4_soft_mix_14_output.csv` | Soft participant mixture top=12 strength=0.6. |
+| `304_v4_soft_mix_15` | `high_risk_participant_reconstruction_v4` | `official_candidates/304_v4_soft_mix_15_source.py` | `official_candidates/304_v4_soft_mix_15_output.csv` | Soft participant mixture top=12 strength=0.75. |
+| `305_v4_soft_mix_16` | `high_risk_participant_reconstruction_v4` | `official_candidates/305_v4_soft_mix_16_source.py` | `official_candidates/305_v4_soft_mix_16_output.csv` | Soft participant mixture top=12 strength=0.9. |
+| `306_v4_soft_mix_17` | `high_risk_participant_reconstruction_v4` | `official_candidates/306_v4_soft_mix_17_source.py` | `official_candidates/306_v4_soft_mix_17_output.csv` | Soft participant mixture top=20 strength=0.45. |
+| `307_v4_soft_mix_18` | `high_risk_participant_reconstruction_v4` | `official_candidates/307_v4_soft_mix_18_source.py` | `official_candidates/307_v4_soft_mix_18_output.csv` | Soft participant mixture top=20 strength=0.6. |
+| `308_v4_soft_mix_19` | `high_risk_participant_reconstruction_v4` | `official_candidates/308_v4_soft_mix_19_source.py` | `official_candidates/308_v4_soft_mix_19_output.csv` | Soft participant mixture top=20 strength=0.75. |
+| `309_v4_soft_mix_20` | `high_risk_participant_reconstruction_v4` | `official_candidates/309_v4_soft_mix_20_source.py` | `official_candidates/309_v4_soft_mix_20_output.csv` | Soft participant mixture top=20 strength=0.9. |
+| `310_v4_zero_hybrid_1_20` | `high_risk_participant_reconstruction_v4` | `official_candidates/310_v4_zero_hybrid_1_20_source.py` | `official_candidates/310_v4_zero_hybrid_1_20_output.csv` | Hybrid zero reconstruction threshold=0.2. |
+| `311_v4_zero_hybrid_1_40` | `high_risk_participant_reconstruction_v4` | `official_candidates/311_v4_zero_hybrid_1_40_source.py` | `official_candidates/311_v4_zero_hybrid_1_40_output.csv` | Hybrid zero reconstruction threshold=0.4. |
+| `312_v4_zero_hybrid_1_60` | `high_risk_participant_reconstruction_v4` | `official_candidates/312_v4_zero_hybrid_1_60_source.py` | `official_candidates/312_v4_zero_hybrid_1_60_output.csv` | Hybrid zero reconstruction threshold=0.6. |
+| `313_v4_zero_hybrid_2_20` | `high_risk_participant_reconstruction_v4` | `official_candidates/313_v4_zero_hybrid_2_20_source.py` | `official_candidates/313_v4_zero_hybrid_2_20_output.csv` | Hybrid zero reconstruction threshold=0.2. |
+| `314_v4_zero_hybrid_2_40` | `high_risk_participant_reconstruction_v4` | `official_candidates/314_v4_zero_hybrid_2_40_source.py` | `official_candidates/314_v4_zero_hybrid_2_40_output.csv` | Hybrid zero reconstruction threshold=0.4. |
+| `315_v4_zero_hybrid_2_60` | `high_risk_participant_reconstruction_v4` | `official_candidates/315_v4_zero_hybrid_2_60_source.py` | `official_candidates/315_v4_zero_hybrid_2_60_output.csv` | Hybrid zero reconstruction threshold=0.6. |
+| `316_v4_zero_hybrid_3_20` | `high_risk_participant_reconstruction_v4` | `official_candidates/316_v4_zero_hybrid_3_20_source.py` | `official_candidates/316_v4_zero_hybrid_3_20_output.csv` | Hybrid zero reconstruction threshold=0.2. |
+| `317_v4_zero_hybrid_3_40` | `high_risk_participant_reconstruction_v4` | `official_candidates/317_v4_zero_hybrid_3_40_source.py` | `official_candidates/317_v4_zero_hybrid_3_40_output.csv` | Hybrid zero reconstruction threshold=0.4. |
+| `318_v4_zero_hybrid_3_60` | `high_risk_participant_reconstruction_v4` | `official_candidates/318_v4_zero_hybrid_3_60_source.py` | `official_candidates/318_v4_zero_hybrid_3_60_output.csv` | Hybrid zero reconstruction threshold=0.6. |
+| `319_v4_zero_hybrid_4_20` | `high_risk_participant_reconstruction_v4` | `official_candidates/319_v4_zero_hybrid_4_20_source.py` | `official_candidates/319_v4_zero_hybrid_4_20_output.csv` | Hybrid zero reconstruction threshold=0.2. |
+| `320_v4_zero_hybrid_4_40` | `high_risk_participant_reconstruction_v4` | `official_candidates/320_v4_zero_hybrid_4_40_source.py` | `official_candidates/320_v4_zero_hybrid_4_40_output.csv` | Hybrid zero reconstruction threshold=0.4. |
+| `321_v4_zero_hybrid_4_60` | `high_risk_participant_reconstruction_v4` | `official_candidates/321_v4_zero_hybrid_4_60_source.py` | `official_candidates/321_v4_zero_hybrid_4_60_output.csv` | Hybrid zero reconstruction threshold=0.6. |
+| `322_v4_zero_hybrid_5_20` | `high_risk_participant_reconstruction_v4` | `official_candidates/322_v4_zero_hybrid_5_20_source.py` | `official_candidates/322_v4_zero_hybrid_5_20_output.csv` | Hybrid zero reconstruction threshold=0.2. |
+| `323_v4_zero_hybrid_5_40` | `high_risk_participant_reconstruction_v4` | `official_candidates/323_v4_zero_hybrid_5_40_source.py` | `official_candidates/323_v4_zero_hybrid_5_40_output.csv` | Hybrid zero reconstruction threshold=0.4. |
+| `324_v4_zero_hybrid_5_60` | `high_risk_participant_reconstruction_v4` | `official_candidates/324_v4_zero_hybrid_5_60_source.py` | `official_candidates/324_v4_zero_hybrid_5_60_output.csv` | Hybrid zero reconstruction threshold=0.6. |
+| `325_v4_tail_anchor_175` | `high_risk_participant_reconstruction_v4` | `official_candidates/325_v4_tail_anchor_175_source.py` | `official_candidates/325_v4_tail_anchor_175_output.csv` | Restore tail with target std 175 from anchor source. |
+| `326_v4_tail_hard_175` | `high_risk_participant_reconstruction_v4` | `official_candidates/326_v4_tail_hard_175_source.py` | `official_candidates/326_v4_tail_hard_175_output.csv` | Restore tail with target std 175 from hard source. |
+| `327_v4_tail_soft_175` | `high_risk_participant_reconstruction_v4` | `official_candidates/327_v4_tail_soft_175_source.py` | `official_candidates/327_v4_tail_soft_175_output.csv` | Restore tail with target std 175 from soft source. |
+| `328_v4_tail_anchor_195` | `high_risk_participant_reconstruction_v4` | `official_candidates/328_v4_tail_anchor_195_source.py` | `official_candidates/328_v4_tail_anchor_195_output.csv` | Restore tail with target std 195 from anchor source. |
+| `329_v4_tail_hard_195` | `high_risk_participant_reconstruction_v4` | `official_candidates/329_v4_tail_hard_195_source.py` | `official_candidates/329_v4_tail_hard_195_output.csv` | Restore tail with target std 195 from hard source. |
+| `330_v4_tail_soft_195` | `high_risk_participant_reconstruction_v4` | `official_candidates/330_v4_tail_soft_195_source.py` | `official_candidates/330_v4_tail_soft_195_output.csv` | Restore tail with target std 195 from soft source. |
+| `331_v4_tail_anchor_215` | `high_risk_participant_reconstruction_v4` | `official_candidates/331_v4_tail_anchor_215_source.py` | `official_candidates/331_v4_tail_anchor_215_output.csv` | Restore tail with target std 215 from anchor source. |
+| `332_v4_tail_hard_215` | `high_risk_participant_reconstruction_v4` | `official_candidates/332_v4_tail_hard_215_source.py` | `official_candidates/332_v4_tail_hard_215_output.csv` | Restore tail with target std 215 from hard source. |
+| `333_v4_tail_soft_215` | `high_risk_participant_reconstruction_v4` | `official_candidates/333_v4_tail_soft_215_source.py` | `official_candidates/333_v4_tail_soft_215_output.csv` | Restore tail with target std 215 from soft source. |
+| `334_v4_tail_anchor_235` | `high_risk_participant_reconstruction_v4` | `official_candidates/334_v4_tail_anchor_235_source.py` | `official_candidates/334_v4_tail_anchor_235_output.csv` | Restore tail with target std 235 from anchor source. |
+| `335_v4_tail_hard_235` | `high_risk_participant_reconstruction_v4` | `official_candidates/335_v4_tail_hard_235_source.py` | `official_candidates/335_v4_tail_hard_235_output.csv` | Restore tail with target std 235 from hard source. |
+| `336_v4_tail_soft_235` | `high_risk_participant_reconstruction_v4` | `official_candidates/336_v4_tail_soft_235_source.py` | `official_candidates/336_v4_tail_soft_235_output.csv` | Restore tail with target std 235 from soft source. |
+| `337_v4_tail_anchor_255` | `high_risk_participant_reconstruction_v4` | `official_candidates/337_v4_tail_anchor_255_source.py` | `official_candidates/337_v4_tail_anchor_255_output.csv` | Restore tail with target std 255 from anchor source. |
+| `338_v4_tail_hard_255` | `high_risk_participant_reconstruction_v4` | `official_candidates/338_v4_tail_hard_255_source.py` | `official_candidates/338_v4_tail_hard_255_output.csv` | Restore tail with target std 255 from hard source. |
+| `339_v4_tail_soft_255` | `high_risk_participant_reconstruction_v4` | `official_candidates/339_v4_tail_soft_255_source.py` | `official_candidates/339_v4_tail_soft_255_output.csv` | Restore tail with target std 255 from soft source. |
+| `340_v4_champion_fusion_01` | `high_risk_participant_reconstruction_v4` | `official_candidates/340_v4_champion_fusion_01_source.py` | `official_candidates/340_v4_champion_fusion_01_output.csv` | Fusion champion rank 1 combining reconstruction components. |
+| `341_v4_champion_fusion_02` | `high_risk_participant_reconstruction_v4` | `official_candidates/341_v4_champion_fusion_02_source.py` | `official_candidates/341_v4_champion_fusion_02_output.csv` | Fusion champion rank 2 combining reconstruction components. |
+| `342_v4_champion_fusion_03` | `high_risk_participant_reconstruction_v4` | `official_candidates/342_v4_champion_fusion_03_source.py` | `official_candidates/342_v4_champion_fusion_03_output.csv` | Fusion champion rank 3 combining reconstruction components. |
+| `343_v4_champion_fusion_04` | `high_risk_participant_reconstruction_v4` | `official_candidates/343_v4_champion_fusion_04_source.py` | `official_candidates/343_v4_champion_fusion_04_output.csv` | Fusion champion rank 4 combining reconstruction components. |
+| `344_v4_champion_fusion_05` | `high_risk_participant_reconstruction_v4` | `official_candidates/344_v4_champion_fusion_05_source.py` | `official_candidates/344_v4_champion_fusion_05_output.csv` | Fusion champion rank 5 combining reconstruction components. |
+| `345_v4_champion_fusion_06` | `high_risk_participant_reconstruction_v4` | `official_candidates/345_v4_champion_fusion_06_source.py` | `official_candidates/345_v4_champion_fusion_06_output.csv` | Fusion champion rank 6 combining reconstruction components. |
+| `346_v4_champion_fusion_07` | `high_risk_participant_reconstruction_v4` | `official_candidates/346_v4_champion_fusion_07_source.py` | `official_candidates/346_v4_champion_fusion_07_output.csv` | Fusion champion rank 7 combining reconstruction components. |
+| `347_v4_champion_fusion_08` | `high_risk_participant_reconstruction_v4` | `official_candidates/347_v4_champion_fusion_08_source.py` | `official_candidates/347_v4_champion_fusion_08_output.csv` | Fusion champion rank 8 combining reconstruction components. |
+| `348_v4_champion_fusion_09` | `high_risk_participant_reconstruction_v4` | `official_candidates/348_v4_champion_fusion_09_source.py` | `official_candidates/348_v4_champion_fusion_09_output.csv` | Fusion champion rank 9 combining reconstruction components. |
+| `349_v4_champion_fusion_10` | `high_risk_participant_reconstruction_v4` | `official_candidates/349_v4_champion_fusion_10_source.py` | `official_candidates/349_v4_champion_fusion_10_output.csv` | Fusion champion rank 10 combining reconstruction components. |
+
+Risk label for all V4 rows: `high_risk_participant_trt_reconstruction_v4`. Current next manual upload target: `349_v4_champion_fusion_10`.

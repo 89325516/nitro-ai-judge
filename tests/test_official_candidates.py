@@ -25,15 +25,16 @@ class OfficialCandidateTest(unittest.TestCase):
         first = ledger["submissions"][0]
         self.assertEqual("4e1670481a8f", first["submission_id"])
         self.assertAlmostEqual(36.11668, float(first["official_partial_score"]))
-        self.assertAlmostEqual(53.8099243, float(ledger["best_official_score"]))
-        self.assertEqual("199", ledger["best_official_candidate_id"])
-        self.assertEqual("manual_199_score_53_8099243", ledger["best_official_submission_id"])
-        self.assertEqual("269", ledger["next_manual_upload_target"])
+        self.assertAlmostEqual(55.0, float(ledger["best_official_score"]))
+        self.assertEqual("269", ledger["best_official_candidate_id"])
+        self.assertEqual("manual_269_score_55_0_approx", ledger["best_official_submission_id"])
+        self.assertTrue(ledger["best_official_score_approximate"])
+        self.assertEqual("349", ledger["next_manual_upload_target"])
         self.assertTrue(ledger["latest_official_feedback_submission_id_missing"])
 
     def test_scored_anchor_candidates_remain_upload_ready(self) -> None:
         ledger = self.ledger()
-        expected = {"087": 37.35945, "099": 38.20618, "129": 37.89482, "159": 38.87076, "199": 53.8099243}
+        expected = {"087": 37.35945, "099": 38.20618, "129": 37.89482, "159": 38.87076, "199": 53.8099243, "269": 55.0}
         for cid, score in expected.items():
             with self.subTest(candidate=cid):
                 candidate = next(row for row in ledger["pending_candidates"] if row["candidate_id"] == cid)
@@ -46,10 +47,10 @@ class OfficialCandidateTest(unittest.TestCase):
     def test_only_current_batch_has_pending_upload_targets(self) -> None:
         ledger = self.ledger()
         pending = [row for row in ledger["pending_candidates"] if row["status"] == "pending"]
-        self.assertEqual(20, len(pending))
-        self.assertEqual({str(i) for i in range(250, 270)}, {row["candidate_id"] for row in pending})
+        self.assertEqual(80, len(pending))
+        self.assertEqual({str(i) for i in range(270, 350)}, {row["candidate_id"] for row in pending})
         targets = [row for row in pending if row["next_manual_upload_target"]]
-        self.assertEqual(["269"], [row["candidate_id"] for row in targets])
+        self.assertEqual(["349"], [row["candidate_id"] for row in targets])
 
     def test_existing_candidate_outputs_match_test_contract(self) -> None:
         expected_ids = [row["datapointID"] for row in read_csv(ROOT / "data/test_data.csv")]

@@ -22,16 +22,20 @@ class NoiseAwareV3PushTest(unittest.TestCase):
     def report(self) -> dict:
         return json.loads((ROOT / "reports/noise_aware_v3_push_report.json").read_text(encoding="utf-8"))
 
-    def test_records_249_without_replacing_199_best(self) -> None:
+    def test_records_v3_history_before_v4_anchor(self) -> None:
         ledger = json.loads((ROOT / "reports/official_submission_ledger.json").read_text(encoding="utf-8"))
-        self.assertEqual("199", ledger["best_official_candidate_id"])
-        self.assertAlmostEqual(53.8099243, float(ledger["best_official_score"]))
-        self.assertEqual("manual_199_score_53_8099243", ledger["best_official_submission_id"])
-        self.assertEqual("249", ledger["latest_official_feedback_candidate_id"])
+        self.assertEqual("269", ledger["best_official_candidate_id"])
+        self.assertAlmostEqual(55.0, float(ledger["best_official_score"]))
+        self.assertTrue(ledger["best_official_score_approximate"])
+        self.assertEqual("manual_269_score_55_0_approx", ledger["best_official_submission_id"])
+        self.assertEqual("269", ledger["latest_official_feedback_candidate_id"])
         scored = next(row for row in ledger["pending_candidates"] if row["candidate_id"] == "249")
         self.assertEqual("official_scored", scored["status"])
         self.assertEqual("manual_249_score_53_8099243", scored["official_submission_id"])
         self.assertFalse(scored["next_manual_upload_target"])
+        anchor = next(row for row in ledger["pending_candidates"] if row["candidate_id"] == "269")
+        self.assertEqual("official_scored", anchor["status"])
+        self.assertAlmostEqual(55.0, float(anchor["official_partial_score"]))
 
     def test_candidate_269_is_next_upload_target(self) -> None:
         report = self.report()

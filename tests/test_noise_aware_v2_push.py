@@ -22,11 +22,11 @@ class NoiseAwareV2PushTest(unittest.TestCase):
     def report(self) -> dict:
         return json.loads((ROOT / "reports/noise_aware_v2_push_report.json").read_text(encoding="utf-8"))
 
-    def test_records_199_as_current_best(self) -> None:
+    def test_records_199_as_historical_best_anchor(self) -> None:
         ledger = json.loads((ROOT / "reports/official_submission_ledger.json").read_text(encoding="utf-8"))
-        self.assertAlmostEqual(53.8099243, float(ledger["best_official_score"]))
-        self.assertEqual("199", ledger["best_official_candidate_id"])
-        self.assertEqual("manual_199_score_53_8099243", ledger["best_official_submission_id"])
+        self.assertAlmostEqual(55.0, float(ledger["best_official_score"]))
+        self.assertEqual("269", ledger["best_official_candidate_id"])
+        self.assertEqual("manual_269_score_55_0_approx", ledger["best_official_submission_id"])
         scored = next(row for row in ledger["pending_candidates"] if row["candidate_id"] == "199")
         self.assertEqual("official_scored", scored["status"])
         self.assertFalse(scored["next_manual_upload_target"])
