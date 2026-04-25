@@ -84,6 +84,25 @@ Changes should keep module boundaries small, avoid hidden state, prefer injected
 
 
 
+
+### BERT Failure Recovery
+
+Candidate `022_bert_two_head_scale120` is rejected as a standalone candidate after scoring `29.481623660280615 / 100` on local three-fold unseen-text validation. Do not upload it unless intentionally spending a high-risk official probe.
+
+Run the hybrid recovery path with a tiny backend for interface checks:
+
+```bash
+python3 experiments/bert_hybrid.py --train data/train_data.csv --test data/test_data.csv --output reports/bert_hybrid_tiny_check.csv --report reports/bert_hybrid_tiny_check.json --backend tiny --epochs 1 --learning-rate 0.01 --chunk-words 8 --max-length 32 --max-train-chunks 2
+```
+
+Run the real BERT hybrid only when ready for a slower experiment:
+
+```bash
+PYTORCH_ENABLE_MPS_FALLBACK=1 python3 experiments/bert_hybrid.py --train data/train_data.csv --test data/test_data.csv --output reports/bert_hybrid_candidate.csv --report reports/bert_hybrid_candidate.json --backend hf --device mps --epochs 1 --unfreeze-layers 1
+```
+
+A BERT hybrid is not promoted unless its full local text-holdout score beats the frozen Transformer local estimate.
+
 ### BERT Two-Head Experiment
 
 Run a deterministic smoke test without downloading model weights:

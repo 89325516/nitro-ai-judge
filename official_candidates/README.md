@@ -85,5 +85,6 @@ After each successful official submission, record the score with `python3 experi
 21. `022_bert_two_head_scale120`
    - Source: `official_candidates/022_bert_two_head_scale120_source.py`
    - Output: `official_candidates/022_bert_two_head_scale120_output.csv`
-   - Hypothesis: a task-adapted two-head Romanian BERT model may rank word difficulty differently from frozen embeddings; scale `1.20` corrects the raw BERT mean toward previous official candidates.
-   - Recommendation: submit only after Candidate `003_safe_v6` and the frozen Transformer scale candidates unless you want to explicitly probe the fine-tuned BERT direction.
+   - Local estimate: `29.481623660280615 / 100`
+   - Decision: rejected as a standalone official candidate.
+   - Reason: it loses both R2 and Pearson against Ridge, Safe V6, Semantic TRT, and frozen Transformer local estimates.

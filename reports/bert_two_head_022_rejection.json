@@ -1,0 +1,17 @@
+{
+  "candidate_id": "022",
+  "decision": "rejected",
+  "evidence_class": "local_estimate",
+  "fallback_candidates": {
+    "baseline_text_holdout": 38.388843675977554,
+    "safe_v6_text_holdout": 38.625340473796726,
+    "semantic_trt_text_holdout": 38.55469362010065,
+    "transformer_text_holdout": 38.99673098959958
+  },
+  "fold_count": 3,
+  "mean_pearson": 0.4206046069376139,
+  "mean_r2": 0.1690278662679983,
+  "mean_score": 29.481623660280615,
+  "recommendation": "Do not submit Candidate 022 as a standalone official candidate.",
+  "score_type": "local_estimate"
+}

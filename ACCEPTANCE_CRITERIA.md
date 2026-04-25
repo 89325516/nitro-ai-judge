@@ -95,6 +95,15 @@
 - Token-to-word mapping preserves one prediction per input row.
 - BERT model weights and generated model artifacts are not tracked in git.
 
+## BERT Failure Recovery
+
+- Candidate `022_bert_two_head_scale120` is not recommended for official upload after a local text-holdout score below the active fallback candidates.
+- Future BERT official candidates require a full local text-holdout report before packaging as upload-ready.
+- BERT hybrid outputs contain exactly one row for each input test datapoint.
+- BERT hybrid answers are finite and non-negative.
+- BERT hybrid reports are labeled as local estimates unless official judge feedback is available.
+- BERT hybrid promotion requires beating the frozen Transformer local estimate before official packaging.
+
 ## Official Feedback
 
 - Official judge scores outrank local estimates when choosing submission candidates.
