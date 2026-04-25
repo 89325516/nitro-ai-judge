@@ -23,3 +23,4 @@ env/
 
 # Source prompt material excluded from this public repository
 Nitro AI Judge.pdf
+.claude/
