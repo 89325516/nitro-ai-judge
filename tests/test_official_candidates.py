@@ -26,21 +26,21 @@ class OfficialCandidateTest(unittest.TestCase):
         self.assertGreaterEqual(float(ledger["best_official_score"]), float(first["official_partial_score"]))
         self.assertTrue(ledger["should_choose_best_as_final_now"])
 
-    def test_latest_largest_id_feedback_can_be_below_current_best(self) -> None:
+    def test_latest_largest_id_feedback_is_current_best_again(self) -> None:
         ledger = json.loads((ROOT / "reports/official_submission_ledger.json").read_text(encoding="utf-8"))
-        self.assertAlmostEqual(38.20618, float(ledger["best_official_score"]))
-        self.assertEqual("099", ledger["best_official_candidate_id"])
-        self.assertEqual("manual_099_score_38_20618", ledger["best_official_submission_id"])
+        self.assertAlmostEqual(38.87076, float(ledger["best_official_score"]))
+        self.assertEqual("159", ledger["best_official_candidate_id"])
+        self.assertEqual("manual_159_score_38_87076", ledger["best_official_submission_id"])
         self.assertTrue(ledger["latest_official_feedback_submission_id_missing"])
         self.assertEqual("largest_numeric_candidate_id_at_manual_upload_time", ledger["latest_manual_submission_policy"])
-        self.assertEqual("129", ledger["latest_official_feedback_candidate_id"])
-        self.assertAlmostEqual(37.89482, float(ledger["latest_official_feedback_score"]))
+        self.assertEqual("159", ledger["latest_official_feedback_candidate_id"])
+        self.assertAlmostEqual(38.87076, float(ledger["latest_official_feedback_score"]))
         latest = ledger["submissions"][-1]
-        self.assertEqual("129", latest["candidate_id"])
+        self.assertEqual("159", latest["candidate_id"])
         self.assertEqual("success", latest["state"])
-        self.assertAlmostEqual(37.89482, float(latest["official_partial_score"]))
+        self.assertAlmostEqual(38.87076, float(latest["official_partial_score"]))
         self.assertTrue(latest["submission_id_missing"])
-        self.assertFalse(latest["chosen_as_final"])
+        self.assertTrue(latest["chosen_as_final"])
 
     def test_candidate_087_is_scored_and_still_upload_ready(self) -> None:
         ledger = json.loads((ROOT / "reports/official_submission_ledger.json").read_text(encoding="utf-8"))
@@ -73,7 +73,18 @@ class OfficialCandidateTest(unittest.TestCase):
         self.assertTrue(candidate["submission_id_missing"])
         self.assertAlmostEqual(37.89482, float(candidate["official_partial_score"]))
         self.assertFalse(candidate["next_manual_upload_target"])
-        self.assertAlmostEqual(38.20618, float(ledger["best_official_score"]))
+        self.assertAlmostEqual(38.87076, float(ledger["best_official_score"]))
+
+
+    def test_candidate_159_is_scored_as_current_best(self) -> None:
+        ledger = json.loads((ROOT / "reports/official_submission_ledger.json").read_text(encoding="utf-8"))
+        candidate = next(row for row in ledger["pending_candidates"] if row["candidate_id"] == "159")
+        self.assertEqual("official_scored", candidate["status"])
+        self.assertEqual("manual_159_score_38_87076", candidate["official_submission_id"])
+        self.assertTrue(candidate["submission_id_missing"])
+        self.assertAlmostEqual(38.87076, float(candidate["official_partial_score"]))
+        self.assertFalse(candidate["next_manual_upload_target"])
+        self.assertTrue(candidate["upload_ready"])
 
     def test_pending_candidates_are_upload_ready(self) -> None:
         validation = json.loads((ROOT / "reports/official_candidate_validation.json").read_text(encoding="utf-8"))

@@ -23,14 +23,13 @@ class AggressiveFeedbackPushTest(unittest.TestCase):
     def report(self) -> dict:
         return json.loads((ROOT / "reports/aggressive_feedback_push_report.json").read_text(encoding="utf-8"))
 
-    def test_ledger_records_candidate_099_score(self) -> None:
+    def test_ledger_preserves_candidate_099_score_history(self) -> None:
         ledger = json.loads((ROOT / "reports/official_submission_ledger.json").read_text(encoding="utf-8"))
-        self.assertAlmostEqual(38.20618, float(ledger["best_official_score"]))
-        self.assertEqual("099", ledger["best_official_candidate_id"])
-        self.assertEqual("manual_099_score_38_20618", ledger["best_official_submission_id"])
-        self.assertTrue(ledger["latest_official_feedback_submission_id_missing"])
+        self.assertAlmostEqual(38.87076, float(ledger["best_official_score"]))
+        self.assertEqual("159", ledger["best_official_candidate_id"])
         scored = next(row for row in ledger["pending_candidates"] if row["candidate_id"] == "099")
         self.assertEqual("official_scored", scored["status"])
+        self.assertEqual("manual_099_score_38_20618", scored["official_submission_id"])
         self.assertAlmostEqual(38.20618, float(scored["official_partial_score"]))
 
     def test_candidate_129_was_batch_champion_and_is_now_scored(self) -> None:

@@ -1,0 +1,1802 @@
+{
+  "candidate_count": 40,
+  "candidates": [
+    {
+      "answer_mean": 255.04852355543767,
+      "answer_std": 146.1803200167934,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "160",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "family": "noise_aware_scaled_external",
+      "hypothesis": "Blend clean public aggregate TRT prior calibrated to median.",
+      "ids_match_test_order": true,
+      "mae_vs_159": 20.04072564180371,
+      "mean_delta_vs_159": 1.655172354730894e-08,
+      "name": "noise_external_clean_01",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior"
+      ],
+      "output_bytes": 166624,
+      "output_file": "official_candidates/160_noise_external_clean_01_output.csv",
+      "reproduction_command": "python3 official_candidates/160_noise_external_clean_01_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/159_rebound_champion_counter_prior_stack_output.csv --output official_candidates/160_noise_external_clean_01_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "row_count": 9425,
+      "source_bytes": 8382,
+      "source_file": "official_candidates/160_noise_external_clean_01_source.py",
+      "std_delta_vs_159": -5.969383209958323e-09,
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.04852355331568,
+      "answer_std": 146.18032000073504,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "161",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "family": "noise_aware_scaled_external",
+      "hypothesis": "Blend clean public aggregate TRT prior calibrated to trim10.",
+      "ids_match_test_order": true,
+      "mae_vs_159": 22.01734793209549,
+      "mean_delta_vs_159": 1.4429730299525545e-08,
+      "name": "noise_external_clean_02",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior"
+      ],
+      "output_bytes": 167094,
+      "output_file": "official_candidates/161_noise_external_clean_02_output.csv",
+      "reproduction_command": "python3 official_candidates/161_noise_external_clean_02_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/159_rebound_champion_counter_prior_stack_output.csv --output official_candidates/161_noise_external_clean_02_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "row_count": 9425,
+      "source_bytes": 8382,
+      "source_file": "official_candidates/161_noise_external_clean_02_source.py",
+      "std_delta_vs_159": -2.202773430326488e-08,
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.04852351883287,
+      "answer_std": 146.18032001789652,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "162",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "family": "noise_aware_scaled_external",
+      "hypothesis": "Blend clean public aggregate TRT prior calibrated to winsor10.",
+      "ids_match_test_order": true,
+      "mae_vs_159": 22.04181424328912,
+      "mean_delta_vs_159": -2.00530791971687e-08,
+      "name": "noise_external_clean_03",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior"
+      ],
+      "output_bytes": 167119,
+      "output_file": "official_candidates/162_noise_external_clean_03_output.csv",
+      "reproduction_command": "python3 official_candidates/162_noise_external_clean_03_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/159_rebound_champion_counter_prior_stack_output.csv --output official_candidates/162_noise_external_clean_03_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "row_count": 9425,
+      "source_bytes": 8383,
+      "source_file": "official_candidates/162_noise_external_clean_03_source.py",
+      "std_delta_vs_159": -4.8662514018360525e-09,
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.04852353421748,
+      "answer_std": 146.18032003502935,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "163",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "family": "noise_aware_scaled_external",
+      "hypothesis": "Blend clean public aggregate TRT prior calibrated to zeroaware.",
+      "ids_match_test_order": true,
+      "mae_vs_159": 22.11585185761273,
+      "mean_delta_vs_159": -4.668464725909871e-09,
+      "name": "noise_external_clean_04",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior"
+      ],
+      "output_bytes": 167124,
+      "output_file": "official_candidates/163_noise_external_clean_04_output.csv",
+      "reproduction_command": "python3 official_candidates/163_noise_external_clean_04_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/159_rebound_champion_counter_prior_stack_output.csv --output official_candidates/163_noise_external_clean_04_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "row_count": 9425,
+      "source_bytes": 8384,
+      "source_file": "official_candidates/163_noise_external_clean_04_source.py",
+      "std_delta_vs_159": 1.2266582416486926e-08,
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.07190139522544,
+      "answer_std": 146.13844281818612,
+      "answer_zero_rate": 0.002122015915119363,
+      "answers_finite_non_negative": true,
+      "candidate_id": "164",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "family": "noise_aware_scaled_external",
+      "hypothesis": "Blend clean public aggregate TRT prior calibrated to positive.",
+      "ids_match_test_order": true,
+      "mae_vs_159": 37.61136055066313,
+      "mean_delta_vs_159": 0.02337785633949352,
+      "name": "noise_external_clean_05",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior"
+      ],
+      "output_bytes": 167644,
+      "output_file": "official_candidates/164_noise_external_clean_05_output.csv",
+      "reproduction_command": "python3 official_candidates/164_noise_external_clean_05_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/159_rebound_champion_counter_prior_stack_output.csv --output official_candidates/164_noise_external_clean_05_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "row_count": 9425,
+      "source_bytes": 8384,
+      "source_file": "official_candidates/164_noise_external_clean_05_source.py",
+      "std_delta_vs_159": -0.04187720457665023,
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.0485234960212,
+      "answer_std": 146.18032005849298,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "165",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "family": "noise_aware_scaled_external",
+      "hypothesis": "Blend clean public aggregate TRT prior calibrated to median.",
+      "ids_match_test_order": true,
+      "mae_vs_159": 70.47623643501326,
+      "mean_delta_vs_159": -4.286474108994298e-08,
+      "name": "noise_external_clean_06",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior"
+      ],
+      "output_bytes": 168589,
+      "output_file": "official_candidates/165_noise_external_clean_06_output.csv",
+      "reproduction_command": "python3 official_candidates/165_noise_external_clean_06_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/159_rebound_champion_counter_prior_stack_output.csv --output official_candidates/165_noise_external_clean_06_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "row_count": 9425,
+      "source_bytes": 8383,
+      "source_file": "official_candidates/165_noise_external_clean_06_source.py",
+      "std_delta_vs_159": 3.5730209901885246e-08,
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.04852352997347,
+      "answer_std": 146.18032002893239,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "166",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "family": "noise_aware_scaled_external",
+      "hypothesis": "Blend clean public aggregate TRT prior calibrated to trim20.",
+      "ids_match_test_order": true,
+      "mae_vs_159": 21.812189967745354,
+      "mean_delta_vs_159": -8.912479643186089e-09,
+      "name": "noise_external_clean_07",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior"
+      ],
+      "output_bytes": 166999,
+      "output_file": "official_candidates/166_noise_external_clean_07_output.csv",
+      "reproduction_command": "python3 official_candidates/166_noise_external_clean_07_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/159_rebound_champion_counter_prior_stack_output.csv --output official_candidates/166_noise_external_clean_07_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "row_count": 9425,
+      "source_bytes": 8382,
+      "source_file": "official_candidates/166_noise_external_clean_07_source.py",
+      "std_delta_vs_159": 6.1696141528955195e-09,
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.04852353527855,
+      "answer_std": 146.1803200106477,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "167",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "family": "noise_aware_scaled_external",
+      "hypothesis": "Blend clean public aggregate TRT prior calibrated to winsor20.",
+      "ids_match_test_order": true,
+      "mae_vs_159": 21.386015115968167,
+      "mean_delta_vs_159": -3.6073970477445982e-09,
+      "name": "noise_external_clean_08",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior"
+      ],
+      "output_bytes": 167069,
+      "output_file": "official_candidates/167_noise_external_clean_08_output.csv",
+      "reproduction_command": "python3 official_candidates/167_noise_external_clean_08_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/159_rebound_champion_counter_prior_stack_output.csv --output official_candidates/167_noise_external_clean_08_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "row_count": 9425,
+      "source_bytes": 8384,
+      "source_file": "official_candidates/167_noise_external_clean_08_source.py",
+      "std_delta_vs_159": -1.2115066283513443e-08,
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.0485234960212,
+      "answer_std": 146.18032005849298,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "168",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "family": "noise_aware_scaled_external",
+      "hypothesis": "Blend clean public aggregate TRT prior calibrated to zeroaware.",
+      "ids_match_test_order": true,
+      "mae_vs_159": 70.47623643501326,
+      "mean_delta_vs_159": -4.286474108994298e-08,
+      "name": "noise_external_clean_09",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior"
+      ],
+      "output_bytes": 168589,
+      "output_file": "official_candidates/168_noise_external_clean_09_output.csv",
+      "reproduction_command": "python3 official_candidates/168_noise_external_clean_09_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/159_rebound_champion_counter_prior_stack_output.csv --output official_candidates/168_noise_external_clean_09_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "row_count": 9425,
+      "source_bytes": 8386,
+      "source_file": "official_candidates/168_noise_external_clean_09_source.py",
+      "std_delta_vs_159": 3.5730209901885246e-08,
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.07190139522544,
+      "answer_std": 146.13844281818612,
+      "answer_zero_rate": 0.002122015915119363,
+      "answers_finite_non_negative": true,
+      "candidate_id": "169",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "family": "noise_aware_scaled_external",
+      "hypothesis": "Blend clean public aggregate TRT prior calibrated to positive.",
+      "ids_match_test_order": true,
+      "mae_vs_159": 37.61136055066313,
+      "mean_delta_vs_159": 0.02337785633949352,
+      "name": "noise_external_clean_10",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior"
+      ],
+      "output_bytes": 167644,
+      "output_file": "official_candidates/169_noise_external_clean_10_output.csv",
+      "reproduction_command": "python3 official_candidates/169_noise_external_clean_10_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/159_rebound_champion_counter_prior_stack_output.csv --output official_candidates/169_noise_external_clean_10_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "row_count": 9425,
+      "source_bytes": 8384,
+      "source_file": "official_candidates/169_noise_external_clean_10_source.py",
+      "std_delta_vs_159": -0.04187720457665023,
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.04852355543767,
+      "answer_std": 146.1803200167934,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "170",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "family": "noise_aware_scaled_external",
+      "hypothesis": "Mac-scaled ridge trained on denoised median labels with clean external features.",
+      "ids_match_test_order": true,
+      "mae_vs_159": 20.04072564180371,
+      "mean_delta_vs_159": 1.655172354730894e-08,
+      "name": "noise_scaled_ridge_01",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior",
+        "mac_scaled_model"
+      ],
+      "output_bytes": 166624,
+      "output_file": "official_candidates/170_noise_scaled_ridge_01_output.csv",
+      "reproduction_command": "python3 official_candidates/170_noise_scaled_ridge_01_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/159_rebound_champion_counter_prior_stack_output.csv --output official_candidates/170_noise_scaled_ridge_01_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "row_count": 9425,
+      "source_bytes": 8386,
+      "source_file": "official_candidates/170_noise_scaled_ridge_01_source.py",
+      "std_delta_vs_159": -5.969383209958323e-09,
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.04852353421748,
+      "answer_std": 146.18032003502935,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "171",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "family": "noise_aware_scaled_external",
+      "hypothesis": "Mac-scaled ridge trained on denoised zeroaware labels with clean external features.",
+      "ids_match_test_order": true,
+      "mae_vs_159": 22.11585185761273,
+      "mean_delta_vs_159": -4.668464725909871e-09,
+      "name": "noise_scaled_ridge_02",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior",
+        "mac_scaled_model"
+      ],
+      "output_bytes": 167124,
+      "output_file": "official_candidates/171_noise_scaled_ridge_02_output.csv",
+      "reproduction_command": "python3 official_candidates/171_noise_scaled_ridge_02_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/159_rebound_champion_counter_prior_stack_output.csv --output official_candidates/171_noise_scaled_ridge_02_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "row_count": 9425,
+      "source_bytes": 8388,
+      "source_file": "official_candidates/171_noise_scaled_ridge_02_source.py",
+      "std_delta_vs_159": 1.2266582416486926e-08,
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.04852354588863,
+      "answer_std": 146.18032001817767,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "172",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "family": "noise_aware_scaled_external",
+      "hypothesis": "Mac-scaled hgb trained on denoised trim10 labels with clean external features.",
+      "ids_match_test_order": true,
+      "mae_vs_159": 27.940041568806365,
+      "mean_delta_vs_159": 7.002682878010091e-09,
+      "name": "noise_scaled_hgb_03",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior",
+        "mac_scaled_model"
+      ],
+      "output_bytes": 166454,
+      "output_file": "official_candidates/172_noise_scaled_hgb_03_output.csv",
+      "reproduction_command": "python3 official_candidates/172_noise_scaled_hgb_03_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/159_rebound_champion_counter_prior_stack_output.csv --output official_candidates/172_noise_scaled_hgb_03_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "row_count": 9425,
+      "source_bytes": 8383,
+      "source_file": "official_candidates/172_noise_scaled_hgb_03_source.py",
+      "std_delta_vs_159": -4.585103852150496e-09,
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.04852353315647,
+      "answer_std": 146.1803200083344,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "173",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "family": "noise_aware_scaled_external",
+      "hypothesis": "Mac-scaled hgb trained on denoised winsor10 labels with clean external features.",
+      "ids_match_test_order": true,
+      "mae_vs_159": 26.70392928572944,
+      "mean_delta_vs_159": -5.729475560656283e-09,
+      "name": "noise_scaled_hgb_04",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior",
+        "mac_scaled_model"
+      ],
+      "output_bytes": 166454,
+      "output_file": "official_candidates/173_noise_scaled_hgb_04_output.csv",
+      "reproduction_command": "python3 official_candidates/173_noise_scaled_hgb_04_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/159_rebound_champion_counter_prior_stack_output.csv --output official_candidates/173_noise_scaled_hgb_04_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "row_count": 9425,
+      "source_bytes": 8386,
+      "source_file": "official_candidates/173_noise_scaled_hgb_04_source.py",
+      "std_delta_vs_159": -1.4428366057472886e-08,
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.04852355278516,
+      "answer_std": 146.18032000491763,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "174",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "family": "noise_aware_scaled_external",
+      "hypothesis": "Mac-scaled trees trained on denoised median labels with clean external features.",
+      "ids_match_test_order": true,
+      "mae_vs_159": 35.66733213506632,
+      "mean_delta_vs_159": 1.3899210671297624e-08,
+      "name": "noise_scaled_trees_05",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior",
+        "mac_scaled_model"
+      ],
+      "output_bytes": 166344,
+      "output_file": "official_candidates/174_noise_scaled_trees_05_output.csv",
+      "reproduction_command": "python3 official_candidates/174_noise_scaled_trees_05_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/159_rebound_champion_counter_prior_stack_output.csv --output official_candidates/174_noise_scaled_trees_05_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "row_count": 9425,
+      "source_bytes": 8386,
+      "source_file": "official_candidates/174_noise_scaled_trees_05_source.py",
+      "std_delta_vs_159": -1.7845138700067764e-08,
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.048523541114,
+      "answer_std": 146.18032001716983,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "175",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "family": "noise_aware_scaled_external",
+      "hypothesis": "Mac-scaled trees trained on denoised trim10 labels with clean external features.",
+      "ids_match_test_order": true,
+      "mae_vs_159": 34.765343580583554,
+      "mean_delta_vs_159": 2.2280630673776614e-09,
+      "name": "noise_scaled_trees_06",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior",
+        "mac_scaled_model"
+      ],
+      "output_bytes": 166599,
+      "output_file": "official_candidates/175_noise_scaled_trees_06_output.csv",
+      "reproduction_command": "python3 official_candidates/175_noise_scaled_trees_06_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/159_rebound_champion_counter_prior_stack_output.csv --output official_candidates/175_noise_scaled_trees_06_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "row_count": 9425,
+      "source_bytes": 8388,
+      "source_file": "official_candidates/175_noise_scaled_trees_06_source.py",
+      "std_delta_vs_159": -5.592937668552622e-09,
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.04852353156497,
+      "answer_std": 146.1803200200687,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "176",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "family": "noise_aware_scaled_external",
+      "hypothesis": "Mac-scaled trees trained on denoised zeroaware labels with clean external features.",
+      "ids_match_test_order": true,
+      "mae_vs_159": 34.4886484529443,
+      "mean_delta_vs_159": -7.320977601921186e-09,
+      "name": "noise_scaled_trees_07",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior",
+        "mac_scaled_model"
+      ],
+      "output_bytes": 166604,
+      "output_file": "official_candidates/176_noise_scaled_trees_07_output.csv",
+      "reproduction_command": "python3 official_candidates/176_noise_scaled_trees_07_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/159_rebound_champion_counter_prior_stack_output.csv --output official_candidates/176_noise_scaled_trees_07_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "row_count": 9425,
+      "source_bytes": 8391,
+      "source_file": "official_candidates/176_noise_scaled_trees_07_source.py",
+      "std_delta_vs_159": -2.6940654151985655e-09,
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.04852353846155,
+      "answer_std": 146.18032001900116,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "177",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "family": "noise_aware_scaled_external",
+      "hypothesis": "Mac-scaled hgb trained on denoised positive labels with clean external features.",
+      "ids_match_test_order": true,
+      "mae_vs_159": 34.93882058588859,
+      "mean_delta_vs_159": -4.2439296521479264e-10,
+      "name": "noise_scaled_hgb_08",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior",
+        "mac_scaled_model"
+      ],
+      "output_bytes": 167629,
+      "output_file": "official_candidates/177_noise_scaled_hgb_08_output.csv",
+      "reproduction_command": "python3 official_candidates/177_noise_scaled_hgb_08_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/159_rebound_champion_counter_prior_stack_output.csv --output official_candidates/177_noise_scaled_hgb_08_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "row_count": 9425,
+      "source_bytes": 8386,
+      "source_file": "official_candidates/177_noise_scaled_hgb_08_source.py",
+      "std_delta_vs_159": -3.76161324311397e-09,
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.04852353740054,
+      "answer_std": 146.18032002757286,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "178",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "family": "noise_aware_scaled_external",
+      "hypothesis": "Mac-scaled trees trained on denoised winsor20 labels with clean external features.",
+      "ids_match_test_order": true,
+      "mae_vs_159": 34.89832008827587,
+      "mean_delta_vs_159": -1.4854037999612046e-09,
+      "name": "noise_scaled_trees_09",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior",
+        "mac_scaled_model"
+      ],
+      "output_bytes": 166559,
+      "output_file": "official_candidates/178_noise_scaled_trees_09_output.csv",
+      "reproduction_command": "python3 official_candidates/178_noise_scaled_trees_09_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/159_rebound_champion_counter_prior_stack_output.csv --output official_candidates/178_noise_scaled_trees_09_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "row_count": 9425,
+      "source_bytes": 8390,
+      "source_file": "official_candidates/178_noise_scaled_trees_09_source.py",
+      "std_delta_vs_159": 4.810090104001574e-09,
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.07190139522544,
+      "answer_std": 146.13844281818612,
+      "answer_zero_rate": 0.002122015915119363,
+      "answers_finite_non_negative": true,
+      "candidate_id": "179",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "family": "noise_aware_scaled_external",
+      "hypothesis": "Mac-scaled ridge trained on denoised positive labels with clean external features.",
+      "ids_match_test_order": true,
+      "mae_vs_159": 37.61136055066313,
+      "mean_delta_vs_159": 0.02337785633949352,
+      "name": "noise_scaled_ridge_10",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior",
+        "mac_scaled_model"
+      ],
+      "output_bytes": 167644,
+      "output_file": "official_candidates/179_noise_scaled_ridge_10_output.csv",
+      "reproduction_command": "python3 official_candidates/179_noise_scaled_ridge_10_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/159_rebound_champion_counter_prior_stack_output.csv --output official_candidates/179_noise_scaled_ridge_10_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "row_count": 9425,
+      "source_bytes": 8388,
+      "source_file": "official_candidates/179_noise_scaled_ridge_10_source.py",
+      "std_delta_vs_159": -0.04187720457665023,
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.04852352997347,
+      "answer_std": 146.1803200307318,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "180",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "family": "noise_aware_scaled_external",
+      "hypothesis": "Empirical-Bayes denoising toward external prior with ridge.",
+      "ids_match_test_order": true,
+      "mae_vs_159": 25.217060706843505,
+      "mean_delta_vs_159": -8.912479643186089e-09,
+      "name": "noise_eb_external_01",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior",
+        "mac_scaled_model",
+        "empirical_bayes_shrinkage"
+      ],
+      "output_bytes": 167199,
+      "output_file": "official_candidates/180_noise_eb_external_01_output.csv",
+      "reproduction_command": "python3 official_candidates/180_noise_eb_external_01_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/159_rebound_champion_counter_prior_stack_output.csv --output official_candidates/180_noise_eb_external_01_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "row_count": 9425,
+      "source_bytes": 8402,
+      "source_file": "official_candidates/180_noise_eb_external_01_source.py",
+      "std_delta_vs_159": 7.969020998643828e-09,
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.13283172042443,
+      "answer_std": 146.0253792973309,
+      "answer_zero_rate": 0.004774535809018567,
+      "answers_finite_non_negative": true,
+      "candidate_id": "181",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "family": "noise_aware_scaled_external",
+      "hypothesis": "Empirical-Bayes denoising toward text prior with ridge.",
+      "ids_match_test_order": true,
+      "mae_vs_159": 24.7051734396817,
+      "mean_delta_vs_159": 0.08430818153848918,
+      "name": "noise_eb_external_02",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior",
+        "mac_scaled_model",
+        "empirical_bayes_shrinkage"
+      ],
+      "output_bytes": 167164,
+      "output_file": "official_candidates/181_noise_eb_external_02_output.csv",
+      "reproduction_command": "python3 official_candidates/181_noise_eb_external_02_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/159_rebound_champion_counter_prior_stack_output.csv --output official_candidates/181_noise_eb_external_02_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "row_count": 9425,
+      "source_bytes": 8397,
+      "source_file": "official_candidates/181_noise_eb_external_02_source.py",
+      "std_delta_vs_159": -0.15494072543188508,
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.11963554058357,
+      "answer_std": 146.04989225362263,
+      "answer_zero_rate": 0.004774535809018567,
+      "answers_finite_non_negative": true,
+      "candidate_id": "182",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "family": "noise_aware_scaled_external",
+      "hypothesis": "Empirical-Bayes denoising toward page prior with ridge.",
+      "ids_match_test_order": true,
+      "mae_vs_159": 26.517061500689653,
+      "mean_delta_vs_159": 0.0711120016976281,
+      "name": "noise_eb_external_03",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior",
+        "mac_scaled_model",
+        "empirical_bayes_shrinkage"
+      ],
+      "output_bytes": 167199,
+      "output_file": "official_candidates/182_noise_eb_external_03_output.csv",
+      "reproduction_command": "python3 official_candidates/182_noise_eb_external_03_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/159_rebound_champion_counter_prior_stack_output.csv --output official_candidates/182_noise_eb_external_03_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "row_count": 9425,
+      "source_bytes": 8398,
+      "source_file": "official_candidates/182_noise_eb_external_03_source.py",
+      "std_delta_vs_159": -0.13042776914014098,
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.04852353368696,
+      "answer_std": 146.18032001541337,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "183",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "family": "noise_aware_scaled_external",
+      "hypothesis": "Empirical-Bayes denoising toward hybrid prior with hgb.",
+      "ids_match_test_order": true,
+      "mae_vs_159": 26.724967748859417,
+      "mean_delta_vs_159": -5.198984354137792e-09,
+      "name": "noise_eb_external_04",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior",
+        "mac_scaled_model",
+        "empirical_bayes_shrinkage"
+      ],
+      "output_bytes": 166699,
+      "output_file": "official_candidates/183_noise_eb_external_04_output.csv",
+      "reproduction_command": "python3 official_candidates/183_noise_eb_external_04_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/159_rebound_champion_counter_prior_stack_output.csv --output official_candidates/183_noise_eb_external_04_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "row_count": 9425,
+      "source_bytes": 8399,
+      "source_file": "official_candidates/183_noise_eb_external_04_source.py",
+      "std_delta_vs_159": -7.34939931135159e-09,
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.04852353474803,
+      "answer_std": 146.18032001781498,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "184",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "family": "noise_aware_scaled_external",
+      "hypothesis": "Empirical-Bayes denoising toward external prior with hgb.",
+      "ids_match_test_order": true,
+      "mae_vs_159": 33.279680406472146,
+      "mean_delta_vs_159": -4.1379166759725194e-09,
+      "name": "noise_eb_external_05",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior",
+        "mac_scaled_model",
+        "empirical_bayes_shrinkage"
+      ],
+      "output_bytes": 166989,
+      "output_file": "official_candidates/184_noise_eb_external_05_output.csv",
+      "reproduction_command": "python3 official_candidates/184_noise_eb_external_05_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/159_rebound_champion_counter_prior_stack_output.csv --output official_candidates/184_noise_eb_external_05_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "row_count": 9425,
+      "source_bytes": 8401,
+      "source_file": "official_candidates/184_noise_eb_external_05_source.py",
+      "std_delta_vs_159": -4.947793286191882e-09,
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.0485235474801,
+      "answer_std": 146.1803200218998,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "185",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "family": "noise_aware_scaled_external",
+      "hypothesis": "Empirical-Bayes denoising toward text prior with hgb.",
+      "ids_match_test_order": true,
+      "mae_vs_159": 29.110285921167108,
+      "mean_delta_vs_159": 8.594156497565564e-09,
+      "name": "noise_eb_external_06",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior",
+        "mac_scaled_model",
+        "empirical_bayes_shrinkage"
+      ],
+      "output_bytes": 166854,
+      "output_file": "official_candidates/185_noise_eb_external_06_output.csv",
+      "reproduction_command": "python3 official_candidates/185_noise_eb_external_06_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/159_rebound_champion_counter_prior_stack_output.csv --output official_candidates/185_noise_eb_external_06_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "row_count": 9425,
+      "source_bytes": 8397,
+      "source_file": "official_candidates/185_noise_eb_external_06_source.py",
+      "std_delta_vs_159": -8.629683634353569e-10,
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.04852353793103,
+      "answer_std": 146.18032002316363,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "186",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "family": "noise_aware_scaled_external",
+      "hypothesis": "Empirical-Bayes denoising toward page prior with trees.",
+      "ids_match_test_order": true,
+      "mae_vs_159": 38.52989356870027,
+      "mean_delta_vs_159": -9.549125934427138e-10,
+      "name": "noise_eb_external_07",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior",
+        "mac_scaled_model",
+        "empirical_bayes_shrinkage"
+      ],
+      "output_bytes": 166869,
+      "output_file": "official_candidates/186_noise_eb_external_07_output.csv",
+      "reproduction_command": "python3 official_candidates/186_noise_eb_external_07_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/159_rebound_champion_counter_prior_stack_output.csv --output official_candidates/186_noise_eb_external_07_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "row_count": 9425,
+      "source_bytes": 8399,
+      "source_file": "official_candidates/186_noise_eb_external_07_source.py",
+      "std_delta_vs_159": 4.008597898064181e-10,
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.04852354535808,
+      "answer_std": 146.18032002794365,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "187",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "family": "noise_aware_scaled_external",
+      "hypothesis": "Empirical-Bayes denoising toward hybrid prior with trees.",
+      "ids_match_test_order": true,
+      "mae_vs_159": 34.790293110769234,
+      "mean_delta_vs_159": 6.47213482807274e-09,
+      "name": "noise_eb_external_08",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior",
+        "mac_scaled_model",
+        "empirical_bayes_shrinkage"
+      ],
+      "output_bytes": 166919,
+      "output_file": "official_candidates/187_noise_eb_external_08_output.csv",
+      "reproduction_command": "python3 official_candidates/187_noise_eb_external_08_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/159_rebound_champion_counter_prior_stack_output.csv --output official_candidates/187_noise_eb_external_08_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "row_count": 9425,
+      "source_bytes": 8401,
+      "source_file": "official_candidates/187_noise_eb_external_08_source.py",
+      "std_delta_vs_159": 5.180879725230625e-09,
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.04852352997347,
+      "answer_std": 146.18032001807524,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "188",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "family": "noise_aware_scaled_external",
+      "hypothesis": "Empirical-Bayes denoising toward external prior with trees.",
+      "ids_match_test_order": true,
+      "mae_vs_159": 42.30943632254641,
+      "mean_delta_vs_159": -8.912479643186089e-09,
+      "name": "noise_eb_external_09",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior",
+        "mac_scaled_model",
+        "empirical_bayes_shrinkage"
+      ],
+      "output_bytes": 167259,
+      "output_file": "official_candidates/188_noise_eb_external_09_output.csv",
+      "reproduction_command": "python3 official_candidates/188_noise_eb_external_09_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/159_rebound_champion_counter_prior_stack_output.csv --output official_candidates/188_noise_eb_external_09_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "row_count": 9425,
+      "source_bytes": 8403,
+      "source_file": "official_candidates/188_noise_eb_external_09_source.py",
+      "std_delta_vs_159": -4.687535692937672e-09,
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.04852354960215,
+      "answer_std": 146.1803200224922,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "189",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "family": "noise_aware_scaled_external",
+      "hypothesis": "Empirical-Bayes denoising toward hybrid prior with hgb.",
+      "ids_match_test_order": true,
+      "mae_vs_159": 32.90882088265252,
+      "mean_delta_vs_159": 1.0716206588767818e-08,
+      "name": "noise_eb_external_10",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior",
+        "mac_scaled_model",
+        "empirical_bayes_shrinkage"
+      ],
+      "output_bytes": 166894,
+      "output_file": "official_candidates/189_noise_eb_external_10_output.csv",
+      "reproduction_command": "python3 official_candidates/189_noise_eb_external_10_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/159_rebound_champion_counter_prior_stack_output.csv --output official_candidates/189_noise_eb_external_10_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "row_count": 9425,
+      "source_bytes": 8399,
+      "source_file": "official_candidates/189_noise_eb_external_10_source.py",
+      "std_delta_vs_159": -2.7057467377744615e-10,
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.04852354164456,
+      "answer_std": 146.18032002013277,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "190",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "family": "noise_aware_scaled_external",
+      "hypothesis": "Zero-inflated hurdle using log positive target and ridge.",
+      "ids_match_test_order": true,
+      "mae_vs_159": 25.897261323501326,
+      "mean_delta_vs_159": 2.758611117315013e-09,
+      "name": "noise_hurdle_scaled_01",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior",
+        "mac_scaled_model",
+        "zero_hurdle"
+      ],
+      "output_bytes": 167374,
+      "output_file": "official_candidates/190_noise_hurdle_scaled_01_output.csv",
+      "reproduction_command": "python3 official_candidates/190_noise_hurdle_scaled_01_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/159_rebound_champion_counter_prior_stack_output.csv --output official_candidates/190_noise_hurdle_scaled_01_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "row_count": 9425,
+      "source_bytes": 8407,
+      "source_file": "official_candidates/190_noise_hurdle_scaled_01_source.py",
+      "std_delta_vs_159": -2.630002882142435e-09,
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.04852353740054,
+      "answer_std": 146.18032001347356,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "191",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "family": "noise_aware_scaled_external",
+      "hypothesis": "Zero-inflated hurdle using log positive target and hgb.",
+      "ids_match_test_order": true,
+      "mae_vs_159": 24.55820056254642,
+      "mean_delta_vs_159": -1.4854037999612046e-09,
+      "name": "noise_hurdle_scaled_02",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior",
+        "mac_scaled_model",
+        "zero_hurdle"
+      ],
+      "output_bytes": 166964,
+      "output_file": "official_candidates/191_noise_hurdle_scaled_02_output.csv",
+      "reproduction_command": "python3 official_candidates/191_noise_hurdle_scaled_02_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/159_rebound_champion_counter_prior_stack_output.csv --output official_candidates/191_noise_hurdle_scaled_02_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "row_count": 9425,
+      "source_bytes": 8404,
+      "source_file": "official_candidates/191_noise_hurdle_scaled_02_source.py",
+      "std_delta_vs_159": -9.289209401686094e-09,
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.04852355225466,
+      "answer_std": 146.18032000672807,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "192",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "family": "noise_aware_scaled_external",
+      "hypothesis": "Zero-inflated hurdle using median positive target and ridge.",
+      "ids_match_test_order": true,
+      "mae_vs_159": 20.36851877474801,
+      "mean_delta_vs_159": 1.3368719464779133e-08,
+      "name": "noise_hurdle_scaled_03",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior",
+        "mac_scaled_model",
+        "zero_hurdle"
+      ],
+      "output_bytes": 166659,
+      "output_file": "official_candidates/192_noise_hurdle_scaled_03_output.csv",
+      "reproduction_command": "python3 official_candidates/192_noise_hurdle_scaled_03_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/159_rebound_champion_counter_prior_stack_output.csv --output official_candidates/192_noise_hurdle_scaled_03_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "row_count": 9425,
+      "source_bytes": 8409,
+      "source_file": "official_candidates/192_noise_hurdle_scaled_03_source.py",
+      "std_delta_vs_159": -1.603470423106046e-08,
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.04852352997347,
+      "answer_std": 146.18032001205725,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "193",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "family": "noise_aware_scaled_external",
+      "hypothesis": "Zero-inflated hurdle using trim10 positive target and hgb.",
+      "ids_match_test_order": true,
+      "mae_vs_159": 27.935301232679045,
+      "mean_delta_vs_159": -8.912479643186089e-09,
+      "name": "noise_hurdle_scaled_04",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior",
+        "mac_scaled_model",
+        "zero_hurdle"
+      ],
+      "output_bytes": 166629,
+      "output_file": "official_candidates/193_noise_hurdle_scaled_04_output.csv",
+      "reproduction_command": "python3 official_candidates/193_noise_hurdle_scaled_04_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/159_rebound_champion_counter_prior_stack_output.csv --output official_candidates/193_noise_hurdle_scaled_04_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "row_count": 9425,
+      "source_bytes": 8409,
+      "source_file": "official_candidates/193_noise_hurdle_scaled_04_source.py",
+      "std_delta_vs_159": -1.0705520026021986e-08,
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.04852353740054,
+      "answer_std": 146.1803200227057,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "194",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "family": "noise_aware_scaled_external",
+      "hypothesis": "Zero-inflated hurdle using winsor10 positive target and trees.",
+      "ids_match_test_order": true,
+      "mae_vs_159": 31.374654529018567,
+      "mean_delta_vs_159": -1.4854037999612046e-09,
+      "name": "noise_hurdle_scaled_05",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior",
+        "mac_scaled_model",
+        "zero_hurdle"
+      ],
+      "output_bytes": 166609,
+      "output_file": "official_candidates/194_noise_hurdle_scaled_05_output.csv",
+      "reproduction_command": "python3 official_candidates/194_noise_hurdle_scaled_05_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/159_rebound_champion_counter_prior_stack_output.csv --output official_candidates/194_noise_hurdle_scaled_05_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "row_count": 9425,
+      "source_bytes": 8412,
+      "source_file": "official_candidates/194_noise_hurdle_scaled_05_source.py",
+      "std_delta_vs_159": -5.707079253625125e-11,
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.04852354058357,
+      "answer_std": 146.18032002926233,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "195",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "family": "noise_aware_scaled_external",
+      "hypothesis": "Zero-inflated hurdle using positive positive target and hgb.",
+      "ids_match_test_order": true,
+      "mae_vs_159": 24.19113654769231,
+      "mean_delta_vs_159": 1.6976287042780314e-09,
+      "name": "noise_hurdle_scaled_06",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior",
+        "mac_scaled_model",
+        "zero_hurdle"
+      ],
+      "output_bytes": 166934,
+      "output_file": "official_candidates/195_noise_hurdle_scaled_06_output.csv",
+      "reproduction_command": "python3 official_candidates/195_noise_hurdle_scaled_06_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/159_rebound_champion_counter_prior_stack_output.csv --output official_candidates/195_noise_hurdle_scaled_06_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "row_count": 9425,
+      "source_bytes": 8411,
+      "source_file": "official_candidates/195_noise_hurdle_scaled_06_source.py",
+      "std_delta_vs_159": 6.49956177767308e-09,
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.04852354694958,
+      "answer_std": 146.18032002372854,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "196",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "family": "noise_aware_scaled_external",
+      "hypothesis": "Zero-inflated hurdle using external positive target and ridge.",
+      "ids_match_test_order": true,
+      "mae_vs_159": 61.41856848021221,
+      "mean_delta_vs_159": 8.063636869337643e-09,
+      "name": "noise_hurdle_scaled_07",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior",
+        "mac_scaled_model",
+        "zero_hurdle"
+      ],
+      "output_bytes": 168584,
+      "output_file": "official_candidates/196_noise_hurdle_scaled_07_output.csv",
+      "reproduction_command": "python3 official_candidates/196_noise_hurdle_scaled_07_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/159_rebound_champion_counter_prior_stack_output.csv --output official_candidates/196_noise_hurdle_scaled_07_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "row_count": 9425,
+      "source_bytes": 8413,
+      "source_file": "official_candidates/196_noise_hurdle_scaled_07_source.py",
+      "std_delta_vs_159": 9.657696864451282e-10,
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.04852354005305,
+      "answer_std": 146.18032002260074,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "197",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "family": "noise_aware_scaled_external",
+      "hypothesis": "Zero-inflated hurdle using hybrid positive target and hgb.",
+      "ids_match_test_order": true,
+      "mae_vs_159": 37.00297947405836,
+      "mean_delta_vs_159": 1.1671090760501102e-09,
+      "name": "noise_hurdle_scaled_08",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior",
+        "mac_scaled_model",
+        "zero_hurdle"
+      ],
+      "output_bytes": 167459,
+      "output_file": "official_candidates/197_noise_hurdle_scaled_08_output.csv",
+      "reproduction_command": "python3 official_candidates/197_noise_hurdle_scaled_08_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/159_rebound_champion_counter_prior_stack_output.csv --output official_candidates/197_noise_hurdle_scaled_08_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "row_count": 9425,
+      "source_bytes": 8408,
+      "source_file": "official_candidates/197_noise_hurdle_scaled_08_source.py",
+      "std_delta_vs_159": -1.6203216546273325e-10,
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.04852353687,
+      "answer_std": 146.18032003398352,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "198",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "family": "noise_aware_scaled_external",
+      "hypothesis": "Zero-inflated hurdle using hybrid positive target and trees.",
+      "ids_match_test_order": true,
+      "mae_vs_159": 37.71224322175067,
+      "mean_delta_vs_159": -2.0159518498985562e-09,
+      "name": "noise_hurdle_scaled_09",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior",
+        "mac_scaled_model",
+        "zero_hurdle"
+      ],
+      "output_bytes": 167554,
+      "output_file": "official_candidates/198_noise_hurdle_scaled_09_output.csv",
+      "reproduction_command": "python3 official_candidates/198_noise_hurdle_scaled_09_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/159_rebound_champion_counter_prior_stack_output.csv --output official_candidates/198_noise_hurdle_scaled_09_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "row_count": 9425,
+      "source_bytes": 8410,
+      "source_file": "official_candidates/198_noise_hurdle_scaled_09_source.py",
+      "std_delta_vs_159": 1.122074877457635e-08,
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.04852353941644,
+      "answer_std": 144.7036820573292,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "199",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "family": "noise_aware_scaled_external",
+      "hypothesis": "Champion: Mac-scaled model plus clean external aggregate prior and train-label denoising residuals.",
+      "ids_match_test_order": true,
+      "mae_vs_159": 6.753296578143236,
+      "mean_delta_vs_159": 5.304912065184908e-10,
+      "name": "noise_champion_scaled_external_denoising",
+      "next_manual_upload_target": true,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior",
+        "mac_scaled_model",
+        "empirical_bayes_shrinkage",
+        "zero_hurdle"
+      ],
+      "output_bytes": 166621,
+      "output_file": "official_candidates/199_noise_champion_scaled_external_denoising_output.csv",
+      "reproduction_command": "python3 official_candidates/199_noise_champion_scaled_external_denoising_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/159_rebound_champion_counter_prior_stack_output.csv --output official_candidates/199_noise_champion_scaled_external_denoising_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "row_count": 9425,
+      "source_bytes": 8426,
+      "source_file": "official_candidates/199_noise_champion_scaled_external_denoising_source.py",
+      "std_delta_vs_159": -1.4766379654335822,
+      "upload_ready": true
+    }
+  ],
+  "mode": "generate",
+  "movement_gate": {
+    "mae_vs_159_max": 18.0,
+    "mae_vs_159_min": 6.0,
+    "mean_delta_abs_max": 12.0,
+    "passed": true,
+    "std_delta_abs_max": 18.0
+  },
+  "next_manual_upload_target": "199",
+  "noise_profile": {
+    "between_word_mean_std": 193.54327901375845,
+    "global_mean": 264.440936321278,
+    "global_std": 311.6024263167944,
+    "global_zero_rate": 0.3062051623400636,
+    "mean_within_word_std": 210.46057417993865,
+    "median_within_word_std": 185.80950818871818,
+    "participant_reliability_inputs": {
+      "014": {
+        "mean": 274.3292655868649,
+        "std": 260.73459458834253,
+        "zero_rate": 0.18593299312181052
+      },
+      "015": {
+        "mean": 267.5413800754382,
+        "std": 285.1900463802789,
+        "zero_rate": 0.30441535389394275
+      },
+      "017": {
+        "mean": 250.33126248058576,
+        "std": 256.66152827948554,
+        "zero_rate": 0.2926558686487686
+      },
+      "020": {
+        "mean": 153.793210561349,
+        "std": 186.6577875059578,
+        "zero_rate": 0.3785222986465498
+      },
+      "021": {
+        "mean": 192.5793210561349,
+        "std": 225.76584373064966,
+        "zero_rate": 0.31750610161970266
+      },
+      "022": {
+        "mean": 285.39516307965386,
+        "std": 301.9332639079836,
+        "zero_rate": 0.26935877523851787
+      },
+      "023": {
+        "mean": 433.45018859551806,
+        "std": 424.00381469018697,
+        "zero_rate": 0.20501442201020634
+      },
+      "025": {
+        "mean": 262.92167739072556,
+        "std": 270.00926006691196,
+        "zero_rate": 0.2593743066341247
+      },
+      "026": {
+        "mean": 224.66030619037053,
+        "std": 250.37903502069827,
+        "zero_rate": 0.37009096960284005
+      },
+      "027": {
+        "mean": 373.1834923452407,
+        "std": 372.27671595173865,
+        "zero_rate": 0.22232083425782118
+      },
+      "028": {
+        "mean": 163.3723097404038,
+        "std": 191.71263398120954,
+        "zero_rate": 0.39338806301309076
+      },
+      "029": {
+        "mean": 199.3266030619037,
+        "std": 206.30282125602832,
+        "zero_rate": 0.3141779454182383
+      },
+      "030": {
+        "mean": 291.42844464166853,
+        "std": 304.3514033468413,
+        "zero_rate": 0.2646993565564677
+      },
+      "031": {
+        "mean": 274.4304415353894,
+        "std": 306.97166634212107,
+        "zero_rate": 0.32527179942311957
+      },
+      "032": {
+        "mean": 363.2440647881074,
+        "std": 472.79097528155535,
+        "zero_rate": 0.28111826048369204
+      },
+      "033": {
+        "mean": 257.39937874417575,
+        "std": 293.8146300949539,
+        "zero_rate": 0.3212780119813623
+      },
+      "034": {
+        "mean": 310.7572664743732,
+        "std": 362.7512099275008,
+        "zero_rate": 0.2957621477701353
+      },
+      "035": {
+        "mean": 274.93188373641004,
+        "std": 305.0386751199026,
+        "zero_rate": 0.27779010428222767
+      },
+      "037": {
+        "mean": 243.5717772354116,
+        "std": 276.4913048415782,
+        "zero_rate": 0.31573108497892166
+      },
+      "038": {
+        "mean": 232.69780341690702,
+        "std": 267.36844707167137,
+        "zero_rate": 0.34368759707122254
+      },
+      "039": {
+        "mean": 290.0459285555802,
+        "std": 312.53412274063,
+        "zero_rate": 0.2866651874861327
+      },
+      "041": {
+        "mean": 240.21078322609276,
+        "std": 338.35293368571985,
+        "zero_rate": 0.3953849567339694
+      },
+      "042": {
+        "mean": 284.67716884845794,
+        "std": 304.296181054666,
+        "zero_rate": 0.25981806079431996
+      },
+      "043": {
+        "mean": 251.58486798313734,
+        "std": 266.4879407444842,
+        "zero_rate": 0.3004215664521855
+      },
+      "044": {
+        "mean": 261.0257377412913,
+        "std": 336.6479486957965,
+        "zero_rate": 0.354115819835811
+      },
+      "045": {
+        "mean": 427.52717994231193,
+        "std": 505.1631777219393,
+        "zero_rate": 0.272243177279787
+      },
+      "046": {
+        "mean": 280.39560683381404,
+        "std": 305.5332706294156,
+        "zero_rate": 0.3057466163745285
+      },
+      "048": {
+        "mean": 175.55558020856446,
+        "std": 198.49920530801032,
+        "zero_rate": 0.33769691590858664
+      },
+      "049": {
+        "mean": 225.2600399378744,
+        "std": 258.6287495501936,
+        "zero_rate": 0.31817173285999556
+      },
+      "050": {
+        "mean": 167.59995562458397,
+        "std": 194.41747214901204,
+        "zero_rate": 0.4177945418238296
+      }
+    },
+    "row_count": 135210,
+    "text_noise_stats": {
+      "arg_pisarapanui": {
+        "mean": 222.94521404521404,
+        "std": 265.0121229857749,
+        "zero_rate": 0.3383838383838384
+      },
+      "enc_wikimoon": {
+        "mean": 261.11520467836255,
+        "std": 299.92908743253963,
+        "zero_rate": 0.2801169590643275
+      },
+      "ins_humanrights": {
+        "mean": 295.14266247379453,
+        "std": 337.1046448761928,
+        "zero_rate": 0.3016771488469602
+      },
+      "lit_brokenapril": {
+        "mean": 281.7378676470588,
+        "std": 321.3756015047065,
+        "zero_rate": 0.29558823529411765
+      },
+      "lit_magicmountain": {
+        "mean": 277.0288188002474,
+        "std": 318.6407119514899,
+        "zero_rate": 0.29907235621521333
+      },
+      "lit_northwind": {
+        "mean": 221.63014492753624,
+        "std": 235.77622285802354,
+        "zero_rate": 0.31768115942028985
+      },
+      "lit_solaris": {
+        "mean": 295.5299857549858,
+        "std": 354.1376943781712,
+        "zero_rate": 0.29754273504273504
+      },
+      "popsci_caveman": {
+        "mean": 264.28649289099525,
+        "std": 307.8034574135857,
+        "zero_rate": 0.2981832543443918
+      },
+      "popsci_multipleye": {
+        "mean": 239.09854721549638,
+        "std": 279.41478704289864,
+        "zero_rate": 0.30851493139628733
+      }
+    },
+    "unique_word_count": 4507,
+    "within_to_between_ratio": 1.087408331885178
+  },
+  "official_feedback": {
+    "candidate_id": "159",
+    "official_partial_score": 38.87076,
+    "submission_id": "manual_159_score_38_87076",
+    "submission_id_missing": true
+  },
+  "risk_label": "noise_aware_scaled_external_denoising"
+}

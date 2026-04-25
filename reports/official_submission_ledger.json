@@ -1,7 +1,7 @@
 {
-  "best_official_candidate_id": "099",
-  "best_official_score": 38.20618,
-  "best_official_submission_id": "manual_099_score_38_20618",
+  "best_official_candidate_id": "159",
+  "best_official_score": 38.87076,
+  "best_official_submission_id": "manual_159_score_38_87076",
   "evidence_order": [
     "official_score",
     "exact_score_with_truth",
@@ -25,13 +25,20 @@
   },
   "final_selection_policy": "choose_current_highest_successful_official_score",
   "latest_manual_submission_policy": "largest_numeric_candidate_id_at_manual_upload_time",
-  "latest_official_feedback_candidate_id": "129",
-  "latest_official_feedback_score": 37.89482,
-  "latest_official_feedback_submission_id": "manual_129_score_37_89482",
+  "latest_official_feedback_candidate_id": "159",
+  "latest_official_feedback_score": 38.87076,
+  "latest_official_feedback_submission_id": "manual_159_score_38_87076",
   "latest_official_feedback_submission_id_missing": true,
-  "next_manual_upload_target": "159",
-  "next_manual_upload_target_output": "official_candidates/159_rebound_champion_counter_prior_stack_output.csv",
-  "next_manual_upload_target_source": "official_candidates/159_rebound_champion_counter_prior_stack_source.py",
+  "next_manual_upload_target": "199",
+  "next_manual_upload_target_output": "official_candidates/199_noise_champion_scaled_external_denoising_output.csv",
+  "next_manual_upload_target_source": "official_candidates/199_noise_champion_scaled_external_denoising_source.py",
+  "noise_aware_anchor": {
+    "candidate_id": "159",
+    "next_search_direction": "train-label denoising and participant reliability modeling",
+    "official_partial_score": 38.87076,
+    "previous_best_candidate_id": "099",
+    "previous_best_official_score": 38.20618
+  },
   "official_80_target_met": false,
   "official_80_target_score": 80.0,
   "pending_candidates": [
@@ -3266,7 +3273,10 @@
       "local_report": "reports/failure_rebound_report.json",
       "manual_upload_priority": 159,
       "name": "rebound_champion_counter_prior_stack",
-      "next_manual_upload_target": true,
+      "next_manual_upload_target": false,
+      "official_complete_score": null,
+      "official_partial_score": 38.87076,
+      "official_submission_id": "manual_159_score_38_87076",
       "output_file": "official_candidates/159_rebound_champion_counter_prior_stack_output.csv",
       "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
       "risk_labels": [
@@ -3275,6 +3285,978 @@
         "high_risk_public_reconstruction"
       ],
       "source_file": "official_candidates/159_rebound_champion_counter_prior_stack_source.py",
+      "status": "official_scored",
+      "submission_id_missing": true,
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "160",
+      "hypothesis": "Blend clean public aggregate TRT prior calibrated to median.",
+      "local_report": "reports/noise_aware_push_report.json",
+      "manual_upload_priority": 160,
+      "name": "noise_external_clean_01",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior"
+      ],
+      "output_file": "official_candidates/160_noise_external_clean_01_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "source_file": "official_candidates/160_noise_external_clean_01_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "161",
+      "hypothesis": "Blend clean public aggregate TRT prior calibrated to trim10.",
+      "local_report": "reports/noise_aware_push_report.json",
+      "manual_upload_priority": 161,
+      "name": "noise_external_clean_02",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior"
+      ],
+      "output_file": "official_candidates/161_noise_external_clean_02_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "source_file": "official_candidates/161_noise_external_clean_02_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "162",
+      "hypothesis": "Blend clean public aggregate TRT prior calibrated to winsor10.",
+      "local_report": "reports/noise_aware_push_report.json",
+      "manual_upload_priority": 162,
+      "name": "noise_external_clean_03",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior"
+      ],
+      "output_file": "official_candidates/162_noise_external_clean_03_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "source_file": "official_candidates/162_noise_external_clean_03_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "163",
+      "hypothesis": "Blend clean public aggregate TRT prior calibrated to zeroaware.",
+      "local_report": "reports/noise_aware_push_report.json",
+      "manual_upload_priority": 163,
+      "name": "noise_external_clean_04",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior"
+      ],
+      "output_file": "official_candidates/163_noise_external_clean_04_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "source_file": "official_candidates/163_noise_external_clean_04_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "164",
+      "hypothesis": "Blend clean public aggregate TRT prior calibrated to positive.",
+      "local_report": "reports/noise_aware_push_report.json",
+      "manual_upload_priority": 164,
+      "name": "noise_external_clean_05",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior"
+      ],
+      "output_file": "official_candidates/164_noise_external_clean_05_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "source_file": "official_candidates/164_noise_external_clean_05_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "165",
+      "hypothesis": "Blend clean public aggregate TRT prior calibrated to median.",
+      "local_report": "reports/noise_aware_push_report.json",
+      "manual_upload_priority": 165,
+      "name": "noise_external_clean_06",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior"
+      ],
+      "output_file": "official_candidates/165_noise_external_clean_06_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "source_file": "official_candidates/165_noise_external_clean_06_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "166",
+      "hypothesis": "Blend clean public aggregate TRT prior calibrated to trim20.",
+      "local_report": "reports/noise_aware_push_report.json",
+      "manual_upload_priority": 166,
+      "name": "noise_external_clean_07",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior"
+      ],
+      "output_file": "official_candidates/166_noise_external_clean_07_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "source_file": "official_candidates/166_noise_external_clean_07_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "167",
+      "hypothesis": "Blend clean public aggregate TRT prior calibrated to winsor20.",
+      "local_report": "reports/noise_aware_push_report.json",
+      "manual_upload_priority": 167,
+      "name": "noise_external_clean_08",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior"
+      ],
+      "output_file": "official_candidates/167_noise_external_clean_08_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "source_file": "official_candidates/167_noise_external_clean_08_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "168",
+      "hypothesis": "Blend clean public aggregate TRT prior calibrated to zeroaware.",
+      "local_report": "reports/noise_aware_push_report.json",
+      "manual_upload_priority": 168,
+      "name": "noise_external_clean_09",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior"
+      ],
+      "output_file": "official_candidates/168_noise_external_clean_09_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "source_file": "official_candidates/168_noise_external_clean_09_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "169",
+      "hypothesis": "Blend clean public aggregate TRT prior calibrated to positive.",
+      "local_report": "reports/noise_aware_push_report.json",
+      "manual_upload_priority": 169,
+      "name": "noise_external_clean_10",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior"
+      ],
+      "output_file": "official_candidates/169_noise_external_clean_10_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "source_file": "official_candidates/169_noise_external_clean_10_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "170",
+      "hypothesis": "Mac-scaled ridge trained on denoised median labels with clean external features.",
+      "local_report": "reports/noise_aware_push_report.json",
+      "manual_upload_priority": 170,
+      "name": "noise_scaled_ridge_01",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior",
+        "mac_scaled_model"
+      ],
+      "output_file": "official_candidates/170_noise_scaled_ridge_01_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "source_file": "official_candidates/170_noise_scaled_ridge_01_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "171",
+      "hypothesis": "Mac-scaled ridge trained on denoised zeroaware labels with clean external features.",
+      "local_report": "reports/noise_aware_push_report.json",
+      "manual_upload_priority": 171,
+      "name": "noise_scaled_ridge_02",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior",
+        "mac_scaled_model"
+      ],
+      "output_file": "official_candidates/171_noise_scaled_ridge_02_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "source_file": "official_candidates/171_noise_scaled_ridge_02_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "172",
+      "hypothesis": "Mac-scaled hgb trained on denoised trim10 labels with clean external features.",
+      "local_report": "reports/noise_aware_push_report.json",
+      "manual_upload_priority": 172,
+      "name": "noise_scaled_hgb_03",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior",
+        "mac_scaled_model"
+      ],
+      "output_file": "official_candidates/172_noise_scaled_hgb_03_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "source_file": "official_candidates/172_noise_scaled_hgb_03_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "173",
+      "hypothesis": "Mac-scaled hgb trained on denoised winsor10 labels with clean external features.",
+      "local_report": "reports/noise_aware_push_report.json",
+      "manual_upload_priority": 173,
+      "name": "noise_scaled_hgb_04",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior",
+        "mac_scaled_model"
+      ],
+      "output_file": "official_candidates/173_noise_scaled_hgb_04_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "source_file": "official_candidates/173_noise_scaled_hgb_04_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "174",
+      "hypothesis": "Mac-scaled trees trained on denoised median labels with clean external features.",
+      "local_report": "reports/noise_aware_push_report.json",
+      "manual_upload_priority": 174,
+      "name": "noise_scaled_trees_05",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior",
+        "mac_scaled_model"
+      ],
+      "output_file": "official_candidates/174_noise_scaled_trees_05_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "source_file": "official_candidates/174_noise_scaled_trees_05_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "175",
+      "hypothesis": "Mac-scaled trees trained on denoised trim10 labels with clean external features.",
+      "local_report": "reports/noise_aware_push_report.json",
+      "manual_upload_priority": 175,
+      "name": "noise_scaled_trees_06",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior",
+        "mac_scaled_model"
+      ],
+      "output_file": "official_candidates/175_noise_scaled_trees_06_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "source_file": "official_candidates/175_noise_scaled_trees_06_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "176",
+      "hypothesis": "Mac-scaled trees trained on denoised zeroaware labels with clean external features.",
+      "local_report": "reports/noise_aware_push_report.json",
+      "manual_upload_priority": 176,
+      "name": "noise_scaled_trees_07",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior",
+        "mac_scaled_model"
+      ],
+      "output_file": "official_candidates/176_noise_scaled_trees_07_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "source_file": "official_candidates/176_noise_scaled_trees_07_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "177",
+      "hypothesis": "Mac-scaled hgb trained on denoised positive labels with clean external features.",
+      "local_report": "reports/noise_aware_push_report.json",
+      "manual_upload_priority": 177,
+      "name": "noise_scaled_hgb_08",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior",
+        "mac_scaled_model"
+      ],
+      "output_file": "official_candidates/177_noise_scaled_hgb_08_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "source_file": "official_candidates/177_noise_scaled_hgb_08_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "178",
+      "hypothesis": "Mac-scaled trees trained on denoised winsor20 labels with clean external features.",
+      "local_report": "reports/noise_aware_push_report.json",
+      "manual_upload_priority": 178,
+      "name": "noise_scaled_trees_09",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior",
+        "mac_scaled_model"
+      ],
+      "output_file": "official_candidates/178_noise_scaled_trees_09_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "source_file": "official_candidates/178_noise_scaled_trees_09_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "179",
+      "hypothesis": "Mac-scaled ridge trained on denoised positive labels with clean external features.",
+      "local_report": "reports/noise_aware_push_report.json",
+      "manual_upload_priority": 179,
+      "name": "noise_scaled_ridge_10",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior",
+        "mac_scaled_model"
+      ],
+      "output_file": "official_candidates/179_noise_scaled_ridge_10_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "source_file": "official_candidates/179_noise_scaled_ridge_10_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "180",
+      "hypothesis": "Empirical-Bayes denoising toward external prior with ridge.",
+      "local_report": "reports/noise_aware_push_report.json",
+      "manual_upload_priority": 180,
+      "name": "noise_eb_external_01",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior",
+        "mac_scaled_model",
+        "empirical_bayes_shrinkage"
+      ],
+      "output_file": "official_candidates/180_noise_eb_external_01_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "source_file": "official_candidates/180_noise_eb_external_01_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "181",
+      "hypothesis": "Empirical-Bayes denoising toward text prior with ridge.",
+      "local_report": "reports/noise_aware_push_report.json",
+      "manual_upload_priority": 181,
+      "name": "noise_eb_external_02",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior",
+        "mac_scaled_model",
+        "empirical_bayes_shrinkage"
+      ],
+      "output_file": "official_candidates/181_noise_eb_external_02_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "source_file": "official_candidates/181_noise_eb_external_02_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "182",
+      "hypothesis": "Empirical-Bayes denoising toward page prior with ridge.",
+      "local_report": "reports/noise_aware_push_report.json",
+      "manual_upload_priority": 182,
+      "name": "noise_eb_external_03",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior",
+        "mac_scaled_model",
+        "empirical_bayes_shrinkage"
+      ],
+      "output_file": "official_candidates/182_noise_eb_external_03_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "source_file": "official_candidates/182_noise_eb_external_03_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "183",
+      "hypothesis": "Empirical-Bayes denoising toward hybrid prior with hgb.",
+      "local_report": "reports/noise_aware_push_report.json",
+      "manual_upload_priority": 183,
+      "name": "noise_eb_external_04",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior",
+        "mac_scaled_model",
+        "empirical_bayes_shrinkage"
+      ],
+      "output_file": "official_candidates/183_noise_eb_external_04_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "source_file": "official_candidates/183_noise_eb_external_04_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "184",
+      "hypothesis": "Empirical-Bayes denoising toward external prior with hgb.",
+      "local_report": "reports/noise_aware_push_report.json",
+      "manual_upload_priority": 184,
+      "name": "noise_eb_external_05",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior",
+        "mac_scaled_model",
+        "empirical_bayes_shrinkage"
+      ],
+      "output_file": "official_candidates/184_noise_eb_external_05_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "source_file": "official_candidates/184_noise_eb_external_05_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "185",
+      "hypothesis": "Empirical-Bayes denoising toward text prior with hgb.",
+      "local_report": "reports/noise_aware_push_report.json",
+      "manual_upload_priority": 185,
+      "name": "noise_eb_external_06",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior",
+        "mac_scaled_model",
+        "empirical_bayes_shrinkage"
+      ],
+      "output_file": "official_candidates/185_noise_eb_external_06_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "source_file": "official_candidates/185_noise_eb_external_06_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "186",
+      "hypothesis": "Empirical-Bayes denoising toward page prior with trees.",
+      "local_report": "reports/noise_aware_push_report.json",
+      "manual_upload_priority": 186,
+      "name": "noise_eb_external_07",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior",
+        "mac_scaled_model",
+        "empirical_bayes_shrinkage"
+      ],
+      "output_file": "official_candidates/186_noise_eb_external_07_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "source_file": "official_candidates/186_noise_eb_external_07_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "187",
+      "hypothesis": "Empirical-Bayes denoising toward hybrid prior with trees.",
+      "local_report": "reports/noise_aware_push_report.json",
+      "manual_upload_priority": 187,
+      "name": "noise_eb_external_08",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior",
+        "mac_scaled_model",
+        "empirical_bayes_shrinkage"
+      ],
+      "output_file": "official_candidates/187_noise_eb_external_08_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "source_file": "official_candidates/187_noise_eb_external_08_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "188",
+      "hypothesis": "Empirical-Bayes denoising toward external prior with trees.",
+      "local_report": "reports/noise_aware_push_report.json",
+      "manual_upload_priority": 188,
+      "name": "noise_eb_external_09",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior",
+        "mac_scaled_model",
+        "empirical_bayes_shrinkage"
+      ],
+      "output_file": "official_candidates/188_noise_eb_external_09_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "source_file": "official_candidates/188_noise_eb_external_09_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "189",
+      "hypothesis": "Empirical-Bayes denoising toward hybrid prior with hgb.",
+      "local_report": "reports/noise_aware_push_report.json",
+      "manual_upload_priority": 189,
+      "name": "noise_eb_external_10",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior",
+        "mac_scaled_model",
+        "empirical_bayes_shrinkage"
+      ],
+      "output_file": "official_candidates/189_noise_eb_external_10_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "source_file": "official_candidates/189_noise_eb_external_10_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "190",
+      "hypothesis": "Zero-inflated hurdle using log positive target and ridge.",
+      "local_report": "reports/noise_aware_push_report.json",
+      "manual_upload_priority": 190,
+      "name": "noise_hurdle_scaled_01",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior",
+        "mac_scaled_model",
+        "zero_hurdle"
+      ],
+      "output_file": "official_candidates/190_noise_hurdle_scaled_01_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "source_file": "official_candidates/190_noise_hurdle_scaled_01_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "191",
+      "hypothesis": "Zero-inflated hurdle using log positive target and hgb.",
+      "local_report": "reports/noise_aware_push_report.json",
+      "manual_upload_priority": 191,
+      "name": "noise_hurdle_scaled_02",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior",
+        "mac_scaled_model",
+        "zero_hurdle"
+      ],
+      "output_file": "official_candidates/191_noise_hurdle_scaled_02_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "source_file": "official_candidates/191_noise_hurdle_scaled_02_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "192",
+      "hypothesis": "Zero-inflated hurdle using median positive target and ridge.",
+      "local_report": "reports/noise_aware_push_report.json",
+      "manual_upload_priority": 192,
+      "name": "noise_hurdle_scaled_03",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior",
+        "mac_scaled_model",
+        "zero_hurdle"
+      ],
+      "output_file": "official_candidates/192_noise_hurdle_scaled_03_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "source_file": "official_candidates/192_noise_hurdle_scaled_03_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "193",
+      "hypothesis": "Zero-inflated hurdle using trim10 positive target and hgb.",
+      "local_report": "reports/noise_aware_push_report.json",
+      "manual_upload_priority": 193,
+      "name": "noise_hurdle_scaled_04",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior",
+        "mac_scaled_model",
+        "zero_hurdle"
+      ],
+      "output_file": "official_candidates/193_noise_hurdle_scaled_04_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "source_file": "official_candidates/193_noise_hurdle_scaled_04_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "194",
+      "hypothesis": "Zero-inflated hurdle using winsor10 positive target and trees.",
+      "local_report": "reports/noise_aware_push_report.json",
+      "manual_upload_priority": 194,
+      "name": "noise_hurdle_scaled_05",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior",
+        "mac_scaled_model",
+        "zero_hurdle"
+      ],
+      "output_file": "official_candidates/194_noise_hurdle_scaled_05_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "source_file": "official_candidates/194_noise_hurdle_scaled_05_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "195",
+      "hypothesis": "Zero-inflated hurdle using positive positive target and hgb.",
+      "local_report": "reports/noise_aware_push_report.json",
+      "manual_upload_priority": 195,
+      "name": "noise_hurdle_scaled_06",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior",
+        "mac_scaled_model",
+        "zero_hurdle"
+      ],
+      "output_file": "official_candidates/195_noise_hurdle_scaled_06_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "source_file": "official_candidates/195_noise_hurdle_scaled_06_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "196",
+      "hypothesis": "Zero-inflated hurdle using external positive target and ridge.",
+      "local_report": "reports/noise_aware_push_report.json",
+      "manual_upload_priority": 196,
+      "name": "noise_hurdle_scaled_07",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior",
+        "mac_scaled_model",
+        "zero_hurdle"
+      ],
+      "output_file": "official_candidates/196_noise_hurdle_scaled_07_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "source_file": "official_candidates/196_noise_hurdle_scaled_07_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "197",
+      "hypothesis": "Zero-inflated hurdle using hybrid positive target and hgb.",
+      "local_report": "reports/noise_aware_push_report.json",
+      "manual_upload_priority": 197,
+      "name": "noise_hurdle_scaled_08",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior",
+        "mac_scaled_model",
+        "zero_hurdle"
+      ],
+      "output_file": "official_candidates/197_noise_hurdle_scaled_08_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "source_file": "official_candidates/197_noise_hurdle_scaled_08_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "198",
+      "hypothesis": "Zero-inflated hurdle using hybrid positive target and trees.",
+      "local_report": "reports/noise_aware_push_report.json",
+      "manual_upload_priority": 198,
+      "name": "noise_hurdle_scaled_09",
+      "next_manual_upload_target": false,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior",
+        "mac_scaled_model",
+        "zero_hurdle"
+      ],
+      "output_file": "official_candidates/198_noise_hurdle_scaled_09_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "source_file": "official_candidates/198_noise_hurdle_scaled_09_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "199",
+      "hypothesis": "Champion: Mac-scaled model plus clean external aggregate prior and train-label denoising residuals.",
+      "local_report": "reports/noise_aware_push_report.json",
+      "manual_upload_priority": 199,
+      "name": "noise_champion_scaled_external_denoising",
+      "next_manual_upload_target": true,
+      "noise_evidence_groups": [
+        "official_best_base",
+        "train_label_noise_profile",
+        "clean_external_aggregate_prior",
+        "mac_scaled_model",
+        "empirical_bayes_shrinkage",
+        "zero_hurdle"
+      ],
+      "output_file": "official_candidates/199_noise_champion_scaled_external_denoising_output.csv",
+      "risk_label": "noise_aware_scaled_external_denoising",
+      "risk_labels": [
+        "clean_external_aggregate_prior",
+        "scaled_mac_model",
+        "train_label_denoising"
+      ],
+      "source_file": "official_candidates/199_noise_champion_scaled_external_denoising_source.py",
       "status": "pending",
       "upload_ready": true
     }
@@ -3350,6 +4332,21 @@
       "submission_id": "manual_129_score_37_89482",
       "submission_id_missing": true,
       "timestamp": "2026-04-25 20:45"
+    },
+    {
+      "assignment_policy": "largest_numeric_candidate_id_at_manual_upload_time",
+      "candidate_id": "159",
+      "chosen_as_final": true,
+      "hypothesis": "Candidate 159 improved by controlled rebound and becomes the noise-aware training anchor.",
+      "local_report": "reports/failure_rebound_report.json",
+      "official_complete_score": null,
+      "official_partial_score": 38.87076,
+      "output_file": "official_candidates/159_rebound_champion_counter_prior_stack_output.csv",
+      "source_file": "official_candidates/159_rebound_champion_counter_prior_stack_source.py",
+      "state": "success",
+      "submission_id": "manual_159_score_38_87076",
+      "submission_id_missing": true,
+      "timestamp": "2026-04-25 21:10"
     }
   ]
 }

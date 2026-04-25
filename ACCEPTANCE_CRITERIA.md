@@ -202,6 +202,19 @@
 - The rebound champion is marked as the next manual upload target.
 - The current best official score is not changed until a higher score is recorded.
 
+## Noise-Aware Denoising Push
+
+- A higher official score replaces the previous best official score.
+- Candidate `159` is recorded as the current best before noise-aware search starts.
+- Noise-aware candidate reports include observable train-label noise evidence.
+- Noise-aware candidates preserve exactly one answer for each test datapoint.
+- Noise-aware candidates preserve the required public submission columns.
+- Noise-aware candidate answers are finite and non-negative.
+- Noise-aware candidate sources reproduce their paired outputs.
+- The noise-aware champion is the largest numeric candidate after generation.
+- The noise-aware champion is marked as the next manual upload target.
+- The noise-aware champion changes from the current official best within the documented movement gate.
+
 ## Final 99+ Target
 
 - The final product target is an official or exact-truth score of at least `99 / 100`.

@@ -56,3 +56,7 @@ All candidates preserve the public CSV contract and remain below the upload size
 ## Failure Feedback Update
 
 Candidate `129_aggressive_champion_trained_direction_risk` scored `37.89482 / 100`, which is below Candidate `099` at `38.20618 / 100`. Candidate `099` remains the best official candidate, while Candidate `129` is recorded as the latest scored negative anchor. The next batch starts at Candidate `130` and sets Candidate `159` as the largest-ID rebound champion.
+
+## Noise-Aware Feedback Update
+
+Candidate `159_rebound_champion_counter_prior_stack` scored `38.87076 / 100`, above Candidate `099` at `38.20618 / 100`. Candidate `159` is the active official best. The next batch starts at Candidate `160`, treats train-label noise as the primary bottleneck, and sets Candidate `199` as the largest-ID denoising champion.
