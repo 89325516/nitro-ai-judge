@@ -1,0 +1,8 @@
+{
+  "mode": "bert_two_head_official_candidate",
+  "prediction_scale": 1.2,
+  "promoted": false,
+  "score_type": "local_estimate",
+  "test_rows": 9425,
+  "train_chunks": 2370
+}

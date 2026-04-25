@@ -79,3 +79,11 @@ After each successful official submission, record the score with `python3 experi
    - Local estimate: `38.55469362010065 / 100`
    - Recommendation: hold for now because it does not beat the frozen Transformer local gate of `38.99673098959958 / 100`.
    - Hypothesis: corrected page context and separated skip, positive-time, and rank views may transfer differently from local text-holdout.
+
+## Batch 6: Fine-Tuned BERT Two-Head Candidate
+
+21. `022_bert_two_head_scale120`
+   - Source: `official_candidates/022_bert_two_head_scale120_source.py`
+   - Output: `official_candidates/022_bert_two_head_scale120_output.csv`
+   - Hypothesis: a task-adapted two-head Romanian BERT model may rank word difficulty differently from frozen embeddings; scale `1.20` corrects the raw BERT mean toward previous official candidates.
+   - Recommendation: submit only after Candidate `003_safe_v6` and the frozen Transformer scale candidates unless you want to explicitly probe the fine-tuned BERT direction.

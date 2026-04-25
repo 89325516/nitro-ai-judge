@@ -29,6 +29,9 @@ def select_device(torch_module, requested: str) -> str:
 def make_backend(args: argparse.Namespace):
     import torch
 
+    torch.manual_seed(args.seed)
+    if torch.cuda.is_available():
+        torch.cuda.manual_seed_all(args.seed)
     if args.backend == "tiny":
         tokenizer, model = make_tiny_model()
     else:
@@ -88,17 +91,26 @@ def predict_chunks(args: argparse.Namespace, backend, chunks: list[WordChunk], r
         raise ValueError("each test row must receive a prediction")
     return predictions
 
+def apply_calibration(predictions: np.ndarray, args: argparse.Namespace) -> np.ndarray:
+    values = np.asarray(predictions, dtype=float).copy()
+    if args.zero_rate > 0.0:
+        threshold = np.quantile(values, min(max(args.zero_rate, 0.0), 1.0))
+        values[values <= threshold] = 0.0
+    values *= args.prediction_scale
+    return np.clip(values, 0.0, 10000.0)
+
 def run_train_predict(args: argparse.Namespace) -> dict:
     train_rows = read_rows(args.train)
     test_rows = read_rows(args.test)
     train_chunks = chunk_rows(train_rows, True, args.chunk_words, args.max_train_chunks)
     test_chunks = chunk_rows(test_rows, False, args.chunk_words)
     backend = train_model(args, train_chunks)
-    predictions = predict_chunks(args, backend, test_chunks, len(test_rows))
+    predictions = apply_calibration(predict_chunks(args, backend, test_chunks, len(test_rows)), args)
     write_submission(test_rows, predictions, args.output)
     report = {"mode": "bert_two_head_train_predict", "score_type": "local_estimate", "backend": args.backend,
               "model": args.model if args.backend == "hf" else "tiny", "train_chunks": len(train_chunks),
-              "test_rows": len(test_rows), "promoted": False}
+              "test_rows": len(test_rows), "prediction_scale": args.prediction_scale, "zero_rate": args.zero_rate,
+              "promoted": False}
     write_json(args.report, report)
     return report
 
@@ -138,6 +150,8 @@ def add_common(parser: argparse.ArgumentParser) -> None:
     parser.add_argument("--skip-weight", type=float, default=0.5)
     parser.add_argument("--time-weight", type=float, default=1.0)
     parser.add_argument("--seed", type=int, default=0)
+    parser.add_argument("--prediction-scale", type=float, default=1.0)
+    parser.add_argument("--zero-rate", type=float, default=0.0)
     parser.add_argument("--report", type=Path)
 
 def parse_args() -> argparse.Namespace:

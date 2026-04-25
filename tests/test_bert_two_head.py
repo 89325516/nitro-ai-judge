@@ -65,7 +65,7 @@ class BertTwoHeadTest(unittest.TestCase):
             write_csv(train, ROWS, ["word_id", "word", "answer", "participant_id", "text", "datapointID"])
             args = SimpleNamespace(train=train, backend="tiny", model="unused", device="cpu", epochs=1, learning_rate=0.01,
                                    dropout=0.0, unfreeze_layers=0, chunk_words=8, max_length=32, max_train_chunks=2,
-                                   skip_weight=0.5, time_weight=1.0, seed=0, report=report)
+                                   skip_weight=0.5, time_weight=1.0, seed=0, prediction_scale=1.0, zero_rate=0.0, report=report)
             result = run_smoke(args)
             stored = json.loads(report.read_text(encoding="utf-8"))
         self.assertEqual(result, stored)
@@ -86,7 +86,7 @@ class BertTwoHeadTest(unittest.TestCase):
             write_csv(test, test_rows, ["word_id", "word", "participant_id", "text", "datapointID"])
             args = SimpleNamespace(train=train, test=test, output=output, backend="tiny", model="unused", device="cpu", epochs=1,
                                    learning_rate=0.01, dropout=0.0, unfreeze_layers=0, chunk_words=8, max_length=32,
-                                   max_train_chunks=2, skip_weight=0.5, time_weight=1.0, seed=0, report=report)
+                                   max_train_chunks=2, skip_weight=0.5, time_weight=1.0, seed=0, prediction_scale=1.0, zero_rate=0.0, report=report)
             result = run_train_predict(args)
             with output.open(newline="", encoding="utf-8") as handle:
                 rows = list(csv.DictReader(handle))
