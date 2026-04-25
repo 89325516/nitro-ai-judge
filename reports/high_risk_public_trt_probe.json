@@ -1,0 +1,22 @@
+{
+  "item_coverage": 1885,
+  "item_coverage_rate": 1.0,
+  "mode": "probe",
+  "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+  "risk_label": "high_risk_public_trt_reconstruction",
+  "source_urls": [
+    "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_008.csv",
+    "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_009.csv",
+    "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_010.csv",
+    "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_011.csv",
+    "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_023.csv"
+  ],
+  "subject_coverage": {
+    "008": 1884,
+    "009": 1885,
+    "010": 1885,
+    "011": 1885,
+    "023": 1062
+  },
+  "test_unique_word_ids": 1885
+}

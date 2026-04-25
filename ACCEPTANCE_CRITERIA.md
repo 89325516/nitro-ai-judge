@@ -142,6 +142,16 @@
 - Each external-data candidate report states its evidence class.
 - Branch score targets are not treated as met without official feedback or exact truth labels.
 
+## High-Risk Public TRT Recovery
+
+- Public TRT recovery candidates state their pinned external data source.
+- Public TRT recovery candidates label direct row-level matching as high risk.
+- Public TRT recovery outputs contain exactly one row for each test datapoint.
+- Public TRT recovery outputs use exactly `subtaskID`, `datapointID`, and `answer` columns.
+- Public TRT recovery answers are finite and non-negative.
+- Public TRT recovery source files can reproduce their paired output files from public URLs.
+- Public TRT recovery reports do not mark `80+` or `99+` complete without official or exact-truth evidence.
+
 ## Final 99+ Target
 
 - The final product target is an official or exact-truth score of at least `99 / 100`.

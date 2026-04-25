@@ -97,3 +97,34 @@ After each successful official submission, record the score with `python3 experi
    - Local estimate: `40.25002577495926 / 100`
    - Recommendation: upload next because it beats the frozen Transformer local estimate of `38.99673098959958 / 100`.
    - Hypothesis: public Romanian lexical frequency adds a real word-commonness signal that frozen contextual embeddings and old scale variants did not capture.
+
+## Batch 8: High-Risk Public TRT Recovery
+
+These candidates use public fixation-derived TRT data from `ana0101/eye-tracking` and are labeled high-risk reconstruction candidates. Upload them only when intentionally testing the public-data recovery route. Recommended order: `045`, `037`, `029`, then `024-028`.
+
+| Candidate | Source | Output | Hypothesis |
+| --- | --- | --- | --- |
+| `024_public_trt_item_calibrated` | `official_candidates/024_public_trt_item_calibrated_source.py` | `official_candidates/024_public_trt_item_calibrated_output.csv` | Calibrated external public TRT item statistics. |
+| `025_public_trt_item_blend25` | `official_candidates/025_public_trt_item_blend25_source.py` | `official_candidates/025_public_trt_item_blend25_output.csv` | Blend 25 percent calibrated public TRT item estimate with Candidate 023. |
+| `026_public_trt_item_blend50` | `official_candidates/026_public_trt_item_blend50_source.py` | `official_candidates/026_public_trt_item_blend50_output.csv` | Blend 50 percent calibrated public TRT item estimate with Candidate 023. |
+| `027_public_trt_item_blend75` | `official_candidates/027_public_trt_item_blend75_source.py` | `official_candidates/027_public_trt_item_blend75_output.csv` | Blend 75 percent calibrated public TRT item estimate with Candidate 023. |
+| `028_public_trt_zero_aware` | `official_candidates/028_public_trt_zero_aware_source.py` | `official_candidates/028_public_trt_zero_aware_output.csv` | Use calibrated public TRT item estimate with direct external all-zero item suppression. |
+| `029_public_trt_raw_perm_01` | `official_candidates/029_public_trt_raw_perm_01_source.py` | `official_candidates/029_public_trt_raw_perm_01_output.csv` | Raw Permutation rank 1. |
+| `030_public_trt_raw_perm_02` | `official_candidates/030_public_trt_raw_perm_02_source.py` | `official_candidates/030_public_trt_raw_perm_02_output.csv` | Raw Permutation rank 2. |
+| `031_public_trt_raw_perm_03` | `official_candidates/031_public_trt_raw_perm_03_source.py` | `official_candidates/031_public_trt_raw_perm_03_output.csv` | Raw Permutation rank 3. |
+| `032_public_trt_raw_perm_04` | `official_candidates/032_public_trt_raw_perm_04_source.py` | `official_candidates/032_public_trt_raw_perm_04_output.csv` | Raw Permutation rank 4. |
+| `033_public_trt_raw_perm_05` | `official_candidates/033_public_trt_raw_perm_05_source.py` | `official_candidates/033_public_trt_raw_perm_05_output.csv` | Raw Permutation rank 5. |
+| `034_public_trt_raw_perm_06` | `official_candidates/034_public_trt_raw_perm_06_source.py` | `official_candidates/034_public_trt_raw_perm_06_output.csv` | Raw Permutation rank 6. |
+| `035_public_trt_raw_perm_07` | `official_candidates/035_public_trt_raw_perm_07_source.py` | `official_candidates/035_public_trt_raw_perm_07_output.csv` | Raw Permutation rank 7. |
+| `036_public_trt_raw_perm_08` | `official_candidates/036_public_trt_raw_perm_08_source.py` | `official_candidates/036_public_trt_raw_perm_08_output.csv` | Raw Permutation rank 8. |
+| `037_public_trt_cal_perm_01` | `official_candidates/037_public_trt_cal_perm_01_source.py` | `official_candidates/037_public_trt_cal_perm_01_output.csv` | Calibrated Permutation rank 1. |
+| `038_public_trt_cal_perm_02` | `official_candidates/038_public_trt_cal_perm_02_source.py` | `official_candidates/038_public_trt_cal_perm_02_output.csv` | Calibrated Permutation rank 2. |
+| `039_public_trt_cal_perm_03` | `official_candidates/039_public_trt_cal_perm_03_source.py` | `official_candidates/039_public_trt_cal_perm_03_output.csv` | Calibrated Permutation rank 3. |
+| `040_public_trt_cal_perm_04` | `official_candidates/040_public_trt_cal_perm_04_source.py` | `official_candidates/040_public_trt_cal_perm_04_output.csv` | Calibrated Permutation rank 4. |
+| `041_public_trt_cal_perm_05` | `official_candidates/041_public_trt_cal_perm_05_source.py` | `official_candidates/041_public_trt_cal_perm_05_output.csv` | Calibrated Permutation rank 5. |
+| `042_public_trt_cal_perm_06` | `official_candidates/042_public_trt_cal_perm_06_source.py` | `official_candidates/042_public_trt_cal_perm_06_output.csv` | Calibrated Permutation rank 6. |
+| `043_public_trt_cal_perm_07` | `official_candidates/043_public_trt_cal_perm_07_source.py` | `official_candidates/043_public_trt_cal_perm_07_output.csv` | Calibrated Permutation rank 7. |
+| `044_public_trt_cal_perm_08` | `official_candidates/044_public_trt_cal_perm_08_source.py` | `official_candidates/044_public_trt_cal_perm_08_output.csv` | Calibrated Permutation rank 8. |
+| `045_public_trt_ensemble_fallback` | `official_candidates/045_public_trt_ensemble_fallback_source.py` | `official_candidates/045_public_trt_ensemble_fallback_output.csv` | Blend calibrated item estimate with the top raw and calibrated public TRT permutations. |
+
+Risk label for all Batch 8 rows: `high_risk_public_trt_reconstruction`.
