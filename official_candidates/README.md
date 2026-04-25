@@ -88,3 +88,12 @@ After each successful official submission, record the score with `python3 experi
    - Local estimate: `29.481623660280615 / 100`
    - Decision: rejected as a standalone official candidate.
    - Reason: it loses both R2 and Pearson against Ridge, Safe V6, Semantic TRT, and frozen Transformer local estimates.
+
+## Batch 7: Lexical Frequency Transformer Candidate
+
+22. `023_lexical_transformer`
+   - Source: `official_candidates/023_lexical_transformer_source.py`
+   - Output: `official_candidates/023_lexical_transformer_output.csv`
+   - Local estimate: `40.25002577495926 / 100`
+   - Recommendation: upload next because it beats the frozen Transformer local estimate of `38.99673098959958 / 100`.
+   - Hypothesis: public Romanian lexical frequency adds a real word-commonness signal that frozen contextual embeddings and old scale variants did not capture.

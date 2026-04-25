@@ -104,6 +104,15 @@
 - BERT hybrid reports are labeled as local estimates unless official judge feedback is available.
 - BERT hybrid promotion requires beating the frozen Transformer local estimate before official packaging.
 
+## Lexical Frequency Transformer Candidate
+
+- Lexical frequency Transformer outputs contain exactly one row for each input test datapoint.
+- Lexical frequency Transformer output columns are exactly `subtaskID`, `datapointID`, and `answer`.
+- Lexical frequency Transformer answers are finite and non-negative.
+- Test-file answer values do not affect lexical frequency Transformer predictions.
+- Lexical frequency Transformer reports are labeled as local estimates unless official judge feedback is available.
+- Lexical frequency Transformer upload recommendation requires beating the frozen Transformer local estimate.
+
 ## Official Feedback
 
 - Official judge scores outrank local estimates when choosing submission candidates.

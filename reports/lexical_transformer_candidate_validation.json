@@ -1,0 +1,12 @@
+{
+  "candidate_id": "023",
+  "frozen_transformer_local_score": 38.99673098959958,
+  "mean_pearson": 0.5282695355735598,
+  "mean_r2": 0.27673097992562545,
+  "mean_score": 40.25002577495926,
+  "name": "lexical_transformer",
+  "output_file": "official_candidates/023_lexical_transformer_output.csv",
+  "recommended_for_official_upload": true,
+  "score_type": "local_estimate",
+  "source_file": "official_candidates/023_lexical_transformer_source.py"
+}

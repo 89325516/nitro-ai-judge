@@ -99,6 +99,26 @@
       "source_bytes": 3964,
       "source_file": "official_candidates/005_ridge_scale_110_source.py",
       "upload_ready": true
+    },
+    {
+      "answer_max": 1402.215053,
+      "answer_mean": 274.08558953050397,
+      "answer_min": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "023",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "ids_match_test_order": true,
+      "name": "lexical_transformer",
+      "output_bytes": 166609,
+      "output_file": "official_candidates/023_lexical_transformer_output.csv",
+      "row_count": 9425,
+      "source_bytes": 9716,
+      "source_file": "official_candidates/023_lexical_transformer_source.py",
+      "upload_ready": true
     }
   ],
   "output_limit_bytes": 52428800,
