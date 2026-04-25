@@ -215,6 +215,20 @@
 - The noise-aware champion is marked as the next manual upload target.
 - The noise-aware champion changes from the current official best within the documented movement gate.
 
+## Noise-Aware V2 Directional Push
+
+- A higher official score replaces the previous best official score.
+- Candidate `199` is recorded as the current best before V2 search starts.
+- V2 candidates preserve the officially validated `159 -> 199` denoising direction.
+- V2 candidates preserve exactly one answer for each test datapoint.
+- V2 candidates preserve the required public submission columns.
+- V2 candidate answers are finite and non-negative.
+- V2 candidate sources reproduce their paired outputs.
+- The V2 champion is the largest numeric candidate after generation.
+- The V2 champion is marked as the next manual upload target.
+- The V2 champion changes from Candidate `199` within the documented movement gate.
+- Unscored historical numbered exploration files are removed when they are not official anchors or current inputs.
+
 ## Final 99+ Target
 
 - The final product target is an official or exact-truth score of at least `99 / 100`.
