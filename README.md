@@ -68,6 +68,16 @@ A real masked-language-model smoke test can be run with:
 python3 experiments/transformer_deep_experiment.py smoke --train data/train_data.csv --limit-rows 4 --scorer hf --model dumitrescustefan/bert-base-romanian-cased-v1 --device auto --report reports/transformer_surprisal_hf_smoke.json
 ```
 
+## 99+ Target Checks
+
+The final target is `99 / 100`, but that target can only be accepted from exact truth labels or Nitro Judge feedback. Run the local reachability audit with:
+
+```bash
+python3 experiments/target_audit.py --train data/train_data.csv --test data/test_data.csv --sample data/sample_output.csv --output-dir reports
+```
+
+The audit separates local estimates, oracle ceilings, leakage signals, and exact scores so model progress is not confused with official completion.
+
 ## Development Discipline
 
 Changes should keep module boundaries small, avoid hidden state, prefer injected dependencies, and test observable behavior rather than implementation details.

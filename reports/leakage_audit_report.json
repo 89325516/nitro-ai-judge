@@ -1,0 +1,9 @@
+{
+  "evidence_class": "leakage_signal",
+  "participant_overlap_count": 0,
+  "test_rows": 9425,
+  "test_word_seen_rate": 0.5177718832891247,
+  "text_overlap_count": 0,
+  "train_rows": 135210,
+  "word_id_overlap_count": 0
+}

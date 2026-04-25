@@ -1,0 +1,32 @@
+{
+  "best_candidate": {
+    "mode": "cross_validate",
+    "name": "transformer_text_holdout",
+    "path": "reports/transformer_text_holdout.json",
+    "row_count": 135210,
+    "score": 38.99673098959958,
+    "score_type": "local_estimate"
+  },
+  "candidates": [
+    {
+      "mode": "cross_validate",
+      "name": "transformer_text_holdout",
+      "path": "reports/transformer_text_holdout.json",
+      "row_count": 135210,
+      "score": 38.99673098959958,
+      "score_type": "local_estimate"
+    },
+    {
+      "mode": "cross_validate",
+      "name": "baseline_text_holdout",
+      "path": "reports/baseline_text_holdout.json",
+      "row_count": 135210,
+      "score": 38.388843675977554,
+      "score_type": "local_estimate"
+    }
+  ],
+  "evidence_class": "local_estimate",
+  "fallback_score": 38.388844,
+  "promoted": false,
+  "promotion_score": 39.388844
+}

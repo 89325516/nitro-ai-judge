@@ -65,6 +65,14 @@
 - Generated feature caches are excluded from git.
 - Fine-tuning is not introduced without a separate documented mechanism.
 
+## Final 99+ Target
+
+- The final product target is an official or exact-truth score of at least `99 / 100`.
+- Local estimates, smoke tests, and oracle ceilings do not satisfy the final `99+` target.
+- Every score report identifies its evidence class.
+- Leakage and ceiling checks run before a high-cost model is promoted.
+- The stable fallback submission remains available until a candidate passes the local promotion threshold.
+
 ## Change Discipline
 
 - Any new mechanism is documented before implementation.
