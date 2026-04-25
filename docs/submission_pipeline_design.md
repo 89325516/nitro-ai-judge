@@ -16,7 +16,7 @@ The model uses these input signals:
 - page number and word index parsed from `word_id`;
 - URL, capitalization, uppercase, punctuation-only, digit, and accent flags.
 
-The target is transformed with `log1p` before Ridge regression and converted back with `expm1`. Predictions are clipped to non-negative reading-time values before the output file is written.
+The current stable baseline trains Ridge regression directly on raw Total Reading Time milliseconds. Predictions are clipped to non-negative reading-time values before the output file is written.
 
 ## Interfaces
 

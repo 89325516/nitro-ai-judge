@@ -49,6 +49,14 @@
 - Model changes must preserve the public submission CSV columns.
 - Hidden-test performance is not claimed without judge feedback or truth labels.
 
+## Transformer Experiment
+
+- Transformer work remains experimental until its local estimate beats the stable raw-Ridge estimate.
+- Transformer reports identify themselves as local estimates.
+- Each evaluated row receives exactly one contextual feature vector.
+- The stable submission path is not replaced by a Transformer path without documented score improvement.
+- Generated Transformer caches and model weights are not tracked in git.
+
 ## Change Discipline
 
 - Any new mechanism is documented before implementation.

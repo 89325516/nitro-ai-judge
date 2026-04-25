@@ -46,6 +46,16 @@ This cross-validation score is an estimate based on held-out training texts. It 
 python3 evaluate.py score --truth truth.csv --predictions submission.csv --report reports/exact_score.json
 ```
 
+## Transformer Experiments
+
+The `codex/transformer-experiment` branch contains optional Transformer experiments. These experiments add contextual word features from a pretrained language model, but they do not replace the stable raw-Ridge submission unless the local text-holdout score improves beyond `38.388844 / 100`.
+
+Run a tiny smoke test with:
+
+```bash
+python3 experiments/transformer_experiment.py smoke --train data/train_data.csv --limit-rows 12 --report reports/transformer_smoke.json
+```
+
 ## Development Discipline
 
 Changes should keep module boundaries small, avoid hidden state, prefer injected dependencies, and test observable behavior rather than implementation details.

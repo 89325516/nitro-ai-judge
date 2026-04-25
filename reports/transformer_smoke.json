@@ -1,0 +1,9 @@
+{
+  "baseline_score": 38.388844,
+  "feature_width": 13,
+  "mode": "transformer_smoke",
+  "model": "deterministic",
+  "promoted": false,
+  "row_count": 12,
+  "score_type": "local_estimate"
+}

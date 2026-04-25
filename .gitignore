@@ -23,3 +23,12 @@ env/
 
 # Source prompt material excluded from this public repository
 Nitro AI Judge.pdf
+
+# Experiment caches and model artifacts
+.cache/
+models/
+*.npy
+*.npz
+*.pt
+*.pth
+*.safetensors
