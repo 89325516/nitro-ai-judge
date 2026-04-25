@@ -51,11 +51,11 @@ class FeedbackChampionCandidateTest(unittest.TestCase):
         self.assertEqual(expected_ids, [row["datapointID"] for row in rows])
         self.assertTrue(all(math.isfinite(float(row["answer"])) and float(row["answer"]) >= 0.0 for row in rows))
 
-    def test_ledger_marks_099_as_next_manual_upload_target(self) -> None:
+    def test_ledger_keeps_099_as_best_after_later_feedback(self) -> None:
         ledger = json.loads((ROOT / "reports/official_submission_ledger.json").read_text(encoding="utf-8"))
         self.assertEqual(38.20618, ledger["best_official_score"])
-        self.assertEqual("099", ledger["latest_official_feedback_candidate_id"])
-        self.assertEqual("129", ledger["next_manual_upload_target"])
+        self.assertEqual("129", ledger["latest_official_feedback_candidate_id"])
+        self.assertEqual("159", ledger["next_manual_upload_target"])
         candidate = next(row for row in ledger["pending_candidates"] if row["candidate_id"] == "099")
         self.assertFalse(candidate["next_manual_upload_target"])
         self.assertEqual("official_scored", candidate["status"])

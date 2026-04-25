@@ -1,0 +1,1208 @@
+{
+  "candidate_count": 30,
+  "candidates": [
+    {
+      "answer_mean": 251.1568461080106,
+      "answer_std": 152.16153235934073,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "130",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "corr_vs_099": 0.9999474286594834,
+      "family": "failure_rebound_feedback",
+      "fused_evidence_groups": [
+        "safe_surface_via_best_fusion",
+        "medium_public_behavior_via_best_fusion",
+        "high_public_reconstruction_via_best_fusion"
+      ],
+      "hypothesis": "Move five percent opposite the failed 129 vector.",
+      "ids_match_test_order": true,
+      "mae_vs_099": 1.477119616657825,
+      "mae_vs_129": 31.019511786949604,
+      "name": "rebound_counter129_005",
+      "next_manual_upload_target": false,
+      "output_bytes": 166206,
+      "output_file": "official_candidates/130_rebound_counter129_005_output.csv",
+      "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+      "reproduction_command": "python3 official_candidates/130_rebound_counter129_005_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv --failed-output official_candidates/129_aggressive_champion_trained_direction_risk_output.csv --anchor-output official_candidates/087_three_tier_fusion_base_14_output.csv --high-risk-base-output official_candidates/045_public_trt_ensemble_fallback_output.csv --output official_candidates/130_rebound_counter129_005_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "row_count": 9425,
+      "source_bytes": 6916,
+      "source_file": "official_candidates/130_rebound_counter129_005_source.py",
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 252.37483925039783,
+      "answer_std": 152.31043378558482,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "131",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "corr_vs_099": 0.9997901090825613,
+      "family": "failure_rebound_feedback",
+      "fused_evidence_groups": [
+        "safe_surface_via_best_fusion",
+        "medium_public_behavior_via_best_fusion",
+        "high_public_reconstruction_via_best_fusion"
+      ],
+      "hypothesis": "Move ten percent opposite the failed 129 vector.",
+      "ids_match_test_order": true,
+      "mae_vs_099": 2.9542392449867374,
+      "mae_vs_129": 32.496631415278515,
+      "name": "rebound_counter129_010",
+      "next_manual_upload_target": false,
+      "output_bytes": 166239,
+      "output_file": "official_candidates/131_rebound_counter129_010_output.csv",
+      "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+      "reproduction_command": "python3 official_candidates/131_rebound_counter129_010_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv --failed-output official_candidates/129_aggressive_champion_trained_direction_risk_output.csv --anchor-output official_candidates/087_three_tier_fusion_base_14_output.csv --high-risk-base-output official_candidates/045_public_trt_ensemble_fallback_output.csv --output official_candidates/131_rebound_counter129_010_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "row_count": 9425,
+      "source_bytes": 6914,
+      "source_file": "official_candidates/131_rebound_counter129_010_source.py",
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 254.81082545984086,
+      "answer_std": 152.65595441996396,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "132",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "corr_vs_099": 0.9991639707975927,
+      "family": "failure_rebound_feedback",
+      "fused_evidence_groups": [
+        "safe_surface_via_best_fusion",
+        "medium_public_behavior_via_best_fusion",
+        "high_public_reconstruction_via_best_fusion"
+      ],
+      "hypothesis": "Move twenty percent opposite the failed 129 vector.",
+      "ids_match_test_order": true,
+      "mae_vs_099": 5.908478432891247,
+      "mae_vs_129": 35.45087060318302,
+      "name": "rebound_counter129_020",
+      "next_manual_upload_target": false,
+      "output_bytes": 166288,
+      "output_file": "official_candidates/132_rebound_counter129_020_output.csv",
+      "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+      "reproduction_command": "python3 official_candidates/132_rebound_counter129_020_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv --failed-output official_candidates/129_aggressive_champion_trained_direction_risk_output.csv --anchor-output official_candidates/087_three_tier_fusion_base_14_output.csv --high-risk-base-output official_candidates/045_public_trt_ensemble_fallback_output.csv --output official_candidates/132_rebound_counter129_020_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "row_count": 9425,
+      "source_bytes": 6914,
+      "source_file": "official_candidates/132_rebound_counter129_020_source.py",
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 258.464804834695,
+      "answer_std": 153.29268601308874,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "133",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "corr_vs_099": 0.9974587184782123,
+      "family": "failure_rebound_feedback",
+      "fused_evidence_groups": [
+        "safe_surface_via_best_fusion",
+        "medium_public_behavior_via_best_fusion",
+        "high_public_reconstruction_via_best_fusion"
+      ],
+      "hypothesis": "Stress-test the counter-129 direction.",
+      "ids_match_test_order": true,
+      "mae_vs_099": 10.339837270875332,
+      "mae_vs_129": 39.88222944116711,
+      "name": "rebound_counter129_035",
+      "next_manual_upload_target": false,
+      "output_bytes": 166346,
+      "output_file": "official_candidates/133_rebound_counter129_035_output.csv",
+      "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+      "reproduction_command": "python3 official_candidates/133_rebound_counter129_035_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv --failed-output official_candidates/129_aggressive_champion_trained_direction_risk_output.csv --anchor-output official_candidates/087_three_tier_fusion_base_14_output.csv --high-risk-base-output official_candidates/045_public_trt_ensemble_fallback_output.csv --output official_candidates/133_rebound_counter129_035_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "row_count": 9425,
+      "source_bytes": 6916,
+      "source_file": "official_candidates/133_rebound_counter129_035_source.py",
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 248.72085985114057,
+      "answer_std": 151.91168114316073,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "134",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "corr_vs_099": 0.99994725558297,
+      "family": "failure_rebound_feedback",
+      "fused_evidence_groups": [
+        "safe_surface_via_best_fusion",
+        "medium_public_behavior_via_best_fusion",
+        "high_public_reconstruction_via_best_fusion"
+      ],
+      "hypothesis": "Keep only five percent of the failed 129 displacement.",
+      "ids_match_test_order": true,
+      "mae_vs_099": 1.477119616127321,
+      "mae_vs_129": 28.06527255416446,
+      "name": "rebound_damped129_005",
+      "next_manual_upload_target": false,
+      "output_bytes": 166168,
+      "output_file": "official_candidates/134_rebound_damped129_005_output.csv",
+      "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+      "reproduction_command": "python3 official_candidates/134_rebound_damped129_005_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv --failed-output official_candidates/129_aggressive_champion_trained_direction_risk_output.csv --anchor-output official_candidates/087_three_tier_fusion_base_14_output.csv --high-risk-base-output official_candidates/045_public_trt_ensemble_fallback_output.csv --output official_candidates/134_rebound_damped129_005_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "row_count": 9425,
+      "source_bytes": 6915,
+      "source_file": "official_candidates/134_rebound_damped129_005_source.py",
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 247.50286675416447,
+      "answer_std": 151.8108102728351,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "135",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "corr_vs_099": 0.9997887251214556,
+      "family": "failure_rebound_feedback",
+      "fused_evidence_groups": [
+        "safe_surface_via_best_fusion",
+        "medium_public_behavior_via_best_fusion",
+        "high_public_reconstruction_via_best_fusion"
+      ],
+      "hypothesis": "Keep ten percent of the failed 129 displacement.",
+      "ids_match_test_order": true,
+      "mae_vs_099": 2.9542392092307694,
+      "mae_vs_129": 26.58815296106101,
+      "name": "rebound_damped129_010",
+      "next_manual_upload_target": false,
+      "output_bytes": 166140,
+      "output_file": "official_candidates/135_rebound_damped129_010_output.csv",
+      "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+      "reproduction_command": "python3 official_candidates/135_rebound_damped129_010_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv --failed-output official_candidates/129_aggressive_champion_trained_direction_risk_output.csv --anchor-output official_candidates/087_three_tier_fusion_base_14_output.csv --high-risk-base-output official_candidates/045_public_trt_ensemble_fallback_output.csv --output official_candidates/135_rebound_damped129_010_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "row_count": 9425,
+      "source_bytes": 6913,
+      "source_file": "official_candidates/135_rebound_damped129_010_source.py",
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 246.28487361591513,
+      "answer_std": 151.72602023283625,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "136",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "corr_vs_099": 0.9995240370734118,
+      "family": "failure_rebound_feedback",
+      "fused_evidence_groups": [
+        "safe_surface_via_best_fusion",
+        "medium_public_behavior_via_best_fusion",
+        "high_public_reconstruction_via_best_fusion"
+      ],
+      "hypothesis": "Keep fifteen percent of the failed 129 displacement.",
+      "ids_match_test_order": true,
+      "mae_vs_099": 4.431358825994695,
+      "mae_vs_129": 25.11103334429708,
+      "name": "rebound_damped129_015",
+      "next_manual_upload_target": false,
+      "output_bytes": 166122,
+      "output_file": "official_candidates/136_rebound_damped129_015_output.csv",
+      "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+      "reproduction_command": "python3 official_candidates/136_rebound_damped129_015_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv --failed-output official_candidates/129_aggressive_champion_trained_direction_risk_output.csv --anchor-output official_candidates/087_three_tier_fusion_base_14_output.csv --high-risk-base-output official_candidates/045_public_trt_ensemble_fallback_output.csv --output official_candidates/136_rebound_damped129_015_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "row_count": 9425,
+      "source_bytes": 6915,
+      "source_file": "official_candidates/136_rebound_damped129_015_source.py",
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 252.05400967989388,
+      "answer_std": 151.88598158784663,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "137",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "corr_vs_099": 0.9998609794110087,
+      "family": "failure_rebound_feedback",
+      "fused_evidence_groups": [
+        "safe_surface_via_best_fusion",
+        "medium_public_behavior_via_best_fusion",
+        "high_public_reconstruction_via_best_fusion"
+      ],
+      "hypothesis": "Blend counter-129 movement with the successful 087 to 099 direction.",
+      "ids_match_test_order": true,
+      "mae_vs_099": 2.6438888617506633,
+      "mae_vs_129": 32.142795418249335,
+      "name": "rebound_counter_prior_mix",
+      "next_manual_upload_target": false,
+      "output_bytes": 166227,
+      "output_file": "official_candidates/137_rebound_counter_prior_mix_output.csv",
+      "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+      "reproduction_command": "python3 official_candidates/137_rebound_counter_prior_mix_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv --failed-output official_candidates/129_aggressive_champion_trained_direction_risk_output.csv --anchor-output official_candidates/087_three_tier_fusion_base_14_output.csv --high-risk-base-output official_candidates/045_public_trt_ensemble_fallback_output.csv --output official_candidates/137_rebound_counter_prior_mix_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "row_count": 9425,
+      "source_bytes": 6917,
+      "source_file": "official_candidates/137_rebound_counter_prior_mix_source.py",
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 249.40413706228117,
+      "answer_std": 151.35318941173406,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "138",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "corr_vs_099": 0.9999080291402701,
+      "family": "failure_rebound_feedback",
+      "fused_evidence_groups": [
+        "safe_surface_via_best_fusion",
+        "medium_public_behavior_via_best_fusion",
+        "high_public_reconstruction_via_best_fusion"
+      ],
+      "hypothesis": "Extend the successful 087 to 099 direction by twenty-five percent.",
+      "ids_match_test_order": true,
+      "mae_vs_099": 1.3612093374005303,
+      "mae_vs_129": 28.95811384572944,
+      "name": "rebound_prior_success_025",
+      "next_manual_upload_target": false,
+      "output_bytes": 166172,
+      "output_file": "official_candidates/138_rebound_prior_success_025_output.csv",
+      "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+      "reproduction_command": "python3 official_candidates/138_rebound_prior_success_025_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv --failed-output official_candidates/129_aggressive_champion_trained_direction_risk_output.csv --anchor-output official_candidates/087_three_tier_fusion_base_14_output.csv --high-risk-base-output official_candidates/045_public_trt_ensemble_fallback_output.csv --output official_candidates/138_rebound_prior_success_025_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "row_count": 9425,
+      "source_bytes": 6916,
+      "source_file": "official_candidates/138_rebound_prior_success_025_source.py",
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 248.86942115766576,
+      "answer_std": 150.7058651296608,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "139",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "corr_vs_099": 0.9996288976521914,
+      "family": "failure_rebound_feedback",
+      "fused_evidence_groups": [
+        "safe_surface_via_best_fusion",
+        "medium_public_behavior_via_best_fusion",
+        "high_public_reconstruction_via_best_fusion"
+      ],
+      "hypothesis": "Extend the successful 087 to 099 direction by fifty percent.",
+      "ids_match_test_order": true,
+      "mae_vs_099": 2.7224186790450924,
+      "mae_vs_129": 28.40015250790451,
+      "name": "rebound_prior_success_050",
+      "next_manual_upload_target": false,
+      "output_bytes": 166168,
+      "output_file": "official_candidates/139_rebound_prior_success_050_output.csv",
+      "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+      "reproduction_command": "python3 official_candidates/139_rebound_prior_success_050_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv --failed-output official_candidates/129_aggressive_champion_trained_direction_risk_output.csv --anchor-output official_candidates/087_three_tier_fusion_base_14_output.csv --high-risk-base-output official_candidates/045_public_trt_ensemble_fallback_output.csv --output official_candidates/139_rebound_prior_success_050_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "row_count": 9425,
+      "source_bytes": 6914,
+      "source_file": "official_candidates/139_rebound_prior_success_050_source.py",
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 248.33470524732098,
+      "answer_std": 150.08699139985814,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "140",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "corr_vs_099": 0.9991579212138062,
+      "family": "failure_rebound_feedback",
+      "fused_evidence_groups": [
+        "safe_surface_via_best_fusion",
+        "medium_public_behavior_via_best_fusion",
+        "high_public_reconstruction_via_best_fusion"
+      ],
+      "hypothesis": "Extend the successful 087 to 099 direction by seventy-five percent.",
+      "ids_match_test_order": true,
+      "mae_vs_099": 4.083628012413794,
+      "mae_vs_129": 27.86883234503979,
+      "name": "rebound_prior_success_075",
+      "next_manual_upload_target": false,
+      "output_bytes": 166153,
+      "output_file": "official_candidates/140_rebound_prior_success_075_output.csv",
+      "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+      "reproduction_command": "python3 official_candidates/140_rebound_prior_success_075_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv --failed-output official_candidates/129_aggressive_champion_trained_direction_risk_output.csv --anchor-output official_candidates/087_three_tier_fusion_base_14_output.csv --high-risk-base-output official_candidates/045_public_trt_ensemble_fallback_output.csv --output official_candidates/140_rebound_prior_success_075_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "row_count": 9425,
+      "source_bytes": 6916,
+      "source_file": "official_candidates/140_rebound_prior_success_075_source.py",
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 247.79998933750662,
+      "answer_std": 149.49692155269102,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "141",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "corr_vs_099": 0.9984906262564963,
+      "family": "failure_rebound_feedback",
+      "fused_evidence_groups": [
+        "safe_surface_via_best_fusion",
+        "medium_public_behavior_via_best_fusion",
+        "high_public_reconstruction_via_best_fusion"
+      ],
+      "hypothesis": "Extend the successful 087 to 099 direction by one full step.",
+      "ids_match_test_order": true,
+      "mae_vs_099": 5.444837348647216,
+      "mae_vs_129": 27.363364339310348,
+      "name": "rebound_prior_success_100",
+      "next_manual_upload_target": false,
+      "output_bytes": 166143,
+      "output_file": "official_candidates/141_rebound_prior_success_100_output.csv",
+      "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+      "reproduction_command": "python3 official_candidates/141_rebound_prior_success_100_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv --failed-output official_candidates/129_aggressive_champion_trained_direction_risk_output.csv --anchor-output official_candidates/087_three_tier_fusion_base_14_output.csv --high-risk-base-output official_candidates/045_public_trt_ensemble_fallback_output.csv --output official_candidates/141_rebound_prior_success_100_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "row_count": 9425,
+      "source_bytes": 6914,
+      "source_file": "official_candidates/141_rebound_prior_success_100_source.py",
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 253.05811641994697,
+      "answer_std": 151.76026911260215,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "142",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "corr_vs_099": 0.9996955512772265,
+      "family": "failure_rebound_feedback",
+      "fused_evidence_groups": [
+        "safe_surface_via_best_fusion",
+        "medium_public_behavior_via_best_fusion",
+        "high_public_reconstruction_via_best_fusion"
+      ],
+      "hypothesis": "Combine a moderate counter-129 vector with a smaller prior-success vector.",
+      "ids_match_test_order": true,
+      "mae_vs_099": 3.9241501668965517,
+      "mae_vs_129": 33.387704228753314,
+      "name": "rebound_prior_counter_balanced",
+      "next_manual_upload_target": false,
+      "output_bytes": 166255,
+      "output_file": "official_candidates/142_rebound_prior_counter_balanced_output.csv",
+      "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+      "reproduction_command": "python3 official_candidates/142_rebound_prior_counter_balanced_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv --failed-output official_candidates/129_aggressive_champion_trained_direction_risk_output.csv --anchor-output official_candidates/087_three_tier_fusion_base_14_output.csv --high-risk-base-output official_candidates/045_public_trt_ensemble_fallback_output.csv --output official_candidates/142_rebound_prior_counter_balanced_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "row_count": 9425,
+      "source_bytes": 6917,
+      "source_file": "official_candidates/142_rebound_prior_counter_balanced_source.py",
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.17327311649868,
+      "answer_std": 151.68018478999693,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "143",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "corr_vs_099": 0.9991438998578919,
+      "family": "failure_rebound_feedback",
+      "fused_evidence_groups": [
+        "safe_surface_via_best_fusion",
+        "medium_public_behavior_via_best_fusion",
+        "high_public_reconstruction_via_best_fusion"
+      ],
+      "hypothesis": "Stronger rebound from the failed direction plus prior-success extension.",
+      "ids_match_test_order": true,
+      "mae_vs_099": 6.56771289464191,
+      "mae_vs_129": 35.998875578037136,
+      "name": "rebound_prior_counter_strong",
+      "next_manual_upload_target": false,
+      "output_bytes": 166284,
+      "output_file": "official_candidates/143_rebound_prior_counter_strong_output.csv",
+      "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+      "reproduction_command": "python3 official_candidates/143_rebound_prior_counter_strong_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv --failed-output official_candidates/129_aggressive_champion_trained_direction_risk_output.csv --anchor-output official_candidates/087_three_tier_fusion_base_14_output.csv --high-risk-base-output official_candidates/045_public_trt_ensemble_fallback_output.csv --output official_candidates/143_rebound_prior_counter_strong_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "row_count": 9425,
+      "source_bytes": 6917,
+      "source_file": "official_candidates/143_rebound_prior_counter_strong_source.py",
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 249.93885297167108,
+      "answer_std": 150.99192197775028,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "144",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "corr_vs_099": 0.9990903568013488,
+      "family": "failure_rebound_feedback",
+      "fused_evidence_groups": [
+        "safe_surface_via_best_fusion",
+        "medium_public_behavior_via_best_fusion",
+        "high_public_reconstruction_via_best_fusion",
+        "distribution_matched_high_risk"
+      ],
+      "hypothesis": "Mix distribution-matched high-risk base evidence at weight 0.12.",
+      "ids_match_test_order": true,
+      "mae_vs_099": 4.405363724244031,
+      "mae_vs_129": 31.098106218567636,
+      "name": "rebound_zmatch_base_12",
+      "next_manual_upload_target": false,
+      "output_bytes": 166275,
+      "output_file": "official_candidates/144_rebound_zmatch_base_12_output.csv",
+      "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+      "reproduction_command": "python3 official_candidates/144_rebound_zmatch_base_12_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv --failed-output official_candidates/129_aggressive_champion_trained_direction_risk_output.csv --anchor-output official_candidates/087_three_tier_fusion_base_14_output.csv --high-risk-base-output official_candidates/045_public_trt_ensemble_fallback_output.csv --output official_candidates/144_rebound_zmatch_base_12_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "row_count": 9425,
+      "source_bytes": 7011,
+      "source_file": "official_candidates/144_rebound_zmatch_base_12_source.py",
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 249.93885297718836,
+      "answer_std": 150.45508762481722,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "145",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "corr_vs_099": 0.9974530636718167,
+      "family": "failure_rebound_feedback",
+      "fused_evidence_groups": [
+        "safe_surface_via_best_fusion",
+        "medium_public_behavior_via_best_fusion",
+        "high_public_reconstruction_via_best_fusion",
+        "distribution_matched_high_risk"
+      ],
+      "hypothesis": "Mix distribution-matched high-risk base evidence at weight 0.20.",
+      "ids_match_test_order": true,
+      "mae_vs_099": 7.3422728824403185,
+      "mae_vs_129": 32.34039512318302,
+      "name": "rebound_zmatch_base_20",
+      "next_manual_upload_target": false,
+      "output_bytes": 166337,
+      "output_file": "official_candidates/145_rebound_zmatch_base_20_output.csv",
+      "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+      "reproduction_command": "python3 official_candidates/145_rebound_zmatch_base_20_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv --failed-output official_candidates/129_aggressive_champion_trained_direction_risk_output.csv --anchor-output official_candidates/087_three_tier_fusion_base_14_output.csv --high-risk-base-output official_candidates/045_public_trt_ensemble_fallback_output.csv --output official_candidates/145_rebound_zmatch_base_20_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "row_count": 9425,
+      "source_bytes": 7010,
+      "source_file": "official_candidates/145_rebound_zmatch_base_20_source.py",
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 249.94074764901856,
+      "answer_std": 151.1355794172389,
+      "answer_zero_rate": 0.002122015915119363,
+      "answers_finite_non_negative": true,
+      "candidate_id": "146",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "corr_vs_099": 0.9992168902052405,
+      "family": "failure_rebound_feedback",
+      "fused_evidence_groups": [
+        "safe_surface_via_best_fusion",
+        "medium_public_behavior_via_best_fusion",
+        "high_public_reconstruction_via_best_fusion",
+        "distribution_matched_high_risk"
+      ],
+      "hypothesis": "Mix distribution-matched high-risk cal_direct evidence at weight 0.12.",
+      "ids_match_test_order": true,
+      "mae_vs_099": 4.2873370929442975,
+      "mae_vs_129": 29.652955278514593,
+      "name": "rebound_zmatch_cal_direct_12",
+      "next_manual_upload_target": false,
+      "output_bytes": 166127,
+      "output_file": "official_candidates/146_rebound_zmatch_cal_direct_12_output.csv",
+      "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+      "reproduction_command": "python3 official_candidates/146_rebound_zmatch_cal_direct_12_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv --failed-output official_candidates/129_aggressive_champion_trained_direction_risk_output.csv --anchor-output official_candidates/087_three_tier_fusion_base_14_output.csv --high-risk-base-output official_candidates/045_public_trt_ensemble_fallback_output.csv --output official_candidates/146_rebound_zmatch_cal_direct_12_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "row_count": 9425,
+      "source_bytes": 7017,
+      "source_file": "official_candidates/146_rebound_zmatch_cal_direct_12_source.py",
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 249.94327264625994,
+      "answer_std": 150.67088392322694,
+      "answer_zero_rate": 0.002652519893899204,
+      "answers_finite_non_negative": true,
+      "candidate_id": "147",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "corr_vs_099": 0.9978099573477589,
+      "family": "failure_rebound_feedback",
+      "fused_evidence_groups": [
+        "safe_surface_via_best_fusion",
+        "medium_public_behavior_via_best_fusion",
+        "high_public_reconstruction_via_best_fusion",
+        "distribution_matched_high_risk"
+      ],
+      "hypothesis": "Mix distribution-matched high-risk cal_direct evidence at weight 0.20.",
+      "ids_match_test_order": true,
+      "mae_vs_099": 7.144299934641909,
+      "mae_vs_129": 29.965573672254642,
+      "name": "rebound_zmatch_cal_direct_20",
+      "next_manual_upload_target": false,
+      "output_bytes": 166080,
+      "output_file": "official_candidates/147_rebound_zmatch_cal_direct_20_output.csv",
+      "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+      "reproduction_command": "python3 official_candidates/147_rebound_zmatch_cal_direct_20_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv --failed-output official_candidates/129_aggressive_champion_trained_direction_risk_output.csv --anchor-output official_candidates/087_three_tier_fusion_base_14_output.csv --high-risk-base-output official_candidates/045_public_trt_ensemble_fallback_output.csv --output official_candidates/147_rebound_zmatch_cal_direct_20_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "row_count": 9425,
+      "source_bytes": 7016,
+      "source_file": "official_candidates/147_rebound_zmatch_cal_direct_20_source.py",
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 249.93885298079576,
+      "answer_std": 149.2053157856726,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "148",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "corr_vs_099": 0.9976193653306292,
+      "family": "failure_rebound_feedback",
+      "fused_evidence_groups": [
+        "safe_surface_via_best_fusion",
+        "medium_public_behavior_via_best_fusion",
+        "high_public_reconstruction_via_best_fusion",
+        "distribution_matched_high_risk"
+      ],
+      "hypothesis": "Mix distribution-matched high-risk item_mean evidence at weight 0.12.",
+      "ids_match_test_order": true,
+      "mae_vs_099": 8.382500802228117,
+      "mae_vs_129": 31.017285277241378,
+      "name": "rebound_zmatch_item_mean_12",
+      "next_manual_upload_target": false,
+      "output_bytes": 166455,
+      "output_file": "official_candidates/148_rebound_zmatch_item_mean_12_output.csv",
+      "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+      "reproduction_command": "python3 official_candidates/148_rebound_zmatch_item_mean_12_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv --failed-output official_candidates/129_aggressive_champion_trained_direction_risk_output.csv --anchor-output official_candidates/087_three_tier_fusion_base_14_output.csv --high-risk-base-output official_candidates/045_public_trt_ensemble_fallback_output.csv --output official_candidates/148_rebound_zmatch_item_mean_12_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "row_count": 9425,
+      "source_bytes": 7016,
+      "source_file": "official_candidates/148_rebound_zmatch_item_mean_12_source.py",
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 249.93885298270558,
+      "answer_std": 147.44999318585454,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "149",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "corr_vs_099": 0.9946420024699051,
+      "family": "failure_rebound_feedback",
+      "fused_evidence_groups": [
+        "safe_surface_via_best_fusion",
+        "medium_public_behavior_via_best_fusion",
+        "high_public_reconstruction_via_best_fusion",
+        "distribution_matched_high_risk"
+      ],
+      "hypothesis": "Mix distribution-matched high-risk merged_avg evidence at weight 0.16.",
+      "ids_match_test_order": true,
+      "mae_vs_099": 12.613771106525197,
+      "mae_vs_129": 32.236679963076924,
+      "name": "rebound_zmatch_merged_avg_16",
+      "next_manual_upload_target": false,
+      "output_bytes": 166541,
+      "output_file": "official_candidates/149_rebound_zmatch_merged_avg_16_output.csv",
+      "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+      "reproduction_command": "python3 official_candidates/149_rebound_zmatch_merged_avg_16_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv --failed-output official_candidates/129_aggressive_champion_trained_direction_risk_output.csv --anchor-output official_candidates/087_three_tier_fusion_base_14_output.csv --high-risk-base-output official_candidates/045_public_trt_ensemble_fallback_output.csv --output official_candidates/149_rebound_zmatch_merged_avg_16_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "row_count": 9425,
+      "source_bytes": 7017,
+      "source_file": "official_candidates/149_rebound_zmatch_merged_avg_16_source.py",
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 249.93885298015914,
+      "answer_std": 150.00670451247566,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "150",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "corr_vs_099": 0.9986019544778654,
+      "family": "failure_rebound_feedback",
+      "fused_evidence_groups": [
+        "safe_surface_via_best_fusion",
+        "medium_public_behavior_via_best_fusion",
+        "high_public_reconstruction_via_best_fusion",
+        "trained_residual"
+      ],
+      "hypothesis": "Train ridge_log and add only a distribution-matched residual at weight 0.10.",
+      "ids_match_test_order": true,
+      "mae_vs_099": 5.728152457824934,
+      "mae_vs_129": 27.702844936657826,
+      "name": "rebound_stack_ridge_log_10_01",
+      "next_manual_upload_target": false,
+      "output_bytes": 166341,
+      "output_file": "official_candidates/150_rebound_stack_ridge_log_10_01_output.csv",
+      "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+      "reproduction_command": "python3 official_candidates/150_rebound_stack_ridge_log_10_01_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv --failed-output official_candidates/129_aggressive_champion_trained_direction_risk_output.csv --anchor-output official_candidates/087_three_tier_fusion_base_14_output.csv --high-risk-base-output official_candidates/045_public_trt_ensemble_fallback_output.csv --output official_candidates/150_rebound_stack_ridge_log_10_01_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "row_count": 9425,
+      "source_bytes": 7014,
+      "source_file": "official_candidates/150_rebound_stack_ridge_log_10_01_source.py",
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 249.93885298185677,
+      "answer_std": 148.69826357335015,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "151",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "corr_vs_099": 0.9953828291425788,
+      "family": "failure_rebound_feedback",
+      "fused_evidence_groups": [
+        "safe_surface_via_best_fusion",
+        "medium_public_behavior_via_best_fusion",
+        "high_public_reconstruction_via_best_fusion",
+        "trained_residual"
+      ],
+      "hypothesis": "Train ridge_log and add only a distribution-matched residual at weight 0.18.",
+      "ids_match_test_order": true,
+      "mae_vs_099": 10.310674419416447,
+      "mae_vs_129": 26.44896538801061,
+      "name": "rebound_stack_ridge_log_18_02",
+      "next_manual_upload_target": false,
+      "output_bytes": 166419,
+      "output_file": "official_candidates/151_rebound_stack_ridge_log_18_02_output.csv",
+      "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+      "reproduction_command": "python3 official_candidates/151_rebound_stack_ridge_log_18_02_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv --failed-output official_candidates/129_aggressive_champion_trained_direction_risk_output.csv --anchor-output official_candidates/087_three_tier_fusion_base_14_output.csv --high-risk-base-output official_candidates/045_public_trt_ensemble_fallback_output.csv --output official_candidates/151_rebound_stack_ridge_log_18_02_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "row_count": 9425,
+      "source_bytes": 7015,
+      "source_file": "official_candidates/151_rebound_stack_ridge_log_18_02_source.py",
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 249.93885298090188,
+      "answer_std": 150.53878591890387,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "152",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "corr_vs_099": 0.9983105978629078,
+      "family": "failure_rebound_feedback",
+      "fused_evidence_groups": [
+        "safe_surface_via_best_fusion",
+        "medium_public_behavior_via_best_fusion",
+        "high_public_reconstruction_via_best_fusion",
+        "trained_residual"
+      ],
+      "hypothesis": "Train ridge_raw and add only a distribution-matched residual at weight 0.15.",
+      "ids_match_test_order": true,
+      "mae_vs_099": 5.9736287123607426,
+      "mae_vs_129": 29.30183256859417,
+      "name": "rebound_stack_ridge_raw_15_03",
+      "next_manual_upload_target": false,
+      "output_bytes": 166249,
+      "output_file": "official_candidates/152_rebound_stack_ridge_raw_15_03_output.csv",
+      "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+      "reproduction_command": "python3 official_candidates/152_rebound_stack_ridge_raw_15_03_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv --failed-output official_candidates/129_aggressive_champion_trained_direction_risk_output.csv --anchor-output official_candidates/087_three_tier_fusion_base_14_output.csv --high-risk-base-output official_candidates/045_public_trt_ensemble_fallback_output.csv --output official_candidates/152_rebound_stack_ridge_raw_15_03_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "row_count": 9425,
+      "source_bytes": 7015,
+      "source_file": "official_candidates/152_rebound_stack_ridge_raw_15_03_source.py",
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 249.93885297591513,
+      "answer_std": 151.42223048873618,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "153",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "corr_vs_099": 0.999302718829049,
+      "family": "failure_rebound_feedback",
+      "fused_evidence_groups": [
+        "safe_surface_via_best_fusion",
+        "medium_public_behavior_via_best_fusion",
+        "high_public_reconstruction_via_best_fusion",
+        "trained_residual"
+      ],
+      "hypothesis": "Train huber and add only a distribution-matched residual at weight 0.15.",
+      "ids_match_test_order": true,
+      "mae_vs_099": 3.9201937333687003,
+      "mae_vs_129": 28.86202546397878,
+      "name": "rebound_stack_huber_15_04",
+      "next_manual_upload_target": false,
+      "output_bytes": 166236,
+      "output_file": "official_candidates/153_rebound_stack_huber_15_04_output.csv",
+      "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+      "reproduction_command": "python3 official_candidates/153_rebound_stack_huber_15_04_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv --failed-output official_candidates/129_aggressive_champion_trained_direction_risk_output.csv --anchor-output official_candidates/087_three_tier_fusion_base_14_output.csv --high-risk-base-output official_candidates/045_public_trt_ensemble_fallback_output.csv --output official_candidates/153_rebound_stack_huber_15_04_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "row_count": 9425,
+      "source_bytes": 7011,
+      "source_file": "official_candidates/153_rebound_stack_huber_15_04_source.py",
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 249.93885298461538,
+      "answer_std": 151.12621944885277,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "154",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "corr_vs_099": 0.9992059040137964,
+      "family": "failure_rebound_feedback",
+      "fused_evidence_groups": [
+        "safe_surface_via_best_fusion",
+        "medium_public_behavior_via_best_fusion",
+        "high_public_reconstruction_via_best_fusion",
+        "trained_residual"
+      ],
+      "hypothesis": "Train trees and add only a distribution-matched residual at weight 0.12.",
+      "ids_match_test_order": true,
+      "mae_vs_099": 4.382223986100796,
+      "mae_vs_129": 29.506721956286473,
+      "name": "rebound_stack_trees_12_05",
+      "next_manual_upload_target": false,
+      "output_bytes": 166228,
+      "output_file": "official_candidates/154_rebound_stack_trees_12_05_output.csv",
+      "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+      "reproduction_command": "python3 official_candidates/154_rebound_stack_trees_12_05_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv --failed-output official_candidates/129_aggressive_champion_trained_direction_risk_output.csv --anchor-output official_candidates/087_three_tier_fusion_base_14_output.csv --high-risk-base-output official_candidates/045_public_trt_ensemble_fallback_output.csv --output official_candidates/154_rebound_stack_trees_12_05_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "row_count": 9425,
+      "source_bytes": 7011,
+      "source_file": "official_candidates/154_rebound_stack_trees_12_05_source.py",
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 249.9388529766578,
+      "answer_std": 150.6592469996135,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "155",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "corr_vs_099": 0.9977788972166249,
+      "family": "failure_rebound_feedback",
+      "fused_evidence_groups": [
+        "safe_surface_via_best_fusion",
+        "medium_public_behavior_via_best_fusion",
+        "high_public_reconstruction_via_best_fusion",
+        "trained_residual"
+      ],
+      "hypothesis": "Train trees and add only a distribution-matched residual at weight 0.20.",
+      "ids_match_test_order": true,
+      "mae_vs_099": 7.303706648488063,
+      "mae_vs_129": 29.663438515968167,
+      "name": "rebound_stack_trees_20_06",
+      "next_manual_upload_target": false,
+      "output_bytes": 166246,
+      "output_file": "official_candidates/155_rebound_stack_trees_20_06_output.csv",
+      "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+      "reproduction_command": "python3 official_candidates/155_rebound_stack_trees_20_06_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv --failed-output official_candidates/129_aggressive_champion_trained_direction_risk_output.csv --anchor-output official_candidates/087_three_tier_fusion_base_14_output.csv --high-risk-base-output official_candidates/045_public_trt_ensemble_fallback_output.csv --output official_candidates/155_rebound_stack_trees_20_06_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "row_count": 9425,
+      "source_bytes": 7010,
+      "source_file": "official_candidates/155_rebound_stack_trees_20_06_source.py",
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 251.8876419743236,
+      "answer_std": 149.74327486534463,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "156",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "corr_vs_099": 0.9987130135312156,
+      "family": "failure_rebound_feedback",
+      "fused_evidence_groups": [
+        "safe_surface_via_best_fusion",
+        "medium_public_behavior_via_best_fusion",
+        "high_public_reconstruction_via_best_fusion",
+        "trained_residual"
+      ],
+      "hypothesis": "Train ridge_log and add only a distribution-matched residual at weight 0.12.",
+      "ids_match_test_order": true,
+      "mae_vs_099": 5.680378992572944,
+      "mae_vs_129": 29.716306068965515,
+      "name": "rebound_stack_ridge_log_12_07",
+      "next_manual_upload_target": false,
+      "output_bytes": 166407,
+      "output_file": "official_candidates/156_rebound_stack_ridge_log_12_07_output.csv",
+      "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+      "reproduction_command": "python3 official_candidates/156_rebound_stack_ridge_log_12_07_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv --failed-output official_candidates/129_aggressive_champion_trained_direction_risk_output.csv --anchor-output official_candidates/087_three_tier_fusion_base_14_output.csv --high-risk-base-output official_candidates/045_public_trt_ensemble_fallback_output.csv --output official_candidates/156_rebound_stack_ridge_log_12_07_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "row_count": 9425,
+      "source_bytes": 7032,
+      "source_file": "official_candidates/156_rebound_stack_ridge_log_12_07_source.py",
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 251.8876419732626,
+      "answer_std": 150.15757989087163,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "157",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "corr_vs_099": 0.9967557222552408,
+      "family": "failure_rebound_feedback",
+      "fused_evidence_groups": [
+        "safe_surface_via_best_fusion",
+        "medium_public_behavior_via_best_fusion",
+        "high_public_reconstruction_via_best_fusion",
+        "trained_residual"
+      ],
+      "hypothesis": "Train ridge_raw and add only a distribution-matched residual at weight 0.22.",
+      "ids_match_test_order": true,
+      "mae_vs_099": 8.326268387374006,
+      "mae_vs_129": 31.728457414111407,
+      "name": "rebound_stack_ridge_raw_22_08",
+      "next_manual_upload_target": false,
+      "output_bytes": 166324,
+      "output_file": "official_candidates/157_rebound_stack_ridge_raw_22_08_output.csv",
+      "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+      "reproduction_command": "python3 official_candidates/157_rebound_stack_ridge_raw_22_08_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv --failed-output official_candidates/129_aggressive_champion_trained_direction_risk_output.csv --anchor-output official_candidates/087_three_tier_fusion_base_14_output.csv --high-risk-base-output official_candidates/045_public_trt_ensemble_fallback_output.csv --output official_candidates/157_rebound_stack_ridge_raw_22_08_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "row_count": 9425,
+      "source_bytes": 7032,
+      "source_file": "official_candidates/157_rebound_stack_ridge_raw_22_08_source.py",
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 251.88764197305042,
+      "answer_std": 151.42057492544504,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "158",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "corr_vs_099": 0.9990664750699232,
+      "family": "failure_rebound_feedback",
+      "fused_evidence_groups": [
+        "safe_surface_via_best_fusion",
+        "medium_public_behavior_via_best_fusion",
+        "high_public_reconstruction_via_best_fusion",
+        "trained_residual"
+      ],
+      "hypothesis": "Train huber and add only a distribution-matched residual at weight 0.20.",
+      "ids_match_test_order": true,
+      "mae_vs_099": 4.752334917029177,
+      "mae_vs_129": 31.04099300647215,
+      "name": "rebound_stack_huber_20_09",
+      "next_manual_upload_target": false,
+      "output_bytes": 166311,
+      "output_file": "official_candidates/158_rebound_stack_huber_20_09_output.csv",
+      "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+      "reproduction_command": "python3 official_candidates/158_rebound_stack_huber_20_09_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv --failed-output official_candidates/129_aggressive_champion_trained_direction_risk_output.csv --anchor-output official_candidates/087_three_tier_fusion_base_14_output.csv --high-risk-base-output official_candidates/045_public_trt_ensemble_fallback_output.csv --output official_candidates/158_rebound_stack_huber_20_09_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "row_count": 9425,
+      "source_bytes": 7027,
+      "source_file": "official_candidates/158_rebound_stack_huber_20_09_source.py",
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.04852353888595,
+      "answer_std": 146.18032002276277,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "159",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "corr_vs_099": 0.9983800198861205,
+      "family": "failure_rebound_feedback",
+      "fused_evidence_groups": [
+        "safe_surface_via_best_fusion",
+        "medium_public_behavior_via_best_fusion",
+        "high_public_reconstruction_via_best_fusion",
+        "trained_residual",
+        "distribution_matched_high_risk"
+      ],
+      "hypothesis": "Champion: keep 099 as base, reverse the failed 129 direction, add small prior-success extension, and inject distribution-matched trained/high-risk residuals.",
+      "ids_match_test_order": true,
+      "mae_vs_099": 9.253677196498675,
+      "mae_vs_129": 32.98291834758621,
+      "name": "rebound_champion_counter_prior_stack",
+      "next_manual_upload_target": true,
+      "output_bytes": 166508,
+      "output_file": "official_candidates/159_rebound_champion_counter_prior_stack_output.csv",
+      "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+      "reproduction_command": "python3 official_candidates/159_rebound_champion_counter_prior_stack_source.py --train data/train_data.csv --test data/test_data.csv --best-output official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv --failed-output official_candidates/129_aggressive_champion_trained_direction_risk_output.csv --anchor-output official_candidates/087_three_tier_fusion_base_14_output.csv --high-risk-base-output official_candidates/045_public_trt_ensemble_fallback_output.csv --output official_candidates/159_rebound_champion_counter_prior_stack_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "row_count": 9425,
+      "source_bytes": 7075,
+      "source_file": "official_candidates/159_rebound_champion_counter_prior_stack_source.py",
+      "upload_ready": true
+    }
+  ],
+  "mode": "generate",
+  "next_manual_upload_target": "159",
+  "official_feedback": {
+    "best_candidate_id": "099",
+    "best_official_score": 38.20618,
+    "failed_candidate_id": "129",
+    "failed_official_score": 37.89482,
+    "failed_submission_id": "manual_129_score_37_89482",
+    "submission_id_missing": true
+  },
+  "rebound_gate": {
+    "mae_vs_099_max": 29.54,
+    "mae_vs_099_min": 8.0,
+    "passed": true
+  },
+  "risk_label": "three_tier_fusion_with_high_risk_reconstruction"
+}

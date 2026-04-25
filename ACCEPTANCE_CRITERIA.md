@@ -189,6 +189,19 @@
 - The champion candidate is materially different from the latest official-best output.
 - A new official score is not claimed until judge feedback is recorded.
 
+## Failure Rebound Feedback
+
+- A lower official score is recorded without replacing the current best score.
+- The latest scored candidate is identifiable even when it is not the best candidate.
+- A failed largest-ID candidate is marked as official scored before the next batch is generated.
+- Failure-rebound candidates keep safe, medium, and high-risk signals fused into one output.
+- Failure-rebound candidates preserve exactly one answer for each test datapoint.
+- Failure-rebound candidates preserve the required public submission columns.
+- Failure-rebound candidate answers are finite and non-negative.
+- The rebound champion is the largest numeric candidate after generation.
+- The rebound champion is marked as the next manual upload target.
+- The current best official score is not changed until a higher score is recorded.
+
 ## Final 99+ Target
 
 - The final product target is an official or exact-truth score of at least `99 / 100`.

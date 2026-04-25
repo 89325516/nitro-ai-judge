@@ -33,9 +33,7 @@ class AggressiveFeedbackPushTest(unittest.TestCase):
         self.assertEqual("official_scored", scored["status"])
         self.assertAlmostEqual(38.20618, float(scored["official_partial_score"]))
 
-    def test_candidate_129_is_current_champion(self) -> None:
-        ids = [int(path.name.split("_", 1)[0]) for path in (ROOT / "official_candidates").glob("*_source.py")]
-        self.assertEqual(129, max(ids))
+    def test_candidate_129_was_batch_champion_and_is_now_scored(self) -> None:
         report = self.report()
         champion = report["candidates"][-1]
         self.assertEqual("129", report["next_manual_upload_target"])
@@ -44,6 +42,10 @@ class AggressiveFeedbackPushTest(unittest.TestCase):
         self.assertTrue(report["champion_difference_gate"]["passed"])
         self.assertLessEqual(champion["corr_vs_099"], 0.995)
         self.assertGreaterEqual(champion["mae_vs_099"], 15.0)
+        ledger = json.loads((ROOT / "reports/official_submission_ledger.json").read_text(encoding="utf-8"))
+        scored = next(row for row in ledger["pending_candidates"] if row["candidate_id"] == "129")
+        self.assertEqual("official_scored", scored["status"])
+        self.assertFalse(scored["next_manual_upload_target"])
 
     def test_new_candidates_are_fused_upload_ready_outputs(self) -> None:
         expected_ids = [row["datapointID"] for row in read_csv(ROOT / "data/test_data.csv")]

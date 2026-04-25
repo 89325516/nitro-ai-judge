@@ -52,3 +52,7 @@ All candidates preserve the public CSV contract and remain below the upload size
 - Every official result is recorded without changing its reported score.
 - A missing submission ID does not block recording a known largest-ID official score.
 - The highest successful official score is identifiable from the ledger.
+
+## Failure Feedback Update
+
+Candidate `129_aggressive_champion_trained_direction_risk` scored `37.89482 / 100`, which is below Candidate `099` at `38.20618 / 100`. Candidate `099` remains the best official candidate, while Candidate `129` is recorded as the latest scored negative anchor. The next batch starts at Candidate `130` and sets Candidate `159` as the largest-ID rebound champion.
