@@ -22,6 +22,16 @@
 - Missing, duplicated, or unparseable output rows are not acceptable.
 - Users can distinguish source data, generated outputs, and documentation without inspecting internal code.
 
+## Submission Pipeline
+
+- A local command can produce a submission CSV from the provided train and test CSV files.
+- The generated submission has exactly the columns `subtaskID`, `datapointID`, and `answer`.
+- The generated submission contains exactly one row for each test datapoint.
+- Each generated answer is a finite, non-negative number.
+- The generated datapoint IDs match the test datapoint IDs without omissions or duplicates.
+- The generation process does not require the source PDF.
+- The source file used for submission remains below the judge source upload size limit.
+
 ## Change Discipline
 
 - Any new mechanism is documented before implementation.
