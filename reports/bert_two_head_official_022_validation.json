@@ -1,0 +1,25 @@
+{
+  "answer_mean": 280.8763516525199,
+  "answer_zero_rate": 0.0,
+  "answers_finite_non_negative": true,
+  "candidate_id": "022",
+  "columns": [
+    "subtaskID",
+    "datapointID",
+    "answer"
+  ],
+  "decision": "rejected",
+  "hypothesis": "Fine-tuned Romanian BERT two-head model with 1.20 scale calibration.",
+  "ids_match_test_order": true,
+  "local_text_holdout_score": 29.481623660280615,
+  "name": "bert_two_head_scale120",
+  "output_bytes": 166919,
+  "output_file": "official_candidates/022_bert_two_head_scale120_output.csv",
+  "promoted": false,
+  "recommendation": "Do not upload Candidate 022 as a standalone official candidate.",
+  "row_count": 9425,
+  "score_type": "local_estimate",
+  "source_bytes": 8329,
+  "source_file": "official_candidates/022_bert_two_head_scale120_source.py",
+  "upload_ready": false
+}

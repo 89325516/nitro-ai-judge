@@ -1,0 +1,18 @@
+{
+  "evidence_class": "oracle_ceiling",
+  "family_word_mean_unseen_text": {
+    "pearson": 0.2973764954522317,
+    "r2": 0.07139013650973902,
+    "score": 18.438331598098536
+  },
+  "same_item_unseen_participant": {
+    "pearson": 0.5839164152639251,
+    "r2": 0.3392481113400273,
+    "score": 46.15822633019762
+  },
+  "word_mean_unseen_text": {
+    "pearson": 0.3843848564529222,
+    "r2": 0.10614520392486837,
+    "score": 24.526503018889528
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "fold_count": 9,
+  "folds": [
+    {
+      "fold": 1,
+      "heldout_texts": [
+        "lit_solaris"
+      ],
+      "pearson": 0.5216304393225684,
+      "r2": 0.2619004635985368,
+      "row_count": 28080,
+      "score": 39.17654514605526
+    },
+    {
+      "fold": 2,
+      "heldout_texts": [
+        "popsci_multipleye"
+      ],
+      "pearson": 0.5232782809287836,
+      "r2": 0.2635019299645006,
+      "row_count": 24780,
+      "score": 39.33901054466421
+    },
+    {
+      "fold": 3,
+      "heldout_texts": [
+        "arg_pisarapanui"
+      ],
+      "pearson": 0.5130963164566519,
+      "r2": 0.2531251198368414,
+      "row_count": 20790,
+      "score": 38.31107181467466
+    },
+    {
+      "fold": 4,
+      "heldout_texts": [
+        "lit_brokenapril"
+      ],
+      "pearson": 0.4935909051400308,
+      "r2": 0.23553495419461223,
+      "row_count": 16320,
+      "score": 36.45629296673215
+    },
+    {
+      "fold": 5,
+      "heldout_texts": [
+        "lit_magicmountain"
+      ],
+      "pearson": 0.49851216673317483,
+      "r2": 0.24266454034869722,
+      "row_count": 16170,
+      "score": 37.0588353540936
+    },
+    {
+      "fold": 6,
+      "heldout_texts": [
+        "popsci_caveman"
+      ],
+      "pearson": 0.5207484127464059,
+      "r2": 0.2659251816456545,
+      "row_count": 12660,
+      "score": 39.33367971960302
+    },
+    {
+      "fold": 7,
+      "heldout_texts": [
+        "ins_humanrights"
+      ],
+      "pearson": 0.5211002748895723,
+      "r2": 0.2601565912860818,
+      "row_count": 9540,
+      "score": 39.06284330878271
+    },
+    {
+      "fold": 8,
+      "heldout_texts": [
+        "lit_northwind"
+      ],
+      "pearson": 0.4646499784285316,
+      "r2": 0.1528756622323989,
+      "row_count": 3450,
+      "score": 30.876282033046525
+    },
+    {
+      "fold": 9,
+      "heldout_texts": [
+        "enc_wikimoon"
+      ],
+      "pearson": 0.5556621125512178,
+      "r2": 0.2912860694610375,
+      "row_count": 3420,
+      "score": 42.347409100612765
+    }
+  ],
+  "mean_pearson": 0.5124743207996596,
+  "mean_r2": 0.2474411680631512,
+  "mean_score": 37.99577444314055,
+  "mode": "cross_validate",
+  "row_count": 135210,
+  "score_type": "local_estimate",
+  "std_score": 2.9645740942913785,
+  "strategy": "text"
+}

@@ -1,0 +1,9 @@
+{
+  "evidence_class": "leakage_signal",
+  "looks_like_probability_scale": true,
+  "max_answer": 0.9997604935523885,
+  "mean_answer": 0.5039239092678488,
+  "min_answer": 0.00025926027136713437,
+  "row_count": 9425,
+  "row_order_abs_pearson": 0.011240731212066203
+}

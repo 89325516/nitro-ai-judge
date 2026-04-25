@@ -49,6 +49,98 @@
 - Model changes must preserve the public submission CSV columns.
 - Hidden-test performance is not claimed without judge feedback or truth labels.
 
+## Transformer Experiment
+
+- Transformer work remains experimental until its local estimate beats the stable raw-Ridge estimate.
+- Transformer reports identify themselves as local estimates.
+- Each evaluated row receives exactly one contextual feature vector.
+- The stable submission path is not replaced by a Transformer path without documented score improvement.
+- Generated Transformer caches and model weights are not tracked in git.
+
+## Transformer Surprisal
+
+- Surprisal experiments preserve the stable raw-Ridge submission unless the local estimate exceeds `39.388844 / 100`.
+- Each surprisal feature row contains finite numeric values.
+- Surprisal feature loading rejects row-count mismatches.
+- Generated feature caches are excluded from git.
+- Fine-tuning is not introduced without a separate documented mechanism.
+
+## Safe V6 50 Target
+
+- Safe V6 is promoted only when the local three-fold unseen-text estimate is at least `50 / 100`.
+- Safe V6 reports are labeled as local estimates unless exact truth labels or official judge feedback are available.
+- Safe V6 output contains exactly one row for each input test datapoint.
+- Safe V6 output columns are exactly `subtaskID`, `datapointID`, and `answer`.
+- Safe V6 answers are finite and non-negative.
+- Test-file answer values do not affect Safe V6 predictions.
+- Target-derived statistics are not computed from held-out prediction rows.
+
+## Semantic TRT Sprint
+
+- Semantic TRT candidates use only observable train and test CSV fields unless an external-resource track is explicitly allowed.
+- Semantic TRT output contains exactly one row for each input test datapoint.
+- Semantic TRT output columns are exactly `subtaskID`, `datapointID`, and `answer`.
+- Semantic TRT answers are finite and non-negative.
+- Test-file answer values do not affect Semantic TRT predictions.
+- Semantic TRT local reports are labeled as local estimates, not official or exact scores.
+- The final `100 / 100` target is satisfied only by official judge feedback or exact hidden truth labels.
+
+## BERT Two-Head Experiment
+
+- BERT two-head outputs contain exactly one row for each input test datapoint.
+- BERT two-head output columns are exactly `subtaskID`, `datapointID`, and `answer`.
+- BERT two-head answers are finite and non-negative.
+- Test-file answer values do not affect BERT two-head predictions.
+- BERT two-head smoke reports are labeled as local estimates, not official scores.
+- Token-to-word mapping preserves one prediction per input row.
+- BERT model weights and generated model artifacts are not tracked in git.
+
+## BERT Failure Recovery
+
+- Candidate `022_bert_two_head_scale120` is not recommended for official upload after a local text-holdout score below the active fallback candidates.
+- Future BERT official candidates require a full local text-holdout report before packaging as upload-ready.
+- BERT hybrid outputs contain exactly one row for each input test datapoint.
+- BERT hybrid answers are finite and non-negative.
+- BERT hybrid reports are labeled as local estimates unless official judge feedback is available.
+- BERT hybrid promotion requires beating the frozen Transformer local estimate before official packaging.
+
+## Lexical Frequency Transformer Candidate
+
+- Lexical frequency Transformer outputs contain exactly one row for each input test datapoint.
+- Lexical frequency Transformer output columns are exactly `subtaskID`, `datapointID`, and `answer`.
+- Lexical frequency Transformer answers are finite and non-negative.
+- Test-file answer values do not affect lexical frequency Transformer predictions.
+- Lexical frequency Transformer reports are labeled as local estimates unless official judge feedback is available.
+- Lexical frequency Transformer upload recommendation requires beating the frozen Transformer local estimate.
+
+## Official Feedback
+
+- Official judge scores outrank local estimates when choosing submission candidates.
+- Each official submission record preserves the reported submission ID and score.
+- The highest successful official score is identifiable from the project records.
+- Pending official candidates have uploadable source and output files.
+- Each pending official candidate output has exactly one row per test datapoint.
+- Each pending official candidate output uses exactly `subtaskID`, `datapointID`, and `answer`.
+- Candidate source and output files stay within the official upload size limits.
+
+## Official 80 Push
+
+- The official `80 / 100` target is satisfied only by an official or exact-truth score of at least `80`.
+- Official 80 push candidates have deterministic source and output pairs.
+- Official 80 push candidates preserve test datapoint ID order.
+- Official 80 push candidate answers are finite and non-negative.
+- Official 80 push reports identify upload priority and hypothesis for each pending candidate.
+- The official ledger can be updated without changing previously recorded official scores.
+- The current best successful official score is identifiable after each ledger update.
+
+## Final 99+ Target
+
+- The final product target is an official or exact-truth score of at least `99 / 100`.
+- Local estimates, smoke tests, and oracle ceilings do not satisfy the final `99+` target.
+- Every score report identifies its evidence class.
+- Leakage and ceiling checks run before a high-cost model is promoted.
+- The stable fallback submission remains available until a candidate passes the local promotion threshold.
+
 ## Change Discipline
 
 - Any new mechanism is documented before implementation.

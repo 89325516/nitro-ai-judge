@@ -1,0 +1,320 @@
+{
+  "candidates": [
+    {
+      "answer_mean": 262.01971823607425,
+      "answer_zero_rate": 0.19946949602122016,
+      "answers_finite_non_negative": true,
+      "candidate_id": "006",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "hypothesis": "Set bottom 20 percent predictions to zero.",
+      "ids_match_test_order": true,
+      "manual_upload_priority": 6,
+      "name": "ridge_zero_20",
+      "output_bytes": 164824,
+      "output_file": "official_candidates/006_ridge_zero_20_output.csv",
+      "row_count": 9425,
+      "source_bytes": 4756,
+      "source_file": "official_candidates/006_ridge_zero_20_source.py",
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 249.7672558769231,
+      "answer_zero_rate": 0.29973474801061006,
+      "answers_finite_non_negative": true,
+      "candidate_id": "007",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "hypothesis": "Set bottom 30 percent predictions to zero.",
+      "ids_match_test_order": true,
+      "manual_upload_priority": 7,
+      "name": "ridge_zero_30",
+      "output_bytes": 162934,
+      "output_file": "official_candidates/007_ridge_zero_30_output.csv",
+      "row_count": 9425,
+      "source_bytes": 4757,
+      "source_file": "official_candidates/007_ridge_zero_30_source.py",
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 231.70103207214856,
+      "answer_zero_rate": 0.39946949602122017,
+      "answers_finite_non_negative": true,
+      "candidate_id": "008",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "hypothesis": "Set bottom 40 percent predictions to zero.",
+      "ids_match_test_order": true,
+      "manual_upload_priority": 8,
+      "name": "ridge_zero_40",
+      "output_bytes": 161054,
+      "output_file": "official_candidates/008_ridge_zero_40_output.csv",
+      "row_count": 9425,
+      "source_bytes": 4757,
+      "source_file": "official_candidates/008_ridge_zero_40_source.py",
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 286.58693023023875,
+      "answer_zero_rate": 0.011671087533156498,
+      "answers_finite_non_negative": true,
+      "candidate_id": "009",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "hypothesis": "Boost text arg_pisacowsmilk by 12 percent.",
+      "ids_match_test_order": true,
+      "manual_upload_priority": 9,
+      "name": "text_boost_arg_pisacowsmilk",
+      "output_bytes": 166654,
+      "output_file": "official_candidates/009_text_boost_arg_pisacowsmilk_output.csv",
+      "row_count": 9425,
+      "source_bytes": 4757,
+      "source_file": "official_candidates/009_text_boost_arg_pisacowsmilk_source.py",
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 287.12223050557026,
+      "answer_zero_rate": 0.011671087533156498,
+      "answers_finite_non_negative": true,
+      "candidate_id": "010",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "hypothesis": "Boost text ins_learningmobility by 12 percent.",
+      "ids_match_test_order": true,
+      "manual_upload_priority": 10,
+      "name": "text_boost_ins_learningmobility",
+      "output_bytes": 166744,
+      "output_file": "official_candidates/010_text_boost_ins_learningmobility_output.csv",
+      "row_count": 9425,
+      "source_bytes": 4765,
+      "source_file": "official_candidates/010_text_boost_ins_learningmobility_source.py",
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 281.55286946100796,
+      "answer_zero_rate": 0.011671087533156498,
+      "answers_finite_non_negative": true,
+      "candidate_id": "011",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "hypothesis": "Boost text lit_alchemist by 12 percent.",
+      "ids_match_test_order": true,
+      "manual_upload_priority": 11,
+      "name": "text_boost_lit_alchemist",
+      "output_bytes": 166619,
+      "output_file": "official_candidates/011_text_boost_lit_alchemist_output.csv",
+      "row_count": 9425,
+      "source_bytes": 4751,
+      "source_file": "official_candidates/011_text_boost_lit_alchemist_source.py",
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 280.7013842689655,
+      "answer_zero_rate": 0.011671087533156498,
+      "answers_finite_non_negative": true,
+      "candidate_id": "012",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "hypothesis": "Boost participant 040 by 12 percent.",
+      "ids_match_test_order": true,
+      "manual_upload_priority": 12,
+      "name": "participant_boost_040",
+      "output_bytes": 166625,
+      "output_file": "official_candidates/012_participant_boost_040_output.csv",
+      "row_count": 9425,
+      "source_bytes": 4748,
+      "source_file": "official_candidates/012_participant_boost_040_source.py",
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 280.7013842689655,
+      "answer_zero_rate": 0.011671087533156498,
+      "answers_finite_non_negative": true,
+      "candidate_id": "013",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "hypothesis": "Boost participant 036 by 12 percent.",
+      "ids_match_test_order": true,
+      "manual_upload_priority": 13,
+      "name": "participant_boost_036",
+      "output_bytes": 166625,
+      "output_file": "official_candidates/013_participant_boost_036_output.csv",
+      "row_count": 9425,
+      "source_bytes": 4748,
+      "source_file": "official_candidates/013_participant_boost_036_source.py",
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 280.7013842689655,
+      "answer_zero_rate": 0.011671087533156498,
+      "answers_finite_non_negative": true,
+      "candidate_id": "014",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "hypothesis": "Boost participant 016 by 12 percent.",
+      "ids_match_test_order": true,
+      "manual_upload_priority": 14,
+      "name": "participant_boost_016",
+      "output_bytes": 166625,
+      "output_file": "official_candidates/014_participant_boost_016_output.csv",
+      "row_count": 9425,
+      "source_bytes": 4748,
+      "source_file": "official_candidates/014_participant_boost_016_source.py",
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 280.7013842689655,
+      "answer_zero_rate": 0.011671087533156498,
+      "answers_finite_non_negative": true,
+      "candidate_id": "015",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "hypothesis": "Boost participant 024 by 12 percent.",
+      "ids_match_test_order": true,
+      "manual_upload_priority": 15,
+      "name": "participant_boost_024",
+      "output_bytes": 166625,
+      "output_file": "official_candidates/015_participant_boost_024_output.csv",
+      "row_count": 9425,
+      "source_bytes": 4748,
+      "source_file": "official_candidates/015_participant_boost_024_source.py",
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 280.7013842689655,
+      "answer_zero_rate": 0.011671087533156498,
+      "answers_finite_non_negative": true,
+      "candidate_id": "016",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "hypothesis": "Boost participant 019 by 12 percent.",
+      "ids_match_test_order": true,
+      "manual_upload_priority": 16,
+      "name": "participant_boost_019",
+      "output_bytes": 166625,
+      "output_file": "official_candidates/016_participant_boost_019_output.csv",
+      "row_count": 9425,
+      "source_bytes": 4748,
+      "source_file": "official_candidates/016_participant_boost_019_source.py",
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 246.17419994748013,
+      "answer_zero_rate": 0.011671087533156498,
+      "answers_finite_non_negative": true,
+      "candidate_id": "017",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "hypothesis": "Scale frozen Transformer predictions by 0.9.",
+      "ids_match_test_order": true,
+      "manual_upload_priority": 17,
+      "name": "transformer_scale_090",
+      "output_bytes": 166469,
+      "output_file": "official_candidates/017_transformer_scale_090_output.csv",
+      "row_count": 9425,
+      "source_bytes": 9362,
+      "source_file": "official_candidates/017_transformer_scale_090_source.py",
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 300.8795777156499,
+      "answer_zero_rate": 0.011671087533156498,
+      "answers_finite_non_negative": true,
+      "candidate_id": "018",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "hypothesis": "Scale frozen Transformer predictions by 1.1.",
+      "ids_match_test_order": true,
+      "manual_upload_priority": 18,
+      "name": "transformer_scale_110",
+      "output_bytes": 166934,
+      "output_file": "official_candidates/018_transformer_scale_110_output.csv",
+      "row_count": 9425,
+      "source_bytes": 9362,
+      "source_file": "official_candidates/018_transformer_scale_110_source.py",
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 261.3590327087533,
+      "answer_zero_rate": 0.2,
+      "answers_finite_non_negative": true,
+      "candidate_id": "019",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "hypothesis": "Set bottom 20 percent frozen Transformer predictions to zero.",
+      "ids_match_test_order": true,
+      "manual_upload_priority": 19,
+      "name": "transformer_zero_20",
+      "output_bytes": 164804,
+      "output_file": "official_candidates/019_transformer_zero_20_output.csv",
+      "row_count": 9425,
+      "source_bytes": 9409,
+      "source_file": "official_candidates/019_transformer_zero_20_source.py",
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 248.50191763448274,
+      "answer_zero_rate": 0.29973474801061006,
+      "answers_finite_non_negative": true,
+      "candidate_id": "020",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "hypothesis": "Set bottom 30 percent frozen Transformer predictions to zero.",
+      "ids_match_test_order": true,
+      "manual_upload_priority": 20,
+      "name": "transformer_zero_30",
+      "output_bytes": 162924,
+      "output_file": "official_candidates/020_transformer_zero_30_output.csv",
+      "row_count": 9425,
+      "source_bytes": 9409,
+      "source_file": "official_candidates/020_transformer_zero_30_source.py",
+      "upload_ready": true
+    }
+  ],
+  "target_score": 80.0
+}

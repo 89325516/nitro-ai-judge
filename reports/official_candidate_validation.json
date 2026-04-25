@@ -1,0 +1,127 @@
+{
+  "candidates": [
+    {
+      "answer_max": 1353.130181,
+      "answer_mean": 274.1224455740053,
+      "answer_min": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "001",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "ids_match_test_order": true,
+      "name": "ridge_official",
+      "output_bytes": 166554,
+      "output_file": "official_candidates/001_ridge_official_output.csv",
+      "row_count": 9425,
+      "source_bytes": 3944,
+      "source_file": "official_candidates/001_ridge_official_source.py",
+      "upload_ready": true
+    },
+    {
+      "answer_max": 1168.715084,
+      "answer_mean": 273.5268888323607,
+      "answer_min": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "002",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "ids_match_test_order": true,
+      "name": "frozen_transformer",
+      "output_bytes": 166719,
+      "output_file": "official_candidates/002_frozen_transformer_output.csv",
+      "row_count": 9425,
+      "source_bytes": 8516,
+      "source_file": "official_candidates/002_frozen_transformer_source.py",
+      "upload_ready": true
+    },
+    {
+      "answer_max": 1221.839874,
+      "answer_mean": 275.19151454259946,
+      "answer_min": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "003",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "ids_match_test_order": true,
+      "name": "safe_v6",
+      "output_bytes": 166429,
+      "output_file": "official_candidates/003_safe_v6_output.csv",
+      "row_count": 9425,
+      "source_bytes": 10943,
+      "source_file": "official_candidates/003_safe_v6_source.py",
+      "upload_ready": true
+    },
+    {
+      "answer_max": 1217.817163,
+      "answer_mean": 246.71020101697613,
+      "answer_min": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "004",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "ids_match_test_order": true,
+      "name": "ridge_scale_090",
+      "output_bytes": 166299,
+      "output_file": "official_candidates/004_ridge_scale_090_output.csv",
+      "row_count": 9425,
+      "source_bytes": 3964,
+      "source_file": "official_candidates/004_ridge_scale_090_source.py",
+      "upload_ready": true
+    },
+    {
+      "answer_max": 1488.443199,
+      "answer_mean": 301.53469012838195,
+      "answer_min": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "005",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "ids_match_test_order": true,
+      "name": "ridge_scale_110",
+      "output_bytes": 166874,
+      "output_file": "official_candidates/005_ridge_scale_110_output.csv",
+      "row_count": 9425,
+      "source_bytes": 3964,
+      "source_file": "official_candidates/005_ridge_scale_110_source.py",
+      "upload_ready": true
+    },
+    {
+      "answer_max": 1402.215053,
+      "answer_mean": 274.08558953050397,
+      "answer_min": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "023",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "ids_match_test_order": true,
+      "name": "lexical_transformer",
+      "output_bytes": 166609,
+      "output_file": "official_candidates/023_lexical_transformer_output.csv",
+      "row_count": 9425,
+      "source_bytes": 9716,
+      "source_file": "official_candidates/023_lexical_transformer_source.py",
+      "upload_ready": true
+    }
+  ],
+  "output_limit_bytes": 52428800,
+  "source_limit_bytes": 35840,
+  "test_row_count": 9425
+}
