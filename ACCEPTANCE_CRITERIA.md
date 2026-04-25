@@ -85,6 +85,16 @@
 - Each pending official candidate output uses exactly `subtaskID`, `datapointID`, and `answer`.
 - Candidate source and output files stay within the official upload size limits.
 
+## Official 80 Push
+
+- The official `80 / 100` target is satisfied only by an official or exact-truth score of at least `80`.
+- Official 80 push candidates have deterministic source and output pairs.
+- Official 80 push candidates preserve test datapoint ID order.
+- Official 80 push candidate answers are finite and non-negative.
+- Official 80 push reports identify upload priority and hypothesis for each pending candidate.
+- The official ledger can be updated without changing previously recorded official scores.
+- The current best successful official score is identifiable after each ledger update.
+
 ## Final 99+ Target
 
 - The final product target is an official or exact-truth score of at least `99 / 100`.
