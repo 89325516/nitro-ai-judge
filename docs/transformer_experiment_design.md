@@ -36,3 +36,13 @@ Transformer results are local estimates until truth labels or judge feedback exi
 - Subword vectors can be mapped back to original word rows.
 - Stable `solution.py` and `submission.csv` remain unchanged by smoke tests.
 - Generated feature caches are not tracked by git.
+
+## Deep Transformer Surprisal Track
+
+Frozen hidden-state features produced only a weak local gain over raw Ridge. The next experiment targets masked-language-model surprisal because the task statement links reading time to word predictability and contextual probability.
+
+The promotion threshold is `39.388844 / 100`, which is one point above the stable raw-Ridge estimate. Surprisal results below that threshold remain experimental and must not replace the stable submission.
+
+Surprisal features estimate how unlikely each original word or subword is in its page context. The experiment records compact row-level features: mean surprisal, maximum surprisal, token count, split complexity, and missing-token count.
+
+Generated feature caches belong under `.cache/` and are not tracked by git.

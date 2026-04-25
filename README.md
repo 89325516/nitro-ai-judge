@@ -56,6 +56,18 @@ Run a tiny smoke test with:
 python3 experiments/transformer_experiment.py smoke --train data/train_data.csv --limit-rows 12 --report reports/transformer_smoke.json
 ```
 
+For the deeper surprisal experiment, run a deterministic smoke test with:
+
+```bash
+python3 experiments/transformer_deep_experiment.py smoke --train data/train_data.csv --limit-rows 8 --scorer deterministic --report reports/transformer_surprisal_smoke.json
+```
+
+A real masked-language-model smoke test can be run with:
+
+```bash
+python3 experiments/transformer_deep_experiment.py smoke --train data/train_data.csv --limit-rows 4 --scorer hf --model dumitrescustefan/bert-base-romanian-cased-v1 --device auto --report reports/transformer_surprisal_hf_smoke.json
+```
+
 ## Development Discipline
 
 Changes should keep module boundaries small, avoid hidden state, prefer injected dependencies, and test observable behavior rather than implementation details.

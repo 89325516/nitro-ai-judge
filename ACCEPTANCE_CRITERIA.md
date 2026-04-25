@@ -57,6 +57,14 @@
 - The stable submission path is not replaced by a Transformer path without documented score improvement.
 - Generated Transformer caches and model weights are not tracked in git.
 
+## Transformer Surprisal
+
+- Surprisal experiments preserve the stable raw-Ridge submission unless the local estimate exceeds `39.388844 / 100`.
+- Each surprisal feature row contains finite numeric values.
+- Surprisal feature loading rejects row-count mismatches.
+- Generated feature caches are excluded from git.
+- Fine-tuning is not introduced without a separate documented mechanism.
+
 ## Change Discipline
 
 - Any new mechanism is documented before implementation.

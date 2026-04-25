@@ -1,0 +1,17 @@
+{
+  "baseline_score": 38.388844,
+  "feature_keys": [
+    "surprisal_max",
+    "surprisal_mean",
+    "surprisal_missing_count",
+    "surprisal_split_complexity",
+    "surprisal_sum",
+    "surprisal_token_count"
+  ],
+  "mode": "transformer_surprisal_smoke",
+  "model": "deterministic",
+  "promoted": false,
+  "promotion_score": 39.388844,
+  "row_count": 8,
+  "score_type": "local_estimate"
+}
