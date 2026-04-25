@@ -38,9 +38,7 @@ class FeedbackChampionCandidateTest(unittest.TestCase):
             read_csv(ROOT / "official_candidates/088_feedback_anchor_clone_output.csv"),
         )
 
-    def test_candidate_099_is_largest_upload_ready_candidate(self) -> None:
-        ids = [int(path.name.split("_", 1)[0]) for path in (ROOT / "official_candidates").glob("*_source.py")]
-        self.assertEqual(99, max(ids))
+    def test_candidate_099_batch_output_is_upload_ready(self) -> None:
         candidate = self.report()["candidates"][-1]
         rows = read_csv(ROOT / candidate["output_file"])
         expected_ids = [row["datapointID"] for row in read_csv(ROOT / "data/test_data.csv")]
@@ -55,12 +53,13 @@ class FeedbackChampionCandidateTest(unittest.TestCase):
 
     def test_ledger_marks_099_as_next_manual_upload_target(self) -> None:
         ledger = json.loads((ROOT / "reports/official_submission_ledger.json").read_text(encoding="utf-8"))
-        self.assertEqual(37.35945, ledger["best_official_score"])
-        self.assertEqual("087", ledger["latest_official_feedback_candidate_id"])
-        self.assertEqual("099", ledger["next_manual_upload_target"])
+        self.assertEqual(38.20618, ledger["best_official_score"])
+        self.assertEqual("099", ledger["latest_official_feedback_candidate_id"])
+        self.assertEqual("129", ledger["next_manual_upload_target"])
         candidate = next(row for row in ledger["pending_candidates"] if row["candidate_id"] == "099")
-        self.assertTrue(candidate["next_manual_upload_target"])
-        self.assertEqual("pending", candidate["status"])
+        self.assertFalse(candidate["next_manual_upload_target"])
+        self.assertEqual("official_scored", candidate["status"])
+        self.assertAlmostEqual(38.20618, float(candidate["official_partial_score"]))
 
     def test_champion_source_reproduces_output(self) -> None:
         candidate = self.report()["candidates"][-1]

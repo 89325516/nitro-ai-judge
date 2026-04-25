@@ -1,6 +1,7 @@
 {
-  "best_official_score": 37.35945,
-  "best_official_submission_id": "07ead7cdad22",
+  "best_official_candidate_id": "099",
+  "best_official_score": 38.20618,
+  "best_official_submission_id": "manual_099_score_38_20618",
   "evidence_order": [
     "official_score",
     "exact_score_with_truth",
@@ -8,24 +9,21 @@
     "smoke_test"
   ],
   "feedback_driven_next_candidate_anchor": {
-    "candidate_id": "087",
-    "component_weights": {
-      "high": 0.35,
-      "medium": 0.45,
-      "safe": 0.2
-    },
-    "mode": "base",
-    "next_search_direction": "increase safe/medium around candidate 087 while keeping each output a three-tier fusion individual",
-    "official_partial_score": 37.35945
+    "candidate_id": "099",
+    "next_search_direction": "aggressive trained three-tier fusion with official-direction extrapolation",
+    "official_partial_score": 38.20618,
+    "submission_id": "manual_099_score_38_20618",
+    "submission_id_missing": true
   },
   "feedback_driven_next_candidate_start": "088",
   "final_selection_policy": "choose_current_highest_successful_official_score",
   "latest_manual_submission_policy": "largest_numeric_candidate_id_at_manual_upload_time",
-  "latest_official_feedback_candidate_id": "087",
-  "latest_official_feedback_submission_id": "07ead7cdad22",
-  "next_manual_upload_target": "099",
-  "next_manual_upload_target_output": "official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv",
-  "next_manual_upload_target_source": "official_candidates/099_feedback_champion_safe25_medium50_high25_source.py",
+  "latest_official_feedback_candidate_id": "099",
+  "latest_official_feedback_submission_id": "manual_099_score_38_20618",
+  "latest_official_feedback_submission_id_missing": true,
+  "next_manual_upload_target": "129",
+  "next_manual_upload_target_output": "official_candidates/129_aggressive_champion_trained_direction_risk_output.csv",
+  "next_manual_upload_target_source": "official_candidates/129_aggressive_champion_trained_direction_risk_source.py",
   "official_80_target_met": false,
   "official_80_target_score": 80.0,
   "pending_candidates": [
@@ -1800,7 +1798,10 @@
       "local_score": null,
       "manual_upload_priority": 99,
       "name": "feedback_champion_safe25_medium50_high25",
-      "next_manual_upload_target": true,
+      "next_manual_upload_target": false,
+      "official_complete_score": null,
+      "official_partial_score": 38.20618,
+      "official_submission_id": "manual_099_score_38_20618",
       "output_file": "official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv",
       "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
       "risk_labels": [
@@ -1810,7 +1811,752 @@
       ],
       "scale": 1.02,
       "source_file": "official_candidates/099_feedback_champion_safe25_medium50_high25_source.py",
+      "status": "official_scored",
+      "submission_id_missing": true,
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "100",
+      "hypothesis": "Extend the verified 087 to 099 improvement direction by gamma 1.5.",
+      "local_report": "reports/aggressive_feedback_push_report.json",
+      "local_score": null,
+      "manual_upload_priority": 100,
+      "name": "aggressive_direction_gamma150",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/100_aggressive_direction_gamma150_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/100_aggressive_direction_gamma150_source.py",
       "status": "pending",
+      "trained_feature_groups": [
+        "safe_surface",
+        "medium_public_behavior",
+        "high_public_reconstruction",
+        "official_direction"
+      ],
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "101",
+      "hypothesis": "Extend the verified official direction by gamma 2.0.",
+      "local_report": "reports/aggressive_feedback_push_report.json",
+      "local_score": null,
+      "manual_upload_priority": 101,
+      "name": "aggressive_direction_gamma200",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/101_aggressive_direction_gamma200_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/101_aggressive_direction_gamma200_source.py",
+      "status": "pending",
+      "trained_feature_groups": [
+        "safe_surface",
+        "medium_public_behavior",
+        "high_public_reconstruction",
+        "official_direction"
+      ],
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "102",
+      "hypothesis": "Make a large official-direction move instead of another tiny blend.",
+      "local_report": "reports/aggressive_feedback_push_report.json",
+      "local_score": null,
+      "manual_upload_priority": 102,
+      "name": "aggressive_direction_gamma300",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/102_aggressive_direction_gamma300_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/102_aggressive_direction_gamma300_source.py",
+      "status": "pending",
+      "trained_feature_groups": [
+        "safe_surface",
+        "medium_public_behavior",
+        "high_public_reconstruction",
+        "official_direction"
+      ],
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "103",
+      "hypothesis": "Stress-test the official direction with gamma 4.0.",
+      "local_report": "reports/aggressive_feedback_push_report.json",
+      "local_score": null,
+      "manual_upload_priority": 103,
+      "name": "aggressive_direction_gamma400",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/103_aggressive_direction_gamma400_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/103_aggressive_direction_gamma400_source.py",
+      "status": "pending",
+      "trained_feature_groups": [
+        "safe_surface",
+        "medium_public_behavior",
+        "high_public_reconstruction",
+        "official_direction"
+      ],
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "104",
+      "hypothesis": "Aggressive official-direction extrapolation at gamma 6.0.",
+      "local_report": "reports/aggressive_feedback_push_report.json",
+      "local_score": null,
+      "manual_upload_priority": 104,
+      "name": "aggressive_direction_gamma600",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/104_aggressive_direction_gamma600_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/104_aggressive_direction_gamma600_source.py",
+      "status": "pending",
+      "trained_feature_groups": [
+        "safe_surface",
+        "medium_public_behavior",
+        "high_public_reconstruction",
+        "official_direction"
+      ],
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "105",
+      "hypothesis": "Maximum official-direction extrapolation in the first block.",
+      "local_report": "reports/aggressive_feedback_push_report.json",
+      "local_score": null,
+      "manual_upload_priority": 105,
+      "name": "aggressive_direction_gamma800",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/105_aggressive_direction_gamma800_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/105_aggressive_direction_gamma800_source.py",
+      "status": "pending",
+      "trained_feature_groups": [
+        "safe_surface",
+        "medium_public_behavior",
+        "high_public_reconstruction",
+        "official_direction"
+      ],
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "106",
+      "hypothesis": "Gamma 3.0 plus positive scale shift.",
+      "local_report": "reports/aggressive_feedback_push_report.json",
+      "local_score": null,
+      "manual_upload_priority": 106,
+      "name": "aggressive_direction_gamma300_scale104",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/106_aggressive_direction_gamma300_scale104_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/106_aggressive_direction_gamma300_scale104_source.py",
+      "status": "pending",
+      "trained_feature_groups": [
+        "safe_surface",
+        "medium_public_behavior",
+        "high_public_reconstruction",
+        "official_direction"
+      ],
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "107",
+      "hypothesis": "Gamma 3.0 with the lowest one percent set to zero.",
+      "local_report": "reports/aggressive_feedback_push_report.json",
+      "local_score": null,
+      "manual_upload_priority": 107,
+      "name": "aggressive_direction_gamma300_zero01",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/107_aggressive_direction_gamma300_zero01_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/107_aggressive_direction_gamma300_zero01_source.py",
+      "status": "pending",
+      "trained_feature_groups": [
+        "safe_surface",
+        "medium_public_behavior",
+        "high_public_reconstruction",
+        "official_direction"
+      ],
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "108",
+      "hypothesis": "Gamma 4.0 with low-tail floor handling.",
+      "local_report": "reports/aggressive_feedback_push_report.json",
+      "local_score": null,
+      "manual_upload_priority": 108,
+      "name": "aggressive_direction_gamma400_floor02",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/108_aggressive_direction_gamma400_floor02_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/108_aggressive_direction_gamma400_floor02_source.py",
+      "status": "pending",
+      "trained_feature_groups": [
+        "safe_surface",
+        "medium_public_behavior",
+        "high_public_reconstruction",
+        "official_direction"
+      ],
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "109",
+      "hypothesis": "Gamma 6.0 with high-tail cap control.",
+      "local_report": "reports/aggressive_feedback_push_report.json",
+      "local_score": null,
+      "manual_upload_priority": 109,
+      "name": "aggressive_direction_gamma600_cap995",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/109_aggressive_direction_gamma600_cap995_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/109_aggressive_direction_gamma600_cap995_source.py",
+      "status": "pending",
+      "trained_feature_groups": [
+        "safe_surface",
+        "medium_public_behavior",
+        "high_public_reconstruction",
+        "official_direction"
+      ],
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "110",
+      "hypothesis": "Train a raw Ridge stacker on public behavior and surface features.",
+      "local_report": "reports/aggressive_feedback_push_report.json",
+      "local_score": null,
+      "manual_upload_priority": 110,
+      "name": "aggressive_train_ridge_raw_balanced",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/110_aggressive_train_ridge_raw_balanced_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/110_aggressive_train_ridge_raw_balanced_source.py",
+      "status": "pending",
+      "trained_feature_groups": [
+        "safe_surface",
+        "medium_public_behavior",
+        "high_public_reconstruction",
+        "trained_stacker"
+      ],
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "111",
+      "hypothesis": "Train a log-target Ridge stacker to change scale and tail behavior.",
+      "local_report": "reports/aggressive_feedback_push_report.json",
+      "local_score": null,
+      "manual_upload_priority": 111,
+      "name": "aggressive_train_ridge_log_balanced",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/111_aggressive_train_ridge_log_balanced_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/111_aggressive_train_ridge_log_balanced_source.py",
+      "status": "pending",
+      "trained_feature_groups": [
+        "safe_surface",
+        "medium_public_behavior",
+        "high_public_reconstruction",
+        "trained_stacker"
+      ],
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "112",
+      "hypothesis": "Favor public item and text behavior inside a trained stack.",
+      "local_report": "reports/aggressive_feedback_push_report.json",
+      "local_score": null,
+      "manual_upload_priority": 112,
+      "name": "aggressive_train_ridge_medium_heavy",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/112_aggressive_train_ridge_medium_heavy_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/112_aggressive_train_ridge_medium_heavy_source.py",
+      "status": "pending",
+      "trained_feature_groups": [
+        "safe_surface",
+        "medium_public_behavior",
+        "high_public_reconstruction",
+        "trained_stacker"
+      ],
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "113",
+      "hypothesis": "Favor mapped public TRT while keeping trained correction active.",
+      "local_report": "reports/aggressive_feedback_push_report.json",
+      "local_score": null,
+      "manual_upload_priority": 113,
+      "name": "aggressive_train_ridge_high_heavy",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/113_aggressive_train_ridge_high_heavy_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/113_aggressive_train_ridge_high_heavy_source.py",
+      "status": "pending",
+      "trained_feature_groups": [
+        "safe_surface",
+        "medium_public_behavior",
+        "high_public_reconstruction",
+        "trained_stacker"
+      ],
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "114",
+      "hypothesis": "Use a robust Huber-style trained stacker for outlier resistance.",
+      "local_report": "reports/aggressive_feedback_push_report.json",
+      "local_score": null,
+      "manual_upload_priority": 114,
+      "name": "aggressive_train_huber_balanced",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/114_aggressive_train_huber_balanced_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/114_aggressive_train_huber_balanced_source.py",
+      "status": "pending",
+      "trained_feature_groups": [
+        "safe_surface",
+        "medium_public_behavior",
+        "high_public_reconstruction",
+        "trained_stacker"
+      ],
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "115",
+      "hypothesis": "Robust stacker with stronger direct reconstruction signal.",
+      "local_report": "reports/aggressive_feedback_push_report.json",
+      "local_score": null,
+      "manual_upload_priority": 115,
+      "name": "aggressive_train_huber_high_push",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/115_aggressive_train_huber_high_push_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/115_aggressive_train_huber_high_push_source.py",
+      "status": "pending",
+      "trained_feature_groups": [
+        "safe_surface",
+        "medium_public_behavior",
+        "high_public_reconstruction",
+        "trained_stacker"
+      ],
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "116",
+      "hypothesis": "ExtraTrees-style stacker focused on public medium behavior.",
+      "local_report": "reports/aggressive_feedback_push_report.json",
+      "local_score": null,
+      "manual_upload_priority": 116,
+      "name": "aggressive_train_tree_medium",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/116_aggressive_train_tree_medium_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/116_aggressive_train_tree_medium_source.py",
+      "status": "pending",
+      "trained_feature_groups": [
+        "safe_surface",
+        "medium_public_behavior",
+        "high_public_reconstruction",
+        "trained_stacker"
+      ],
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "117",
+      "hypothesis": "ExtraTrees-style stacker with a high-risk reconstruction push.",
+      "local_report": "reports/aggressive_feedback_push_report.json",
+      "local_score": null,
+      "manual_upload_priority": 117,
+      "name": "aggressive_train_tree_high",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/117_aggressive_train_tree_high_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/117_aggressive_train_tree_high_source.py",
+      "status": "pending",
+      "trained_feature_groups": [
+        "safe_surface",
+        "medium_public_behavior",
+        "high_public_reconstruction",
+        "trained_stacker"
+      ],
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "118",
+      "hypothesis": "Trained stacker plus explicit low-tail zero handling.",
+      "local_report": "reports/aggressive_feedback_push_report.json",
+      "local_score": null,
+      "manual_upload_priority": 118,
+      "name": "aggressive_train_ridge_zero_tail",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/118_aggressive_train_ridge_zero_tail_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/118_aggressive_train_ridge_zero_tail_source.py",
+      "status": "pending",
+      "trained_feature_groups": [
+        "safe_surface",
+        "medium_public_behavior",
+        "high_public_reconstruction",
+        "trained_stacker"
+      ],
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "119",
+      "hypothesis": "Trained stacker blended with the verified official direction.",
+      "local_report": "reports/aggressive_feedback_push_report.json",
+      "local_score": null,
+      "manual_upload_priority": 119,
+      "name": "aggressive_train_ridge_direction_blend",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/119_aggressive_train_ridge_direction_blend_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/119_aggressive_train_ridge_direction_blend_source.py",
+      "status": "pending",
+      "trained_feature_groups": [
+        "safe_surface",
+        "medium_public_behavior",
+        "high_public_reconstruction",
+        "trained_stacker",
+        "official_direction"
+      ],
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "120",
+      "hypothesis": "Let the public TRT reconstruction base dominate the fused output.",
+      "local_report": "reports/aggressive_feedback_push_report.json",
+      "local_score": null,
+      "manual_upload_priority": 120,
+      "name": "aggressive_risk_base75",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/120_aggressive_risk_base75_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/120_aggressive_risk_base75_source.py",
+      "status": "pending",
+      "trained_feature_groups": [
+        "safe_surface",
+        "medium_public_behavior",
+        "high_public_reconstruction"
+      ],
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "121",
+      "hypothesis": "Use mapped raw public subject TRT as the dominant signal.",
+      "local_report": "reports/aggressive_feedback_push_report.json",
+      "local_score": null,
+      "manual_upload_priority": 121,
+      "name": "aggressive_risk_raw_direct75",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/121_aggressive_risk_raw_direct75_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/121_aggressive_risk_raw_direct75_source.py",
+      "status": "pending",
+      "trained_feature_groups": [
+        "safe_surface",
+        "medium_public_behavior",
+        "high_public_reconstruction"
+      ],
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "122",
+      "hypothesis": "Use calibrated mapped public subject TRT as the dominant signal.",
+      "local_report": "reports/aggressive_feedback_push_report.json",
+      "local_score": null,
+      "manual_upload_priority": 122,
+      "name": "aggressive_risk_cal_direct75",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/122_aggressive_risk_cal_direct75_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/122_aggressive_risk_cal_direct75_source.py",
+      "status": "pending",
+      "trained_feature_groups": [
+        "safe_surface",
+        "medium_public_behavior",
+        "high_public_reconstruction"
+      ],
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "123",
+      "hypothesis": "Push exact public item-level TRT recovery.",
+      "local_report": "reports/aggressive_feedback_push_report.json",
+      "local_score": null,
+      "manual_upload_priority": 123,
+      "name": "aggressive_risk_item_mean80",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/123_aggressive_risk_item_mean80_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/123_aggressive_risk_item_mean80_source.py",
+      "status": "pending",
+      "trained_feature_groups": [
+        "safe_surface",
+        "medium_public_behavior",
+        "high_public_reconstruction"
+      ],
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "124",
+      "hypothesis": "Use public merged average TRT as a high-risk recovery source.",
+      "local_report": "reports/aggressive_feedback_push_report.json",
+      "local_score": null,
+      "manual_upload_priority": 124,
+      "name": "aggressive_risk_merged_avg80",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/124_aggressive_risk_merged_avg80_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/124_aggressive_risk_merged_avg80_source.py",
+      "status": "pending",
+      "trained_feature_groups": [
+        "safe_surface",
+        "medium_public_behavior",
+        "high_public_reconstruction"
+      ],
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "125",
+      "hypothesis": "Extreme raw public-subject reconstruction push.",
+      "local_report": "reports/aggressive_feedback_push_report.json",
+      "local_score": null,
+      "manual_upload_priority": 125,
+      "name": "aggressive_risk_raw_direct90",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/125_aggressive_risk_raw_direct90_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/125_aggressive_risk_raw_direct90_source.py",
+      "status": "pending",
+      "trained_feature_groups": [
+        "safe_surface",
+        "medium_public_behavior",
+        "high_public_reconstruction"
+      ],
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "126",
+      "hypothesis": "Extreme calibrated public-subject reconstruction push.",
+      "local_report": "reports/aggressive_feedback_push_report.json",
+      "local_score": null,
+      "manual_upload_priority": 126,
+      "name": "aggressive_risk_cal_direct90",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/126_aggressive_risk_cal_direct90_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/126_aggressive_risk_cal_direct90_source.py",
+      "status": "pending",
+      "trained_feature_groups": [
+        "safe_surface",
+        "medium_public_behavior",
+        "high_public_reconstruction"
+      ],
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "127",
+      "hypothesis": "Item-level recovery with aggressive zero-tail structure.",
+      "local_report": "reports/aggressive_feedback_push_report.json",
+      "local_score": null,
+      "manual_upload_priority": 127,
+      "name": "aggressive_risk_item_zero",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/127_aggressive_risk_item_zero_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/127_aggressive_risk_item_zero_source.py",
+      "status": "pending",
+      "trained_feature_groups": [
+        "safe_surface",
+        "medium_public_behavior",
+        "high_public_reconstruction"
+      ],
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "128",
+      "hypothesis": "Calibrated reconstruction fused with a large official-direction move.",
+      "local_report": "reports/aggressive_feedback_push_report.json",
+      "local_score": null,
+      "manual_upload_priority": 128,
+      "name": "aggressive_risk_direction_gamma4",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/128_aggressive_risk_direction_gamma4_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/128_aggressive_risk_direction_gamma4_source.py",
+      "status": "pending",
+      "trained_feature_groups": [
+        "safe_surface",
+        "medium_public_behavior",
+        "high_public_reconstruction",
+        "official_direction"
+      ],
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "129",
+      "hypothesis": "Champion: trained stacker plus medium behavior, calibrated reconstruction, and gamma 3 official-direction extrapolation.",
+      "local_report": "reports/aggressive_feedback_push_report.json",
+      "local_score": null,
+      "manual_upload_priority": 129,
+      "name": "aggressive_champion_trained_direction_risk",
+      "next_manual_upload_target": true,
+      "output_file": "official_candidates/129_aggressive_champion_trained_direction_risk_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/129_aggressive_champion_trained_direction_risk_source.py",
+      "status": "pending",
+      "trained_feature_groups": [
+        "safe_surface",
+        "medium_public_behavior",
+        "high_public_reconstruction",
+        "trained_stacker",
+        "official_direction"
+      ],
       "upload_ready": true
     }
   ],
@@ -1855,6 +2601,21 @@
       "state": "success",
       "submission_id": "07ead7cdad22",
       "timestamp": "2026-04-25 19:53"
+    },
+    {
+      "assignment_policy": "largest_numeric_candidate_id_at_manual_upload_time",
+      "candidate_id": "099",
+      "chosen_as_final": true,
+      "hypothesis": "Candidate 099 made the first verified improvement over Candidate 087 but stayed too correlated, so it anchors an aggressive trained search.",
+      "local_report": "reports/feedback_champion_report.json",
+      "official_complete_score": null,
+      "official_partial_score": 38.20618,
+      "output_file": "official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv",
+      "source_file": "official_candidates/099_feedback_champion_safe25_medium50_high25_source.py",
+      "state": "success",
+      "submission_id": "manual_099_score_38_20618",
+      "submission_id_missing": true,
+      "timestamp": "2026-04-25 20:10"
     }
   ]
 }

@@ -176,6 +176,19 @@
 - Champion candidates preserve the required public submission columns.
 - Champion candidates are not treated as official improvements before judge feedback is recorded.
 
+## Aggressive Feedback Push
+
+- A missing official submission ID does not block recording a known official score.
+- Candidate `099` is recorded as the current official best before Candidate `100+` search starts.
+- Feedback-driven batches keep the largest numeric candidate as the manual upload target.
+- Aggressive candidates keep safe, medium, and high-risk signals fused into one output.
+- Trained candidates state the feature groups used for training.
+- Aggressive candidate outputs contain exactly one row for each test datapoint.
+- Aggressive candidate outputs use exactly `subtaskID`, `datapointID`, and `answer` columns.
+- Aggressive candidate answers are finite and non-negative.
+- The champion candidate is materially different from the latest official-best output.
+- A new official score is not claimed until judge feedback is recorded.
+
 ## Final 99+ Target
 
 - The final product target is an official or exact-truth score of at least `99 / 100`.

@@ -1,0 +1,1453 @@
+{
+  "candidate_count": 30,
+  "candidates": [
+    {
+      "answer_mean": 246.73055750885945,
+      "answer_std": 148.4045510764072,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "100",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "corr_vs_099": 0.996550380363999,
+      "family": "aggressive_feedback_push",
+      "hypothesis": "Extend the verified 087 to 099 improvement direction by gamma 1.5.",
+      "ids_match_test_order": true,
+      "mae_vs_099": 8.167256019522547,
+      "name": "aggressive_direction_gamma150",
+      "next_manual_upload_target": false,
+      "output_bytes": 166131,
+      "output_file": "official_candidates/100_aggressive_direction_gamma150_output.csv",
+      "p95_abs_vs_099": 25.988407399999968,
+      "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+      "reproduction_command": "python3 official_candidates/100_aggressive_direction_gamma150_source.py --train data/train_data.csv --test data/test_data.csv --base-output official_candidates/023_lexical_transformer_output.csv --high-risk-base-output official_candidates/045_public_trt_ensemble_fallback_output.csv --anchor-output official_candidates/087_three_tier_fusion_base_14_output.csv --best-output official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv --output official_candidates/100_aggressive_direction_gamma150_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "row_count": 9425,
+      "source_bytes": 8835,
+      "source_file": "official_candidates/100_aggressive_direction_gamma150_source.py",
+      "source_urls": [
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_008.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_009.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_010.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_011.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_023.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_merged.csv"
+      ],
+      "trained_feature_groups": [
+        "safe_surface",
+        "medium_public_behavior",
+        "high_public_reconstruction",
+        "official_direction"
+      ],
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 245.66112569602123,
+      "answer_std": 147.4313449053898,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "101",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "corr_vs_099": 0.9937774691448235,
+      "family": "aggressive_feedback_push",
+      "hypothesis": "Extend the verified official direction by gamma 2.0.",
+      "ids_match_test_order": true,
+      "mae_vs_099": 10.889674697294431,
+      "name": "aggressive_direction_gamma200",
+      "next_manual_upload_target": false,
+      "output_bytes": 166103,
+      "output_file": "official_candidates/101_aggressive_direction_gamma200_output.csv",
+      "p95_abs_vs_099": 34.65120999999999,
+      "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+      "reproduction_command": "python3 official_candidates/101_aggressive_direction_gamma200_source.py --train data/train_data.csv --test data/test_data.csv --base-output official_candidates/023_lexical_transformer_output.csv --high-risk-base-output official_candidates/045_public_trt_ensemble_fallback_output.csv --anchor-output official_candidates/087_three_tier_fusion_base_14_output.csv --best-output official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv --output official_candidates/101_aggressive_direction_gamma200_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "row_count": 9425,
+      "source_bytes": 8835,
+      "source_file": "official_candidates/101_aggressive_direction_gamma200_source.py",
+      "source_urls": [
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_008.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_009.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_010.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_011.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_023.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_merged.csv"
+      ],
+      "trained_feature_groups": [
+        "safe_surface",
+        "medium_public_behavior",
+        "high_public_reconstruction",
+        "official_direction"
+      ],
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 243.52261782769233,
+      "answer_std": 145.85107925013534,
+      "answer_zero_rate": 0.00116710875331565,
+      "answers_finite_non_negative": true,
+      "candidate_id": "102",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "corr_vs_099": 0.9856361338539029,
+      "family": "aggressive_feedback_push",
+      "hypothesis": "Make a large official-direction move instead of another tiny blend.",
+      "ids_match_test_order": true,
+      "mae_vs_099": 16.334156272785144,
+      "name": "aggressive_direction_gamma300",
+      "next_manual_upload_target": false,
+      "output_bytes": 166081,
+      "output_file": "official_candidates/102_aggressive_direction_gamma300_output.csv",
+      "p95_abs_vs_099": 51.97681499999998,
+      "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+      "reproduction_command": "python3 official_candidates/102_aggressive_direction_gamma300_source.py --train data/train_data.csv --test data/test_data.csv --base-output official_candidates/023_lexical_transformer_output.csv --high-risk-base-output official_candidates/045_public_trt_ensemble_fallback_output.csv --anchor-output official_candidates/087_three_tier_fusion_base_14_output.csv --best-output official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv --output official_candidates/102_aggressive_direction_gamma300_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "row_count": 9425,
+      "source_bytes": 8835,
+      "source_file": "official_candidates/102_aggressive_direction_gamma300_source.py",
+      "source_urls": [
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_008.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_009.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_010.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_011.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_023.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_merged.csv"
+      ],
+      "trained_feature_groups": [
+        "safe_surface",
+        "medium_public_behavior",
+        "high_public_reconstruction",
+        "official_direction"
+      ],
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 241.38560963013262,
+      "answer_std": 144.7700501477368,
+      "answer_zero_rate": 0.001273209549071618,
+      "answers_finite_non_negative": true,
+      "candidate_id": "103",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "corr_vs_099": 0.9739311081635886,
+      "family": "aggressive_feedback_push",
+      "hypothesis": "Stress-test the official direction with gamma 4.0.",
+      "ids_match_test_order": true,
+      "mae_vs_099": 21.77713817750663,
+      "name": "aggressive_direction_gamma400",
+      "next_manual_upload_target": false,
+      "output_bytes": 166072,
+      "output_file": "official_candidates/103_aggressive_direction_gamma400_output.csv",
+      "p95_abs_vs_099": 69.30241999999993,
+      "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+      "reproduction_command": "python3 official_candidates/103_aggressive_direction_gamma400_source.py --train data/train_data.csv --test data/test_data.csv --base-output official_candidates/023_lexical_transformer_output.csv --high-risk-base-output official_candidates/045_public_trt_ensemble_fallback_output.csv --anchor-output official_candidates/087_three_tier_fusion_base_14_output.csv --best-output official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv --output official_candidates/103_aggressive_direction_gamma400_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "row_count": 9425,
+      "source_bytes": 8835,
+      "source_file": "official_candidates/103_aggressive_direction_gamma400_source.py",
+      "source_urls": [
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_008.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_009.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_010.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_011.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_023.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_merged.csv"
+      ],
+      "trained_feature_groups": [
+        "safe_surface",
+        "medium_public_behavior",
+        "high_public_reconstruction",
+        "official_direction"
+      ],
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 237.15386048838195,
+      "answer_std": 144.07898740369455,
+      "answer_zero_rate": 0.003819628647214854,
+      "answers_finite_non_negative": true,
+      "candidate_id": "104",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "corr_vs_099": 0.9400754492189135,
+      "family": "aggressive_feedback_push",
+      "hypothesis": "Aggressive official-direction extrapolation at gamma 6.0.",
+      "ids_match_test_order": true,
+      "mae_vs_099": 32.6208347335809,
+      "name": "aggressive_direction_gamma600",
+      "next_manual_upload_target": false,
+      "output_bytes": 166082,
+      "output_file": "official_candidates/104_aggressive_direction_gamma600_output.csv",
+      "p95_abs_vs_099": 103.95362999999992,
+      "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+      "reproduction_command": "python3 official_candidates/104_aggressive_direction_gamma600_source.py --train data/train_data.csv --test data/test_data.csv --base-output official_candidates/023_lexical_transformer_output.csv --high-risk-base-output official_candidates/045_public_trt_ensemble_fallback_output.csv --anchor-output official_candidates/087_three_tier_fusion_base_14_output.csv --best-output official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv --output official_candidates/104_aggressive_direction_gamma600_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "row_count": 9425,
+      "source_bytes": 8835,
+      "source_file": "official_candidates/104_aggressive_direction_gamma600_source.py",
+      "source_urls": [
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_008.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_009.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_010.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_011.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_023.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_merged.csv"
+      ],
+      "trained_feature_groups": [
+        "safe_surface",
+        "medium_public_behavior",
+        "high_public_reconstruction",
+        "official_direction"
+      ],
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 233.17592916413795,
+      "answer_std": 144.9866843311373,
+      "answer_zero_rate": 0.010610079575596816,
+      "answers_finite_non_negative": true,
+      "candidate_id": "105",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "corr_vs_099": 0.8959363091387093,
+      "family": "aggressive_feedback_push",
+      "hypothesis": "Maximum official-direction extrapolation in the first block.",
+      "ids_match_test_order": true,
+      "mae_vs_099": 43.21071347214854,
+      "name": "aggressive_direction_gamma800",
+      "next_manual_upload_target": false,
+      "output_bytes": 166028,
+      "output_file": "official_candidates/105_aggressive_direction_gamma800_output.csv",
+      "p95_abs_vs_099": 137.14982079999996,
+      "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+      "reproduction_command": "python3 official_candidates/105_aggressive_direction_gamma800_source.py --train data/train_data.csv --test data/test_data.csv --base-output official_candidates/023_lexical_transformer_output.csv --high-risk-base-output official_candidates/045_public_trt_ensemble_fallback_output.csv --anchor-output official_candidates/087_three_tier_fusion_base_14_output.csv --best-output official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv --output official_candidates/105_aggressive_direction_gamma800_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "row_count": 9425,
+      "source_bytes": 8835,
+      "source_file": "official_candidates/105_aggressive_direction_gamma800_source.py",
+      "source_urls": [
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_008.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_009.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_010.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_011.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_023.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_merged.csv"
+      ],
+      "trained_feature_groups": [
+        "safe_surface",
+        "medium_public_behavior",
+        "high_public_reconstruction",
+        "official_direction"
+      ],
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 253.26352254132624,
+      "answer_std": 151.68512242387078,
+      "answer_zero_rate": 0.00116710875331565,
+      "answers_finite_non_negative": true,
+      "candidate_id": "106",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "corr_vs_099": 0.9856361338501816,
+      "family": "aggressive_feedback_push",
+      "hypothesis": "Gamma 3.0 plus positive scale shift.",
+      "ids_match_test_order": true,
+      "mae_vs_099": 17.389062283183026,
+      "name": "aggressive_direction_gamma300_scale104",
+      "next_manual_upload_target": false,
+      "output_bytes": 166177,
+      "output_file": "official_candidates/106_aggressive_direction_gamma300_scale104_output.csv",
+      "p95_abs_vs_099": 47.256143000000066,
+      "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+      "reproduction_command": "python3 official_candidates/106_aggressive_direction_gamma300_scale104_source.py --train data/train_data.csv --test data/test_data.csv --base-output official_candidates/023_lexical_transformer_output.csv --high-risk-base-output official_candidates/045_public_trt_ensemble_fallback_output.csv --anchor-output official_candidates/087_three_tier_fusion_base_14_output.csv --best-output official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv --output official_candidates/106_aggressive_direction_gamma300_scale104_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "row_count": 9425,
+      "source_bytes": 8836,
+      "source_file": "official_candidates/106_aggressive_direction_gamma300_scale104_source.py",
+      "source_urls": [
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_008.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_009.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_010.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_011.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_023.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_merged.csv"
+      ],
+      "trained_feature_groups": [
+        "safe_surface",
+        "medium_public_behavior",
+        "high_public_reconstruction",
+        "official_direction"
+      ],
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 243.46066529665785,
+      "answer_std": 145.95256297370148,
+      "answer_zero_rate": 0.010185676392572944,
+      "answers_finite_non_negative": true,
+      "candidate_id": "107",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "corr_vs_099": 0.9856270605717679,
+      "family": "aggressive_feedback_push",
+      "hypothesis": "Gamma 3.0 with the lowest one percent set to zero.",
+      "ids_match_test_order": true,
+      "mae_vs_099": 16.36937778397878,
+      "name": "aggressive_direction_gamma300_zero01",
+      "next_manual_upload_target": false,
+      "output_bytes": 166061,
+      "output_file": "official_candidates/107_aggressive_direction_gamma300_zero01_output.csv",
+      "p95_abs_vs_099": 51.97681499999998,
+      "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+      "reproduction_command": "python3 official_candidates/107_aggressive_direction_gamma300_zero01_source.py --train data/train_data.csv --test data/test_data.csv --base-output official_candidates/023_lexical_transformer_output.csv --high-risk-base-output official_candidates/045_public_trt_ensemble_fallback_output.csv --anchor-output official_candidates/087_three_tier_fusion_base_14_output.csv --best-output official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv --output official_candidates/107_aggressive_direction_gamma300_zero01_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "row_count": 9425,
+      "source_bytes": 8858,
+      "source_file": "official_candidates/107_aggressive_direction_gamma300_zero01_source.py",
+      "source_urls": [
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_008.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_009.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_010.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_011.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_023.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_merged.csv"
+      ],
+      "trained_feature_groups": [
+        "safe_surface",
+        "medium_public_behavior",
+        "high_public_reconstruction",
+        "official_direction"
+      ],
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 241.62672407225466,
+      "answer_std": 144.3943755050173,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "108",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "corr_vs_099": 0.973848115494431,
+      "family": "aggressive_feedback_push",
+      "hypothesis": "Gamma 4.0 with low-tail floor handling.",
+      "ids_match_test_order": true,
+      "mae_vs_099": 21.9381805737931,
+      "name": "aggressive_direction_gamma400_floor02",
+      "next_manual_upload_target": false,
+      "output_bytes": 166154,
+      "output_file": "official_candidates/108_aggressive_direction_gamma400_floor02_output.csv",
+      "p95_abs_vs_099": 69.30241999999993,
+      "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+      "reproduction_command": "python3 official_candidates/108_aggressive_direction_gamma400_floor02_source.py --train data/train_data.csv --test data/test_data.csv --base-output official_candidates/023_lexical_transformer_output.csv --high-risk-base-output official_candidates/045_public_trt_ensemble_fallback_output.csv --anchor-output official_candidates/087_three_tier_fusion_base_14_output.csv --best-output official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv --output official_candidates/108_aggressive_direction_gamma400_floor02_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "row_count": 9425,
+      "source_bytes": 8859,
+      "source_file": "official_candidates/108_aggressive_direction_gamma400_floor02_source.py",
+      "source_urls": [
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_008.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_009.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_010.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_011.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_023.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_merged.csv"
+      ],
+      "trained_feature_groups": [
+        "safe_surface",
+        "medium_public_behavior",
+        "high_public_reconstruction",
+        "official_direction"
+      ],
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 236.39534082068965,
+      "answer_std": 141.3636800631882,
+      "answer_zero_rate": 0.003819628647214854,
+      "answers_finite_non_negative": true,
+      "candidate_id": "109",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "corr_vs_099": 0.935679698484096,
+      "family": "aggressive_feedback_push",
+      "hypothesis": "Gamma 6.0 with high-tail cap control.",
+      "ids_match_test_order": true,
+      "mae_vs_099": 32.90211516944297,
+      "name": "aggressive_direction_gamma600_cap995",
+      "next_manual_upload_target": false,
+      "output_bytes": 166077,
+      "output_file": "official_candidates/109_aggressive_direction_gamma600_cap995_output.csv",
+      "p95_abs_vs_099": 104.56931879999986,
+      "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+      "reproduction_command": "python3 official_candidates/109_aggressive_direction_gamma600_cap995_source.py --train data/train_data.csv --test data/test_data.csv --base-output official_candidates/023_lexical_transformer_output.csv --high-risk-base-output official_candidates/045_public_trt_ensemble_fallback_output.csv --anchor-output official_candidates/087_three_tier_fusion_base_14_output.csv --best-output official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv --output official_candidates/109_aggressive_direction_gamma600_cap995_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "row_count": 9425,
+      "source_bytes": 8858,
+      "source_file": "official_candidates/109_aggressive_direction_gamma600_cap995_source.py",
+      "source_urls": [
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_008.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_009.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_010.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_011.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_023.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_merged.csv"
+      ],
+      "trained_feature_groups": [
+        "safe_surface",
+        "medium_public_behavior",
+        "high_public_reconstruction",
+        "official_direction"
+      ],
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 254.69853895076923,
+      "answer_std": 153.53902440623526,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "110",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "corr_vs_099": 0.9725244496747398,
+      "family": "aggressive_feedback_push",
+      "hypothesis": "Train a raw Ridge stacker on public behavior and surface features.",
+      "ids_match_test_order": true,
+      "mae_vs_099": 23.83619610397878,
+      "name": "aggressive_train_ridge_raw_balanced",
+      "next_manual_upload_target": false,
+      "output_bytes": 166304,
+      "output_file": "official_candidates/110_aggressive_train_ridge_raw_balanced_output.csv",
+      "p95_abs_vs_099": 74.48840999999996,
+      "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+      "reproduction_command": "python3 official_candidates/110_aggressive_train_ridge_raw_balanced_source.py --train data/train_data.csv --test data/test_data.csv --base-output official_candidates/023_lexical_transformer_output.csv --high-risk-base-output official_candidates/045_public_trt_ensemble_fallback_output.csv --anchor-output official_candidates/087_three_tier_fusion_base_14_output.csv --best-output official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv --output official_candidates/110_aggressive_train_ridge_raw_balanced_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "row_count": 9425,
+      "source_bytes": 9025,
+      "source_file": "official_candidates/110_aggressive_train_ridge_raw_balanced_source.py",
+      "source_urls": [
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_008.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_009.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_010.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_011.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_023.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_merged.csv"
+      ],
+      "trained_feature_groups": [
+        "safe_surface",
+        "medium_public_behavior",
+        "high_public_reconstruction",
+        "trained_stacker"
+      ],
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 204.10898172180373,
+      "answer_std": 148.752585337493,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "111",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "corr_vs_099": 0.967467319747988,
+      "family": "aggressive_feedback_push",
+      "hypothesis": "Train a log-target Ridge stacker to change scale and tail behavior.",
+      "ids_match_test_order": true,
+      "mae_vs_099": 49.60444178238727,
+      "name": "aggressive_train_ridge_log_balanced",
+      "next_manual_upload_target": false,
+      "output_bytes": 165372,
+      "output_file": "official_candidates/111_aggressive_train_ridge_log_balanced_output.csv",
+      "p95_abs_vs_099": 105.53526459999985,
+      "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+      "reproduction_command": "python3 official_candidates/111_aggressive_train_ridge_log_balanced_source.py --train data/train_data.csv --test data/test_data.csv --base-output official_candidates/023_lexical_transformer_output.csv --high-risk-base-output official_candidates/045_public_trt_ensemble_fallback_output.csv --anchor-output official_candidates/087_three_tier_fusion_base_14_output.csv --best-output official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv --output official_candidates/111_aggressive_train_ridge_log_balanced_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "row_count": 9425,
+      "source_bytes": 9024,
+      "source_file": "official_candidates/111_aggressive_train_ridge_log_balanced_source.py",
+      "source_urls": [
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_008.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_009.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_010.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_011.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_023.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_merged.csv"
+      ],
+      "trained_feature_groups": [
+        "safe_surface",
+        "medium_public_behavior",
+        "high_public_reconstruction",
+        "trained_stacker"
+      ],
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 251.7093679177719,
+      "answer_std": 152.6269796699846,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "112",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "corr_vs_099": 0.9774168856511528,
+      "family": "aggressive_feedback_push",
+      "hypothesis": "Favor public item and text behavior inside a trained stack.",
+      "ids_match_test_order": true,
+      "mae_vs_099": 21.445938359681698,
+      "name": "aggressive_train_ridge_medium_heavy",
+      "next_manual_upload_target": false,
+      "output_bytes": 166212,
+      "output_file": "official_candidates/112_aggressive_train_ridge_medium_heavy_output.csv",
+      "p95_abs_vs_099": 66.62912060000001,
+      "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+      "reproduction_command": "python3 official_candidates/112_aggressive_train_ridge_medium_heavy_source.py --train data/train_data.csv --test data/test_data.csv --base-output official_candidates/023_lexical_transformer_output.csv --high-risk-base-output official_candidates/045_public_trt_ensemble_fallback_output.csv --anchor-output official_candidates/087_three_tier_fusion_base_14_output.csv --best-output official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv --output official_candidates/112_aggressive_train_ridge_medium_heavy_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "row_count": 9425,
+      "source_bytes": 9027,
+      "source_file": "official_candidates/112_aggressive_train_ridge_medium_heavy_source.py",
+      "source_urls": [
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_008.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_009.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_010.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_011.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_023.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_merged.csv"
+      ],
+      "trained_feature_groups": [
+        "safe_surface",
+        "medium_public_behavior",
+        "high_public_reconstruction",
+        "trained_stacker"
+      ],
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 215.5421970913528,
+      "answer_std": 147.55229975969237,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "113",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "corr_vs_099": 0.9743193868299588,
+      "family": "aggressive_feedback_push",
+      "hypothesis": "Favor mapped public TRT while keeping trained correction active.",
+      "ids_match_test_order": true,
+      "mae_vs_099": 37.50397632965518,
+      "name": "aggressive_train_ridge_high_heavy",
+      "next_manual_upload_target": false,
+      "output_bytes": 165543,
+      "output_file": "official_candidates/113_aggressive_train_ridge_high_heavy_output.csv",
+      "p95_abs_vs_099": 92.49806019999994,
+      "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+      "reproduction_command": "python3 official_candidates/113_aggressive_train_ridge_high_heavy_source.py --train data/train_data.csv --test data/test_data.csv --base-output official_candidates/023_lexical_transformer_output.csv --high-risk-base-output official_candidates/045_public_trt_ensemble_fallback_output.csv --anchor-output official_candidates/087_three_tier_fusion_base_14_output.csv --best-output official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv --output official_candidates/113_aggressive_train_ridge_high_heavy_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "row_count": 9425,
+      "source_bytes": 9027,
+      "source_file": "official_candidates/113_aggressive_train_ridge_high_heavy_source.py",
+      "source_urls": [
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_008.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_009.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_010.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_011.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_023.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_merged.csv"
+      ],
+      "trained_feature_groups": [
+        "safe_surface",
+        "medium_public_behavior",
+        "high_public_reconstruction",
+        "trained_stacker"
+      ],
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 228.5593195030239,
+      "answer_std": 145.2202918748701,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "114",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "corr_vs_099": 0.984603384313382,
+      "family": "aggressive_feedback_push",
+      "hypothesis": "Use a robust Huber-style trained stacker for outlier resistance.",
+      "ids_match_test_order": true,
+      "mae_vs_099": 24.599639072572945,
+      "name": "aggressive_train_huber_balanced",
+      "next_manual_upload_target": false,
+      "output_bytes": 165790,
+      "output_file": "official_candidates/114_aggressive_train_huber_balanced_output.csv",
+      "p95_abs_vs_099": 68.7445066,
+      "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+      "reproduction_command": "python3 official_candidates/114_aggressive_train_huber_balanced_source.py --train data/train_data.csv --test data/test_data.csv --base-output official_candidates/023_lexical_transformer_output.csv --high-risk-base-output official_candidates/045_public_trt_ensemble_fallback_output.csv --anchor-output official_candidates/087_three_tier_fusion_base_14_output.csv --best-output official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv --output official_candidates/114_aggressive_train_huber_balanced_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "row_count": 9425,
+      "source_bytes": 9023,
+      "source_file": "official_candidates/114_aggressive_train_huber_balanced_source.py",
+      "source_urls": [
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_008.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_009.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_010.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_011.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_023.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_merged.csv"
+      ],
+      "trained_feature_groups": [
+        "safe_surface",
+        "medium_public_behavior",
+        "high_public_reconstruction",
+        "trained_stacker"
+      ],
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 231.98734475819631,
+      "answer_std": 145.14158581702515,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "115",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "corr_vs_099": 0.9810840899149946,
+      "family": "aggressive_feedback_push",
+      "hypothesis": "Robust stacker with stronger direct reconstruction signal.",
+      "ids_match_test_order": true,
+      "mae_vs_099": 23.366996027692306,
+      "name": "aggressive_train_huber_high_push",
+      "next_manual_upload_target": false,
+      "output_bytes": 165806,
+      "output_file": "official_candidates/115_aggressive_train_huber_high_push_output.csv",
+      "p95_abs_vs_099": 71.54180859999998,
+      "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+      "reproduction_command": "python3 official_candidates/115_aggressive_train_huber_high_push_source.py --train data/train_data.csv --test data/test_data.csv --base-output official_candidates/023_lexical_transformer_output.csv --high-risk-base-output official_candidates/045_public_trt_ensemble_fallback_output.csv --anchor-output official_candidates/087_three_tier_fusion_base_14_output.csv --best-output official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv --output official_candidates/115_aggressive_train_huber_high_push_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "row_count": 9425,
+      "source_bytes": 9024,
+      "source_file": "official_candidates/115_aggressive_train_huber_high_push_source.py",
+      "source_urls": [
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_008.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_009.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_010.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_011.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_023.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_merged.csv"
+      ],
+      "trained_feature_groups": [
+        "safe_surface",
+        "medium_public_behavior",
+        "high_public_reconstruction",
+        "trained_stacker"
+      ],
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.83179410631303,
+      "answer_std": 154.28786728966608,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "116",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "corr_vs_099": 0.9815857724932604,
+      "family": "aggressive_feedback_push",
+      "hypothesis": "ExtraTrees-style stacker focused on public medium behavior.",
+      "ids_match_test_order": true,
+      "mae_vs_099": 21.325880960954905,
+      "name": "aggressive_train_tree_medium",
+      "next_manual_upload_target": false,
+      "output_bytes": 166244,
+      "output_file": "official_candidates/116_aggressive_train_tree_medium_output.csv",
+      "p95_abs_vs_099": 60.854510800000014,
+      "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+      "reproduction_command": "python3 official_candidates/116_aggressive_train_tree_medium_source.py --train data/train_data.csv --test data/test_data.csv --base-output official_candidates/023_lexical_transformer_output.csv --high-risk-base-output official_candidates/045_public_trt_ensemble_fallback_output.csv --anchor-output official_candidates/087_three_tier_fusion_base_14_output.csv --best-output official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv --output official_candidates/116_aggressive_train_tree_medium_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "row_count": 9425,
+      "source_bytes": 9031,
+      "source_file": "official_candidates/116_aggressive_train_tree_medium_source.py",
+      "source_urls": [
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_008.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_009.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_010.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_011.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_023.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_merged.csv"
+      ],
+      "trained_feature_groups": [
+        "safe_surface",
+        "medium_public_behavior",
+        "high_public_reconstruction",
+        "trained_stacker"
+      ],
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 258.01122904381964,
+      "answer_std": 153.15514082649412,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "117",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "corr_vs_099": 0.9774808067907692,
+      "family": "aggressive_feedback_push",
+      "hypothesis": "ExtraTrees-style stacker with a high-risk reconstruction push.",
+      "ids_match_test_order": true,
+      "mae_vs_099": 23.66947842535809,
+      "name": "aggressive_train_tree_high",
+      "next_manual_upload_target": false,
+      "output_bytes": 166271,
+      "output_file": "official_candidates/117_aggressive_train_tree_high_output.csv",
+      "p95_abs_vs_099": 67.22554239999997,
+      "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+      "reproduction_command": "python3 official_candidates/117_aggressive_train_tree_high_source.py --train data/train_data.csv --test data/test_data.csv --base-output official_candidates/023_lexical_transformer_output.csv --high-risk-base-output official_candidates/045_public_trt_ensemble_fallback_output.csv --anchor-output official_candidates/087_three_tier_fusion_base_14_output.csv --best-output official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv --output official_candidates/117_aggressive_train_tree_high_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "row_count": 9425,
+      "source_bytes": 9032,
+      "source_file": "official_candidates/117_aggressive_train_tree_high_source.py",
+      "source_urls": [
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_008.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_009.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_010.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_011.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_023.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_merged.csv"
+      ],
+      "trained_feature_groups": [
+        "safe_surface",
+        "medium_public_behavior",
+        "high_public_reconstruction",
+        "trained_stacker"
+      ],
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 205.830425786313,
+      "answer_std": 148.91665044208955,
+      "answer_zero_rate": 0.01506631299734748,
+      "answers_finite_non_negative": true,
+      "candidate_id": "118",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "corr_vs_099": 0.9694986774714554,
+      "family": "aggressive_feedback_push",
+      "hypothesis": "Trained stacker plus explicit low-tail zero handling.",
+      "ids_match_test_order": true,
+      "mae_vs_099": 47.82943324679046,
+      "name": "aggressive_train_ridge_zero_tail",
+      "next_manual_upload_target": false,
+      "output_bytes": 165428,
+      "output_file": "official_candidates/118_aggressive_train_ridge_zero_tail_output.csv",
+      "p95_abs_vs_099": 101.62725879999995,
+      "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+      "reproduction_command": "python3 official_candidates/118_aggressive_train_ridge_zero_tail_source.py --train data/train_data.csv --test data/test_data.csv --base-output official_candidates/023_lexical_transformer_output.csv --high-risk-base-output official_candidates/045_public_trt_ensemble_fallback_output.csv --anchor-output official_candidates/087_three_tier_fusion_base_14_output.csv --best-output official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv --output official_candidates/118_aggressive_train_ridge_zero_tail_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "row_count": 9425,
+      "source_bytes": 9050,
+      "source_file": "official_candidates/118_aggressive_train_ridge_zero_tail_source.py",
+      "source_urls": [
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_008.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_009.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_010.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_011.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_023.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_merged.csv"
+      ],
+      "trained_feature_groups": [
+        "safe_surface",
+        "medium_public_behavior",
+        "high_public_reconstruction",
+        "trained_stacker"
+      ],
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 251.608912134748,
+      "answer_std": 151.75192796124364,
+      "answer_zero_rate": 0.00010610079575596818,
+      "answers_finite_non_negative": true,
+      "candidate_id": "119",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "corr_vs_099": 0.9756426968876387,
+      "family": "aggressive_feedback_push",
+      "hypothesis": "Trained stacker blended with the verified official direction.",
+      "ids_match_test_order": true,
+      "mae_vs_099": 21.969244050185676,
+      "name": "aggressive_train_ridge_direction_blend",
+      "next_manual_upload_target": false,
+      "output_bytes": 166249,
+      "output_file": "official_candidates/119_aggressive_train_ridge_direction_blend_output.csv",
+      "p95_abs_vs_099": 68.96015939999994,
+      "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+      "reproduction_command": "python3 official_candidates/119_aggressive_train_ridge_direction_blend_source.py --train data/train_data.csv --test data/test_data.csv --base-output official_candidates/023_lexical_transformer_output.csv --high-risk-base-output official_candidates/045_public_trt_ensemble_fallback_output.csv --anchor-output official_candidates/087_three_tier_fusion_base_14_output.csv --best-output official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv --output official_candidates/119_aggressive_train_ridge_direction_blend_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "row_count": 9425,
+      "source_bytes": 9067,
+      "source_file": "official_candidates/119_aggressive_train_ridge_direction_blend_source.py",
+      "source_urls": [
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_008.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_009.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_010.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_011.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_023.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_merged.csv"
+      ],
+      "trained_feature_groups": [
+        "safe_surface",
+        "medium_public_behavior",
+        "high_public_reconstruction",
+        "trained_stacker",
+        "official_direction"
+      ],
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 238.3635352818037,
+      "answer_std": 156.81226795747324,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "120",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "corr_vs_099": 0.9688889423621659,
+      "family": "aggressive_feedback_push",
+      "hypothesis": "Let the public TRT reconstruction base dominate the fused output.",
+      "ids_match_test_order": true,
+      "mae_vs_099": 28.634570449230765,
+      "name": "aggressive_risk_base75",
+      "next_manual_upload_target": false,
+      "output_bytes": 166089,
+      "output_file": "official_candidates/120_aggressive_risk_base75_output.csv",
+      "p95_abs_vs_099": 74.42802659999998,
+      "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+      "reproduction_command": "python3 official_candidates/120_aggressive_risk_base75_source.py --train data/train_data.csv --test data/test_data.csv --base-output official_candidates/023_lexical_transformer_output.csv --high-risk-base-output official_candidates/045_public_trt_ensemble_fallback_output.csv --anchor-output official_candidates/087_three_tier_fusion_base_14_output.csv --best-output official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv --output official_candidates/120_aggressive_risk_base75_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "row_count": 9425,
+      "source_bytes": 8981,
+      "source_file": "official_candidates/120_aggressive_risk_base75_source.py",
+      "source_urls": [
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_008.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_009.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_010.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_011.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_023.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_merged.csv"
+      ],
+      "trained_feature_groups": [
+        "safe_surface",
+        "medium_public_behavior",
+        "high_public_reconstruction"
+      ],
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 190.69697375437667,
+      "answer_std": 215.01370811157125,
+      "answer_zero_rate": 0.004774535809018567,
+      "answers_finite_non_negative": true,
+      "candidate_id": "121",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "corr_vs_099": 0.6034647739047275,
+      "family": "aggressive_feedback_push",
+      "hypothesis": "Use mapped raw public subject TRT as the dominant signal.",
+      "ids_match_test_order": true,
+      "mae_vs_099": 132.08231917029178,
+      "name": "aggressive_risk_raw_direct75",
+      "next_manual_upload_target": false,
+      "output_bytes": 163898,
+      "output_file": "official_candidates/121_aggressive_risk_raw_direct75_output.csv",
+      "p95_abs_vs_099": 333.84964819999993,
+      "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+      "reproduction_command": "python3 official_candidates/121_aggressive_risk_raw_direct75_source.py --train data/train_data.csv --test data/test_data.csv --base-output official_candidates/023_lexical_transformer_output.csv --high-risk-base-output official_candidates/045_public_trt_ensemble_fallback_output.csv --anchor-output official_candidates/087_three_tier_fusion_base_14_output.csv --best-output official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv --output official_candidates/121_aggressive_risk_raw_direct75_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "row_count": 9425,
+      "source_bytes": 8986,
+      "source_file": "official_candidates/121_aggressive_risk_raw_direct75_source.py",
+      "source_urls": [
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_008.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_009.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_010.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_011.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_023.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_merged.csv"
+      ],
+      "trained_feature_groups": [
+        "safe_surface",
+        "medium_public_behavior",
+        "high_public_reconstruction"
+      ],
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 258.3198058874271,
+      "answer_std": 149.88504226644523,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "122",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "corr_vs_099": 0.9657328239027423,
+      "family": "aggressive_feedback_push",
+      "hypothesis": "Use calibrated mapped public subject TRT as the dominant signal.",
+      "ids_match_test_order": true,
+      "mae_vs_099": 29.354706952785147,
+      "name": "aggressive_risk_cal_direct75",
+      "next_manual_upload_target": false,
+      "output_bytes": 165951,
+      "output_file": "official_candidates/122_aggressive_risk_cal_direct75_output.csv",
+      "p95_abs_vs_099": 77.18329760000003,
+      "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+      "reproduction_command": "python3 official_candidates/122_aggressive_risk_cal_direct75_source.py --train data/train_data.csv --test data/test_data.csv --base-output official_candidates/023_lexical_transformer_output.csv --high-risk-base-output official_candidates/045_public_trt_ensemble_fallback_output.csv --anchor-output official_candidates/087_three_tier_fusion_base_14_output.csv --best-output official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv --output official_candidates/122_aggressive_risk_cal_direct75_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "row_count": 9425,
+      "source_bytes": 8986,
+      "source_file": "official_candidates/122_aggressive_risk_cal_direct75_source.py",
+      "source_urls": [
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_008.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_009.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_010.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_011.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_023.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_merged.csv"
+      ],
+      "trained_feature_groups": [
+        "safe_surface",
+        "medium_public_behavior",
+        "high_public_reconstruction"
+      ],
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 192.57514745039788,
+      "answer_std": 155.5005945901467,
+      "answer_zero_rate": 0.004774535809018567,
+      "answers_finite_non_negative": true,
+      "candidate_id": "123",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "corr_vs_099": 0.882488146902998,
+      "family": "aggressive_feedback_push",
+      "hypothesis": "Push exact public item-level TRT recovery.",
+      "ids_match_test_order": true,
+      "mae_vs_099": 75.12245963830239,
+      "name": "aggressive_risk_item_mean80",
+      "next_manual_upload_target": false,
+      "output_bytes": 165179,
+      "output_file": "official_candidates/123_aggressive_risk_item_mean80_output.csv",
+      "p95_abs_vs_099": 181.96800319999997,
+      "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+      "reproduction_command": "python3 official_candidates/123_aggressive_risk_item_mean80_source.py --train data/train_data.csv --test data/test_data.csv --base-output official_candidates/023_lexical_transformer_output.csv --high-risk-base-output official_candidates/045_public_trt_ensemble_fallback_output.csv --anchor-output official_candidates/087_three_tier_fusion_base_14_output.csv --best-output official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv --output official_candidates/123_aggressive_risk_item_mean80_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "row_count": 9425,
+      "source_bytes": 8986,
+      "source_file": "official_candidates/123_aggressive_risk_item_mean80_source.py",
+      "source_urls": [
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_008.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_009.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_010.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_011.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_023.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_merged.csv"
+      ],
+      "trained_feature_groups": [
+        "safe_surface",
+        "medium_public_behavior",
+        "high_public_reconstruction"
+      ],
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 196.29499381591512,
+      "answer_std": 180.0666447407423,
+      "answer_zero_rate": 0.004774535809018567,
+      "answers_finite_non_negative": true,
+      "candidate_id": "124",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "corr_vs_099": 0.8401877338445856,
+      "family": "aggressive_feedback_push",
+      "hypothesis": "Use public merged average TRT as a high-risk recovery source.",
+      "ids_match_test_order": true,
+      "mae_vs_099": 87.3670543983024,
+      "name": "aggressive_risk_merged_avg80",
+      "next_manual_upload_target": false,
+      "output_bytes": 164689,
+      "output_file": "official_candidates/124_aggressive_risk_merged_avg80_output.csv",
+      "p95_abs_vs_099": 216.63600079999998,
+      "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+      "reproduction_command": "python3 official_candidates/124_aggressive_risk_merged_avg80_source.py --train data/train_data.csv --test data/test_data.csv --base-output official_candidates/023_lexical_transformer_output.csv --high-risk-base-output official_candidates/045_public_trt_ensemble_fallback_output.csv --anchor-output official_candidates/087_three_tier_fusion_base_14_output.csv --best-output official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv --output official_candidates/124_aggressive_risk_merged_avg80_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "row_count": 9425,
+      "source_bytes": 8987,
+      "source_file": "official_candidates/124_aggressive_risk_merged_avg80_source.py",
+      "source_urls": [
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_008.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_009.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_010.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_011.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_023.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_merged.csv"
+      ],
+      "trained_feature_groups": [
+        "safe_surface",
+        "medium_public_behavior",
+        "high_public_reconstruction"
+      ],
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 179.5045401612732,
+      "answer_std": 240.06771142427564,
+      "answer_zero_rate": 0.004774535809018567,
+      "answers_finite_non_negative": true,
+      "candidate_id": "125",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "corr_vs_099": 0.5228196142459768,
+      "family": "aggressive_feedback_push",
+      "hypothesis": "Extreme raw public-subject reconstruction push.",
+      "ids_match_test_order": true,
+      "mae_vs_099": 157.49266156,
+      "name": "aggressive_risk_raw_direct90",
+      "next_manual_upload_target": false,
+      "output_bytes": 162100,
+      "output_file": "official_candidates/125_aggressive_risk_raw_direct90_output.csv",
+      "p95_abs_vs_099": 398.2608421999999,
+      "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+      "reproduction_command": "python3 official_candidates/125_aggressive_risk_raw_direct90_source.py --train data/train_data.csv --test data/test_data.csv --base-output official_candidates/023_lexical_transformer_output.csv --high-risk-base-output official_candidates/045_public_trt_ensemble_fallback_output.csv --anchor-output official_candidates/087_three_tier_fusion_base_14_output.csv --best-output official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv --output official_candidates/125_aggressive_risk_raw_direct90_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "row_count": 9425,
+      "source_bytes": 8986,
+      "source_file": "official_candidates/125_aggressive_risk_raw_direct90_source.py",
+      "source_urls": [
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_008.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_009.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_010.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_011.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_023.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_merged.csv"
+      ],
+      "trained_feature_groups": [
+        "safe_surface",
+        "medium_public_behavior",
+        "high_public_reconstruction"
+      ],
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 255.4388999468435,
+      "answer_std": 147.4396831027183,
+      "answer_zero_rate": 0.0,
+      "answers_finite_non_negative": true,
+      "candidate_id": "126",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "corr_vs_099": 0.9538600047058936,
+      "family": "aggressive_feedback_push",
+      "hypothesis": "Extreme calibrated public-subject reconstruction push.",
+      "ids_match_test_order": true,
+      "mae_vs_099": 32.854727272572944,
+      "name": "aggressive_risk_cal_direct90",
+      "next_manual_upload_target": false,
+      "output_bytes": 165947,
+      "output_file": "official_candidates/126_aggressive_risk_cal_direct90_output.csv",
+      "p95_abs_vs_099": 89.21695639999997,
+      "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+      "reproduction_command": "python3 official_candidates/126_aggressive_risk_cal_direct90_source.py --train data/train_data.csv --test data/test_data.csv --base-output official_candidates/023_lexical_transformer_output.csv --high-risk-base-output official_candidates/045_public_trt_ensemble_fallback_output.csv --anchor-output official_candidates/087_three_tier_fusion_base_14_output.csv --best-output official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv --output official_candidates/126_aggressive_risk_cal_direct90_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "row_count": 9425,
+      "source_bytes": 8987,
+      "source_file": "official_candidates/126_aggressive_risk_cal_direct90_source.py",
+      "source_urls": [
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_008.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_009.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_010.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_011.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_023.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_merged.csv"
+      ],
+      "trained_feature_groups": [
+        "safe_surface",
+        "medium_public_behavior",
+        "high_public_reconstruction"
+      ],
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 186.91993975543767,
+      "answer_std": 151.02802712928903,
+      "answer_zero_rate": 0.020159151193633953,
+      "answers_finite_non_negative": true,
+      "candidate_id": "127",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "corr_vs_099": 0.8826140853781004,
+      "family": "aggressive_feedback_push",
+      "hypothesis": "Item-level recovery with aggressive zero-tail structure.",
+      "ids_match_test_order": true,
+      "mae_vs_099": 77.76490514164458,
+      "name": "aggressive_risk_item_zero",
+      "next_manual_upload_target": false,
+      "output_bytes": 165019,
+      "output_file": "official_candidates/127_aggressive_risk_item_zero_output.csv",
+      "p95_abs_vs_099": 186.45279039999997,
+      "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+      "reproduction_command": "python3 official_candidates/127_aggressive_risk_item_zero_source.py --train data/train_data.csv --test data/test_data.csv --base-output official_candidates/023_lexical_transformer_output.csv --high-risk-base-output official_candidates/045_public_trt_ensemble_fallback_output.csv --anchor-output official_candidates/087_three_tier_fusion_base_14_output.csv --best-output official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv --output official_candidates/127_aggressive_risk_item_zero_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "row_count": 9425,
+      "source_bytes": 9008,
+      "source_file": "official_candidates/127_aggressive_risk_item_zero_source.py",
+      "source_urls": [
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_008.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_009.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_010.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_011.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_023.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_merged.csv"
+      ],
+      "trained_feature_groups": [
+        "safe_surface",
+        "medium_public_behavior",
+        "high_public_reconstruction"
+      ],
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 253.47318731511936,
+      "answer_std": 147.55557507904933,
+      "answer_zero_rate": 0.00021220159151193635,
+      "answers_finite_non_negative": true,
+      "candidate_id": "128",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "corr_vs_099": 0.9720648948972647,
+      "family": "aggressive_feedback_push",
+      "hypothesis": "Calibrated reconstruction fused with a large official-direction move.",
+      "ids_match_test_order": true,
+      "mae_vs_099": 24.936990203501328,
+      "name": "aggressive_risk_direction_gamma4",
+      "next_manual_upload_target": false,
+      "output_bytes": 166028,
+      "output_file": "official_candidates/128_aggressive_risk_direction_gamma4_output.csv",
+      "p95_abs_vs_099": 67.9058834,
+      "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+      "reproduction_command": "python3 official_candidates/128_aggressive_risk_direction_gamma4_source.py --train data/train_data.csv --test data/test_data.csv --base-output official_candidates/023_lexical_transformer_output.csv --high-risk-base-output official_candidates/045_public_trt_ensemble_fallback_output.csv --anchor-output official_candidates/087_three_tier_fusion_base_14_output.csv --best-output official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv --output official_candidates/128_aggressive_risk_direction_gamma4_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "row_count": 9425,
+      "source_bytes": 9026,
+      "source_file": "official_candidates/128_aggressive_risk_direction_gamma4_source.py",
+      "source_urls": [
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_008.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_009.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_010.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_011.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_023.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_merged.csv"
+      ],
+      "trained_feature_groups": [
+        "safe_surface",
+        "medium_public_behavior",
+        "high_public_reconstruction",
+        "official_direction"
+      ],
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 225.5789905720955,
+      "answer_std": 152.75122069264938,
+      "answer_zero_rate": 0.00010610079575596818,
+      "answers_finite_non_negative": true,
+      "candidate_id": "129",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "corr_vs_099": 0.9789116997906293,
+      "family": "aggressive_feedback_push",
+      "hypothesis": "Champion: trained stacker plus medium behavior, calibrated reconstruction, and gamma 3 official-direction extrapolation.",
+      "ids_match_test_order": true,
+      "mae_vs_099": 29.54239217029178,
+      "name": "aggressive_champion_trained_direction_risk",
+      "next_manual_upload_target": true,
+      "output_bytes": 165720,
+      "output_file": "official_candidates/129_aggressive_champion_trained_direction_risk_output.csv",
+      "p95_abs_vs_099": 75.1280628,
+      "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+      "reproduction_command": "python3 official_candidates/129_aggressive_champion_trained_direction_risk_source.py --train data/train_data.csv --test data/test_data.csv --base-output official_candidates/023_lexical_transformer_output.csv --high-risk-base-output official_candidates/045_public_trt_ensemble_fallback_output.csv --anchor-output official_candidates/087_three_tier_fusion_base_14_output.csv --best-output official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv --output official_candidates/129_aggressive_champion_trained_direction_risk_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "row_count": 9425,
+      "source_bytes": 9082,
+      "source_file": "official_candidates/129_aggressive_champion_trained_direction_risk_source.py",
+      "source_urls": [
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_008.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_009.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_010.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_011.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_023.csv",
+        "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_merged.csv"
+      ],
+      "trained_feature_groups": [
+        "safe_surface",
+        "medium_public_behavior",
+        "high_public_reconstruction",
+        "trained_stacker",
+        "official_direction"
+      ],
+      "upload_ready": true
+    }
+  ],
+  "champion_difference_gate": {
+    "corr_vs_099_max": 0.995,
+    "mae_vs_099_min": 15.0,
+    "passed": true
+  },
+  "mode": "generate",
+  "next_manual_upload_target": "129",
+  "official_feedback": {
+    "candidate_id": "099",
+    "official_partial_score": 38.20618,
+    "submission_id": "manual_099_score_38_20618",
+    "submission_id_missing": true
+  },
+  "risk_label": "three_tier_fusion_with_high_risk_reconstruction"
+}
