@@ -1,0 +1,49 @@
+{
+  "fold_count": 3,
+  "folds": [
+    {
+      "fold": 1,
+      "heldout_texts": [
+        "lit_northwind",
+        "lit_solaris",
+        "popsci_caveman"
+      ],
+      "pearson": 0.5134790115481326,
+      "r2": 0.24327701947164082,
+      "row_count": 44190,
+      "score": 37.83780155098867
+    },
+    {
+      "fold": 2,
+      "heldout_texts": [
+        "enc_wikimoon",
+        "lit_magicmountain",
+        "popsci_multipleye"
+      ],
+      "pearson": 0.5110717617171521,
+      "r2": 0.2595653767264037,
+      "row_count": 44370,
+      "score": 38.53185692217779
+    },
+    {
+      "fold": 3,
+      "heldout_texts": [
+        "arg_pisarapanui",
+        "ins_humanrights",
+        "lit_brokenapril"
+      ],
+      "pearson": 0.5063746563457653,
+      "r2": 0.24541276715009663,
+      "row_count": 46650,
+      "score": 37.589371174793094
+    }
+  ],
+  "mean_pearson": 0.5103084765370167,
+  "mean_r2": 0.24941838778271372,
+  "mean_score": 37.986343215986516,
+  "mode": "cross_validate",
+  "row_count": 135210,
+  "score_type": "local_estimate",
+  "std_score": 0.3988469344548696,
+  "strategy": "text"
+}

@@ -75,6 +75,16 @@
 - Test-file answer values do not affect Safe V6 predictions.
 - Target-derived statistics are not computed from held-out prediction rows.
 
+## Official Feedback
+
+- Official judge scores outrank local estimates when choosing submission candidates.
+- Each official submission record preserves the reported submission ID and score.
+- The highest successful official score is identifiable from the project records.
+- Pending official candidates have uploadable source and output files.
+- Each pending official candidate output has exactly one row per test datapoint.
+- Each pending official candidate output uses exactly `subtaskID`, `datapointID`, and `answer`.
+- Candidate source and output files stay within the official upload size limits.
+
 ## Final 99+ Target
 
 - The final product target is an official or exact-truth score of at least `99 / 100`.

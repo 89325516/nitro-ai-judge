@@ -1,0 +1,80 @@
+{
+  "best_official_score": 36.11668,
+  "best_official_submission_id": "4e1670481a8f",
+  "evidence_order": [
+    "official_score",
+    "exact_score_with_truth",
+    "local_text_holdout_estimate",
+    "smoke_test"
+  ],
+  "final_selection_policy": "choose_current_highest_successful_official_score",
+  "pending_candidates": [
+    {
+      "candidate_id": "002",
+      "hypothesis": "Best local estimate; tests contextual frozen Romanian BERT features.",
+      "local_report": "reports/transformer_text_holdout.json",
+      "local_score": 38.99673098959958,
+      "manual_upload_priority": 2,
+      "name": "frozen_transformer",
+      "output_file": "official_candidates/002_frozen_transformer_output.csv",
+      "source_file": "official_candidates/002_frozen_transformer_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "003",
+      "hypothesis": "Tests leak-safe tabular, hurdle, and stacker signals.",
+      "local_report": "reports/safe_v6_text_holdout.json",
+      "local_score": 38.625340473796726,
+      "manual_upload_priority": 3,
+      "name": "safe_v6",
+      "output_file": "official_candidates/003_safe_v6_output.csv",
+      "source_file": "official_candidates/003_safe_v6_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "004",
+      "hypothesis": "Tests whether lower prediction scale improves official R2.",
+      "local_report": "reports/ridge_scale_090_text_holdout.json",
+      "local_score": 37.986343215986516,
+      "manual_upload_priority": 4,
+      "name": "ridge_scale_090",
+      "output_file": "official_candidates/004_ridge_scale_090_output.csv",
+      "source_file": "official_candidates/004_ridge_scale_090_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "005",
+      "hypothesis": "Tests whether higher prediction scale improves official R2.",
+      "local_report": "reports/ridge_scale_110_text_holdout.json",
+      "local_score": 37.79044143799357,
+      "manual_upload_priority": 5,
+      "name": "ridge_scale_110",
+      "output_file": "official_candidates/005_ridge_scale_110_output.csv",
+      "source_file": "official_candidates/005_ridge_scale_110_source.py",
+      "status": "pending",
+      "upload_ready": true
+    }
+  ],
+  "remaining_competition_submissions_after_first": 29,
+  "remaining_final_slots_after_first": 2,
+  "should_choose_best_as_final_now": true,
+  "submissions": [
+    {
+      "candidate_id": "001",
+      "chosen_as_final": false,
+      "hypothesis": "Stable Ridge baseline establishes the first official reference score.",
+      "local_report": "reports/baseline_text_holdout.json",
+      "local_score": 38.388843675977554,
+      "official_complete_score": null,
+      "official_partial_score": 36.11668,
+      "output_file": "official_candidates/001_ridge_official_output.csv",
+      "source_file": "official_candidates/001_ridge_official_source.py",
+      "state": "success",
+      "submission_id": "4e1670481a8f",
+      "timestamp": "2026-04-25 14:47"
+    }
+  ]
+}
