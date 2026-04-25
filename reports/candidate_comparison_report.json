@@ -18,6 +18,14 @@
     },
     {
       "mode": "cross_validate",
+      "name": "safe_v6_text_holdout",
+      "path": "reports/safe_v6_text_holdout.json",
+      "row_count": 135210,
+      "score": 38.625340473796726,
+      "score_type": "local_estimate"
+    },
+    {
+      "mode": "cross_validate",
       "name": "baseline_text_holdout",
       "path": "reports/baseline_text_holdout.json",
       "row_count": 135210,

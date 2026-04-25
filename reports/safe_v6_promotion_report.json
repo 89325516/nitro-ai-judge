@@ -1,0 +1,17 @@
+{
+  "evidence_note": "No official hidden-test score is claimed by this report.",
+  "no_participant_oracle_reference": {
+    "pearson": 0.5839164152639251,
+    "r2": 0.3392481113400273,
+    "score": 46.15822633019762
+  },
+  "primary_mean_score": 38.625340473796726,
+  "primary_report": "reports/safe_v6_text_holdout.json",
+  "promoted": false,
+  "reason": "Safe V6 did not reach the 50 / 100 local promotion gate.",
+  "robustness_mean_score": 37.99577444314055,
+  "robustness_report": "reports/safe_v6_leave_one_text.json",
+  "score_type": "local_estimate",
+  "stable_submission_replaced": false,
+  "target_score": 50.0
+}

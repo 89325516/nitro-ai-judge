@@ -65,6 +65,16 @@
 - Generated feature caches are excluded from git.
 - Fine-tuning is not introduced without a separate documented mechanism.
 
+## Safe V6 50 Target
+
+- Safe V6 is promoted only when the local three-fold unseen-text estimate is at least `50 / 100`.
+- Safe V6 reports are labeled as local estimates unless exact truth labels or official judge feedback are available.
+- Safe V6 output contains exactly one row for each input test datapoint.
+- Safe V6 output columns are exactly `subtaskID`, `datapointID`, and `answer`.
+- Safe V6 answers are finite and non-negative.
+- Test-file answer values do not affect Safe V6 predictions.
+- Target-derived statistics are not computed from held-out prediction rows.
+
 ## Final 99+ Target
 
 - The final product target is an official or exact-truth score of at least `99 / 100`.
