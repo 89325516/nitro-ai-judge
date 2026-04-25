@@ -20,10 +20,10 @@ args = parser.parse_args()
 
 train = pd.read_csv(args.train)
 test  = pd.read_csv(args.test)
-print("資料載入完成: train={}, test={}".format(len(train), len(test)))
+print("Data loaded: train={}, test={}".format(len(train), len(test)))
 
 # ============================================================
-# 解析 word_id
+# Parse word_id
 # ============================================================
 def get_word_key(wid):
     parts = wid.split('_')
@@ -48,7 +48,7 @@ train['text_type']  = train['text'].str.split('_').str[0]
 test['text_type']   = test['text'].str.split('_').str[0]
 
 # ============================================================
-# 查找表
+# Lookup tables
 # ============================================================
 participant_stats = train.groupby('participant_id')['answer'].agg(['mean','median','std'])
 participant_stats.columns = ['part_mean','part_median','part_std']
@@ -74,7 +74,7 @@ text_type_stats.columns = ['tt_mean','tt_std']
 word_key_stats = train.groupby('word_key')['answer'].agg(['mean','median','std','count'])
 word_key_stats.columns = ['wk_mean','wk_median','wk_std','wk_count']
 
-# 前後詞長度
+# Neighbor word lengths
 train['word_len_raw'] = train['word_clean'].str.len().fillna(0)
 train_sorted = train.drop_duplicates('word_key').sort_values(['text','word_key'])
 for shift, name in [(1,'prev'),(- 1,'next'),(2,'prev2'),(-2,'next2')]:
@@ -82,12 +82,12 @@ for shift, name in [(1,'prev'),(- 1,'next'),(2,'prev2'),(-2,'next2')]:
 neighbor_cols = ['word_key','prev_word_len','next_word_len','prev2_word_len','next2_word_len']
 train = train.merge(train_sorted[neighbor_cols], on='word_key', how='left')
 
-# 文本詞數
+# Text word counts
 text_len_map = train.drop_duplicates('word_key').groupby('text')['word_key'].count().rename('text_n_words')
 train = train.merge(text_len_map, on='text', how='left')
 test  = test.merge(text_len_map, on='text', how='left')
 
-# n-gram 頻率
+# n-gram frequency
 all_words = train['word_lower'].fillna('').tolist()
 bigram_counter, trigram_counter = Counter(), Counter()
 for w in all_words:
@@ -118,10 +118,10 @@ global_skip_rate    = (train['answer'] == 0).mean()
 global_nonzero_mean = nonzero_train['answer'].mean()
 global_nonzero_std  = nonzero_train['answer'].std()
 
-print("查找表建立完成 | 全局跳過率: {:.1%}".format(global_skip_rate))
+print("Lookup tables built | Global skip rate: {:.1%}".format(global_skip_rate))
 
 # ============================================================
-# 特徵工程
+# Feature engineering
 # ============================================================
 VOWELS = set('aeiouAEIOUăâîĂÂÎ')
 RO_DIAC = set('ăâîșțĂÂÎȘȚ')
@@ -136,7 +136,7 @@ def engineer(df, is_train=True):
     wc = df['word_clean'].fillna('').astype(str)
     wl = df['word_lower'].fillna('').astype(str)
 
-    # 基礎特徵
+    # Basic features
     df['word_len']       = wc.str.len().astype(float)
     df['n_vowels']       = wc.apply(lambda w: sum(1 for c in w if c in VOWELS))
     df['n_consonants']   = df['word_len'] - df['n_vowels']
@@ -162,7 +162,7 @@ def engineer(df, is_train=True):
     df['bigram_freq_log'] = np.log1p(df['bigram_freq'] * 1000)
     df['trigram_freq_log']= np.log1p(df['trigram_freq'] * 1000)
 
-    # 位置特徵
+    # Position features
     df['word_pos']       = df['word_key'].str.split('_').str[-1].astype(float)
     df['page_num']       = df['word_key'].str.split('_').apply(lambda x: float(x[-2]) if len(x) >= 2 else 0.0)
     df['word_pos_log']   = np.log1p(df['word_pos'])
@@ -173,7 +173,7 @@ def engineer(df, is_train=True):
     df['is_first_10pct'] = (df['pos_ratio'] < 0.1).astype(float)
     df['is_mid']         = ((df['pos_ratio'] > 0.3) & (df['pos_ratio'] < 0.7)).astype(float)
 
-    # 參與者特徵
+    # Participant features
     df = df.merge(participant_stats, on='participant_id', how='left')
     df['part_mean']         = df['part_mean'].fillna(global_mean)
     df['part_median']       = df['part_median'].fillna(global_median)
@@ -189,7 +189,7 @@ def engineer(df, is_train=True):
     df = df.merge(part_tt_skip, on=['participant_id','text_type'], how='left')
     df['part_tt_skip'] = df['part_tt_skip'].fillna(df['part_skip_rate'])
 
-    # 單詞查找
+    # Word lookup
     df = df.merge(word_form_stats, on='word_clean', how='left')
     df['wf_mean']   = df['wf_mean'].fillna(global_mean)
     df['wf_median'] = df['wf_median'].fillna(global_median)
@@ -226,7 +226,7 @@ def engineer(df, is_train=True):
     df = df.merge(word_nonzero_std, on='word_lower', how='left')
     df['wl_nonzero_std'] = df['wl_nonzero_std'].fillna(global_nonzero_std)
 
-    # 前後詞
+    # Neighbor words
     for col in ['prev_word_len','next_word_len','prev2_word_len','next2_word_len']:
         if col not in df.columns: df[col] = 0.0
         df[col] = df[col].fillna(0)
@@ -234,7 +234,7 @@ def engineer(df, is_train=True):
     df['neighbor_len_mean'] = df['neighbor_len_sum'] / 2
     df['neighbor_len_max']  = df[['prev_word_len','next_word_len']].max(axis=1)
 
-    # 互動特徵
+    # Interaction features
     df['wf_x_part']       = df['wf_mean'] * df['part_mean'] / global_mean
     df['wk_x_part']       = df['wk_mean'] * df['part_mean'] / global_mean
     df['len_x_part']      = df['word_len'] * df['part_mean']
@@ -250,19 +250,19 @@ def engineer(df, is_train=True):
     df['part_tt_x_wf']    = df['part_tt_mean'] * df['wf_mean'] / global_mean
     df['wk_vs_wf']        = df['wk_mean'] - df['wf_mean']
     df['part_vs_text']    = df['part_mean'] - df['text_mean']
-    # 詞難度估計（長度 × 低n-gram頻率）
+    # Word difficulty estimate from length and low n-gram frequency
     df['word_difficulty'] = df['word_len'] * (1 - df['bigram_freq'] * 100)
-    # 參與者跳過率 × 詞跳過率
+    # Participant skip rate times word skip rate
     df['skip_x_skip']     = df['part_skip_rate'] * df['skip_rate']
-    # 非零 TRT 相對於參與者均值
+    # Non-zero TRT relative to participant mean
     df['nz_vs_part']      = df['wl_nonzero_mean'] / (df['part_nonzero_mean'] + 1e-9)
 
     return df
 
-print("開始特徵工程...")
+print("Engineering features...")
 train = engineer(train, is_train=True)
 test  = engineer(test,  is_train=False)
-print("特徵工程完成")
+print("Feature engineering done")
 
 FEATURES = [
     'word_len','n_vowels','n_consonants','vowel_ratio',
@@ -290,7 +290,7 @@ FEATURES = [
     'wk_vs_wf','part_vs_text','word_difficulty','skip_x_skip','nz_vs_part',
 ]
 
-# Meta-model 也加入一些關鍵原始特徵
+# Add key raw features to the meta-model
 META_EXTRA_FEATURES = [
     'wk_mean','wk_count','part_mean','part_skip_rate',
     'skip_rate','wl_nonzero_mean','expected_trt',
@@ -305,10 +305,10 @@ X_test = test[FEATURES].fillna(0).values
 X_meta_extra       = train[META_EXTRA_FEATURES].fillna(0).values
 X_meta_extra_test  = test[META_EXTRA_FEATURES].fillna(0).values
 
-print("特徵數量:", len(FEATURES))
+print("Number of features:", len(FEATURES))
 
 # ============================================================
-# 評分函數
+# Metric
 # ============================================================
 def eval_metric(y_true, preds):
     y_true = np.array(y_true, dtype=float)
@@ -319,7 +319,7 @@ def eval_metric(y_true, preds):
     return 100.0 * (abs(pears) + r2) / 2.0
 
 # ============================================================
-# 模型定義
+# Model definitions
 # ============================================================
 lgb_reg_params = dict(
     n_estimators=2000, learning_rate=0.02, num_leaves=127,
@@ -353,7 +353,7 @@ hgb_params = dict(
 )
 
 # ============================================================
-# 交叉驗證
+# Cross-validation
 # ============================================================
 groups = train['text'].values
 gkf    = GroupKFold(n_splits=9)
@@ -366,7 +366,7 @@ oof_log  = np.zeros(len(X))   # LightGBM on log target
 cv_scores = []
 
 print("=" * 65)
-print("交叉驗證")
+print("Cross-validation")
 print("=" * 65)
 
 for fold, (tr_idx, val_idx) in enumerate(gkf.split(X, y, groups)):
@@ -401,7 +401,7 @@ for fold, (tr_idx, val_idx) in enumerate(gkf.split(X, y, groups)):
     p_skip = mD.predict_proba(X_val)[:, 1]
     oof_skip[val_idx] = p_skip
 
-    # E: LightGBM on log(TRT) — 對非零值更精確
+    # E: LightGBM on log(TRT) for better non-zero value fit
     mE = lgb.LGBMRegressor(**lgb_log_params)
     mE.fit(X_tr, y_log_tr, eval_set=[(X_val, y_log[val_idx])], callbacks=cb_lgb)
     p_log = np.expm1(mE.predict(X_val))
@@ -425,14 +425,14 @@ for fold, (tr_idx, val_idx) in enumerate(gkf.split(X, y, groups)):
         fold+1, g, sA, sB, sC, sHurd, sEns))
 
 print("=" * 65)
-print("平均 Ensemble: {:.2f} +/- {:.2f}".format(np.mean(cv_scores), np.std(cv_scores)))
+print("Mean ensemble: {:.2f} +/- {:.2f}".format(np.mean(cv_scores), np.std(cv_scores)))
 print("=" * 65)
 
 # ============================================================
 # Meta-model Stacking
-# LightGBM meta，輸入：4個OOF + hurdle特徵 + 關鍵原始特徵
+# LightGBM meta input: four OOF predictions, hurdle features, and key raw features
 # ============================================================
-print("\nMeta-model Stacking 訓練中...")
+print("\nTraining meta-model stacker...")
 oof_hurdle = (1 - oof_skip) * oof_lgb
 
 X_meta_train = np.column_stack([
@@ -454,9 +454,9 @@ meta_oof = meta_model.predict(X_meta_train)
 print("Meta-model OOF score: {:.2f}".format(eval_metric(y, meta_oof)))
 
 # ============================================================
-# 全部資料重新訓練
+# Retrain on full data
 # ============================================================
-print("\n全部資料重新訓練中...")
+print("\nRetraining on full data...")
 cb = [lgb.log_evaluation(-1)]
 fA = lgb.LGBMRegressor(**lgb_reg_params); fA.fit(X, y, callbacks=cb)
 fB = xgb.XGBRegressor(**{k: v for k, v in xgb_params.items() if k != 'early_stopping_rounds'}); fB.fit(X, y, verbose=False)
@@ -483,7 +483,7 @@ final_preds = 0.5 * np.clip(p_ens_test, 0, None) + 0.5 * np.clip(meta_preds, 0, 
 final_preds = np.clip(final_preds, 0, None)
 
 # ============================================================
-# 儲存結果
+# Save submission
 # ============================================================
 out = test[['datapointID']].copy()
 out['subtaskID'] = 1
@@ -491,7 +491,7 @@ out['answer']    = final_preds
 out = out[['subtaskID', 'datapointID', 'answer']]
 out.to_csv(args.output, index=False)
 
-print("\n完成！")
-print("輸出前10行:")
+print("\nDone!")
+print("First 10 rows:")
 print(out.head(10).to_string())
-print("\n檔案已存到:", args.output)
+print("\nSaved to:", args.output)
