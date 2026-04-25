@@ -21,6 +21,18 @@ Each official attempt is recorded with its submission ID, timestamp, uploaded so
 
 The current best official score should be selected as final after every successful submission. If a later official score is higher, the final selection should move to the new best submission.
 
+## Manual Upload Assignment Rule
+
+The manual Nitro upload target is the largest numeric candidate ID available at upload time unless the user explicitly says otherwise. The next official feedback is assigned to that candidate ID before it is used for any follow-up search.
+
+Local reports do not prove a score increase. Every score-changing decision must first record the official submission in `reports/official_submission_ledger.json`.
+
+## Feedback-Driven Search
+
+Candidate `087_three_tier_fusion_base_14` is the current official anchor after submission `07ead7cdad22` scored `37.35945 / 100`. The next search starts at Candidate `088` and stays centered on the `087` recipe: `mode=base`, safe weight `0.20`, medium weight `0.45`, and high-risk weight `0.35`.
+
+The next generation should keep each output as one three-tier fusion individual. It should test stronger safe/medium weighting, moderate high-risk reconstruction, scale variants, and zero-rate variants around the official anchor rather than restarting broad unfocused exploration.
+
 ## Candidate Strategy
 
 The next candidates test different hypotheses:

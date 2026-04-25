@@ -3953,6 +3953,13 @@
       "medium_exact_lookup": false,
       "mode": "base",
       "name": "three_tier_fusion_base_14",
+      "official_feedback": {
+        "chosen_as_final": true,
+        "official_partial_score": 37.35945,
+        "state": "success",
+        "submission_id": "07ead7cdad22",
+        "timestamp": "2026-04-25 19:53"
+      },
       "output_bytes": 166231,
       "output_file": "official_candidates/087_three_tier_fusion_base_14_output.csv",
       "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
@@ -4007,6 +4014,23 @@
   },
   "high_risk_base_candidate": "045_public_trt_ensemble_fallback",
   "mode": "generate",
+  "official_feedback": {
+    "assignment_policy": "largest_numeric_candidate_id_at_manual_upload_time",
+    "candidate_id": "087",
+    "next_candidate_start": "088",
+    "next_search_anchor": {
+      "component_weights": {
+        "high": 0.35,
+        "medium": 0.45,
+        "safe": 0.2
+      },
+      "mode": "base"
+    },
+    "official_partial_score": 37.35945,
+    "state": "success",
+    "submission_id": "07ead7cdad22",
+    "timestamp": "2026-04-25 19:53"
+  },
   "raw_mapping_rankings": [
     {
       "distance": 0.8679669170958694,

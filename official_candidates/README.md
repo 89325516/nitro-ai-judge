@@ -179,3 +179,5 @@ All Batch 9 candidates fuse safe language features, medium public behavior aggre
 | `087_three_tier_fusion_base_14` | `0.20/0.45/0.35` | `official_candidates/087_three_tier_fusion_base_14_source.py` | `official_candidates/087_three_tier_fusion_base_14_output.csv` | Fused safe, medium, and high-risk signals with base high component rank 14. |
 
 Risk label for all Batch 9 rows: `three_tier_fusion_with_high_risk_reconstruction` with safe, medium, and high-risk components.
+
+Official feedback: Candidate `087_three_tier_fusion_base_14` was submitted as `07ead7cdad22` on `2026-04-25 19:53` and scored `37.35945 / 100`, making it the current official best and the anchor for Candidate `088+` feedback-driven search.

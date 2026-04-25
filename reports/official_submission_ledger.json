@@ -1,13 +1,28 @@
 {
-  "best_official_score": 37.29678,
-  "best_official_submission_id": "59a73c203976",
+  "best_official_score": 37.35945,
+  "best_official_submission_id": "07ead7cdad22",
   "evidence_order": [
     "official_score",
     "exact_score_with_truth",
     "local_text_holdout_estimate",
     "smoke_test"
   ],
+  "feedback_driven_next_candidate_anchor": {
+    "candidate_id": "087",
+    "component_weights": {
+      "high": 0.35,
+      "medium": 0.45,
+      "safe": 0.2
+    },
+    "mode": "base",
+    "next_search_direction": "increase safe/medium around candidate 087 while keeping each output a three-tier fusion individual",
+    "official_partial_score": 37.35945
+  },
+  "feedback_driven_next_candidate_start": "088",
   "final_selection_policy": "choose_current_highest_successful_official_score",
+  "latest_manual_submission_policy": "largest_numeric_candidate_id_at_manual_upload_time",
+  "latest_official_feedback_candidate_id": "087",
+  "latest_official_feedback_submission_id": "07ead7cdad22",
   "official_80_target_met": false,
   "official_80_target_score": 80.0,
   "pending_candidates": [
@@ -1458,6 +1473,7 @@
     },
     {
       "candidate_id": "087",
+      "chosen_as_final": true,
       "component_weights": {
         "high": 0.35,
         "medium": 0.45,
@@ -1468,6 +1484,9 @@
       "local_score": null,
       "manual_upload_priority": 87,
       "name": "three_tier_fusion_base_14",
+      "next_action": "use_as_feedback_anchor_for_candidates_088_plus",
+      "official_partial_score": 37.35945,
+      "official_submission_id": "07ead7cdad22",
       "output_file": "official_candidates/087_three_tier_fusion_base_14_output.csv",
       "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
       "risk_labels": [
@@ -1476,7 +1495,7 @@
         "high_risk_public_reconstruction"
       ],
       "source_file": "official_candidates/087_three_tier_fusion_base_14_source.py",
-      "status": "pending",
+      "status": "official_scored",
       "upload_ready": true
     }
   ],
@@ -1501,12 +1520,26 @@
     },
     {
       "candidate_id": "002",
-      "chosen_as_final": true,
+      "chosen_as_final": false,
       "official_complete_score": null,
       "official_partial_score": 37.29678,
       "state": "success",
       "submission_id": "59a73c203976",
       "timestamp": "2026-04-25 15:16"
+    },
+    {
+      "assignment_policy": "largest_numeric_candidate_id_at_manual_upload_time",
+      "candidate_id": "087",
+      "chosen_as_final": true,
+      "hypothesis": "Fused safe, medium, and high-risk signals with base high component rank 14.",
+      "local_report": "reports/three_tier_external_report.json",
+      "official_complete_score": null,
+      "official_partial_score": 37.35945,
+      "output_file": "official_candidates/087_three_tier_fusion_base_14_output.csv",
+      "source_file": "official_candidates/087_three_tier_fusion_base_14_source.py",
+      "state": "success",
+      "submission_id": "07ead7cdad22",
+      "timestamp": "2026-04-25 19:53"
     }
   ]
 }

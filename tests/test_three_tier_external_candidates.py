@@ -35,6 +35,8 @@ class ThreeTierExternalCandidateTest(unittest.TestCase):
     def test_every_candidate_is_one_fused_individual(self) -> None:
         report = self.report()
         self.assertEqual(42, report["candidate_count"])
+        self.assertEqual("087", report["official_feedback"]["candidate_id"])
+        self.assertAlmostEqual(37.35945, float(report["official_feedback"]["official_partial_score"]))
         self.assertEqual({"raw", "cal", "base"}, {candidate["mode"] for candidate in report["candidates"]})
         for candidate in report["candidates"]:
             with self.subTest(candidate=candidate["candidate_id"]):

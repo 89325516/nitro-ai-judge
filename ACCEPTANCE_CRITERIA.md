@@ -122,6 +122,9 @@
 - Each pending official candidate output has exactly one row per test datapoint.
 - Each pending official candidate output uses exactly `subtaskID`, `datapointID`, and `answer`.
 - Candidate source and output files stay within the official upload size limits.
+- Manual official feedback is assigned to the largest numeric candidate ID unless the user explicitly says otherwise.
+- A scored largest-ID candidate is marked as official feedback before it anchors the next search.
+- Feedback-driven candidate search starts from the latest official best, not from local-only estimates.
 
 ## Official 80 Push
 
