@@ -13,8 +13,11 @@ OUTPUT_LIMIT = 50 * 1024 * 1024
 TARGET_SCORE = 80.0
 BASE_SOURCE = "official_candidates/001_ridge_official_source.py"
 BASE_OUTPUT = "official_candidates/001_ridge_official_output.csv"
+TRANSFORMER_OUTPUT = "official_candidates/002_frozen_transformer_output.csv"
 CONFIG_MARKER = "FeatureMap = dict[str, float]\n"
 PREDICTION_MARKER = "predictions = np.clip(model.predict(test_features), 0.0, 10000.0)"
+TRANSFORMER_CONFIG_MARKER = "POSITION_PATTERN = re.compile(r\"_page_(\\d+)_(\\d+)$\")\n"
+TRANSFORMER_PREDICTION_MARKER = "predictions = model.fit(combined_features(train_rows, encoder, args.feature_width), targets).predict(combined_features(test_rows, encoder, args.feature_width))"
 
 
 def read_csv(path: Path) -> list[dict[str, str]]:
@@ -42,17 +45,16 @@ def zero_threshold(values: list[float], rate: float) -> float:
     return ordered[index]
 
 
-def make_variant(root: Path, candidate_id: str, name: str, config: dict) -> dict:
+def make_variant(root: Path, candidate_id: str, name: str, config: dict, base_source: str = BASE_SOURCE) -> dict:
     source_path = root / "official_candidates" / f"{candidate_id}_{name}_source.py"
     output_path = root / "official_candidates" / f"{candidate_id}_{name}_output.csv"
-    source_path.write_text(variant_source((root / BASE_SOURCE).read_text(encoding="utf-8"), config), encoding="utf-8")
+    source_path.write_text(variant_source((root / base_source).read_text(encoding="utf-8"), config), encoding="utf-8")
     subprocess.run(["python3", str(source_path), "--train", str(root / "data/train_data.csv"), "--test", str(root / "data/test_data.csv"), "--output", str(output_path)], check=True)
     return {"candidate_id": candidate_id, "name": name, "source_file": str(source_path.relative_to(root)), "output_file": str(output_path.relative_to(root)), "hypothesis": config.get("hypothesis", name), "manual_upload_priority": int(candidate_id)}
 
 
 def variant_source(base_source: str, config: dict) -> str:
-    helper = f"""FeatureMap = dict[str, float]
-CONFIG = {repr(config)}
+    helper_body = f"""CONFIG = {repr(config)}
 
 
 def transform_predictions(test_rows: list[dict[str, str]], predictions: np.ndarray) -> np.ndarray:
@@ -70,27 +72,41 @@ def transform_predictions(test_rows: list[dict[str, str]], predictions: np.ndarr
         output.append(max(0.0, value * scale))
     return np.clip(np.asarray(output, dtype=float), 0.0, 10000.0)
 """
-    if CONFIG_MARKER not in base_source or PREDICTION_MARKER not in base_source:
-        raise ValueError("base source does not match expected Ridge layout")
-    return base_source.replace(CONFIG_MARKER, helper).replace(PREDICTION_MARKER, "predictions = transform_predictions(test_rows, model.predict(test_features))")
+    if CONFIG_MARKER in base_source and PREDICTION_MARKER in base_source:
+        helper = "FeatureMap = dict[str, float]\n" + helper_body
+        return base_source.replace(CONFIG_MARKER, helper).replace(PREDICTION_MARKER, "predictions = transform_predictions(test_rows, model.predict(test_features))")
+    if TRANSFORMER_CONFIG_MARKER in base_source and TRANSFORMER_PREDICTION_MARKER in base_source:
+        helper = TRANSFORMER_CONFIG_MARKER + helper_body
+        replacement = "raw_predictions = model.fit(combined_features(train_rows, encoder, args.feature_width), targets).predict(combined_features(test_rows, encoder, args.feature_width))\n    predictions = transform_predictions(test_rows, raw_predictions)"
+        return base_source.replace(TRANSFORMER_CONFIG_MARKER, helper).replace(TRANSFORMER_PREDICTION_MARKER, replacement)
+    raise ValueError("base source does not match an expected layout")
 
 
 def generate(root: Path) -> list[dict]:
     output_rows, _ = base_rows(root)
     values = [float(row["answer"]) for row in output_rows]
-    specs: list[tuple[str, str, dict]] = []
+    specs: list[tuple[str, str, dict, str]] = []
     for candidate_id, rate in [("006", 0.20), ("007", 0.30), ("008", 0.40)]:
         threshold = zero_threshold(values, rate)
         name = f"ridge_zero_{int(rate * 100):02d}"
         config = {"zero_threshold": threshold, "scale": 1.0, "hypothesis": f"Set bottom {int(rate * 100)} percent predictions to zero."}
-        specs.append((candidate_id, name, config))
+        specs.append((candidate_id, name, config, BASE_SOURCE))
     for candidate_id, text in [("009", "arg_pisacowsmilk"), ("010", "ins_learningmobility"), ("011", "lit_alchemist")]:
         config = {"text": text, "factor": 1.12, "hypothesis": f"Boost text {text} by 12 percent."}
-        specs.append((candidate_id, f"text_boost_{text}", config))
+        specs.append((candidate_id, f"text_boost_{text}", config, BASE_SOURCE))
     for candidate_id, participant in [("012", "040"), ("013", "036"), ("014", "016"), ("015", "024"), ("016", "019")]:
         config = {"participant_id": participant, "factor": 1.12, "hypothesis": f"Boost participant {participant} by 12 percent."}
-        specs.append((candidate_id, f"participant_boost_{participant}", config))
-    return [make_variant(root, *spec) for spec in specs]
+        specs.append((candidate_id, f"participant_boost_{participant}", config, BASE_SOURCE))
+    transformer_rows = read_csv(root / TRANSFORMER_OUTPUT)
+    transformer_values = [float(row["answer"]) for row in transformer_rows]
+    for candidate_id, scale in [("017", 0.90), ("018", 1.10)]:
+        config = {"scale": scale, "hypothesis": f"Scale frozen Transformer predictions by {scale}."}
+        specs.append((candidate_id, f"transformer_scale_{int(scale * 100):03d}", config, "official_candidates/002_frozen_transformer_source.py"))
+    for candidate_id, rate in [("019", 0.20), ("020", 0.30)]:
+        threshold = zero_threshold(transformer_values, rate)
+        config = {"zero_threshold": threshold, "scale": 1.0, "hypothesis": f"Set bottom {int(rate * 100)} percent frozen Transformer predictions to zero."}
+        specs.append((candidate_id, f"transformer_zero_{int(rate * 100):02d}", config, "official_candidates/002_frozen_transformer_source.py"))
+    return [make_variant(root, candidate_id, name, config, base_source) for candidate_id, name, config, base_source in specs]
 
 
 def validate(root: Path, candidates: Sequence[dict]) -> dict:

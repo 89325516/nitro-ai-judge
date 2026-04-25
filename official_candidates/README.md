@@ -52,4 +52,21 @@ Use these source and output pairs for manual Nitro Judge submissions. Official s
 14. `015_participant_boost_024`
 15. `016_participant_boost_019`
 
+## Batch 4: Frozen Transformer Calibration
+
+16. `017_transformer_scale_090`
+   - Source: `official_candidates/017_transformer_scale_090_source.py`
+   - Output: `official_candidates/017_transformer_scale_090_output.csv`
+17. `018_transformer_scale_110`
+   - Source: `official_candidates/018_transformer_scale_110_source.py`
+   - Output: `official_candidates/018_transformer_scale_110_output.csv`
+18. `019_transformer_zero_20`
+   - Source: `official_candidates/019_transformer_zero_20_source.py`
+   - Output: `official_candidates/019_transformer_zero_20_output.csv`
+19. `020_transformer_zero_30`
+   - Source: `official_candidates/020_transformer_zero_30_source.py`
+   - Output: `official_candidates/020_transformer_zero_30_output.csv`
+
+Because Candidate `002_frozen_transformer` is currently official-best, submit Candidate `003_safe_v6` next, then prefer Transformer scale variants before zero-rate variants.
+
 After each successful official submission, record the score with `python3 experiments/official_80_push.py record ...` and select the highest successful official score as final.

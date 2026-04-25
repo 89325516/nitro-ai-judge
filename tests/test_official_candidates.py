@@ -23,7 +23,7 @@ class OfficialCandidateTest(unittest.TestCase):
         self.assertEqual("4e1670481a8f", first["submission_id"])
         self.assertEqual("success", first["state"])
         self.assertAlmostEqual(36.11668, float(first["official_partial_score"]))
-        self.assertEqual(36.11668, float(ledger["best_official_score"]))
+        self.assertGreaterEqual(float(ledger["best_official_score"]), float(first["official_partial_score"]))
         self.assertTrue(ledger["should_choose_best_as_final_now"])
 
     def test_pending_candidates_are_upload_ready(self) -> None:

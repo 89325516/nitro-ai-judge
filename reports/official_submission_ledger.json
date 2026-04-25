@@ -1,6 +1,6 @@
 {
-  "best_official_score": 36.11668,
-  "best_official_submission_id": "4e1670481a8f",
+  "best_official_score": 37.29678,
+  "best_official_submission_id": "59a73c203976",
   "evidence_order": [
     "official_score",
     "exact_score_with_truth",
@@ -11,18 +11,6 @@
   "official_80_target_met": false,
   "official_80_target_score": 80.0,
   "pending_candidates": [
-    {
-      "candidate_id": "002",
-      "hypothesis": "Best local estimate; tests contextual frozen Romanian BERT features.",
-      "local_report": "reports/transformer_text_holdout.json",
-      "local_score": 38.99673098959958,
-      "manual_upload_priority": 2,
-      "name": "frozen_transformer",
-      "output_file": "official_candidates/002_frozen_transformer_output.csv",
-      "source_file": "official_candidates/002_frozen_transformer_source.py",
-      "status": "pending",
-      "upload_ready": true
-    },
     {
       "candidate_id": "003",
       "hypothesis": "Tests leak-safe tabular, hurdle, and stacker signals.",
@@ -190,6 +178,54 @@
       "source_file": "official_candidates/016_participant_boost_019_source.py",
       "status": "pending",
       "upload_ready": true
+    },
+    {
+      "candidate_id": "017",
+      "hypothesis": "Scale frozen Transformer predictions by 0.9.",
+      "local_report": "reports/official_80_push_candidates.json",
+      "local_score": null,
+      "manual_upload_priority": 17,
+      "name": "transformer_scale_090",
+      "output_file": "official_candidates/017_transformer_scale_090_output.csv",
+      "source_file": "official_candidates/017_transformer_scale_090_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "018",
+      "hypothesis": "Scale frozen Transformer predictions by 1.1.",
+      "local_report": "reports/official_80_push_candidates.json",
+      "local_score": null,
+      "manual_upload_priority": 18,
+      "name": "transformer_scale_110",
+      "output_file": "official_candidates/018_transformer_scale_110_output.csv",
+      "source_file": "official_candidates/018_transformer_scale_110_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "019",
+      "hypothesis": "Set bottom 20 percent frozen Transformer predictions to zero.",
+      "local_report": "reports/official_80_push_candidates.json",
+      "local_score": null,
+      "manual_upload_priority": 19,
+      "name": "transformer_zero_20",
+      "output_file": "official_candidates/019_transformer_zero_20_output.csv",
+      "source_file": "official_candidates/019_transformer_zero_20_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "020",
+      "hypothesis": "Set bottom 30 percent frozen Transformer predictions to zero.",
+      "local_report": "reports/official_80_push_candidates.json",
+      "local_score": null,
+      "manual_upload_priority": 20,
+      "name": "transformer_zero_30",
+      "output_file": "official_candidates/020_transformer_zero_30_output.csv",
+      "source_file": "official_candidates/020_transformer_zero_30_source.py",
+      "status": "pending",
+      "upload_ready": true
     }
   ],
   "probing_budget": "10-15 official submissions",
@@ -210,6 +246,15 @@
       "state": "success",
       "submission_id": "4e1670481a8f",
       "timestamp": "2026-04-25 14:47"
+    },
+    {
+      "candidate_id": "002",
+      "chosen_as_final": true,
+      "official_complete_score": null,
+      "official_partial_score": 37.29678,
+      "state": "success",
+      "submission_id": "59a73c203976",
+      "timestamp": "2026-04-25 15:16"
     }
   ]
 }

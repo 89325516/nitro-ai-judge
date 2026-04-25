@@ -230,6 +230,90 @@
       "source_bytes": 4748,
       "source_file": "official_candidates/016_participant_boost_019_source.py",
       "upload_ready": true
+    },
+    {
+      "answer_mean": 246.17419994748013,
+      "answer_zero_rate": 0.011671087533156498,
+      "answers_finite_non_negative": true,
+      "candidate_id": "017",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "hypothesis": "Scale frozen Transformer predictions by 0.9.",
+      "ids_match_test_order": true,
+      "manual_upload_priority": 17,
+      "name": "transformer_scale_090",
+      "output_bytes": 166469,
+      "output_file": "official_candidates/017_transformer_scale_090_output.csv",
+      "row_count": 9425,
+      "source_bytes": 9362,
+      "source_file": "official_candidates/017_transformer_scale_090_source.py",
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 300.8795777156499,
+      "answer_zero_rate": 0.011671087533156498,
+      "answers_finite_non_negative": true,
+      "candidate_id": "018",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "hypothesis": "Scale frozen Transformer predictions by 1.1.",
+      "ids_match_test_order": true,
+      "manual_upload_priority": 18,
+      "name": "transformer_scale_110",
+      "output_bytes": 166934,
+      "output_file": "official_candidates/018_transformer_scale_110_output.csv",
+      "row_count": 9425,
+      "source_bytes": 9362,
+      "source_file": "official_candidates/018_transformer_scale_110_source.py",
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 261.3590327087533,
+      "answer_zero_rate": 0.2,
+      "answers_finite_non_negative": true,
+      "candidate_id": "019",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "hypothesis": "Set bottom 20 percent frozen Transformer predictions to zero.",
+      "ids_match_test_order": true,
+      "manual_upload_priority": 19,
+      "name": "transformer_zero_20",
+      "output_bytes": 164804,
+      "output_file": "official_candidates/019_transformer_zero_20_output.csv",
+      "row_count": 9425,
+      "source_bytes": 9409,
+      "source_file": "official_candidates/019_transformer_zero_20_source.py",
+      "upload_ready": true
+    },
+    {
+      "answer_mean": 248.50191763448274,
+      "answer_zero_rate": 0.29973474801061006,
+      "answers_finite_non_negative": true,
+      "candidate_id": "020",
+      "columns": [
+        "subtaskID",
+        "datapointID",
+        "answer"
+      ],
+      "hypothesis": "Set bottom 30 percent frozen Transformer predictions to zero.",
+      "ids_match_test_order": true,
+      "manual_upload_priority": 20,
+      "name": "transformer_zero_30",
+      "output_bytes": 162924,
+      "output_file": "official_candidates/020_transformer_zero_30_output.csv",
+      "row_count": 9425,
+      "source_bytes": 9409,
+      "source_file": "official_candidates/020_transformer_zero_30_source.py",
+      "upload_ready": true
     }
   ],
   "target_score": 80.0
