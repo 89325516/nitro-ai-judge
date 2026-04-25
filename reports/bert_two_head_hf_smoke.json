@@ -1,0 +1,8 @@
+{
+  "backend": "hf",
+  "finite_non_negative": true,
+  "mode": "bert_two_head_smoke",
+  "promoted": false,
+  "row_count": 4,
+  "score_type": "local_estimate"
+}

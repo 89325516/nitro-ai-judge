@@ -83,6 +83,29 @@ The audit separates local estimates, oracle ceilings, leakage signals, and exact
 Changes should keep module boundaries small, avoid hidden state, prefer injected dependencies, and test observable behavior rather than implementation details.
 
 
+
+### BERT Two-Head Experiment
+
+Run a deterministic smoke test without downloading model weights:
+
+```bash
+python3 experiments/bert_two_head.py smoke --train data/train_data.csv --backend tiny --epochs 1 --learning-rate 0.01 --chunk-words 8 --max-length 32 --max-train-chunks 2 --report reports/bert_two_head_smoke.json
+```
+
+Run a tiny real Romanian BERT smoke test:
+
+```bash
+python3 experiments/bert_two_head.py smoke --train data/train_data.csv --backend hf --device cpu --epochs 1 --learning-rate 0.00002 --chunk-words 4 --max-length 64 --max-train-chunks 1 --unfreeze-layers 0 --report reports/bert_two_head_hf_smoke.json
+```
+
+Generate an experimental prediction file after choosing a training budget:
+
+```bash
+python3 experiments/bert_two_head.py train-predict --train data/train_data.csv --test data/test_data.csv --output reports/bert_two_head_candidate.csv --report reports/bert_two_head_candidate.json --backend hf --epochs 1 --unfreeze-layers 2
+```
+
+This experiment is not promoted over the current official-best candidate until local or official evidence supports it.
+
 ### Semantic TRT Sprint
 
 Run the conservative CSV-only semantic candidate with:

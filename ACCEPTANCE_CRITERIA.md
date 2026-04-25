@@ -85,6 +85,16 @@
 - Semantic TRT local reports are labeled as local estimates, not official or exact scores.
 - The final `100 / 100` target is satisfied only by official judge feedback or exact hidden truth labels.
 
+## BERT Two-Head Experiment
+
+- BERT two-head outputs contain exactly one row for each input test datapoint.
+- BERT two-head output columns are exactly `subtaskID`, `datapointID`, and `answer`.
+- BERT two-head answers are finite and non-negative.
+- Test-file answer values do not affect BERT two-head predictions.
+- BERT two-head smoke reports are labeled as local estimates, not official scores.
+- Token-to-word mapping preserves one prediction per input row.
+- BERT model weights and generated model artifacts are not tracked in git.
+
 ## Official Feedback
 
 - Official judge scores outrank local estimates when choosing submission candidates.
