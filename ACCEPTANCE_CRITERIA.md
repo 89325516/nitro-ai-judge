@@ -152,6 +152,18 @@
 - Public TRT recovery source files can reproduce their paired output files from public URLs.
 - Public TRT recovery reports do not mark `80+` or `99+` complete without official or exact-truth evidence.
 
+## Three-Tier External Data Fusion Sprint
+
+- Three-tier fusion candidates combine safe, medium, and high-risk components in one output.
+- Three-tier fusion candidates state component weights and risk labels.
+- The safe component does not read public fixation or TRT rows.
+- The medium component does not use exact test participant plus text plus word lookup.
+- The high-risk component labels lookup or reconstruction behavior.
+- Three-tier fusion outputs contain exactly one row for each test datapoint.
+- Three-tier fusion outputs use exactly `subtaskID`, `datapointID`, and `answer` columns.
+- Three-tier fusion answers are finite and non-negative.
+- Three-tier fusion reports do not mark `80+` or `99+` complete without official or exact-truth evidence.
+
 ## Final 99+ Target
 
 - The final product target is an official or exact-truth score of at least `99 / 100`.

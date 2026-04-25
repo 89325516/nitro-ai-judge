@@ -1,0 +1,28 @@
+{
+  "exact_row_reconstruction_risk": true,
+  "mode": "probe",
+  "pinned_commit": "6c724e8877c52ea021f295216949860f87d1c8b2",
+  "public_rows": 30736,
+  "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+  "risk_labels": [
+    "safe_external_generalization",
+    "medium_public_behavior_mapping",
+    "high_risk_public_reconstruction"
+  ],
+  "source_urls": [
+    "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_008.csv",
+    "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_009.csv",
+    "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_010.csv",
+    "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_011.csv",
+    "https://raw.githubusercontent.com/ana0101/eye-tracking/6c724e8877c52ea021f295216949860f87d1c8b2/trt_model/word_sentence_fixations/words_dict_romanian_023.csv"
+  ],
+  "test_item_coverage": 1885,
+  "test_participant_overlap": [],
+  "test_text_overlap": [
+    "arg_pisacowsmilk",
+    "ins_learningmobility",
+    "lit_alchemist"
+  ],
+  "test_unique_word_ids": 1885,
+  "train_item_coverage": 4507
+}

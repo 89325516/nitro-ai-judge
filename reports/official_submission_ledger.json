@@ -512,6 +512,972 @@
       "source_file": "official_candidates/045_public_trt_ensemble_fallback_source.py",
       "status": "pending",
       "upload_ready": true
+    },
+    {
+      "candidate_id": "046",
+      "component_weights": {
+        "high": 0.75,
+        "medium": 0.15,
+        "safe": 0.1
+      },
+      "hypothesis": "Fused safe, medium, and high-risk signals with raw high component rank 1.",
+      "local_report": "reports/three_tier_external_report.json",
+      "local_score": null,
+      "manual_upload_priority": 46,
+      "name": "three_tier_fusion_raw_01",
+      "output_file": "official_candidates/046_three_tier_fusion_raw_01_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/046_three_tier_fusion_raw_01_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "047",
+      "component_weights": {
+        "high": 0.7,
+        "medium": 0.15,
+        "safe": 0.15
+      },
+      "hypothesis": "Fused safe, medium, and high-risk signals with raw high component rank 2.",
+      "local_report": "reports/three_tier_external_report.json",
+      "local_score": null,
+      "manual_upload_priority": 47,
+      "name": "three_tier_fusion_raw_02",
+      "output_file": "official_candidates/047_three_tier_fusion_raw_02_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/047_three_tier_fusion_raw_02_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "048",
+      "component_weights": {
+        "high": 0.65,
+        "medium": 0.15,
+        "safe": 0.2
+      },
+      "hypothesis": "Fused safe, medium, and high-risk signals with raw high component rank 3.",
+      "local_report": "reports/three_tier_external_report.json",
+      "local_score": null,
+      "manual_upload_priority": 48,
+      "name": "three_tier_fusion_raw_03",
+      "output_file": "official_candidates/048_three_tier_fusion_raw_03_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/048_three_tier_fusion_raw_03_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "049",
+      "component_weights": {
+        "high": 0.65,
+        "medium": 0.25,
+        "safe": 0.1
+      },
+      "hypothesis": "Fused safe, medium, and high-risk signals with raw high component rank 4.",
+      "local_report": "reports/three_tier_external_report.json",
+      "local_score": null,
+      "manual_upload_priority": 49,
+      "name": "three_tier_fusion_raw_04",
+      "output_file": "official_candidates/049_three_tier_fusion_raw_04_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/049_three_tier_fusion_raw_04_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "050",
+      "component_weights": {
+        "high": 0.6,
+        "medium": 0.25,
+        "safe": 0.15
+      },
+      "hypothesis": "Fused safe, medium, and high-risk signals with raw high component rank 5.",
+      "local_report": "reports/three_tier_external_report.json",
+      "local_score": null,
+      "manual_upload_priority": 50,
+      "name": "three_tier_fusion_raw_05",
+      "output_file": "official_candidates/050_three_tier_fusion_raw_05_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/050_three_tier_fusion_raw_05_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "051",
+      "component_weights": {
+        "high": 0.55,
+        "medium": 0.2,
+        "safe": 0.25
+      },
+      "hypothesis": "Fused safe, medium, and high-risk signals with raw high component rank 6.",
+      "local_report": "reports/three_tier_external_report.json",
+      "local_score": null,
+      "manual_upload_priority": 51,
+      "name": "three_tier_fusion_raw_06",
+      "output_file": "official_candidates/051_three_tier_fusion_raw_06_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/051_three_tier_fusion_raw_06_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "052",
+      "component_weights": {
+        "high": 0.5,
+        "medium": 0.2,
+        "safe": 0.3
+      },
+      "hypothesis": "Fused safe, medium, and high-risk signals with raw high component rank 7.",
+      "local_report": "reports/three_tier_external_report.json",
+      "local_score": null,
+      "manual_upload_priority": 52,
+      "name": "three_tier_fusion_raw_07",
+      "output_file": "official_candidates/052_three_tier_fusion_raw_07_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/052_three_tier_fusion_raw_07_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "053",
+      "component_weights": {
+        "high": 0.5,
+        "medium": 0.3,
+        "safe": 0.2
+      },
+      "hypothesis": "Fused safe, medium, and high-risk signals with raw high component rank 8.",
+      "local_report": "reports/three_tier_external_report.json",
+      "local_score": null,
+      "manual_upload_priority": 53,
+      "name": "three_tier_fusion_raw_08",
+      "output_file": "official_candidates/053_three_tier_fusion_raw_08_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/053_three_tier_fusion_raw_08_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "054",
+      "component_weights": {
+        "high": 0.4,
+        "medium": 0.25,
+        "safe": 0.35
+      },
+      "hypothesis": "Fused safe, medium, and high-risk signals with raw high component rank 9.",
+      "local_report": "reports/three_tier_external_report.json",
+      "local_score": null,
+      "manual_upload_priority": 54,
+      "name": "three_tier_fusion_raw_09",
+      "output_file": "official_candidates/054_three_tier_fusion_raw_09_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/054_three_tier_fusion_raw_09_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "055",
+      "component_weights": {
+        "high": 0.4,
+        "medium": 0.35,
+        "safe": 0.25
+      },
+      "hypothesis": "Fused safe, medium, and high-risk signals with raw high component rank 10.",
+      "local_report": "reports/three_tier_external_report.json",
+      "local_score": null,
+      "manual_upload_priority": 55,
+      "name": "three_tier_fusion_raw_10",
+      "output_file": "official_candidates/055_three_tier_fusion_raw_10_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/055_three_tier_fusion_raw_10_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "056",
+      "component_weights": {
+        "high": 0.3,
+        "medium": 0.3,
+        "safe": 0.4
+      },
+      "hypothesis": "Fused safe, medium, and high-risk signals with raw high component rank 11.",
+      "local_report": "reports/three_tier_external_report.json",
+      "local_score": null,
+      "manual_upload_priority": 56,
+      "name": "three_tier_fusion_raw_11",
+      "output_file": "official_candidates/056_three_tier_fusion_raw_11_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/056_three_tier_fusion_raw_11_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "057",
+      "component_weights": {
+        "high": 0.3,
+        "medium": 0.4,
+        "safe": 0.3
+      },
+      "hypothesis": "Fused safe, medium, and high-risk signals with raw high component rank 12.",
+      "local_report": "reports/three_tier_external_report.json",
+      "local_score": null,
+      "manual_upload_priority": 57,
+      "name": "three_tier_fusion_raw_12",
+      "output_file": "official_candidates/057_three_tier_fusion_raw_12_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/057_three_tier_fusion_raw_12_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "058",
+      "component_weights": {
+        "high": 0.3,
+        "medium": 0.25,
+        "safe": 0.45
+      },
+      "hypothesis": "Fused safe, medium, and high-risk signals with raw high component rank 13.",
+      "local_report": "reports/three_tier_external_report.json",
+      "local_score": null,
+      "manual_upload_priority": 58,
+      "name": "three_tier_fusion_raw_13",
+      "output_file": "official_candidates/058_three_tier_fusion_raw_13_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/058_three_tier_fusion_raw_13_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "059",
+      "component_weights": {
+        "high": 0.35,
+        "medium": 0.45,
+        "safe": 0.2
+      },
+      "hypothesis": "Fused safe, medium, and high-risk signals with raw high component rank 14.",
+      "local_report": "reports/three_tier_external_report.json",
+      "local_score": null,
+      "manual_upload_priority": 59,
+      "name": "three_tier_fusion_raw_14",
+      "output_file": "official_candidates/059_three_tier_fusion_raw_14_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/059_three_tier_fusion_raw_14_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "060",
+      "component_weights": {
+        "high": 0.75,
+        "medium": 0.15,
+        "safe": 0.1
+      },
+      "hypothesis": "Fused safe, medium, and high-risk signals with cal high component rank 1.",
+      "local_report": "reports/three_tier_external_report.json",
+      "local_score": null,
+      "manual_upload_priority": 60,
+      "name": "three_tier_fusion_cal_01",
+      "output_file": "official_candidates/060_three_tier_fusion_cal_01_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/060_three_tier_fusion_cal_01_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "061",
+      "component_weights": {
+        "high": 0.7,
+        "medium": 0.15,
+        "safe": 0.15
+      },
+      "hypothesis": "Fused safe, medium, and high-risk signals with cal high component rank 2.",
+      "local_report": "reports/three_tier_external_report.json",
+      "local_score": null,
+      "manual_upload_priority": 61,
+      "name": "three_tier_fusion_cal_02",
+      "output_file": "official_candidates/061_three_tier_fusion_cal_02_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/061_three_tier_fusion_cal_02_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "062",
+      "component_weights": {
+        "high": 0.65,
+        "medium": 0.15,
+        "safe": 0.2
+      },
+      "hypothesis": "Fused safe, medium, and high-risk signals with cal high component rank 3.",
+      "local_report": "reports/three_tier_external_report.json",
+      "local_score": null,
+      "manual_upload_priority": 62,
+      "name": "three_tier_fusion_cal_03",
+      "output_file": "official_candidates/062_three_tier_fusion_cal_03_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/062_three_tier_fusion_cal_03_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "063",
+      "component_weights": {
+        "high": 0.65,
+        "medium": 0.25,
+        "safe": 0.1
+      },
+      "hypothesis": "Fused safe, medium, and high-risk signals with cal high component rank 4.",
+      "local_report": "reports/three_tier_external_report.json",
+      "local_score": null,
+      "manual_upload_priority": 63,
+      "name": "three_tier_fusion_cal_04",
+      "output_file": "official_candidates/063_three_tier_fusion_cal_04_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/063_three_tier_fusion_cal_04_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "064",
+      "component_weights": {
+        "high": 0.6,
+        "medium": 0.25,
+        "safe": 0.15
+      },
+      "hypothesis": "Fused safe, medium, and high-risk signals with cal high component rank 5.",
+      "local_report": "reports/three_tier_external_report.json",
+      "local_score": null,
+      "manual_upload_priority": 64,
+      "name": "three_tier_fusion_cal_05",
+      "output_file": "official_candidates/064_three_tier_fusion_cal_05_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/064_three_tier_fusion_cal_05_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "065",
+      "component_weights": {
+        "high": 0.55,
+        "medium": 0.2,
+        "safe": 0.25
+      },
+      "hypothesis": "Fused safe, medium, and high-risk signals with cal high component rank 6.",
+      "local_report": "reports/three_tier_external_report.json",
+      "local_score": null,
+      "manual_upload_priority": 65,
+      "name": "three_tier_fusion_cal_06",
+      "output_file": "official_candidates/065_three_tier_fusion_cal_06_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/065_three_tier_fusion_cal_06_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "066",
+      "component_weights": {
+        "high": 0.5,
+        "medium": 0.2,
+        "safe": 0.3
+      },
+      "hypothesis": "Fused safe, medium, and high-risk signals with cal high component rank 7.",
+      "local_report": "reports/three_tier_external_report.json",
+      "local_score": null,
+      "manual_upload_priority": 66,
+      "name": "three_tier_fusion_cal_07",
+      "output_file": "official_candidates/066_three_tier_fusion_cal_07_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/066_three_tier_fusion_cal_07_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "067",
+      "component_weights": {
+        "high": 0.5,
+        "medium": 0.3,
+        "safe": 0.2
+      },
+      "hypothesis": "Fused safe, medium, and high-risk signals with cal high component rank 8.",
+      "local_report": "reports/three_tier_external_report.json",
+      "local_score": null,
+      "manual_upload_priority": 67,
+      "name": "three_tier_fusion_cal_08",
+      "output_file": "official_candidates/067_three_tier_fusion_cal_08_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/067_three_tier_fusion_cal_08_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "068",
+      "component_weights": {
+        "high": 0.4,
+        "medium": 0.25,
+        "safe": 0.35
+      },
+      "hypothesis": "Fused safe, medium, and high-risk signals with cal high component rank 9.",
+      "local_report": "reports/three_tier_external_report.json",
+      "local_score": null,
+      "manual_upload_priority": 68,
+      "name": "three_tier_fusion_cal_09",
+      "output_file": "official_candidates/068_three_tier_fusion_cal_09_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/068_three_tier_fusion_cal_09_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "069",
+      "component_weights": {
+        "high": 0.4,
+        "medium": 0.35,
+        "safe": 0.25
+      },
+      "hypothesis": "Fused safe, medium, and high-risk signals with cal high component rank 10.",
+      "local_report": "reports/three_tier_external_report.json",
+      "local_score": null,
+      "manual_upload_priority": 69,
+      "name": "three_tier_fusion_cal_10",
+      "output_file": "official_candidates/069_three_tier_fusion_cal_10_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/069_three_tier_fusion_cal_10_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "070",
+      "component_weights": {
+        "high": 0.3,
+        "medium": 0.3,
+        "safe": 0.4
+      },
+      "hypothesis": "Fused safe, medium, and high-risk signals with cal high component rank 11.",
+      "local_report": "reports/three_tier_external_report.json",
+      "local_score": null,
+      "manual_upload_priority": 70,
+      "name": "three_tier_fusion_cal_11",
+      "output_file": "official_candidates/070_three_tier_fusion_cal_11_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/070_three_tier_fusion_cal_11_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "071",
+      "component_weights": {
+        "high": 0.3,
+        "medium": 0.4,
+        "safe": 0.3
+      },
+      "hypothesis": "Fused safe, medium, and high-risk signals with cal high component rank 12.",
+      "local_report": "reports/three_tier_external_report.json",
+      "local_score": null,
+      "manual_upload_priority": 71,
+      "name": "three_tier_fusion_cal_12",
+      "output_file": "official_candidates/071_three_tier_fusion_cal_12_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/071_three_tier_fusion_cal_12_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "072",
+      "component_weights": {
+        "high": 0.3,
+        "medium": 0.25,
+        "safe": 0.45
+      },
+      "hypothesis": "Fused safe, medium, and high-risk signals with cal high component rank 13.",
+      "local_report": "reports/three_tier_external_report.json",
+      "local_score": null,
+      "manual_upload_priority": 72,
+      "name": "three_tier_fusion_cal_13",
+      "output_file": "official_candidates/072_three_tier_fusion_cal_13_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/072_three_tier_fusion_cal_13_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "073",
+      "component_weights": {
+        "high": 0.35,
+        "medium": 0.45,
+        "safe": 0.2
+      },
+      "hypothesis": "Fused safe, medium, and high-risk signals with cal high component rank 14.",
+      "local_report": "reports/three_tier_external_report.json",
+      "local_score": null,
+      "manual_upload_priority": 73,
+      "name": "three_tier_fusion_cal_14",
+      "output_file": "official_candidates/073_three_tier_fusion_cal_14_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/073_three_tier_fusion_cal_14_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "074",
+      "component_weights": {
+        "high": 0.75,
+        "medium": 0.15,
+        "safe": 0.1
+      },
+      "hypothesis": "Fused safe, medium, and high-risk signals with base high component rank 1.",
+      "local_report": "reports/three_tier_external_report.json",
+      "local_score": null,
+      "manual_upload_priority": 74,
+      "name": "three_tier_fusion_base_01",
+      "output_file": "official_candidates/074_three_tier_fusion_base_01_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/074_three_tier_fusion_base_01_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "075",
+      "component_weights": {
+        "high": 0.7,
+        "medium": 0.15,
+        "safe": 0.15
+      },
+      "hypothesis": "Fused safe, medium, and high-risk signals with base high component rank 2.",
+      "local_report": "reports/three_tier_external_report.json",
+      "local_score": null,
+      "manual_upload_priority": 75,
+      "name": "three_tier_fusion_base_02",
+      "output_file": "official_candidates/075_three_tier_fusion_base_02_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/075_three_tier_fusion_base_02_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "076",
+      "component_weights": {
+        "high": 0.65,
+        "medium": 0.15,
+        "safe": 0.2
+      },
+      "hypothesis": "Fused safe, medium, and high-risk signals with base high component rank 3.",
+      "local_report": "reports/three_tier_external_report.json",
+      "local_score": null,
+      "manual_upload_priority": 76,
+      "name": "three_tier_fusion_base_03",
+      "output_file": "official_candidates/076_three_tier_fusion_base_03_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/076_three_tier_fusion_base_03_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "077",
+      "component_weights": {
+        "high": 0.65,
+        "medium": 0.25,
+        "safe": 0.1
+      },
+      "hypothesis": "Fused safe, medium, and high-risk signals with base high component rank 4.",
+      "local_report": "reports/three_tier_external_report.json",
+      "local_score": null,
+      "manual_upload_priority": 77,
+      "name": "three_tier_fusion_base_04",
+      "output_file": "official_candidates/077_three_tier_fusion_base_04_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/077_three_tier_fusion_base_04_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "078",
+      "component_weights": {
+        "high": 0.6,
+        "medium": 0.25,
+        "safe": 0.15
+      },
+      "hypothesis": "Fused safe, medium, and high-risk signals with base high component rank 5.",
+      "local_report": "reports/three_tier_external_report.json",
+      "local_score": null,
+      "manual_upload_priority": 78,
+      "name": "three_tier_fusion_base_05",
+      "output_file": "official_candidates/078_three_tier_fusion_base_05_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/078_three_tier_fusion_base_05_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "079",
+      "component_weights": {
+        "high": 0.55,
+        "medium": 0.2,
+        "safe": 0.25
+      },
+      "hypothesis": "Fused safe, medium, and high-risk signals with base high component rank 6.",
+      "local_report": "reports/three_tier_external_report.json",
+      "local_score": null,
+      "manual_upload_priority": 79,
+      "name": "three_tier_fusion_base_06",
+      "output_file": "official_candidates/079_three_tier_fusion_base_06_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/079_three_tier_fusion_base_06_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "080",
+      "component_weights": {
+        "high": 0.5,
+        "medium": 0.2,
+        "safe": 0.3
+      },
+      "hypothesis": "Fused safe, medium, and high-risk signals with base high component rank 7.",
+      "local_report": "reports/three_tier_external_report.json",
+      "local_score": null,
+      "manual_upload_priority": 80,
+      "name": "three_tier_fusion_base_07",
+      "output_file": "official_candidates/080_three_tier_fusion_base_07_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/080_three_tier_fusion_base_07_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "081",
+      "component_weights": {
+        "high": 0.5,
+        "medium": 0.3,
+        "safe": 0.2
+      },
+      "hypothesis": "Fused safe, medium, and high-risk signals with base high component rank 8.",
+      "local_report": "reports/three_tier_external_report.json",
+      "local_score": null,
+      "manual_upload_priority": 81,
+      "name": "three_tier_fusion_base_08",
+      "output_file": "official_candidates/081_three_tier_fusion_base_08_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/081_three_tier_fusion_base_08_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "082",
+      "component_weights": {
+        "high": 0.4,
+        "medium": 0.25,
+        "safe": 0.35
+      },
+      "hypothesis": "Fused safe, medium, and high-risk signals with base high component rank 9.",
+      "local_report": "reports/three_tier_external_report.json",
+      "local_score": null,
+      "manual_upload_priority": 82,
+      "name": "three_tier_fusion_base_09",
+      "output_file": "official_candidates/082_three_tier_fusion_base_09_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/082_three_tier_fusion_base_09_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "083",
+      "component_weights": {
+        "high": 0.4,
+        "medium": 0.35,
+        "safe": 0.25
+      },
+      "hypothesis": "Fused safe, medium, and high-risk signals with base high component rank 10.",
+      "local_report": "reports/three_tier_external_report.json",
+      "local_score": null,
+      "manual_upload_priority": 83,
+      "name": "three_tier_fusion_base_10",
+      "output_file": "official_candidates/083_three_tier_fusion_base_10_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/083_three_tier_fusion_base_10_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "084",
+      "component_weights": {
+        "high": 0.3,
+        "medium": 0.3,
+        "safe": 0.4
+      },
+      "hypothesis": "Fused safe, medium, and high-risk signals with base high component rank 11.",
+      "local_report": "reports/three_tier_external_report.json",
+      "local_score": null,
+      "manual_upload_priority": 84,
+      "name": "three_tier_fusion_base_11",
+      "output_file": "official_candidates/084_three_tier_fusion_base_11_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/084_three_tier_fusion_base_11_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "085",
+      "component_weights": {
+        "high": 0.3,
+        "medium": 0.4,
+        "safe": 0.3
+      },
+      "hypothesis": "Fused safe, medium, and high-risk signals with base high component rank 12.",
+      "local_report": "reports/three_tier_external_report.json",
+      "local_score": null,
+      "manual_upload_priority": 85,
+      "name": "three_tier_fusion_base_12",
+      "output_file": "official_candidates/085_three_tier_fusion_base_12_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/085_three_tier_fusion_base_12_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "086",
+      "component_weights": {
+        "high": 0.3,
+        "medium": 0.25,
+        "safe": 0.45
+      },
+      "hypothesis": "Fused safe, medium, and high-risk signals with base high component rank 13.",
+      "local_report": "reports/three_tier_external_report.json",
+      "local_score": null,
+      "manual_upload_priority": 86,
+      "name": "three_tier_fusion_base_13",
+      "output_file": "official_candidates/086_three_tier_fusion_base_13_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/086_three_tier_fusion_base_13_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "candidate_id": "087",
+      "component_weights": {
+        "high": 0.35,
+        "medium": 0.45,
+        "safe": 0.2
+      },
+      "hypothesis": "Fused safe, medium, and high-risk signals with base high component rank 14.",
+      "local_report": "reports/three_tier_external_report.json",
+      "local_score": null,
+      "manual_upload_priority": 87,
+      "name": "three_tier_fusion_base_14",
+      "output_file": "official_candidates/087_three_tier_fusion_base_14_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "source_file": "official_candidates/087_three_tier_fusion_base_14_source.py",
+      "status": "pending",
+      "upload_ready": true
     }
   ],
   "probing_budget": "10-15 official submissions",
