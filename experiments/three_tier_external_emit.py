@@ -113,6 +113,10 @@ def main():
     train=rc(a.train); test=rc(a.test); b=base(a.base_output,test); hb=base(a.high_risk_base_output,test) if a.high_risk_base_output and a.high_risk_base_output.exists() else None
     rows=pub(Path('.cache/three_tier_external')); m=mat(rows); cal=dcal(train,m); s=safe(train,test,b); md=medium(train,test,rows,m); hr=high(test,m,hb,cal); wt=CONFIG['weights']
     out=[min(10000.0,max(0.0,(wt['safe']*x+wt['medium']*y+wt['high']*z)*CONFIG.get('scale',1.0))) for x,y,z in zip(s,md,hr)]
+    if CONFIG.get('zero_quantile') is not None:
+        t=float(np.quantile(np.asarray(out,float),CONFIG['zero_quantile'])); out=[0.0 if v<=t else v for v in out]
+    if CONFIG.get('floor_quantile') is not None:
+        t=float(np.quantile(np.asarray(out,float),CONFIG['floor_quantile'])); out=[max(t,v) for v in out]
     write(test,out,a.output)
 if __name__=='__main__': main()
 '''

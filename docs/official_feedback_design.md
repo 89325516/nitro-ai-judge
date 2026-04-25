@@ -29,9 +29,9 @@ Local reports do not prove a score increase. Every score-changing decision must 
 
 ## Feedback-Driven Search
 
-Candidate `087_three_tier_fusion_base_14` is the current official anchor after submission `07ead7cdad22` scored `37.35945 / 100`. The next search starts at Candidate `088` and stays centered on the `087` recipe: `mode=base`, safe weight `0.20`, medium weight `0.45`, and high-risk weight `0.35`.
+Candidate `087_three_tier_fusion_base_14` is the current official anchor after submission `07ead7cdad22` scored `37.35945 / 100`. The next search starts at Candidate `088` and stays centered on the `087` recipe: `mode=base`, safe weight `0.20`, medium weight `0.45`, high-risk weight `0.35`, and scale `1.04`.
 
-The next generation should keep each output as one three-tier fusion individual. It should test stronger safe/medium weighting, moderate high-risk reconstruction, scale variants, and zero-rate variants around the official anchor rather than restarting broad unfocused exploration.
+The next generation should keep each output as one three-tier fusion individual. Candidate `099` is the manual upload champion for this batch, using safe weight `0.25`, medium weight `0.50`, high-risk weight `0.25`, and scale `1.02`; it is not an official improvement until judge feedback is recorded.
 
 ## Candidate Strategy
 

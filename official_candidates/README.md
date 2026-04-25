@@ -181,3 +181,14 @@ All Batch 9 candidates fuse safe language features, medium public behavior aggre
 Risk label for all Batch 9 rows: `three_tier_fusion_with_high_risk_reconstruction` with safe, medium, and high-risk components.
 
 Official feedback: Candidate `087_three_tier_fusion_base_14` was submitted as `07ead7cdad22` on `2026-04-25 19:53` and scored `37.35945 / 100`, making it the current official best and the anchor for Candidate `088+` feedback-driven search.
+
+## Batch 10: Feedback Champion Around Candidate 087
+
+This batch treats Candidate `087` as the official feedback anchor at `37.35945 / 100`. Candidates `088-099` stay single three-tier fusion individuals; `088` reproduces the anchor, `089-098` probe nearby weights, scale, and low-tail handling, and `099` is the next manual upload target.
+
+- Anchor: `087_three_tier_fusion_base_14`, weights `0.20/0.45/0.35`, scale `1.04`.
+- Next upload: `099_feedback_champion_safe25_medium50_high25`, weights `0.25/0.50/0.25`, scale `1.02`.
+- Source/output pairs: `official_candidates/088_*` through `official_candidates/099_*`.
+- Report: `reports/feedback_champion_report.json`.
+
+Do not treat Candidate `099` as an official improvement until its Nitro Judge score is recorded.

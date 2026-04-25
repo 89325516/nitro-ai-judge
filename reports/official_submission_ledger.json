@@ -23,6 +23,9 @@
   "latest_manual_submission_policy": "largest_numeric_candidate_id_at_manual_upload_time",
   "latest_official_feedback_candidate_id": "087",
   "latest_official_feedback_submission_id": "07ead7cdad22",
+  "next_manual_upload_target": "099",
+  "next_manual_upload_target_output": "official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv",
+  "next_manual_upload_target_source": "official_candidates/099_feedback_champion_safe25_medium50_high25_source.py",
   "official_80_target_met": false,
   "official_80_target_score": 80.0,
   "pending_candidates": [
@@ -1496,6 +1499,318 @@
       ],
       "source_file": "official_candidates/087_three_tier_fusion_base_14_source.py",
       "status": "official_scored",
+      "upload_ready": true
+    },
+    {
+      "anchor_candidate_id": "087",
+      "candidate_id": "088",
+      "component_weights": {
+        "high": 0.35,
+        "medium": 0.45,
+        "safe": 0.2
+      },
+      "hypothesis": "Reproduce official Candidate 087 exactly as the feedback anchor.",
+      "local_report": "reports/feedback_champion_report.json",
+      "local_score": null,
+      "manual_upload_priority": 88,
+      "name": "feedback_anchor_clone",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/088_feedback_anchor_clone_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "scale": 1.04,
+      "source_file": "official_candidates/088_feedback_anchor_clone_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "anchor_candidate_id": "087",
+      "candidate_id": "089",
+      "component_weights": {
+        "high": 0.3,
+        "medium": 0.45,
+        "safe": 0.25
+      },
+      "hypothesis": "Shift five points from high-risk reconstruction into safe language signal.",
+      "local_report": "reports/feedback_champion_report.json",
+      "local_score": null,
+      "manual_upload_priority": 89,
+      "name": "feedback_safe25_medium45_high30",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/089_feedback_safe25_medium45_high30_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "scale": 1.04,
+      "source_file": "official_candidates/089_feedback_safe25_medium45_high30_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "anchor_candidate_id": "087",
+      "candidate_id": "090",
+      "component_weights": {
+        "high": 0.25,
+        "medium": 0.5,
+        "safe": 0.25
+      },
+      "hypothesis": "Raise medium public behavior weight while reducing high-risk reconstruction.",
+      "local_report": "reports/feedback_champion_report.json",
+      "local_score": null,
+      "manual_upload_priority": 90,
+      "name": "feedback_safe25_medium50_high25",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/090_feedback_safe25_medium50_high25_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "scale": 1.04,
+      "source_file": "official_candidates/090_feedback_safe25_medium50_high25_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "anchor_candidate_id": "087",
+      "candidate_id": "091",
+      "component_weights": {
+        "high": 0.25,
+        "medium": 0.45,
+        "safe": 0.3
+      },
+      "hypothesis": "Test stronger safe language generalization at the same medium weight.",
+      "local_report": "reports/feedback_champion_report.json",
+      "local_score": null,
+      "manual_upload_priority": 91,
+      "name": "feedback_safe30_medium45_high25",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/091_feedback_safe30_medium45_high25_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "scale": 1.04,
+      "source_file": "official_candidates/091_feedback_safe30_medium45_high25_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "anchor_candidate_id": "087",
+      "candidate_id": "092",
+      "component_weights": {
+        "high": 0.25,
+        "medium": 0.55,
+        "safe": 0.2
+      },
+      "hypothesis": "Push the strongest medium public behavior weighting near the anchor.",
+      "local_report": "reports/feedback_champion_report.json",
+      "local_score": null,
+      "manual_upload_priority": 92,
+      "name": "feedback_safe20_medium55_high25",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/092_feedback_safe20_medium55_high25_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "scale": 1.04,
+      "source_file": "official_candidates/092_feedback_safe20_medium55_high25_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "anchor_candidate_id": "087",
+      "candidate_id": "093",
+      "component_weights": {
+        "high": 0.2,
+        "medium": 0.5,
+        "safe": 0.3
+      },
+      "hypothesis": "Reduce reconstruction most while keeping all three tiers active.",
+      "local_report": "reports/feedback_champion_report.json",
+      "local_score": null,
+      "manual_upload_priority": 93,
+      "name": "feedback_safe30_medium50_high20",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/093_feedback_safe30_medium50_high20_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "scale": 1.04,
+      "source_file": "official_candidates/093_feedback_safe30_medium50_high20_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "anchor_candidate_id": "087",
+      "candidate_id": "094",
+      "component_weights": {
+        "high": 0.35,
+        "medium": 0.45,
+        "safe": 0.2
+      },
+      "hypothesis": "Lower anchor scale to test official distribution sensitivity.",
+      "local_report": "reports/feedback_champion_report.json",
+      "local_score": null,
+      "manual_upload_priority": 94,
+      "name": "feedback_anchor_scale098",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/094_feedback_anchor_scale098_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "scale": 0.98,
+      "source_file": "official_candidates/094_feedback_anchor_scale098_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "anchor_candidate_id": "087",
+      "candidate_id": "095",
+      "component_weights": {
+        "high": 0.35,
+        "medium": 0.45,
+        "safe": 0.2
+      },
+      "hypothesis": "Reset anchor scale to neutral calibration.",
+      "local_report": "reports/feedback_champion_report.json",
+      "local_score": null,
+      "manual_upload_priority": 95,
+      "name": "feedback_anchor_scale100",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/095_feedback_anchor_scale100_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "scale": 1.0,
+      "source_file": "official_candidates/095_feedback_anchor_scale100_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "anchor_candidate_id": "087",
+      "candidate_id": "096",
+      "component_weights": {
+        "high": 0.35,
+        "medium": 0.45,
+        "safe": 0.2
+      },
+      "hypothesis": "Slightly lower scale than Candidate 087 without changing weights.",
+      "local_report": "reports/feedback_champion_report.json",
+      "local_score": null,
+      "manual_upload_priority": 96,
+      "name": "feedback_anchor_scale102",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/096_feedback_anchor_scale102_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "scale": 1.02,
+      "source_file": "official_candidates/096_feedback_anchor_scale102_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "anchor_candidate_id": "087",
+      "candidate_id": "097",
+      "component_weights": {
+        "high": 0.25,
+        "medium": 0.5,
+        "safe": 0.25
+      },
+      "hypothesis": "Zero the lowest two percent after stable three-tier fusion.",
+      "local_report": "reports/feedback_champion_report.json",
+      "local_score": null,
+      "manual_upload_priority": 97,
+      "name": "feedback_zero_tail02",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/097_feedback_zero_tail02_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "scale": 1.02,
+      "source_file": "official_candidates/097_feedback_zero_tail02_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "anchor_candidate_id": "087",
+      "candidate_id": "098",
+      "component_weights": {
+        "high": 0.25,
+        "medium": 0.5,
+        "safe": 0.25
+      },
+      "hypothesis": "Clip the lowest two percent upward after stable three-tier fusion.",
+      "local_report": "reports/feedback_champion_report.json",
+      "local_score": null,
+      "manual_upload_priority": 98,
+      "name": "feedback_floor_tail02",
+      "next_manual_upload_target": false,
+      "output_file": "official_candidates/098_feedback_floor_tail02_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "scale": 1.02,
+      "source_file": "official_candidates/098_feedback_floor_tail02_source.py",
+      "status": "pending",
+      "upload_ready": true
+    },
+    {
+      "anchor_candidate_id": "087",
+      "candidate_id": "099",
+      "component_weights": {
+        "high": 0.25,
+        "medium": 0.5,
+        "safe": 0.25
+      },
+      "hypothesis": "Champion upload target centered on stronger safe and medium signals.",
+      "local_report": "reports/feedback_champion_report.json",
+      "local_score": null,
+      "manual_upload_priority": 99,
+      "name": "feedback_champion_safe25_medium50_high25",
+      "next_manual_upload_target": true,
+      "output_file": "official_candidates/099_feedback_champion_safe25_medium50_high25_output.csv",
+      "risk_label": "three_tier_fusion_with_high_risk_reconstruction",
+      "risk_labels": [
+        "safe_external_generalization",
+        "medium_public_behavior_mapping",
+        "high_risk_public_reconstruction"
+      ],
+      "scale": 1.02,
+      "source_file": "official_candidates/099_feedback_champion_safe25_medium50_high25_source.py",
+      "status": "pending",
       "upload_ready": true
     }
   ],

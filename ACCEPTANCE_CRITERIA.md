@@ -167,6 +167,15 @@
 - Three-tier fusion answers are finite and non-negative.
 - Three-tier fusion reports do not mark `80+` or `99+` complete without official or exact-truth evidence.
 
+## Feedback Champion Candidates
+
+- Feedback-driven batches keep the largest numeric candidate as the manual upload target.
+- The feedback anchor records the latest official candidate ID and score.
+- Anchor reproduction candidates match the official anchor output exactly.
+- Champion candidates preserve exactly one answer for each test datapoint.
+- Champion candidates preserve the required public submission columns.
+- Champion candidates are not treated as official improvements before judge feedback is recorded.
+
 ## Final 99+ Target
 
 - The final product target is an official or exact-truth score of at least `99 / 100`.
