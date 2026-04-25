@@ -41,6 +41,14 @@
 - Cross-validation scores are labeled as local estimates, not hidden-test results.
 - Candidate solutions are evaluated through CSV files and command execution, not private model internals.
 
+## Model Improvement
+
+- A replacement submission model must beat `36 / 100` on the local text-holdout estimate before it is treated as a viable candidate.
+- A model report must identify whether the score is a local estimate or an exact score with truth labels.
+- Model changes must preserve one generated answer for every test datapoint.
+- Model changes must preserve the public submission CSV columns.
+- Hidden-test performance is not claimed without judge feedback or truth labels.
+
 ## Change Discipline
 
 - Any new mechanism is documented before implementation.

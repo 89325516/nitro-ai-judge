@@ -28,7 +28,9 @@ Run the local baseline pipeline with:
 python3 solution.py --train data/train_data.csv --test data/test_data.csv --output submission.csv
 ```
 
-The command writes a Nitro-compatible CSV with `subtaskID`, `datapointID`, and `answer` columns. The solution intentionally uses general word and position features instead of concrete participant IDs because the test participants are unseen.
+The command writes a Nitro-compatible CSV with `subtaskID`, `datapointID`, and `answer` columns. The solution uses raw-target Ridge regression with general word and position features instead of concrete participant IDs because the test participants are unseen.
+
+The competition baseline correction means `36 / 100` is the practical baseline floor. The current local estimate should be read on the same 0 to 100 scale.
 
 ## Evaluate A Solution
 

@@ -9,7 +9,6 @@ from pathlib import Path
 from typing import Iterable
 
 import numpy as np
-from sklearn.compose import TransformedTargetRegressor
 from sklearn.feature_extraction import DictVectorizer
 from sklearn.linear_model import Ridge
 from sklearn.pipeline import make_pipeline
@@ -67,22 +66,14 @@ def build_features(row: dict[str, str]) -> FeatureMap:
 
 
 def train_model(features: Iterable[FeatureMap], targets: np.ndarray):
-    regressor = Ridge(alpha=30.0, random_state=0)
-    model = make_pipeline(
-        DictVectorizer(sparse=True),
-        TransformedTargetRegressor(
-            regressor=regressor,
-            func=np.log1p,
-            inverse_func=np.expm1,
-        ),
-    )
+    model = make_pipeline(DictVectorizer(sparse=True), Ridge(alpha=100.0, random_state=0))
     return model.fit(list(features), targets)
 
 
 def write_submission(test_rows: list[dict[str, str]], predictions: np.ndarray, output_path: Path) -> None:
     output_path.parent.mkdir(parents=True, exist_ok=True)
     with output_path.open("w", newline="", encoding="utf-8") as handle:
-        writer = csv.DictWriter(handle, fieldnames=["subtaskID", "datapointID", "answer"])
+        writer = csv.DictWriter(handle, fieldnames=["subtaskID", "datapointID", "answer"], lineterminator="\n")
         writer.writeheader()
         for row, prediction in zip(test_rows, predictions, strict=True):
             writer.writerow(
